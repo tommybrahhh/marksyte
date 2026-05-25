@@ -3,12 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Marksyte | Marketing, insights and sales consulting</title>
+    <title>Marksyte | Growth consulting for consumer brands</title>
     <meta
       name="description"
-      content="Marksyte connects consumer insight with commercial action through marketing, insights and sales consulting."
+      content="Marksyte helps FMCG and retail-focused consumer businesses diagnose what blocks growth and turn data into practical commercial action."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://marksyte.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Marksyte" />
+    <meta property="og:title" content="Marksyte | Growth consulting for consumer brands" />
+    <meta
+      property="og:description"
+      content="Growth diagnosis and brand strategy consulting for FMCG and retail-focused consumer businesses."
+    />
+    <meta property="og:url" content="https://marksyte.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Marksyte | Growth consulting for consumer brands" />
+    <meta
+      name="twitter:description"
+      content="Growth diagnosis and brand strategy consulting for FMCG and retail-focused consumer businesses."
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Marksyte",
+        "url": "https://marksyte.com/",
+        "email": "roman@marksyte.com",
+        "description": "Growth diagnosis and brand strategy consulting for FMCG and retail-focused consumer businesses.",
+        "serviceType": [
+          "Growth Diagnosis",
+          "Brand Strategy Review",
+          "Marketing insights consulting",
+          "Commercial strategy consulting"
+        ],
+        "areaServed": "International",
+        "knowsAbout": [
+          "Consumer insights",
+          "Brand strategy",
+          "Sales enablement",
+          "Business intelligence"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -16,147 +56,179 @@
         <span class="brand-mark" aria-hidden="true">M</span>
         <span>Marksyte</span>
       </a>
-      <nav aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#method">Method</a>
-        <a href="#study-cases">Study cases</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Main navigation">
+          <a href="#services" data-i18n="nav.services">Offers</a>
+          <a href="#study-cases" data-i18n="nav.cases">Case study</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" data-language="es" aria-pressed="false">ES</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero-section" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Marketing · Insights · Sales</p>
-          <h1 id="hero-title">Consumer data is only useful when it changes what the business does.</h1>
-          <p class="hero-lead">
-            Marksyte helps teams turn research, market signals and commercial data into
-            sharper choices: where to play, what to say, what to sell and how to measure progress.
+          <p class="eyebrow" data-i18n="hero.eyebrow">FMCG and retail-focused growth consulting</p>
+          <h1 id="hero-title" data-i18n="hero.title">
+            Diagnose what is blocking growth. Turn insight into action.
+          </h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Marksyte helps consumer businesses sharpen brand, portfolio and commercial decisions
+            when growth slows, data feels unclear or sales needs a stronger story.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#study-cases">View study case</a>
-            <a class="button secondary" href="#contact">Start a project</a>
+            <a class="button primary" href="#contact" data-i18n="cta.discovery">Request a discovery call</a>
+            <a class="button secondary" href="#study-cases" data-i18n="cta.case">View public-data case</a>
           </div>
+          <p class="hero-note" data-i18n="hero.note">
+            For consumer brands, scale-ups and retail-focused teams.
+          </p>
         </div>
 
-        <div class="hero-visual" aria-label="Data to action operating view">
+        <div class="hero-visual" aria-label="Growth diagnosis operating view">
           <div class="signal-board">
             <div class="signal-head">
-              <span>Decision cockpit</span>
-              <span>Live example</span>
+              <span data-i18n="board.title">Growth diagnosis</span>
+              <span data-i18n="board.duration">2-4 week starting engagement</span>
             </div>
             <div class="signal-grid">
               <article>
-                <span class="metric-label">Consumer shift</span>
-                <strong>+6.7</strong>
-                <span class="metric-note">pp youth abstention</span>
+                <span class="metric-label" data-i18n="board.signal">Signal</span>
+                <strong data-i18n="board.signalValue">Why now?</strong>
+                <span class="metric-note" data-i18n="board.signalNote">Locate barriers and opportunities</span>
               </article>
               <article>
-                <span class="metric-label">Demand pocket</span>
-                <strong>55%</strong>
-                <span class="metric-note">High-income social use</span>
+                <span class="metric-label" data-i18n="board.choice">Choice</span>
+                <strong data-i18n="board.choiceValue">Where to play</strong>
+                <span class="metric-note" data-i18n="board.choiceNote">Prioritize segments and offers</span>
               </article>
               <article>
-                <span class="metric-label">Action route</span>
-                <strong>4</strong>
-                <span class="metric-note">Occasion territories</span>
+                <span class="metric-label" data-i18n="board.action">Action</span>
+                <strong data-i18n="board.actionValue">What to do</strong>
+                <span class="metric-note" data-i18n="board.actionNote">Build a practical sales plan</span>
               </article>
             </div>
             <div class="decision-flow" aria-hidden="true">
-              <span>Signals</span>
+              <span data-i18n="board.data">Data</span>
               <i></i>
-              <span>Segments</span>
+              <span data-i18n="board.insight">Insight</span>
               <i></i>
-              <span>Actions</span>
+              <span data-i18n="board.activation">Activation</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Experience and impact">
+        <article>
+          <strong>&gt; EUR 7M</strong>
+          <p data-i18n="proof.one">Sales opportunities identified and developed for a global consumer business.</p>
+        </article>
+        <article>
+          <strong>BI</strong>
+          <p data-i18n="proof.two">Sales-funnel intelligence solution built to replace manual reporting and expose opportunity.</p>
+        </article>
+        <article>
+          <strong>C-suite</strong>
+          <p data-i18n="proof.three">Experience aligning commercial, marketing and senior stakeholders around execution.</p>
+        </article>
+      </section>
+
+      <section class="section challenge-section" aria-labelledby="challenge-title">
+        <div class="section-intro">
+          <p class="eyebrow" data-i18n="challenges.eyebrow">When Marksyte is useful</p>
+          <h2 id="challenge-title" data-i18n="challenges.title">You have activity. You need a sharper growth decision.</h2>
+        </div>
+        <div class="challenge-grid">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="challenges.oneTitle">Growth is slowing</h3>
+            <p data-i18n="challenges.oneText">The team sees performance moving, but cannot agree on what is driving it or where to intervene.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="challenges.twoTitle">Insight is not actionable</h3>
+            <p data-i18n="challenges.twoText">There is data and research, but it is not translating into brand, pricing or portfolio choices.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="challenges.threeTitle">Sales needs a stronger story</h3>
+            <p data-i18n="challenges.threeText">Marketing plans and retailer conversations need clearer commercial logic and better evidence.</p>
+          </article>
         </div>
       </section>
 
       <section class="section services-section" id="services" aria-labelledby="services-title">
         <div class="section-intro">
-          <p class="eyebrow">What Marksyte does</p>
-          <h2 id="services-title">Commercial consulting for teams that need decisions, not decks.</h2>
+          <p class="eyebrow" data-i18n="offers.eyebrow">Starting offers</p>
+          <h2 id="services-title" data-i18n="offers.title">Begin with a focused diagnosis. Build from evidence.</h2>
         </div>
-        <div class="service-grid">
-          <article class="service-item">
-            <span>01</span>
-            <h3>Consumer and market intelligence</h3>
-            <p>
-              Translate surveys, social signals, category data and business performance into a
-              clear read of changing demand.
+        <div class="offer-grid">
+          <article class="offer-item featured">
+            <div class="offer-topline">
+              <span data-i18n="offers.primary">Recommended starting point</span>
+              <strong data-i18n="offers.weeks">2-4 weeks</strong>
+            </div>
+            <h3 data-i18n="offers.growthTitle">Growth Diagnosis</h3>
+            <p data-i18n="offers.growthText">
+              A focused assessment of category signals, consumer behavior, competitive context
+              and commercial performance to identify what is blocking growth.
             </p>
+            <ul>
+              <li data-i18n="offers.growthOne">Priority growth barriers and opportunities</li>
+              <li data-i18n="offers.growthTwo">Decision-ready strategic recommendations</li>
+              <li data-i18n="offers.growthThree">Practical action roadmap for the next 12 months</li>
+            </ul>
           </article>
-          <article class="service-item">
-            <span>02</span>
-            <h3>Growth strategy and positioning</h3>
-            <p>
-              Define where the brand has permission to grow, which audiences matter, and what
-              propositions should move first.
+          <article class="offer-item">
+            <div class="offer-topline">
+              <span data-i18n="offers.followup">Focused review</span>
+              <strong data-i18n="offers.project">Project based</strong>
+            </div>
+            <h3 data-i18n="offers.brandTitle">Brand Strategy Review</h3>
+            <p data-i18n="offers.brandText">
+              Challenge a weak or generic plan and connect brand, portfolio, activation and
+              sales arguments to consumer and customer reality.
             </p>
-          </article>
-          <article class="service-item">
-            <span>03</span>
-            <h3>Sales activation and measurement</h3>
-            <p>
-              Convert strategic territories into channel actions, selling stories, KPIs and
-              learning loops.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section method-section" id="method" aria-labelledby="method-title">
-        <div class="section-intro">
-          <p class="eyebrow">Operating model</p>
-          <h2 id="method-title">From evidence to action in four moves.</h2>
-        </div>
-        <div class="method-steps">
-          <article>
-            <span>Diagnose</span>
-            <p>Separate the real market signal from noise, anecdotes and dashboard clutter.</p>
-          </article>
-          <article>
-            <span>Prioritize</span>
-            <p>Size the audiences, occasions and channels with the strongest business upside.</p>
-          </article>
-          <article>
-            <span>Design</span>
-            <p>Shape propositions, messaging, offers and selling arguments around the opportunity.</p>
-          </article>
-          <article>
-            <span>Activate</span>
-            <p>Turn the plan into experiments, KPIs and decisions the team can run every week.</p>
+            <ul>
+              <li data-i18n="offers.brandOne">Brand-plan challenge and opportunity framing</li>
+              <li data-i18n="offers.brandTwo">Retailer or stakeholder commercial story</li>
+              <li data-i18n="offers.brandThree">Activation priorities and decision criteria</li>
+            </ul>
           </article>
         </div>
       </section>
 
       <section class="section study-section" id="study-cases" aria-labelledby="study-title">
         <div class="section-intro">
-          <p class="eyebrow">Study cases</p>
-          <h2 id="study-title">Example: alcohol consumption in Spain as a data-to-action study.</h2>
-          <p>
-            This section embeds the analytical landing page created for Spain as a full case
-            study: what changed, why it matters and where a business can act.
+          <p class="eyebrow" data-i18n="case.eyebrow">Public-data study case</p>
+          <h2 id="study-title" data-i18n="case.title">Alcohol consumption in Spain: from behavior shift to commercial opportunity.</h2>
+          <p data-i18n="case.intro">
+            An independent analysis built from public data to demonstrate the Marksyte approach:
+            isolate the shift, identify the audience and translate evidence into action.
           </p>
         </div>
 
         <article class="case-shell" aria-labelledby="case-title">
           <div class="case-hero">
             <div>
-              <p class="case-kicker">Consumer shift · Spain</p>
-              <h3 id="case-title">Alcohol loses centrality, but it does not disappear.</h3>
-              <p>
-                The signal is not a uniform decline. It is a reconfiguration of occasions:
-                more abstention, less routine social consumption and stronger wellbeing codes,
-                especially among younger consumers.
+              <p class="case-kicker" data-i18n="case.kicker">Consumer shift · Spain</p>
+              <h3 id="case-title" data-i18n="case.previewTitle">Alcohol loses centrality, but it does not disappear.</h3>
+              <p data-i18n="case.previewText">
+                More abstention and less routine social consumption point to new wellbeing codes,
+                while adult and higher-value occasions remain commercially relevant.
               </p>
             </div>
             <aside>
-              <span>Business implication</span>
-              <p>
-                Growth depends less on pushing frequency and more on designing selective
-                occasions, moderated formats and premium social value.
+              <span data-i18n="case.implication">Business implication</span>
+              <p data-i18n="case.implicationText">
+                Design more selective occasions, moderated formats and stronger social value
+                rather than pushing frequency.
               </p>
             </aside>
           </div>
@@ -164,79 +236,120 @@
           <div class="case-dashboard">
             <section class="case-panel" aria-labelledby="kpi-title">
               <div class="panel-heading">
-                <span>2022 to 2025</span>
-                <h4 id="kpi-title">Main consumption signals</h4>
+                <span data-i18n="case.period">2022 to 2025</span>
+                <h4 id="kpi-title" data-i18n="case.signals">Main consumption signals</h4>
               </div>
               <div id="case-kpis" class="case-kpis"></div>
             </section>
 
             <section class="case-panel dark-panel" aria-labelledby="segment-title">
               <div class="panel-heading">
-                <span>Where to play</span>
-                <h4 id="segment-title">Four commercial territories</h4>
+                <span data-i18n="case.where">Where to play</span>
+                <h4 id="segment-title" data-i18n="case.territories">Four commercial territories</h4>
               </div>
               <div id="territory-map" class="territory-map"></div>
             </section>
           </div>
 
-          <div class="case-dashboard bottom">
-            <section class="case-panel" aria-labelledby="age-title">
-              <div class="panel-heading">
-                <span>Age split · 2025</span>
-                <h4 id="age-title">Social consumption is still strongest in adults.</h4>
-              </div>
-              <div id="age-bars" class="age-bars"></div>
-            </section>
-
-            <section class="case-panel action-panel" aria-labelledby="actions-title">
-              <div class="panel-heading">
-                <span>What to do</span>
-                <h4 id="actions-title">Strategic actions</h4>
-              </div>
-              <div class="action-list">
-                <article>
-                  <span>01</span>
-                  <p>Redesign occasions: aperitif, meal pairing, afterwork, hosting and celebration.</p>
-                </article>
-                <article>
-                  <span>02</span>
-                  <p>Build a moderation portfolio: low alcohol, zero alcohol and controlled portions.</p>
-                </article>
-                <article>
-                  <span>03</span>
-                  <p>Prioritize value: premium cues, quality, flavor and social ritual over volume.</p>
-                </article>
-              </div>
-            </section>
-          </div>
-        </article>
-
-        <section class="embedded-study" aria-labelledby="embedded-study-title">
-          <div class="embedded-study-heading">
+          <footer class="case-cta">
             <div>
-              <p class="eyebrow">Full study case</p>
-              <h3 id="embedded-study-title">Reconfiguration of alcohol consumption in Spain</h3>
+              <p class="case-kicker" data-i18n="case.full">Full public-data analysis</p>
+              <p data-i18n="case.fullText">
+                Review the complete Spanish study with age splits, opportunity ranking,
+                segments and strategic playbook. Full case is available in Spanish.
+              </p>
             </div>
-            <a class="button secondary" href="study-cases/alc-spain/index.html" target="_blank" rel="noreferrer">
-              Open case
+            <a class="button primary" href="study-cases/alc-spain/" data-i18n="case.view">
+              View full case study
             </a>
+          </footer>
+        </article>
+      </section>
+
+      <section class="section method-section" id="method" aria-labelledby="method-title">
+        <div class="section-intro">
+          <p class="eyebrow" data-i18n="method.eyebrow">How an engagement works</p>
+          <h2 id="method-title" data-i18n="method.title">Four steps from ambiguity to commercial action.</h2>
+        </div>
+        <div class="method-steps">
+          <article>
+            <span data-i18n="method.oneTitle">Diagnose</span>
+            <p data-i18n="method.oneText">Understand growth barriers through available data, public signals and business context.</p>
+          </article>
+          <article>
+            <span data-i18n="method.twoTitle">Prioritize</span>
+            <p data-i18n="method.twoText">Identify the audiences, occasions and decisions with the strongest upside.</p>
+          </article>
+          <article>
+            <span data-i18n="method.threeTitle">Design</span>
+            <p data-i18n="method.threeText">Shape practical brand, portfolio and commercial recommendations.</p>
+          </article>
+          <article>
+            <span data-i18n="method.fourTitle">Activate</span>
+            <p data-i18n="method.fourText">Translate recommendations into an execution roadmap and stakeholder story.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow" data-i18n="about.eyebrow">Who is behind Marksyte</p>
+            <h2 id="about-title" data-i18n="about.title">A commercial strategist who works across data, brand and sales.</h2>
           </div>
-          <iframe
-            id="alc-spain-frame"
-            class="study-frame"
-            title="Reconfiguration of alcohol consumption in Spain case study"
-            src="study-cases/alc-spain/index.html?v=embedded"
-            loading="lazy"
-          ></iframe>
-        </section>
+          <div class="profile-placeholder">
+            <p class="profile-label" data-i18n="about.placeholder">Founder profile placeholder</p>
+            <p data-i18n="about.text">
+              Cross-functional experience across consumer goods, healthcare, SaaS and financial
+              products, combining business intelligence, insights, RGM, marketing and commercial execution.
+            </p>
+            <div class="profile-tags">
+              <span data-i18n="about.tagOne">Consumer insight</span>
+              <span data-i18n="about.tagTwo">Brand strategy</span>
+              <span data-i18n="about.tagThree">Sales enablement</span>
+              <span data-i18n="about.tagFour">BI and decision tools</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">Work with Marksyte</p>
-          <h2 id="contact-title">Bring a messy market question. Leave with a decision system.</h2>
+        <div class="contact-copy">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Discovery call</p>
+          <h2 id="contact-title" data-i18n="contact.title">What growth challenge are you trying to solve?</h2>
+          <p data-i18n="contact.text">
+            Share the situation and Marksyte will respond to arrange an initial discovery conversation.
+          </p>
+          <a class="email-link" href="mailto:roman@marksyte.com">roman@marksyte.com</a>
         </div>
-        <a class="button primary" href="mailto:hello@marksyte.com">hello@marksyte.com</a>
+
+        <form class="contact-form" id="discovery-form">
+          <div class="form-grid">
+            <label>
+              <span data-i18n="form.name">Name</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>
+              <span data-i18n="form.email">Work email</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label class="full">
+              <span data-i18n="form.company">Company and role</span>
+              <input type="text" name="company" required autocomplete="organization-title" />
+            </label>
+            <label class="full">
+              <span data-i18n="form.challenge">What is the challenge?</span>
+              <textarea name="challenge" rows="5" required data-i18n-placeholder="form.placeholder" placeholder="For example: growth is slowing and we need to understand which brand or portfolio decisions to prioritize."></textarea>
+            </label>
+          </div>
+          <button class="button primary submit-button" type="submit" data-i18n="cta.discovery">
+            Request a discovery call
+          </button>
+          <p class="form-note" data-i18n="form.note">
+            Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website.
+          </p>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 

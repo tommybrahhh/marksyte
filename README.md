@@ -1,6 +1,18 @@
 # Marksyte
 
-Static landing page for Marksyte, including the embedded Spain alcohol-consumption study case.
+Static bilingual landing page for Marksyte, with a preview linking to a standalone Spain alcohol-consumption study case.
+
+## Site behavior
+
+- English or Spanish is selected automatically from the visitor's browser language, with a visible manual switch.
+- The discovery-call form opens a prepared email draft to `roman@marksyte.com`; it does not store submissions or require a backend.
+
+## Search discovery
+
+- `/robots.txt` permits crawling and points search engines to `/sitemap.xml`.
+- `/sitemap.xml` lists the canonical landing page and full public-data case study.
+- Both pages include canonical links, indexable metadata and JSON-LD structured data.
+- After production deployment, submit `https://marksyte.com/sitemap.xml` in Google Search Console.
 
 ## Vercel deployment
 
@@ -31,6 +43,6 @@ The first command creates a preview deployment and links the local folder to a V
 
 - `/` - Marksyte landing page
 - `/#study-cases` - Study cases section
-- `/study-cases/alc-spain/index.html` - Full Spain case-study page
+- `/study-cases/alc-spain/` - Full Spain case-study page
 
 After production deployment, assign `marksyte.com` in the Vercel project's Domains settings and follow the DNS records Vercel provides.
