@@ -126,18 +126,18 @@ nav a:hover,
   background: var(--surface);
 }
 
-.language-switch button {
+.language-switch a {
   width: 38px;
   height: 34px;
-  border: 0;
   border-radius: 5px;
   background: transparent;
   color: var(--muted);
-  cursor: pointer;
+  display: grid;
+  place-items: center;
   font: 750 0.78rem var(--font-mono);
 }
 
-.language-switch button[aria-pressed="true"] {
+.language-switch a[aria-current="page"] {
   background: var(--dark);
   color: var(--surface);
 }
@@ -508,6 +508,52 @@ h1 {
   border-radius: var(--radius);
   background: #f7f4ec;
   box-shadow: var(--shadow);
+}
+
+.additional-case-preview {
+  width: min(var(--content), 100%);
+  margin: clamp(22px, 4vw, 32px) auto 0;
+  padding: clamp(18px, 3vw, 25px);
+  display: grid;
+  grid-template-columns: minmax(164px, 0.27fr) minmax(280px, 1fr) auto;
+  align-items: center;
+  gap: clamp(18px, 3vw, 30px);
+  border: 1px solid rgba(21, 32, 29, 0.1);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.additional-case-label {
+  padding-right: clamp(16px, 2vw, 26px);
+  border-right: 1px solid rgba(21, 32, 29, 0.12);
+}
+
+.additional-case-label .case-kicker {
+  margin: 0 0 11px;
+}
+
+.additional-case-label span {
+  color: var(--dark);
+  font-size: 1.04rem;
+  font-weight: 700;
+}
+
+.additional-case-copy h3 {
+  margin: 0;
+  font-size: clamp(1.24rem, 2vw, 1.54rem);
+  line-height: 1.16;
+}
+
+.additional-case-copy p {
+  max-width: 680px;
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.additional-case-preview .button {
+  white-space: nowrap;
 }
 
 .case-hero {
@@ -1071,6 +1117,22 @@ h1 {
     flex-direction: column;
     align-items: stretch;
     margin: 0 10px 10px;
+  }
+
+  .additional-case-preview {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .additional-case-label {
+    padding: 0 0 14px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(21, 32, 29, 0.12);
+  }
+
+  .additional-case-preview .button {
+    justify-self: start;
   }
 
   .method-steps,

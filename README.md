@@ -4,14 +4,14 @@ Static bilingual landing page for Marksyte, with a preview linking to a standalo
 
 ## Site behavior
 
-- English or Spanish is selected automatically from the visitor's browser language, with a visible manual switch.
+- English is available at `/` and Spanish at `/es/`, with visible language links between indexable canonical pages.
 - The discovery-call form opens a prepared email draft to `roman@marksyte.com`; it does not store submissions or require a backend.
 
 ## Search discovery
 
 - `/robots.txt` permits crawling and points search engines to `/sitemap.xml`.
-- `/sitemap.xml` lists the canonical landing page and full public-data case study.
-- Both pages include canonical links, indexable metadata and JSON-LD structured data.
+- `/sitemap.xml` lists both localized landing pages and the full public-data case study.
+- Localized landing pages include reciprocal `hreflang` discovery metadata; indexable pages include canonical links, metadata and JSON-LD structured data.
 - After production deployment, submit `https://marksyte.com/sitemap.xml` in Google Search Console.
 
 ## Vercel deployment
@@ -42,6 +42,7 @@ The first command creates a preview deployment and links the local folder to a V
 ## Routes to verify
 
 - `/` - Marksyte landing page
+- `/es/` - Spanish Marksyte landing page
 - `/#study-cases` - Study cases section
 - `/study-cases/alc-spain/` - Full Spain case-study page
 

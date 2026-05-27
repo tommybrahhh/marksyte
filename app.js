@@ -296,17 +296,10 @@ const territoryData = [
   { x: 26, y: 74, accent: "#d7644a" }
 ];
 
-let activeLanguage = "en";
+let activeLanguage = document.documentElement.lang.toLowerCase().startsWith("es") ? "es" : "en";
 
 const percent = (value) => `${value.toFixed(1)}%`;
 const delta = (start, end) => `${end - start > 0 ? "+" : ""}${(end - start).toFixed(1)} pp`;
-
-function detectedLanguage() {
-  const saved = window.localStorage.getItem("marksyte-language");
-  if (saved === "en" || saved === "es") return saved;
-  const locales = navigator.languages?.length ? navigator.languages : [navigator.language];
-  return locales.some((locale) => locale.toLowerCase().startsWith("es")) ? "es" : "en";
-}
 
 function renderKpis() {
   const target = document.querySelector("#case-kpis");
@@ -357,39 +350,9 @@ function renderTerritories() {
   `;
 }
 
-function setLanguage(language, persist = false) {
-  activeLanguage = language === "es" ? "es" : "en";
-  const text = copy[activeLanguage];
-  document.documentElement.lang = activeLanguage;
-  document.title = text.meta.title;
-  document.querySelector('meta[name="description"]').setAttribute("content", text.meta.description);
-
-  document.querySelectorAll("[data-i18n]").forEach((node) => {
-    const keys = node.dataset.i18n.split(".");
-    const value = keys.reduce((current, key) => current?.[key], text);
-    if (typeof value === "string") node.textContent = value;
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
-    const keys = node.dataset.i18nPlaceholder.split(".");
-    const value = keys.reduce((current, key) => current?.[key], text);
-    if (typeof value === "string") node.setAttribute("placeholder", value);
-  });
-
-  document.querySelectorAll("[data-language]").forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.language === activeLanguage));
-  });
-
-  if (persist) window.localStorage.setItem("marksyte-language", activeLanguage);
+function renderLanguageSpecificVisuals() {
   renderKpis();
   renderTerritories();
-}
-
-function initializeLanguage() {
-  document.querySelectorAll("[data-language]").forEach((button) => {
-    button.addEventListener("click", () => setLanguage(button.dataset.language, true));
-  });
-  setLanguage(detectedLanguage());
 }
 
 function initializeForm() {
@@ -424,5 +387,5 @@ function initializeForm() {
   });
 }
 
-initializeLanguage();
+renderLanguageSpecificVisuals();
 initializeForm();
