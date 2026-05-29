@@ -1,6 +1,13 @@
 const revealElements = document.querySelectorAll(".reveal");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-if ("IntersectionObserver" in window) {
+revealElements.forEach((element, index) => {
+  element.style.setProperty("--reveal-delay", `${Math.min(index % 5, 4) * 70}ms`);
+});
+
+if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+} else {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -10,13 +17,8 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -30px" }
+    { threshold: 0.14, rootMargin: "0px 0px -10% 0px" }
   );
 
-  revealElements.forEach((element, index) => {
-    element.style.transitionDelay = `${Math.min(index % 4, 3) * 45}ms`;
-    observer.observe(element);
-  });
-} else {
-  revealElements.forEach((element) => element.classList.add("is-visible"));
+  revealElements.forEach((element) => observer.observe(element));
 }
