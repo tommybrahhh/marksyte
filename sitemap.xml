@@ -2,11 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://marksyte.com/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://marksyte.com/es/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/about/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/es/about/</loc>
+    <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://marksyte.com/study-cases/alc-spain/</loc>
@@ -19,5 +27,37 @@
   <url>
     <loc>https://marksyte.com/es/study-cases/energy-drinks/</loc>
     <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/study-cases/protein-rtd/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/es/study-cases/protein-rtd/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/legal/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/privacy/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/cookies/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/es/aviso-legal/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/es/privacidad/</loc>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://marksyte.com/es/cookies/</loc>
+    <lastmod>2026-05-29</lastmod>
   </url>
 </urlset>

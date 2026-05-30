@@ -101,9 +101,12 @@ const copy = {
     about: {
       eyebrow: "Who is behind Marksyte",
       title: "A commercial strategist who works across data, brand and sales.",
-      placeholder: "Founder profile placeholder",
+      link: "Read the founder profile",
+      placeholder: "Founder profile",
       text:
-        "Cross-functional experience across consumer goods, healthcare, SaaS and financial products, combining business intelligence, insights, RGM, marketing and commercial execution.",
+        "Marksyte is led by a strategist who has moved through BI, insights, RGM, sales and marketing across consumer goods, healthcare, SaaS and financial products.",
+      proofOne: "Sales opportunities identified and developed.",
+      proofTwo: "Sales-funnel intelligence built from scratch.",
       tagOne: "Consumer insight",
       tagTwo: "Brand strategy",
       tagThree: "Sales enablement",
@@ -242,9 +245,12 @@ const copy = {
     about: {
       eyebrow: "Quién hay detrás de Marksyte",
       title: "Un estratega comercial que conecta datos, marca y ventas.",
-      placeholder: "Placeholder de perfil del fundador",
+      link: "Leer el perfil del fundador",
+      placeholder: "Perfil del fundador",
       text:
-        "Experiencia transversal en gran consumo, salud, SaaS y productos financieros, combinando business intelligence, insights, RGM, marketing y ejecución comercial.",
+        "Marksyte está liderado por un estratega que ha trabajado en BI, insights, RGM, ventas y marketing en gran consumo, salud, SaaS y productos financieros.",
+      proofOne: "Oportunidades comerciales identificadas y desarrolladas.",
+      proofTwo: "Inteligencia de funnel comercial construida desde cero.",
       tagOne: "Insight de consumidor",
       tagTwo: "Estrategia de marca",
       tagThree: "Sales enablement",
