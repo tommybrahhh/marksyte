@@ -3,16 +3,16 @@ const copy = {
     meta: {
       title: "Marksyte | Growth consulting for consumer brands",
       description:
-        "Marksyte helps FMCG and retail-focused consumer businesses diagnose what blocks growth and turn data into practical commercial action."
+        "Marksyte helps consumer brands understand why growth is stuck and decide what to do next."
     },
     nav: { services: "Offers", cases: "Study cases", about: "About", contact: "Contact" },
     cta: { discovery: "Request a 20-min discovery call", case: "Browse study cases" },
     hero: {
       eyebrow: "FMCG and retail-focused growth consulting",
       offer: "2-4 week growth diagnosis for consumer brands",
-      title: "Diagnose what is blocking growth. Turn insight into action.",
+      title: "Find out why growth is stuck, and what to do next.",
       lead:
-        "Marksyte helps consumer businesses sharpen brand, portfolio and commercial decisions when growth slows, data feels unclear or sales needs a stronger story.",
+        "I help consumer brands make clearer brand, portfolio and sales decisions when growth slows, data is messy or the sales story is not landing.",
       note: "No pitch deck needed. Share the category challenge and I will reply with next steps."
     },
     board: {
@@ -20,40 +20,40 @@ const copy = {
       duration: "2-4 week starting engagement",
       signal: "Signal",
       signalValue: "Why now?",
-      signalNote: "Locate barriers and opportunities",
+      signalNote: "Spot what has changed",
       choice: "Choice",
       choiceValue: "Where to play",
-      choiceNote: "Prioritize segments and offers",
+      choiceNote: "Choose where to focus",
       action: "Action",
       actionValue: "What to do",
-      actionNote: "Build a practical sales plan",
+      actionNote: "Turn it into a plan",
       data: "Data",
       insight: "Insight",
       activation: "Activation"
     },
     proof: {
       one: "Sales opportunities identified and developed for a global consumer business.",
-      two: "Sales-funnel intelligence solution built to replace manual reporting and expose opportunity.",
-      three: "Experience aligning commercial, marketing and senior stakeholders around execution."
+      two: "Built sales-funnel BI to replace manual reporting and find missed opportunities.",
+      three: "Worked with commercial, marketing and leadership teams to move from analysis to execution."
     },
     challenges: {
       eyebrow: "When Marksyte is useful",
-      title: "You have activity. You need a sharper growth decision.",
+      title: "Your team is busy. The growth decision still is not clear.",
       oneTitle: "Growth is slowing",
-      oneText: "The team sees performance moving, but cannot agree on what is driving it or where to intervene.",
-      twoTitle: "Insight is not actionable",
-      twoText: "There is data and research, but it is not translating into brand, pricing or portfolio choices.",
+      oneText: "Results are moving, but the team cannot agree on what is causing the slowdown.",
+      twoTitle: "Research is not becoming decisions",
+      twoText: "There is data on the table, but it is not helping the team choose what to change.",
       threeTitle: "Sales needs a stronger story",
-      threeText: "Marketing plans and retailer conversations need clearer commercial logic and better evidence."
+      threeText: "Retailer or leadership conversations need a clearer reason to believe."
     },
     offers: {
       eyebrow: "Starting offers",
-      title: "Begin with a focused diagnosis. Build from evidence.",
+      title: "Start by finding the real growth block.",
       primary: "Recommended starting point",
       weeks: "2-4 weeks",
       growthTitle: "Growth Diagnosis",
       growthText:
-        "A focused assessment of category signals, consumer behavior, competitive context and commercial performance to identify what is blocking growth.",
+        "A short project to understand what is slowing growth, where the best opportunity sits and which decisions should come first.",
       growthOne: "Priority growth barriers and opportunities",
       growthTwo: "Decision-ready strategic recommendations",
       growthThree: "Practical action roadmap for the next 12 months",
@@ -68,13 +68,13 @@ const copy = {
     },
     case: {
       eyebrow: "Published business cases",
-      title: "See how market signals become commercial choices.",
+      title: "See how category problems get turned into sharper decisions.",
       intro:
-        "Review category cases built from public signals, consumer behavior and commercial logic. Each case shows the diagnosis, the opportunity and the decisions a brand would need to make.",
+        "Browse examples of how Marksyte reads a category, spots the tension and frames the next move.",
       kicker: "Case library",
-      previewTitle: "Three published cases are ready to review.",
+      previewTitle: "Read the cases behind the method.",
       previewText:
-        "Alcohol in Spain, energy drinks and protein RTD are now grouped in one cases page so visitors can scan the business questions before opening a full case.",
+        "Each case starts with a real market tension, then works toward the choices a brand or distributor would need to test.",
       implication: "Business implication",
       implicationText:
         "Design more selective occasions, moderated formats and stronger social value rather than pushing frequency.",
@@ -89,19 +89,19 @@ const copy = {
     },
     method: {
       eyebrow: "How an engagement works",
-      title: "Four steps from ambiguity to commercial action.",
+      title: "A simple path from messy signals to a practical plan.",
       oneTitle: "Diagnose",
-      oneText: "Understand growth barriers through available data, public signals and business context.",
+      oneText: "Start with the data, market signals and business context already available.",
       twoTitle: "Prioritize",
-      twoText: "Identify the audiences, occasions and decisions with the strongest upside.",
+      twoText: "Decide which audience, occasion or business choice deserves attention first.",
       threeTitle: "Design",
-      threeText: "Shape practical brand, portfolio and commercial recommendations.",
+      threeText: "Shape the brand, portfolio or sales recommendation around that choice.",
       fourTitle: "Activate",
-      fourText: "Translate recommendations into an execution roadmap and stakeholder story."
+      fourText: "Turn it into next steps the team can explain and use."
     },
     about: {
       eyebrow: "Who is behind Marksyte",
-      title: "A commercial strategist who works across data, brand and sales.",
+      title: "A strategist who connects data, brand and sales.",
       link: "Read the founder profile",
       placeholder: "Founder profile",
       text:
@@ -116,7 +116,7 @@ const copy = {
     contact: {
       eyebrow: "Discovery call",
       title: "What growth challenge are you trying to solve?",
-      text: "Share the situation and Marksyte will respond to arrange an initial discovery conversation."
+      text: "Send the context. I will reply with whether I can help and what a first project could look like."
     },
     form: {
       name: "Name",
@@ -149,16 +149,16 @@ const copy = {
     meta: {
       title: "Marksyte | Consultoría de crecimiento para marcas de consumo",
       description:
-        "Marksyte ayuda a negocios de gran consumo y orientados al retail a diagnosticar qué frena el crecimiento y convertir datos en acción comercial."
+        "Marksyte ayuda a marcas de consumo a entender por qué el crecimiento se ha frenado y qué hacer después."
     },
     nav: { services: "Servicios", cases: "Casos de estudio", about: "Quién soy", contact: "Contacto" },
     cta: { discovery: "Solicitar llamada de 20 min", case: "Ver casos de estudio" },
     hero: {
       eyebrow: "Consultoría de crecimiento para FMCG y negocios retail",
       offer: "Diagnóstico de crecimiento de 2-4 semanas para marcas de consumo",
-      title: "Diagnostica qué frena el crecimiento. Convierte insight en acción.",
+      title: "Descubre por qué el crecimiento se ha frenado y qué hacer después.",
       lead:
-        "Marksyte ayuda a negocios de consumo a afinar decisiones de marca, portafolio y comerciales cuando el crecimiento se frena, los datos no son claros o ventas necesita una historia más fuerte.",
+        "Ayudo a marcas de consumo a tomar mejores decisiones de marca, portafolio y ventas cuando el crecimiento se frena, los datos no ordenan la conversación o ventas necesita una historia más convincente.",
       note: "No necesitas preparar un deck. Comparte el reto de categoría y responderé con próximos pasos."
     },
     board: {
@@ -166,40 +166,40 @@ const copy = {
       duration: "Proyecto inicial de 2-4 semanas",
       signal: "Señal",
       signalValue: "¿Por qué ahora?",
-      signalNote: "Detectar barreras y oportunidades",
+      signalNote: "Ver qué ha cambiado",
       choice: "Decisión",
       choiceValue: "Dónde jugar",
-      choiceNote: "Priorizar segmentos y ofertas",
+      choiceNote: "Elegir dónde enfocarse",
       action: "Acción",
       actionValue: "Qué hacer",
-      actionNote: "Construir un plan comercial",
+      actionNote: "Bajarlo a un plan",
       data: "Datos",
       insight: "Insight",
       activation: "Activación"
     },
     proof: {
       one: "Oportunidades comerciales identificadas y desarrolladas para una empresa global de consumo.",
-      two: "Solución de inteligencia del funnel comercial para sustituir reporting manual e identificar oportunidades.",
-      three: "Experiencia alineando equipos comerciales, marketing y alta dirección alrededor de la ejecución."
+      two: "BI de funnel comercial para sustituir reporting manual y encontrar oportunidades perdidas.",
+      three: "Trabajo con equipos comerciales, marketing y dirección para pasar del análisis a la ejecución."
     },
     challenges: {
       eyebrow: "Cuándo Marksyte aporta valor",
-      title: "Tienes actividad. Necesitas una decisión de crecimiento más clara.",
+      title: "El equipo está ocupado. La decisión de crecimiento aún no está clara.",
       oneTitle: "El crecimiento se frena",
-      oneText: "El equipo ve movimiento en resultados, pero no coincide sobre qué lo causa o dónde actuar.",
-      twoTitle: "El insight no se activa",
-      twoText: "Hay datos e investigación, pero no se traducen en decisiones de marca, precio o portafolio.",
+      oneText: "Los resultados se mueven, pero el equipo no coincide sobre qué está causando el freno.",
+      twoTitle: "La investigación no llega a decisiones",
+      twoText: "Hay datos sobre la mesa, pero no ayudan a elegir qué cambiar primero.",
       threeTitle: "Ventas necesita una historia más fuerte",
-      threeText: "Los planes de marketing y las conversaciones con retailers necesitan lógica comercial y evidencia más claras."
+      threeText: "Las conversaciones con retailers o dirección necesitan una razón más clara para creer."
     },
     offers: {
       eyebrow: "Servicios iniciales",
-      title: "Empieza con un diagnóstico enfocado. Construye desde la evidencia.",
+      title: "Empieza por encontrar el verdadero bloqueo de crecimiento.",
       primary: "Punto de partida recomendado",
       weeks: "2-4 semanas",
       growthTitle: "Diagnóstico de Crecimiento",
       growthText:
-        "Evaluación enfocada de señales de categoría, comportamiento del consumidor, entorno competitivo y rendimiento comercial para identificar qué está frenando el crecimiento.",
+        "Un proyecto corto para entender qué está frenando el crecimiento, dónde está la mejor oportunidad y qué decisiones deberían venir primero.",
       growthOne: "Barreras y oportunidades prioritarias de crecimiento",
       growthTwo: "Recomendaciones estratégicas listas para decidir",
       growthThree: "Hoja de ruta práctica para los próximos 12 meses",
@@ -214,13 +214,13 @@ const copy = {
     },
     case: {
       eyebrow: "Casos de negocio publicados",
-      title: "Mira cómo las señales de mercado se convierten en decisiones comerciales.",
+      title: "Mira cómo un problema de categoría se convierte en una decisión más clara.",
       intro:
-        "Revisa casos de categoría construidos con señales públicas, comportamiento del consumidor y lógica comercial. Cada caso muestra el diagnóstico, la oportunidad y las decisiones que una marca debería tomar.",
+        "Revisa ejemplos de cómo Marksyte lee una categoría, detecta la tensión y plantea el siguiente movimiento.",
       kicker: "Biblioteca de casos",
-      previewTitle: "Tres casos publicados listos para revisar.",
+      previewTitle: "Lee los casos detrás del método.",
       previewText:
-        "Alcohol en España, bebidas energéticas y protein RTD están agrupados en una página para que el visitante pueda escanear las preguntas de negocio antes de abrir cada caso.",
+        "Cada caso parte de una tensión real de mercado y avanza hacia las decisiones que una marca o distribuidor tendría que validar.",
       implication: "Implicación comercial",
       implicationText:
         "Diseñar ocasiones más selectivas, formatos moderados y mayor valor social en lugar de empujar frecuencia.",
@@ -235,19 +235,19 @@ const copy = {
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
-      title: "Cuatro pasos desde la ambigüedad hasta la acción comercial.",
+      title: "Un camino simple desde señales desordenadas hasta un plan práctico.",
       oneTitle: "Diagnosticar",
-      oneText: "Entender barreras de crecimiento con datos disponibles, señales públicas y contexto de negocio.",
+      oneText: "Empezar con los datos, señales de mercado y contexto de negocio que ya existen.",
       twoTitle: "Priorizar",
-      twoText: "Identificar audiencias, ocasiones y decisiones con mayor potencial.",
+      twoText: "Decidir qué audiencia, ocasión o decisión merece atención primero.",
       threeTitle: "Diseñar",
-      threeText: "Desarrollar recomendaciones prácticas de marca, portafolio y estrategia comercial.",
+      threeText: "Construir la recomendación de marca, portafolio o ventas alrededor de esa decisión.",
       fourTitle: "Activar",
-      fourText: "Traducir recomendaciones en hoja de ruta de ejecución e historia para stakeholders."
+      fourText: "Convertirlo en próximos pasos que el equipo pueda explicar y usar."
     },
     about: {
       eyebrow: "Quién hay detrás de Marksyte",
-      title: "Un estratega comercial que conecta datos, marca y ventas.",
+      title: "Un estratega que conecta datos, marca y ventas.",
       link: "Leer el perfil del fundador",
       placeholder: "Perfil del fundador",
       text:
@@ -262,7 +262,7 @@ const copy = {
     contact: {
       eyebrow: "Llamada inicial",
       title: "¿Qué reto de crecimiento estás intentando resolver?",
-      text: "Comparte la situación y Marksyte responderá para organizar una primera conversación de descubrimiento."
+      text: "Envía el contexto. Responderé si puedo ayudar y cómo podría ser un primer proyecto."
     },
     form: {
       name: "Nombre",
