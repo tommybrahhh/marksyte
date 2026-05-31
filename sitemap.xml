@@ -1,63 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://marksyte.com/</loc>
+    <loc>https://www.marksyte.com/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/es/</loc>
+    <loc>https://www.marksyte.com/es/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/about/</loc>
+    <loc>https://www.marksyte.com/about/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/es/about/</loc>
+    <loc>https://www.marksyte.com/es/about/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/study-cases/alc-spain/</loc>
+    <loc>https://www.marksyte.com/study-cases/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/study-cases/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/study-cases/alc-spain/</loc>
     <lastmod>2026-05-26</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/study-cases/energy-drinks/</loc>
+    <loc>https://www.marksyte.com/study-cases/energy-drinks/</loc>
     <lastmod>2026-05-27</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/es/study-cases/energy-drinks/</loc>
+    <loc>https://www.marksyte.com/es/study-cases/energy-drinks/</loc>
     <lastmod>2026-05-27</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/study-cases/protein-rtd/</loc>
+    <loc>https://www.marksyte.com/study-cases/protein-rtd/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/es/study-cases/protein-rtd/</loc>
+    <loc>https://www.marksyte.com/es/study-cases/protein-rtd/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/legal/</loc>
+    <loc>https://www.marksyte.com/legal/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/privacy/</loc>
+    <loc>https://www.marksyte.com/privacy/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/cookies/</loc>
+    <loc>https://www.marksyte.com/cookies/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/es/aviso-legal/</loc>
+    <loc>https://www.marksyte.com/es/aviso-legal/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/es/privacidad/</loc>
+    <loc>https://www.marksyte.com/es/privacidad/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://marksyte.com/es/cookies/</loc>
+    <loc>https://www.marksyte.com/es/cookies/</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
 </urlset>

@@ -423,6 +423,12 @@ h1 span {
   line-height: 1.62;
 }
 
+.hero-product-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 247, 0.12), rgba(255, 253, 247, 0.06)),
+    rgba(255, 253, 247, 0.08);
+}
+
 .can-visual {
   display: flex;
   align-items: end;
@@ -432,8 +438,29 @@ h1 span {
 
 .can-visual--hero {
   margin-top: 28px;
-  padding-top: 24px;
+  padding: 26px 8px 10px;
   border-top: 1px solid rgba(255, 253, 247, 0.13);
+  border-radius: 12px;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(200, 255, 82, 0.18), transparent 54%),
+    linear-gradient(180deg, rgba(20, 23, 25, 0.14), rgba(20, 23, 25, 0.02));
+}
+
+.hero-cans-image {
+  margin: 28px -8px 0;
+  padding: 14px 8px 12px;
+  border-top: 1px solid rgba(255, 253, 247, 0.13);
+  border-radius: 12px;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(200, 255, 82, 0.14), transparent 54%),
+    linear-gradient(180deg, rgba(20, 23, 25, 0.14), rgba(20, 23, 25, 0.02));
+}
+
+.hero-cans-image img {
+  width: min(100%, 430px);
+  display: block;
+  margin-inline: auto;
+  filter: drop-shadow(0 22px 34px rgba(0, 0, 0, 0.26));
 }
 
 .can-shape {
@@ -581,9 +608,67 @@ h1 span {
   overflow-wrap: anywhere;
 }
 
+.can-shape--minimal {
+  width: 86px;
+  height: 176px;
+  gap: 9px;
+  border-color: rgba(255, 253, 247, 0.78);
+  border-radius: 18px 18px 13px 13px / 30px 30px 13px 13px;
+  box-shadow:
+    inset 12px 0 18px rgba(255, 255, 255, 0.4),
+    inset -14px 0 24px rgba(20, 23, 25, 0.12),
+    inset 0 -16px 22px rgba(20, 23, 25, 0.1),
+    0 22px 48px rgba(0, 0, 0, 0.26);
+}
+
+.can-shape--minimal::after {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent 20%, transparent 78%, rgba(0, 0, 0, 0.11)),
+    linear-gradient(180deg, rgba(255, 253, 247, 0.34), transparent 28%, transparent 78%, rgba(20, 23, 25, 0.12));
+}
+
+.can-shape--minimal .can-band {
+  width: calc(100% - 20px);
+  padding: 7px 4px;
+  border-color: rgba(20, 23, 25, 0.12);
+  background: rgba(255, 253, 247, 0.82);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+}
+
+.can-shape--minimal .can-band::before,
+.can-shape--minimal .can-band::after {
+  display: none;
+}
+
+.can-shape--minimal strong {
+  min-width: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: clamp(1.34rem, 2.4vw, 1.72rem);
+  letter-spacing: -0.05em;
+  box-shadow: none;
+}
+
+.can-shape--minimal small {
+  max-width: calc(100% - 16px);
+  padding: 5px 7px;
+  background: rgba(255, 253, 247, 0.46);
+  color: rgba(20, 23, 25, 0.78);
+  font-size: 0.54rem;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
 .opportunity-panel .can-shape {
   width: clamp(68px, 6.4vw, 80px);
   height: clamp(134px, 12vw, 154px);
+}
+
+.opportunity-panel .can-shape--minimal {
+  width: clamp(76px, 7.2vw, 88px);
+  height: clamp(154px, 14vw, 178px);
 }
 
 .opportunity-panel .can-shape:nth-child(1) {
@@ -596,6 +681,13 @@ h1 span {
 
 .opportunity-panel .can-shape:nth-child(3) {
   transform: rotate(5deg) translateY(10px);
+}
+
+.can-footnote {
+  margin-top: 18px !important;
+  color: rgba(248, 245, 239, 0.56) !important;
+  font: 700 0.68rem var(--font-mono) !important;
+  text-transform: uppercase;
 }
 
 .signal-strip {

@@ -14,7 +14,7 @@ Static bilingual website for Marksyte, with localized landing pages, a founder p
 - `/robots.txt` permits crawling and points search engines to `/sitemap.xml`.
 - `/sitemap.xml` lists both localized landing pages, founder pages, legal basics and public-data case studies.
 - Localized landing pages include reciprocal `hreflang` discovery metadata; indexable pages include canonical links, metadata and JSON-LD structured data.
-- After production deployment, submit `https://marksyte.com/sitemap.xml` in Google Search Console.
+- After production deployment, submit `https://www.marksyte.com/sitemap.xml` in Google Search Console.
 
 ## Vercel deployment
 

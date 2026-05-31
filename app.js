@@ -5,14 +5,15 @@ const copy = {
       description:
         "Marksyte helps FMCG and retail-focused consumer businesses diagnose what blocks growth and turn data into practical commercial action."
     },
-    nav: { services: "Offers", cases: "Case study", about: "About", contact: "Contact" },
-    cta: { discovery: "Request a discovery call", case: "View public-data case" },
+    nav: { services: "Offers", cases: "Study cases", about: "About", contact: "Contact" },
+    cta: { discovery: "Request a 20-min discovery call", case: "Browse study cases" },
     hero: {
       eyebrow: "FMCG and retail-focused growth consulting",
+      offer: "2-4 week growth diagnosis for consumer brands",
       title: "Diagnose what is blocking growth. Turn insight into action.",
       lead:
         "Marksyte helps consumer businesses sharpen brand, portfolio and commercial decisions when growth slows, data feels unclear or sales needs a stronger story.",
-      note: "For consumer brands, scale-ups and retail-focused teams."
+      note: "No pitch deck needed. Share the category challenge and I will reply with next steps."
     },
     board: {
       title: "Growth diagnosis",
@@ -66,14 +67,14 @@ const copy = {
       brandThree: "Activation priorities and decision criteria"
     },
     case: {
-      eyebrow: "Public-data study case",
-      title: "Alcohol consumption in Spain: from behavior shift to commercial opportunity.",
+      eyebrow: "Published business cases",
+      title: "See how market signals become commercial choices.",
       intro:
-        "An independent analysis built from public data to demonstrate the Marksyte approach: isolate the shift, identify the audience and translate evidence into action.",
-      kicker: "Consumer shift · Spain",
-      previewTitle: "Alcohol loses centrality, but it does not disappear.",
+        "Review category cases built from public signals, consumer behavior and commercial logic. Each case shows the diagnosis, the opportunity and the decisions a brand would need to make.",
+      kicker: "Case library",
+      previewTitle: "Three published cases are ready to review.",
       previewText:
-        "More abstention and less routine social consumption point to new wellbeing codes, while adult and higher-value occasions remain commercially relevant.",
+        "Alcohol in Spain, energy drinks and protein RTD are now grouped in one cases page so visitors can scan the business questions before opening a full case.",
       implication: "Business implication",
       implicationText:
         "Design more selective occasions, moderated formats and stronger social value rather than pushing frequency.",
@@ -84,7 +85,7 @@ const copy = {
       full: "Full public-data analysis",
       fullText:
         "Review the complete Spanish study with age splits, opportunity ranking, segments and strategic playbook. Full case is available in Spanish.",
-      view: "View full case study"
+      view: "Open study cases"
     },
     method: {
       eyebrow: "How an engagement works",
@@ -124,7 +125,8 @@ const copy = {
       challenge: "What is the challenge?",
       placeholder:
         "For example: growth is slowing and we need to understand which brand or portfolio decisions to prioritize.",
-      note: "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website.",
+      note:
+        "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. I usually reply within 1-2 business days.",
       subject: "Discovery call request",
       prepared: "Your email draft is ready. Send it to start the conversation."
     },
@@ -149,14 +151,15 @@ const copy = {
       description:
         "Marksyte ayuda a negocios de gran consumo y orientados al retail a diagnosticar qué frena el crecimiento y convertir datos en acción comercial."
     },
-    nav: { services: "Servicios", cases: "Caso de estudio", about: "Quién soy", contact: "Contacto" },
-    cta: { discovery: "Solicitar llamada inicial", case: "Ver caso con datos públicos" },
+    nav: { services: "Servicios", cases: "Casos de estudio", about: "Quién soy", contact: "Contacto" },
+    cta: { discovery: "Solicitar llamada de 20 min", case: "Ver casos de estudio" },
     hero: {
       eyebrow: "Consultoría de crecimiento para FMCG y negocios retail",
+      offer: "Diagnóstico de crecimiento de 2-4 semanas para marcas de consumo",
       title: "Diagnostica qué frena el crecimiento. Convierte insight en acción.",
       lead:
         "Marksyte ayuda a negocios de consumo a afinar decisiones de marca, portafolio y comerciales cuando el crecimiento se frena, los datos no son claros o ventas necesita una historia más fuerte.",
-      note: "Para marcas de consumo, scale-ups y equipos orientados al retail."
+      note: "No necesitas preparar un deck. Comparte el reto de categoría y responderé con próximos pasos."
     },
     board: {
       title: "Diagnóstico de crecimiento",
@@ -210,14 +213,14 @@ const copy = {
       brandThree: "Prioridades de activación y criterios de decisión"
     },
     case: {
-      eyebrow: "Caso de estudio con datos públicos",
-      title: "Consumo de alcohol en España: del cambio de comportamiento a la oportunidad comercial.",
+      eyebrow: "Casos de negocio publicados",
+      title: "Mira cómo las señales de mercado se convierten en decisiones comerciales.",
       intro:
-        "Un análisis independiente construido con datos públicos para demostrar el método Marksyte: aislar el cambio, identificar la audiencia y traducir evidencia en acción.",
-      kicker: "Cambio de consumo · España",
-      previewTitle: "El alcohol pierde centralidad, no desaparece.",
+        "Revisa casos de categoría construidos con señales públicas, comportamiento del consumidor y lógica comercial. Cada caso muestra el diagnóstico, la oportunidad y las decisiones que una marca debería tomar.",
+      kicker: "Biblioteca de casos",
+      previewTitle: "Tres casos publicados listos para revisar.",
       previewText:
-        "Más abstención y menos consumo social habitual apuntan a nuevos códigos de bienestar, mientras las ocasiones adultas y de mayor valor siguen siendo relevantes.",
+        "Alcohol en España, bebidas energéticas y protein RTD están agrupados en una página para que el visitante pueda escanear las preguntas de negocio antes de abrir cada caso.",
       implication: "Implicación comercial",
       implicationText:
         "Diseñar ocasiones más selectivas, formatos moderados y mayor valor social en lugar de empujar frecuencia.",
@@ -228,7 +231,7 @@ const copy = {
       full: "Análisis completo con datos públicos",
       fullText:
         "Consulta el estudio completo con cortes por edad, ranking de oportunidad, segmentos y playbook estratégico.",
-      view: "Ver caso de estudio completo"
+      view: "Abrir casos de estudio"
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
@@ -268,7 +271,8 @@ const copy = {
       challenge: "¿Cuál es el reto?",
       placeholder:
         "Por ejemplo: el crecimiento se está frenando y necesitamos priorizar decisiones de marca o portafolio.",
-      note: "Al enviar se abrirá un borrador de email dirigido a Marksyte. Tu información no se almacena en esta web.",
+      note:
+        "Al enviar se abrirá un borrador de email dirigido a Marksyte. Tu información no se almacena en esta web. Suelo responder en 1-2 días laborables.",
       subject: "Solicitud de llamada inicial",
       prepared: "Tu borrador de email está listo. Envíalo para iniciar la conversación."
     },
