@@ -52,6 +52,8 @@ The first command creates a preview deployment and links the local folder to a V
 - `/#study-cases` - Study cases section
 - `/study-cases/alc-spain/` - Full Spain case-study page
 - `/study-cases/energy-drinks/` - Energy drinks opportunity case
+- `/study-cases/ai-flows-fmcg/` - AI flows in FMCG implementation case
+- `/es/study-cases/ai-flows-fmcg/` - Spanish AI flows in FMCG implementation case
 - `/study-cases/protein-rtd/` - Protein RTD opportunity case
 
 After production deployment, assign `marksyte.com` in the Vercel project's Domains settings and follow the DNS records Vercel provides.
