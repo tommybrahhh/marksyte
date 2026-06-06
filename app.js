@@ -3,16 +3,16 @@ const copy = {
     meta: {
       title: "Marksyte | Growth consulting for consumer brands",
       description:
-        "Marksyte helps consumer brands understand why growth is stuck and decide what to do next."
+        "Marksyte helps FMCG and retail brands find the real growth block and turn it into a sales-ready plan in 2 to 4 weeks."
     },
     nav: { services: "Offers", cases: "Study cases", about: "About", contact: "Contact" },
-    cta: { discovery: "Request a 20-min discovery call", case: "Browse study cases" },
+    cta: { discovery: "Request a 20-min growth call", case: "Browse study cases" },
     hero: {
       eyebrow: "FMCG and retail-focused growth consulting",
-      offer: "2-4 week growth diagnosis for consumer brands",
-      title: "Find out why growth is stuck, and what to do next.",
+      offer: "2-4 week growth diagnosis for sales-ready action",
+      title: "For FMCG and retail brands that are selling, but not scaling clearly.",
       lead:
-        "I help consumer brands make clearer brand, portfolio and sales decisions when growth slows, data is messy or the sales story is not landing.",
+        "I help teams find the real growth block, choose where to focus and turn it into a sales-ready plan in 2 to 4 weeks.",
       note: "No pitch deck needed. Share the category challenge and I will reply with next steps."
     },
     board: {
@@ -114,7 +114,7 @@ const copy = {
       tagFour: "BI and decision tools"
     },
     contact: {
-      eyebrow: "Discovery call",
+      eyebrow: "Growth call",
       title: "What growth challenge are you trying to solve?",
       text: "Send the context. I will reply with whether I can help and what a first project could look like."
     },
@@ -127,7 +127,7 @@ const copy = {
         "For example: growth is slowing and we need to understand which brand or portfolio decisions to prioritize.",
       note:
         "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. I usually reply within 1-2 business days.",
-      subject: "Discovery call request",
+      subject: "20-min growth call request",
       prepared: "Your email draft is ready. Send it to start the conversation."
     },
     kpis: [
@@ -149,16 +149,16 @@ const copy = {
     meta: {
       title: "Marksyte | Consultoría de crecimiento para marcas de consumo",
       description:
-        "Marksyte ayuda a marcas de consumo a entender por qué el crecimiento se ha frenado y qué hacer después."
+        "Marksyte ayuda a marcas FMCG y retail a encontrar el verdadero bloqueo de crecimiento y convertirlo en un plan accionable en 2 a 4 semanas."
     },
     nav: { services: "Servicios", cases: "Casos de estudio", about: "Quién soy", contact: "Contacto" },
-    cta: { discovery: "Solicitar llamada de 20 min", case: "Ver casos de estudio" },
+    cta: { discovery: "Solicitar llamada de crecimiento de 20 min", case: "Ver casos de estudio" },
     hero: {
       eyebrow: "Consultoría de crecimiento para FMCG y negocios retail",
-      offer: "Diagnóstico de crecimiento de 2-4 semanas para marcas de consumo",
-      title: "Descubre por qué el crecimiento se ha frenado y qué hacer después.",
+      offer: "Diagnóstico de crecimiento de 2-4 semanas para activar ventas",
+      title: "Para marcas FMCG y retail que venden, pero no escalan con claridad.",
       lead:
-        "Ayudo a marcas de consumo a tomar mejores decisiones de marca, portafolio y ventas cuando el crecimiento se frena, los datos no ordenan la conversación o ventas necesita una historia más convincente.",
+        "Ayudo a equipos a encontrar el bloqueo real de crecimiento, elegir dónde enfocarse y convertirlo en un plan listo para ventas en 2 a 4 semanas.",
       note: "No necesitas preparar un deck. Comparte el reto de categoría y responderé con próximos pasos."
     },
     board: {
@@ -260,7 +260,7 @@ const copy = {
       tagFour: "BI y herramientas de decisión"
     },
     contact: {
-      eyebrow: "Llamada inicial",
+      eyebrow: "Llamada de crecimiento",
       title: "¿Qué reto de crecimiento estás intentando resolver?",
       text: "Envía el contexto. Responderé si puedo ayudar y cómo podría ser un primer proyecto."
     },
@@ -273,7 +273,7 @@ const copy = {
         "Por ejemplo: el crecimiento se está frenando y necesitamos priorizar decisiones de marca o portafolio.",
       note:
         "Al enviar se abrirá un borrador de email dirigido a Marksyte. Tu información no se almacena en esta web. Suelo responder en 1-2 días laborables.",
-      subject: "Solicitud de llamada inicial",
+      subject: "Solicitud de llamada de crecimiento de 20 min",
       prepared: "Tu borrador de email está listo. Envíalo para iniciar la conversación."
     },
     kpis: [

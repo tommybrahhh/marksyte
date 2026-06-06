@@ -30,6 +30,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background: var(--soft);
   color: var(--ink);
   font-family: var(--font-sans);
@@ -1659,25 +1660,60 @@ h1 {
 @media (max-width: 760px) {
   .site-header {
     position: static;
+    flex-wrap: wrap;
     align-items: flex-start;
+    gap: 12px;
+  }
+
+  .site-header > * {
+    min-width: 0;
   }
 
   .header-actions {
-    flex-direction: column-reverse;
-    align-items: flex-end;
+    width: min(100%, calc(100vw - 36px));
+    min-width: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 12px;
   }
 
   nav {
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 8px 14px;
     font-size: 0.84rem;
   }
 
+  .language-switch {
+    flex: 0 0 auto;
+  }
+
   .hero-section {
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: minmax(0, 1fr);
     min-height: auto;
     padding-top: 38px;
+  }
+
+  .hero-section > * {
+    min-width: 0;
+  }
+
+  .hero-copy,
+  .hero-visual {
+    width: min(100%, calc(100vw - 64px));
+    max-width: 100%;
+    min-width: 0;
+    justify-self: start;
+  }
+
+  .signal-board {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   h1 {
@@ -1692,12 +1728,31 @@ h1 {
   }
 
   .hero-lead {
+    max-width: min(100%, calc(100vw - 96px));
     font-size: 0.98rem;
     line-height: 1.53;
   }
 
+  .hero-note {
+    max-width: min(100%, calc(100vw - 96px));
+  }
+
   .hero-actions {
     margin-top: 22px;
+  }
+
+  .hero-actions .button {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .signal-head {
+    flex-direction: column;
+  }
+
+  .signal-head span {
+    overflow-wrap: anywhere;
   }
 
   .signal-grid {
