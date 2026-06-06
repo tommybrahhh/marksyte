@@ -881,21 +881,39 @@ h1 {
 
 .sources-section {
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  gap: 32px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding-top: clamp(36px, 5vw, 58px);
+  color: var(--muted);
+}
+
+.sources-section h2 {
+  max-width: none;
+  margin-top: 6px;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
 .sources-list {
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .sources-list a {
-  display: block;
-  padding: 14px 16px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 10px;
   border: 1px solid rgba(20, 23, 25, 0.12);
-  border-radius: var(--radius);
-  background: var(--surface);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.72);
+  font-size: 0.78rem;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .bottom-cta {
@@ -903,7 +921,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 28px;
-  margin-top: clamp(74px, 9vw, 116px);
+  margin-top: clamp(38px, 5vw, 58px);
   margin-bottom: clamp(54px, 7vw, 88px);
   padding: clamp(26px, 4vw, 40px);
   border-radius: var(--radius);
