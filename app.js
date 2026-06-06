@@ -6,14 +6,18 @@ const copy = {
         "Marksyte helps FMCG and retail brands find the real growth block and turn it into a sales-ready plan in 2 to 4 weeks."
     },
     nav: { services: "Offers", cases: "Study cases", about: "About", contact: "Contact" },
-    cta: { discovery: "Request a 20-min growth call", case: "Browse study cases" },
+    cta: {
+      schedule: "Schedule a 30-min growth call",
+      email: "Send the challenge by email",
+      case: "Browse study cases"
+    },
     hero: {
       eyebrow: "FMCG and retail-focused growth consulting",
       offer: "2-4 week growth diagnosis for sales-ready action",
       title: "For FMCG and retail brands that are selling, but not scaling clearly.",
       lead:
         "I help teams find the real growth block, choose where to focus and turn it into a sales-ready plan in 2 to 4 weeks.",
-      note: "No pitch deck needed. Share the category challenge and I will reply with next steps."
+      note: "No pitch deck needed. Pick a time or share the category challenge by email."
     },
     board: {
       title: "Growth diagnosis",
@@ -116,7 +120,9 @@ const copy = {
     contact: {
       eyebrow: "Growth call",
       title: "What growth challenge are you trying to solve?",
-      text: "Send the context. I will reply with whether I can help and what a first project could look like."
+      text:
+        "The easiest next step is to choose a time on Calendly. If you prefer to write first, use the form and I will reply with whether I can help.",
+      or: "or email me directly"
     },
     form: {
       name: "Name",
@@ -127,7 +133,7 @@ const copy = {
         "For example: growth is slowing and we need to understand which brand or portfolio decisions to prioritize.",
       note:
         "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. I usually reply within 1-2 business days.",
-      subject: "20-min growth call request",
+      subject: "Growth challenge from Marksyte website",
       prepared: "Your email draft is ready. Send it to start the conversation."
     },
     kpis: [
@@ -152,14 +158,18 @@ const copy = {
         "Marksyte ayuda a marcas FMCG y retail a encontrar el verdadero bloqueo de crecimiento y convertirlo en un plan accionable en 2 a 4 semanas."
     },
     nav: { services: "Servicios", cases: "Casos de estudio", about: "Quién soy", contact: "Contacto" },
-    cta: { discovery: "Solicitar llamada de crecimiento de 20 min", case: "Ver casos de estudio" },
+    cta: {
+      schedule: "Agendar llamada de crecimiento de 30 min",
+      email: "Enviar el reto por email",
+      case: "Ver casos de estudio"
+    },
     hero: {
       eyebrow: "Consultoría de crecimiento para FMCG y negocios retail",
       offer: "Diagnóstico de crecimiento de 2-4 semanas para activar ventas",
       title: "Para marcas FMCG y retail que venden, pero no escalan con claridad.",
       lead:
         "Ayudo a equipos a encontrar el bloqueo real de crecimiento, elegir dónde enfocarse y convertirlo en un plan listo para ventas en 2 a 4 semanas.",
-      note: "No necesitas preparar un deck. Comparte el reto de categoría y responderé con próximos pasos."
+      note: "No necesitas preparar un deck. Elige una hora o comparte el reto por email."
     },
     board: {
       title: "Diagnóstico de crecimiento",
@@ -262,7 +272,9 @@ const copy = {
     contact: {
       eyebrow: "Llamada de crecimiento",
       title: "¿Qué reto de crecimiento estás intentando resolver?",
-      text: "Envía el contexto. Responderé si puedo ayudar y cómo podría ser un primer proyecto."
+      text:
+        "El siguiente paso más fácil es elegir una hora en Calendly. Si prefieres escribir primero, usa el formulario y responderé si puedo ayudar.",
+      or: "o escríbeme directamente"
     },
     form: {
       name: "Nombre",
@@ -273,7 +285,7 @@ const copy = {
         "Por ejemplo: el crecimiento se está frenando y necesitamos priorizar decisiones de marca o portafolio.",
       note:
         "Al enviar se abrirá un borrador de email dirigido a Marksyte. Tu información no se almacena en esta web. Suelo responder en 1-2 días laborables.",
-      subject: "Solicitud de llamada de crecimiento de 20 min",
+      subject: "Reto de crecimiento desde la web de Marksyte",
       prepared: "Tu borrador de email está listo. Envíalo para iniciar la conversación."
     },
     kpis: [

@@ -1409,9 +1409,25 @@ h1 {
 }
 
 .email-link {
+  display: inline-flex;
+  margin-top: 18px;
   color: var(--ink);
   font-size: 1.12rem;
   font-weight: 780;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.contact-actions span {
+  color: var(--muted);
+  font-size: 0.93rem;
+  font-weight: 700;
 }
 
 .contact-form {
