@@ -1,87 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
   <url>
     <loc>https://www.marksyte.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/about/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/about/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/about/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/about/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/study-cases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/" />
     <lastmod>2026-06-06</lastmod>
   </url>
   <url>
-    <loc>https://www.marksyte.com/es/study-cases/</loc>
+    <loc>https://www.marksyte.com/es/casos-de-estudio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/" />
     <lastmod>2026-06-06</lastmod>
   </url>
   <url>
-    <loc>https://www.marksyte.com/study-cases/alc-spain/</loc>
+    <loc>https://www.marksyte.com/es/casos-de-estudio/alcohol-espana/</loc>
     <lastmod>2026-05-26</lastmod>
   </url>
   <url>
-    <loc>https://www.marksyte.com/study-cases/energy-drinks/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.marksyte.com/study-cases/brand-relevance-distribution/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/brand-relevance-distribution/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/relevancia-marca-distribucion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/brand-relevance-distribution/" />
+    <lastmod>2026-06-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/casos-de-estudio/relevancia-marca-distribucion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/brand-relevance-distribution/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/relevancia-marca-distribucion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/brand-relevance-distribution/" />
+    <lastmod>2026-06-06</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/study-cases/ai-flows-fmcg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/ai-flows-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/flujos-ia-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/ai-flows-fmcg/" />
     <lastmod>2026-06-05</lastmod>
   </url>
   <url>
-    <loc>https://www.marksyte.com/study-cases/brand-relevance-distribution/</loc>
-    <lastmod>2026-06-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.marksyte.com/es/study-cases/brand-relevance-distribution/</loc>
-    <lastmod>2026-06-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.marksyte.com/es/study-cases/ai-flows-fmcg/</loc>
+    <loc>https://www.marksyte.com/es/casos-de-estudio/flujos-ia-fmcg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/ai-flows-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/flujos-ia-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/ai-flows-fmcg/" />
     <lastmod>2026-06-05</lastmod>
   </url>
   <url>
-    <loc>https://www.marksyte.com/es/study-cases/energy-drinks/</loc>
+    <loc>https://www.marksyte.com/study-cases/energy-drinks/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/energy-drinks/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/bebidas-energeticas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/energy-drinks/" />
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/casos-de-estudio/bebidas-energeticas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/energy-drinks/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/bebidas-energeticas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/energy-drinks/" />
     <lastmod>2026-05-27</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/study-cases/protein-rtd/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/protein-rtd/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/proteina-rtd/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/protein-rtd/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
-    <loc>https://www.marksyte.com/es/study-cases/protein-rtd/</loc>
+    <loc>https://www.marksyte.com/es/casos-de-estudio/proteina-rtd/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/protein-rtd/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/proteina-rtd/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/protein-rtd/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/legal/</loc>
-    <lastmod>2026-05-29</lastmod>
-  </url>
-  <url>
-    <loc>https://www.marksyte.com/privacy/</loc>
-    <lastmod>2026-05-29</lastmod>
-  </url>
-  <url>
-    <loc>https://www.marksyte.com/cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/legal/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/legal/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/aviso-legal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/legal/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/legal/" />
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/privacy/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/privacidad/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/privacy/" />
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/cookies/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/cookies/" />
     <lastmod>2026-05-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/cookies/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/cookies/" />
     <lastmod>2026-05-29</lastmod>
   </url>
 </urlset>
