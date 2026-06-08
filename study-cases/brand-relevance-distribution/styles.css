@@ -315,11 +315,16 @@ p {
   text-align: left;
 }
 
-.thesis-statement h2 {
+.thesis-statement h2,
+.thesis-statement h3 {
   max-width: 900px;
   margin: 12px 0 0;
   font-size: clamp(2.3rem, 5.2vw, 5.4rem);
   line-height: 0.96;
+}
+
+.thesis-statement h3 {
+  font-weight: 820;
 }
 
 .thesis-statement > p:not(.eyebrow) {
@@ -1164,6 +1169,15 @@ p {
 
 .scenario-board .is-ready b {
   border-color: rgba(255, 253, 247, 0.16);
+}
+
+.dark-block .scenario-board article {
+  border-color: rgba(255, 253, 247, 0.16);
+}
+
+.dark-block .scenario-board .is-ready {
+  border-color: rgba(200, 255, 82, 0.5);
+  background: rgba(200, 255, 82, 0.12);
 }
 
 .execution-ladder {

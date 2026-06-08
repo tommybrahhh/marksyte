@@ -692,7 +692,7 @@ h1 span {
 
 .signal-strip {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
   position: relative;
   z-index: 1;
@@ -702,7 +702,7 @@ h1 span {
 }
 
 .signal-strip article {
-  min-height: 174px;
+  min-height: 184px;
   padding: clamp(18px, 2.8vw, 25px);
   background: rgba(251, 250, 245, 0.045);
 }
@@ -5700,6 +5700,16 @@ figcaption {
 
 .client-offer .primary-button {
   margin-top: clamp(28px, 4vw, 37px);
+}
+
+@media (max-width: 1100px) {
+  .signal-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .signal-strip article {
+    min-height: 150px;
+  }
 }
 
 @media (max-width: 820px) {

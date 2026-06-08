@@ -322,7 +322,7 @@ h1 {
 
 .signal-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   margin-top: -44px;
   border: 1px solid rgba(20, 23, 25, 0.12);
@@ -995,10 +995,6 @@ h1 {
   .operating-model,
   .signal-strip {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .signal-strip article:first-child {
-    grid-column: 1 / -1;
   }
 
   .risk-grid,

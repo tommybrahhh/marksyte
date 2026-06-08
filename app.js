@@ -36,9 +36,9 @@ const copy = {
       activation: "Activation"
     },
     proof: {
-      one: "Sales opportunities identified and developed for a global consumer business.",
-      two: "Built sales-funnel BI to replace manual reporting and find missed opportunities.",
-      three: "Worked with commercial, marketing and leadership teams to move from analysis to execution."
+      one: "Commercial opportunities identified across consumer and B2B categories.",
+      two: "Developed into concrete sales opportunities with commercial teams.",
+      three: "Replaced manual Excel reporting with a sales-funnel model used across regions."
     },
     challenges: {
       eyebrow: "When Marksyte is useful",
@@ -71,8 +71,8 @@ const copy = {
       brandThree: "Activation priorities and decision criteria"
     },
     case: {
-      eyebrow: "Published business cases",
-      title: "See how category problems get turned into sharper decisions.",
+      eyebrow: "Study cases",
+      title: "See how I turn messy markets into clear growth choices.",
       intro:
         "Browse examples of how Marksyte reads a category, spots the tension and frames the next move.",
       kicker: "Case library",
@@ -110,8 +110,8 @@ const copy = {
       placeholder: "Founder profile",
       text:
         "Marksyte is led by a strategist who has moved through BI, insights, RGM, sales and marketing across consumer goods, healthcare, SaaS and financial products.",
-      proofOne: "Sales opportunities identified and developed.",
-      proofTwo: "Sales-funnel intelligence built from scratch.",
+      proofOne: "Commercial opportunities identified, including EUR 7M+ developed into concrete sales opportunities.",
+      proofTwo: "Manual Excel reporting replaced with ETL, mappings, refreshes and cross-region adoption.",
       tagOne: "Consumer insight",
       tagTwo: "Brand strategy",
       tagThree: "Sales enablement",
@@ -188,9 +188,9 @@ const copy = {
       activation: "Activación"
     },
     proof: {
-      one: "Oportunidades comerciales identificadas y desarrolladas para una empresa global de consumo.",
-      two: "BI de funnel comercial para sustituir reporting manual y encontrar oportunidades perdidas.",
-      three: "Trabajo con equipos comerciales, marketing y dirección para pasar del análisis a la ejecución."
+      one: "Oportunidades comerciales identificadas en categorías de consumo y B2B.",
+      two: "Desarrollados como oportunidades comerciales concretas con equipos comerciales.",
+      three: "Reporting manual en Excel sustituido por un modelo de funnel comercial usado entre regiones."
     },
     challenges: {
       eyebrow: "Cuándo Marksyte aporta valor",
@@ -223,8 +223,8 @@ const copy = {
       brandThree: "Prioridades de activación y criterios de decisión"
     },
     case: {
-      eyebrow: "Casos de negocio publicados",
-      title: "Mira cómo un problema de categoría se convierte en una decisión más clara.",
+      eyebrow: "Casos de estudio",
+      title: "Mira cómo convierto mercados confusos en decisiones claras de crecimiento.",
       intro:
         "Revisa ejemplos de cómo Marksyte lee una categoría, detecta la tensión y plantea el siguiente movimiento.",
       kicker: "Biblioteca de casos",
@@ -262,8 +262,8 @@ const copy = {
       placeholder: "Perfil del fundador",
       text:
         "Marksyte está liderado por un estratega que ha trabajado en BI, insights, RGM, ventas y marketing en gran consumo, salud, SaaS y productos financieros.",
-      proofOne: "Oportunidades comerciales identificadas y desarrolladas.",
-      proofTwo: "Inteligencia de funnel comercial construida desde cero.",
+      proofOne: "Oportunidades comerciales identificadas, incluyendo EUR 7M+ desarrollados como oportunidades comerciales concretas.",
+      proofTwo: "Reporting manual en Excel sustituido con ETL, mappings, refreshes y adopción entre regiones.",
       tagOne: "Insight de consumidor",
       tagTwo: "Estrategia de marca",
       tagThree: "Sales enablement",
