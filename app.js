@@ -51,24 +51,40 @@ const copy = {
       threeText: "Retailer or leadership conversations need a clearer reason to believe."
     },
     offers: {
-      eyebrow: "Starting offers",
-      title: "Start by finding the real growth block.",
-      primary: "Recommended starting point",
+      eyebrow: "Starting points",
+      title: "Start with the problem your team needs to solve.",
+      intro:
+        "Choose the problem closest to your current decision. Each starting point can include diagnosis, strategy, product, brand, insights, BI or deck work depending on what the team needs to move.",
+      primary: "Problem: growth is unclear",
       weeks: "2-4 weeks",
-      growthTitle: "Growth Diagnosis",
+      growthTitle: "Find the real growth block",
       growthText:
-        "A short project to understand what is slowing growth, where the best opportunity sits and which decisions should come first.",
-      growthOne: "Priority growth barriers and opportunities",
-      growthTwo: "Decision-ready strategic recommendations",
-      growthThree: "Practical action roadmap for the next 12 months",
-      followup: "Focused review",
+        "A marketing and growth diagnosis to understand what is slowing momentum, where the best opportunity sits and which decisions should come first.",
+      growthOne: "Commercial, category and marketing performance analysis",
+      growthTwo: "Priority barriers, opportunities and growth hypotheses",
+      growthThree: "Roadmap for leadership, marketing and sales",
+      strategyLabel: "Problem: strategy is too broad",
       project: "Project based",
-      brandTitle: "Brand Strategy Review",
-      brandText:
-        "Challenge a weak or generic plan and connect brand, portfolio, activation and sales arguments to consumer and customer reality.",
-      brandOne: "Brand-plan challenge and opportunity framing",
-      brandTwo: "Retailer or stakeholder commercial story",
-      brandThree: "Activation priorities and decision criteria"
+      strategyTitle: "Sharpen the marketing or proposition strategy",
+      strategyText:
+        "Optimize the marketing strategy, product proposition or brand plan when the team has too many options and not enough clarity on what to bet on.",
+      strategyOne: "Where-to-play, audience, occasion or channel choices",
+      strategyTwo: "Product positioning, claims and value proposition",
+      strategyThree: "Brand activation priorities and commercial story",
+      insightLabel: "Problem: data is not deciding",
+      insightTitle: "Turn insight and BI into action",
+      insightText:
+        "Translate research, sales data and market signals into usable insight, clearer reporting logic and decisions the team can act on.",
+      insightOne: "Insight synthesis and opportunity sizing",
+      insightTwo: "Dashboard, KPI and reporting logic",
+      insightThree: "Commercial narrative from the evidence",
+      presentationLabel: "Problem: story is not landing",
+      presentationTitle: "Build a decision-ready presentation",
+      presentationText:
+        "Create or sharpen strategic decks so the recommendation is simpler, more visual and easier for leadership, sales or customers to buy into.",
+      presentationOne: "Narrative architecture and slide flow",
+      presentationTwo: "Sharper recommendations, visuals and proof points",
+      presentationThree: "Leadership, retailer or workshop-ready deck"
     },
     case: {
       eyebrow: "Study cases",
@@ -95,13 +111,13 @@ const copy = {
       eyebrow: "How an engagement works",
       title: "A simple path from messy signals to a practical plan.",
       oneTitle: "Diagnose",
-      oneText: "Start with the data, market signals and business context already available.",
+      oneText: "Map the evidence",
       twoTitle: "Prioritize",
-      twoText: "Decide which audience, occasion or business choice deserves attention first.",
+      twoText: "Choose the focus",
       threeTitle: "Design",
-      threeText: "Shape the brand, portfolio or sales recommendation around that choice.",
+      threeText: "Shape the answer",
       fourTitle: "Activate",
-      fourText: "Turn it into next steps the team can explain and use."
+      fourText: "Make it usable"
     },
     about: {
       eyebrow: "Who is behind Marksyte",
@@ -203,24 +219,40 @@ const copy = {
       threeText: "Las conversaciones con retailers o dirección necesitan una razón más clara para creer."
     },
     offers: {
-      eyebrow: "Servicios iniciales",
-      title: "Empieza por encontrar el verdadero bloqueo de crecimiento.",
-      primary: "Punto de partida recomendado",
+      eyebrow: "Puntos de partida",
+      title: "Empieza por el problema que tu equipo necesita resolver.",
+      intro:
+        "Elige el problema más cercano a la decisión actual. Cada punto de partida puede incluir diagnóstico, estrategia, producto, marca, insights, BI o decks según lo que el equipo necesite mover.",
+      primary: "Problema: el crecimiento no está claro",
       weeks: "2-4 semanas",
-      growthTitle: "Diagnóstico de Crecimiento",
+      growthTitle: "Encontrar el verdadero bloqueo de crecimiento",
       growthText:
-        "Un proyecto corto para entender qué está frenando el crecimiento, dónde está la mejor oportunidad y qué decisiones deberían venir primero.",
-      growthOne: "Barreras y oportunidades prioritarias de crecimiento",
-      growthTwo: "Recomendaciones estratégicas listas para decidir",
-      growthThree: "Hoja de ruta práctica para los próximos 12 meses",
-      followup: "Revisión enfocada",
+        "Un diagnóstico de marketing y crecimiento para entender qué está frenando el impulso, dónde está la mejor oportunidad y qué decisiones deberían venir primero.",
+      growthOne: "Análisis comercial, de categoría y performance de marketing",
+      growthTwo: "Barreras, oportunidades e hipótesis de crecimiento prioritarias",
+      growthThree: "Hoja de ruta para dirección, marketing y ventas",
+      strategyLabel: "Problema: la estrategia es demasiado amplia",
       project: "Por proyecto",
-      brandTitle: "Revisión de Estrategia de Marca",
-      brandText:
-        "Cuestionar un plan débil o genérico y conectar marca, portafolio, activación y argumentos de venta con la realidad del consumidor y cliente.",
-      brandOne: "Revisión del plan de marca y marco de oportunidades",
-      brandTwo: "Historia comercial para retailers o stakeholders",
-      brandThree: "Prioridades de activación y criterios de decisión"
+      strategyTitle: "Afilar la estrategia de marketing o propuesta",
+      strategyText:
+        "Optimizar la estrategia de marketing, la propuesta de producto o el plan de marca cuando hay demasiadas opciones y poca claridad sobre la apuesta.",
+      strategyOne: "Decisiones de dónde jugar, audiencia, ocasión o canal",
+      strategyTwo: "Posicionamiento de producto, claims y propuesta de valor",
+      strategyThree: "Prioridades de activación de marca e historia comercial",
+      insightLabel: "Problema: los datos no deciden",
+      insightTitle: "Convertir insights y BI en acción",
+      insightText:
+        "Traducir investigación, datos de ventas y señales de mercado en insight utilizable, reporting más claro y decisiones accionables para el equipo.",
+      insightOne: "Síntesis de insights y dimensionamiento de oportunidades",
+      insightTwo: "Lógica de dashboards, KPIs y reporting",
+      insightThree: "Narrativa comercial construida desde la evidencia",
+      presentationLabel: "Problema: la historia no aterriza",
+      presentationTitle: "Construir una presentación lista para decidir",
+      presentationText:
+        "Crear o mejorar decks estratégicos para que la recomendación sea más simple, visual y fácil de comprar por dirección, ventas o clientes.",
+      presentationOne: "Arquitectura narrativa y flujo de slides",
+      presentationTwo: "Recomendaciones, visuales y pruebas más claras",
+      presentationThree: "Deck listo para dirección, retailer o workshop"
     },
     case: {
       eyebrow: "Casos de estudio",
@@ -247,13 +279,13 @@ const copy = {
       eyebrow: "Cómo funciona un proyecto",
       title: "Un camino simple desde señales desordenadas hasta un plan práctico.",
       oneTitle: "Diagnosticar",
-      oneText: "Empezar con los datos, señales de mercado y contexto de negocio que ya existen.",
+      oneText: "Mapear la evidencia",
       twoTitle: "Priorizar",
-      twoText: "Decidir qué audiencia, ocasión o decisión merece atención primero.",
+      twoText: "Elegir el foco",
       threeTitle: "Diseñar",
-      threeText: "Construir la recomendación de marca, portafolio o ventas alrededor de esa decisión.",
+      threeText: "Construir la respuesta",
       fourTitle: "Activar",
-      fourText: "Convertirlo en próximos pasos que el equipo pueda explicar y usar."
+      fourText: "Hacerlo usable"
     },
     about: {
       eyebrow: "Quién hay detrás de Marksyte",
