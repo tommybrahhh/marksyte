@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <title>AI flows in FMCG: where process automation pays first | Marksyte</title>
+    <meta
+      name="description"
+      content="A business case for implementing AI flows in FMCG companies: process opportunities, departments, token-risk control, model evolution and governance."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.marksyte.com/study-cases/ai-integration-fmcg/" />
+    <link rel="alternate" hreflang="en" href="https://www.marksyte.com/study-cases/ai-integration-fmcg/" />
+    <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/casos-de-estudio/integracion-ia-fmcg/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/study-cases/ai-integration-fmcg/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Marksyte" />
+    <meta property="og:title" content="AI flows in FMCG: where process automation pays first | Marksyte" />
+    <meta
+      property="og:description"
+      content="A practical business case for AI implementation in FMCG: quick process wins, token governance and the operating model behind successful adoption."
+    />
+    <meta property="og:url" content="https://www.marksyte.com/study-cases/ai-integration-fmcg/" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AI flows in FMCG | Marksyte" />
+    <meta
+      name="twitter:description"
+      content="Where FMCG companies should use AI flows first, and how to manage token consumption, model choice and governance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400..900;1,400..900&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260613-1" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AI flows in FMCG: where process automation pays first",
+        "description": "A business case for implementing AI flows in FMCG companies, with process opportunities, token-risk control, model evolution and governance.",
+        "inLanguage": "en",
+        "url": "https://www.marksyte.com/study-cases/ai-integration-fmcg/",
+        "datePublished": "2026-06-05",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Marksyte",
+          "url": "https://www.marksyte.com/"
+        },
+        "about": [
+          "FMCG",
+          "Artificial intelligence",
+          "Process optimization",
+          "AI governance",
+          "Commercial strategy"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="case-header">
+      <a class="brand" href="../../" aria-label="Return to Marksyte">
+        <span aria-hidden="true">M</span>
+        Marksyte
+      </a>
+      <div class="header-actions">
+        <nav class="case-language-switch" aria-label="Language">
+          <a href="./" lang="en" hreflang="en" aria-current="page">EN</a>
+          <a href="../../es/casos-de-estudio/integracion-ia-fmcg/" lang="es" hreflang="es">ES</a>
+        </nav>
+        <p>Business case</p>
+        <a href="../../#contact">Request a 20-min discovery call</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="main-title">
+        <div class="hero-copy">
+          <p class="eyebrow">FMCG / AI implementation</p>
+          <h1 id="main-title">AI will not fix FMCG by magic. It will fix the work that repeats every week.</h1>
+          <p class="lead">
+            The useful starting point is smaller than most AI decks suggest: buyer packs, promo
+            reviews, claim checks, demand exceptions, research summaries and internal support work
+            that already moves through the business every week.
+          </p>
+          <p class="scope-note">
+            Built for FMCG leaders deciding where AI should enter real workflows in 2026, how to
+            avoid wasteful model use, and what has to change when pilots become normal operations.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#signal">Read the signal</a>
+            <a class="secondary-button" href="#decision">See the decision logic</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="AI flow implementation summary">
+          <figure class="hero-image">
+            <img src="images/meeting-workflow.webp" alt="FMCG team reviewing printed reports and dashboard data in a business meeting" loading="eager" decoding="async" />
+          </figure>
+          <p class="panel-kicker">Implementation thesis</p>
+          <h2>Start with the work, then choose the model.</h2>
+          <div class="flow-board" aria-hidden="true">
+            <div class="flow-node">Brief</div>
+            <span></span>
+            <div class="flow-node">Data</div>
+            <span></span>
+            <div class="flow-node active">AI review</div>
+            <span></span>
+            <div class="flow-node">Human decision</div>
+          </div>
+          <p>
+            The good setup is deliberately plain: known inputs, a tight context window, human
+            approval where it matters, usage logs and outputs the next team can reuse.
+          </p>
+        </aside>
+      </section>
+
+      <section class="signal-strip" aria-label="Four-pillar case structure">
+        <article>
+          <span>01</span>
+          <strong>Problem</strong>
+          <p>AI is already being used, but too much of it sits outside the way FMCG work is actually managed.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Signal</strong>
+          <p>The clearest opportunities show up in repeated weekly decisions, not in abstract transformation slides.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Decision</strong>
+          <p>Every flow needs a model choice, a cost logic, a source policy and a human owner before it scales.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <strong>What next</strong>
+          <p>A brand should prove three workflows with real teams, then scale only what changes the operating rhythm.</p>
+        </article>
+      </section>
+
+      <section class="thesis" id="problem" aria-labelledby="problem-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-number">01</span>
+            <p class="eyebrow">Problem</p>
+          </div>
+          <div>
+            <h2 id="problem-title">AI pilots are not the problem. Unmanaged AI work is.</h2>
+            <p>
+              In FMCG, AI rarely arrives as one clean program. It appears in buyer packs, promo
+              reviews, shelf analysis, claim checks, demand exceptions, research summaries and
+              internal support answers. The risk is that every team starts solving its own piece,
+              with duplicated prompts, unclear approvals and no view of the cost behind each answer.
+            </p>
+            <p>
+              That is why the first business question is not "which model should we buy?" It is
+              "which repeated decisions deserve an AI flow, and who owns the result when the model
+              is wrong, slow or expensive?"
+            </p>
+          </div>
+        </div>
+
+        <div class="quote-grid" aria-label="External evidence">
+          <article>
+            <p>"88 percent report regular AI use in at least one business function."</p>
+            <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">McKinsey, State of AI 2025</a>
+          </article>
+          <article>
+            <p>"Initially, companies will generate more than 90% of the value from AI by reshaping processes."</p>
+            <a href="https://www.bcg.com/publications/2025/ai-first-consumer-products-company" target="_blank" rel="noopener">BCG, consumer products, 2025</a>
+          </article>
+          <article>
+            <p>"76% surveyed executives work at companies that are increasing investment in AI."</p>
+            <a href="https://www.deloitte.com/us/en/insights/industry/consumer-products/consumer-products-industry-outlook/2025.html" target="_blank" rel="noopener">Deloitte, Consumer Products Outlook 2025</a>
+          </article>
+        </div>
+
+        <div class="chart-grid" aria-label="AI adoption and investment charts">
+          <article class="chart-card">
+            <div class="chart-heading">
+              <span>Adoption curve</span>
+              <h3>Most companies are using AI. Fewer have changed the operating rhythm.</h3>
+            </div>
+            <div class="bar-chart" role="img" aria-label="AI adoption moved from 78 percent in 2024 to 88 percent in 2025; 39 percent experiment with AI agents and 23 percent scale agentic AI.">
+              <div class="bar-row"><span>AI use 2024</span><div class="bar-track"><i style="--value: 78%"></i></div><strong>78%</strong></div>
+              <div class="bar-row"><span>AI use 2025</span><div class="bar-track"><i style="--value: 88%"></i></div><strong>88%</strong></div>
+              <div class="bar-row muted-bar"><span>Agent experiments</span><div class="bar-track"><i style="--value: 39%"></i></div><strong>39%</strong></div>
+              <div class="bar-row muted-bar"><span>Agent scaling</span><div class="bar-track"><i style="--value: 23%"></i></div><strong>23%</strong></div>
+            </div>
+            <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">Source: McKinsey, 2025</a>
+          </article>
+
+          <article class="chart-card">
+            <div class="chart-heading">
+              <span>Consumer products</span>
+              <h3>The budget is moving. The controls have to catch up.</h3>
+            </div>
+            <div class="bar-chart" role="img" aria-label="Deloitte consumer products survey signals: 76 percent increasing AI investment, 89 percent putting at least a fifth of AI budget into generative AI, and 52 percent name efficiency and productivity as expected benefits.">
+              <div class="bar-row"><span>Increasing AI investment</span><div class="bar-track"><i style="--value: 76%"></i></div><strong>76%</strong></div>
+              <div class="bar-row"><span>At least 20% AI budget in gen AI</span><div class="bar-track"><i style="--value: 89%"></i></div><strong>89%</strong></div>
+              <div class="bar-row muted-bar"><span>Efficiency / productivity benefit</span><div class="bar-track"><i style="--value: 52%"></i></div><strong>52%</strong></div>
+            </div>
+            <a href="https://www.deloitte.com/us/en/insights/industry/consumer-products/consumer-products-industry-outlook/2025.html" target="_blank" rel="noopener">Source: Deloitte, 2025</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="map-section" id="signal" aria-labelledby="signal-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-number">02</span>
+            <p class="eyebrow">Signal</p>
+          </div>
+          <div>
+            <h2 id="signal-title">The signal is not only adoption. It is friction in weekly decisions.</h2>
+            <p>
+              Look for places where teams already spend time stitching together documents, numbers
+              and judgement: a KAM preparing the retailer story, a category lead reading open text,
+              a planner explaining service risk, or an innovation team pressure-testing a concept.
+              Those are stronger signals than a generic request for "an AI assistant".
+            </p>
+          </div>
+        </div>
+
+        <figure class="case-image wide-image">
+          <img src="images/category-shelf.webp" alt="Crowded beverage shelf showing many FMCG product choices" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>Category reality</span>
+            FMCG work is full of small choices across dense shelves, retailer requests and demand
+            signals that rarely arrive neatly packaged.
+          </figcaption>
+        </figure>
+
+        <div class="department-grid">
+          <article><span>Commercial</span><h3>Buyer prep becomes repeatable</h3><p>Sell-in, sell-out, promo notes and risks are turned into a short account narrative before the meeting starts.</p><strong>Signal: teams rebuild the same pack every week.</strong></article>
+          <article><span>Category and insights</span><h3>Open text becomes usable</h3><p>Reviews, complaints, survey verbatims and competitor moves are grouped into tensions, claims and consumer language.</p><strong>Signal: the insight is visible only after too much manual reading.</strong></article>
+          <article><span>Marketing</span><h3>Content work stops starting from zero</h3><p>Approved claims, master data and campaign learnings become retailer, ecommerce and retail-media drafts.</p><strong>Signal: the same brand rules are rewritten across channels.</strong></article>
+          <article><span>Supply chain</span><h3>Exceptions get explained faster</h3><p>Demand, stock and service movements are translated into likely causes, affected customers and next actions.</p><strong>Signal: managers ask why before teams have time to assemble the answer.</strong></article>
+          <article><span>Innovation</span><h3>Concepts are challenged earlier</h3><p>Ideas, claims and pack copy are checked against likely objections before expensive development time starts.</p><strong>Signal: weaknesses appear late, after people are attached to the idea.</strong></article>
+          <article><span>Support functions</span><h3>Hand-offs become clearer</h3><p>Finance, legal, HR and procurement get first-pass summaries, policy answers and review notes for approval.</p><strong>Signal: experts spend too much time answering repeat questions.</strong></article>
+        </div>
+      </section>
+
+      <section class="token-section" id="decision" aria-labelledby="decision-title">
+        <div class="section-heading inverted">
+          <div>
+            <span class="section-number">03</span>
+            <p class="eyebrow">Decision</p>
+          </div>
+          <div>
+            <h2 id="decision-title">Treat AI as an operating choice, not a tool everyone uses differently.</h2>
+            <p>
+              In 2026, the model decision has become part of business control. Long context,
+              reasoning, tools and agents are powerful, but they can turn a simple request into a
+              costly workflow. The brand needs routing rules before usage becomes normal work.
+            </p>
+          </div>
+        </div>
+
+        <div class="risk-grid">
+          <article><span>Context creep</span><h3>Every file can become part of the bill.</h3><p>Full decks, raw exports and old chats should not enter the prompt just because the model can read them.</p></article>
+          <article><span>Agent loops</span><h3>Tools multiply hidden work.</h3><p>Search, code execution, browsing and retrieval can create invisible token and usage costs across turns.</p></article>
+          <article><span>Premium model drift</span><h3>Hard tasks pull the expensive model.</h3><p>Without routing, teams use frontier reasoning models for work a smaller model could handle.</p></article>
+          <article><span>Shared capacity</span><h3>One busy team can crowd out another.</h3><p>Rate limits often sit at organization, project or model-family level, not at workflow level.</p></article>
+        </div>
+
+        <div class="source-band">
+          <article><p>"Rate limits can be hit across any of the options depending on what occurs first."</p><a href="https://developers.openai.com/api/docs/guides/rate-limits#usage-tiers" target="_blank" rel="noopener">OpenAI API rate limits</a></article>
+          <article><p>"Rate limits are tied to the project's usage tier."</p><a href="https://ai.google.dev/gemini-api/docs/rate-limits" target="_blank" rel="noopener">Google Gemini API rate limits</a></article>
+          <article><p>"Sizing your Priority Tier capacity to align with your actual traffic patterns helps."</p><a href="https://platform.claude.com/docs/en/api/service-tiers" target="_blank" rel="noopener">Anthropic service tiers</a></article>
+        </div>
+
+        <div class="model-spec-chart" aria-label="Current model context and output comparison">
+          <div class="chart-heading">
+            <span>Current frontier model reality</span>
+            <h3>Long context is useful. It is also easy to overuse.</h3>
+          </div>
+          <div class="spec-grid">
+            <article><span>OpenAI</span><h4>GPT-5.5</h4><div class="spec-bars"><div><b style="--value: 100%"></b><small>1.05M context</small></div><div><b style="--value: 43%"></b><small>128k output</small></div></div><p>$5 input / $30 output per 1M tokens. Long prompts above 272k are priced higher.</p></article>
+            <article><span>Anthropic</span><h4>Claude Opus 4.8</h4><div class="spec-bars"><div><b style="--value: 95%"></b><small>1M context</small></div><div><b style="--value: 43%"></b><small>128k output</small></div></div><p>$5 input / $25 output per 1M tokens, with Priority Tier capacity controls.</p></article>
+            <article><span>Google</span><h4>Gemini 3 Pro Preview</h4><div class="spec-bars"><div><b style="--value: 100%"></b><small>1.05M context</small></div><div><b style="--value: 22%"></b><small>65k output</small></div></div><p>Supports search grounding, function calling, code execution, caching and file search.</p></article>
+          </div>
+          <div class="spec-sources">
+            <a href="https://developers.openai.com/api/docs/models/gpt-5.5/" target="_blank" rel="noopener">OpenAI GPT-5.5 model docs</a>
+            <a href="https://platform.claude.com/docs/en/docs/about-claude/models" target="_blank" rel="noopener">Anthropic model overview</a>
+            <a href="https://ai.google.dev/models/gemini" target="_blank" rel="noopener">Google Gemini models</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="roadmap-section" id="next" aria-labelledby="next-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-number">04</span>
+            <p class="eyebrow">What a brand should do next</p>
+          </div>
+          <div>
+            <h2 id="next-title">Pick three workflows and prove they survive real use.</h2>
+            <p>
+              A brand should not scale AI because a demo looks clever. It should scale when a flow
+              is used repeatedly, improves a named decision, stays inside cost limits and gives the
+              business owner enough confidence to keep using it after the pilot team leaves.
+            </p>
+          </div>
+        </div>
+
+        <div class="flow-list">
+          <article><div class="flow-index">01</div><div><h3>Choose the work, not the technology theme</h3><p>Map candidate processes and score frequency, effort, risk, data readiness and decision value.</p></div><strong>Days 1-15</strong></article>
+          <article><div class="flow-index">02</div><div><h3>Build the controlled version</h3><p>Define templates, source rules, context caps, model routing, approval moments and fallback states.</p></div><strong>Days 16-35</strong></article>
+          <article><div class="flow-index">03</div><div><h3>Run it with real teams</h3><p>Track time saved, rework, token cost, error types, adoption and whether the decision got better.</p></div><strong>Days 36-60</strong></article>
+          <article><div class="flow-index">04</div><div><h3>Scale, redesign or stop</h3><p>Expand flows with repeated use and visible economics. Close the ones that only perform in demos.</p></div><strong>Days 61-90</strong></article>
+        </div>
+
+        <div class="image-duo" aria-label="AI flow use cases in R&D and supply chain">
+          <figure class="case-image">
+            <img src="images/innovation-workspace.webp" alt="Product innovation workspace with packaging design and prototype development on screens" loading="lazy" decoding="async" />
+            <figcaption><span>Innovation</span>Use AI before the expensive part starts: concept review, claim checks, pack copy and test planning.</figcaption>
+          </figure>
+          <figure class="case-image">
+            <img src="images/supply-warehouse.webp" alt="Warehouse aisle with pallet movement and supply chain operations" loading="lazy" decoding="async" />
+            <figcaption><span>Operations</span>Use AI to explain demand, stock and service exceptions faster, not to promise a perfect forecast.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="sources-section" aria-labelledby="sources-title">
+        <div>
+          <p class="eyebrow">Source base</p>
+          <h2 id="sources-title">Sources used for this business case</h2>
+        </div>
+        <div class="sources-list">
+          <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">McKinsey, The State of AI 2025</a>
+          <a href="https://www.mckinsey.com/~/media/mckinsey/industries/consumer%20packaged%20goods/our%20insights/fortune%20or%20fiction%20the%20real%20value%20of%20a%20digital%20and%20ai%20transformation%20in%20cpg/fortune-or-fiction-final-v3.pdf" target="_blank" rel="noopener">McKinsey, digital and AI value in CPG</a>
+          <a href="https://www.bcg.com/publications/2025/ai-first-consumer-products-company" target="_blank" rel="noopener">BCG, The AI-First Consumer Products Company</a>
+          <a href="https://www.deloitte.com/us/en/insights/industry/consumer-products/consumer-products-industry-outlook/2025.html" target="_blank" rel="noopener">Deloitte, 2025 Consumer Products Industry Outlook</a>
+          <a href="https://developers.openai.com/api/docs/guides/rate-limits#usage-tiers" target="_blank" rel="noopener">OpenAI, API rate limits and usage tiers</a>
+          <a href="https://developers.openai.com/api/docs/models/gpt-5.5/" target="_blank" rel="noopener">OpenAI, GPT-5.5 model docs</a>
+          <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">OpenAI, Introducing GPT-5.5</a>
+          <a href="https://ai.google.dev/gemini-api/docs/rate-limits" target="_blank" rel="noopener">Google, Gemini API rate limits</a>
+          <a href="https://ai.google.dev/models/gemini" target="_blank" rel="noopener">Google, Gemini models</a>
+          <a href="https://platform.claude.com/docs/en/docs/about-claude/models" target="_blank" rel="noopener">Anthropic, models overview</a>
+          <a href="https://platform.claude.com/docs/en/api/service-tiers" target="_blank" rel="noopener">Anthropic, service tiers</a>
+        </div>
+      </section>
+
+      <section class="bottom-cta" aria-labelledby="cta-title">
+        <div>
+          <p class="eyebrow">Apply the method</p>
+          <h2 id="cta-title">Need to prioritize AI flows inside an FMCG business?</h2>
+          <p>Start with the workflows that repeat every week and already have accountable owners.</p>
+        </div>
+        <a class="primary-button" href="../../#contact">Request a 20-min discovery call</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Marksyte</span>
+      <nav aria-label="Legal links">
+        <a href="../../legal/">Legal notice</a>
+        <a href="../../privacy/">Privacy</a>
+        <a href="../../cookies/">Cookies</a>
+      </nav>
+    </footer>
+  </body>
+</html>
