@@ -169,106 +169,106 @@ const copy = {
   },
   es: {
     meta: {
-      title: "Marksyte | Consultoría de crecimiento para marcas de consumo",
+      title: "Marksyte | Estrategia de crecimiento para marcas de consumo",
       description:
-        "Marksyte ayuda a marcas FMCG y retail a encontrar el verdadero bloqueo de crecimiento y convertirlo en un plan accionable en 2 a 4 semanas."
+        "Marksyte ayuda a marcas FMCG y retail a entender qué frena su crecimiento y convertirlo en un plan comercial claro en 2 a 4 semanas."
     },
     nav: { services: "Servicios", cases: "Casos de estudio", about: "Quién soy", contact: "Contacto" },
     cta: {
-      schedule: "Agendar llamada de crecimiento de 30 min",
-      email: "Enviar el reto por email",
+      schedule: "Reservar una llamada de 30 min",
+      email: "Enviar el reto por correo",
       case: "Ver casos de estudio"
     },
     hero: {
-      eyebrow: "Consultoría de crecimiento para FMCG y negocios retail",
-      offer: "Diagnóstico de crecimiento de 2-4 semanas para activar ventas",
-      title: "Para marcas FMCG y retail que venden, pero no escalan con claridad.",
+      eyebrow: "Estrategia de crecimiento para FMCG y retail",
+      offer: "Diagnóstico de crecimiento en 2-4 semanas",
+      title: "Para marcas FMCG y retail que venden, pero aún no crecen con claridad.",
       lead:
-        "Ayudo a equipos a encontrar el bloqueo real de crecimiento, elegir dónde enfocarse y convertirlo en un plan listo para ventas en 2 a 4 semanas.",
-      note: "No necesitas preparar un deck. Elige una hora o comparte el reto por email."
+        "Ayudo a los equipos a detectar qué está frenando el crecimiento, decidir dónde concentrar esfuerzos y bajarlo a un plan comercial en 2 a 4 semanas.",
+      note: "No necesitas preparar una presentación. Reserva una hora o cuéntame el reto por correo."
     },
     board: {
       title: "Diagnóstico de crecimiento",
-      duration: "Proyecto inicial de 2-4 semanas",
+      duration: "Proyecto inicial de 2 a 4 semanas",
       signal: "Señal",
       signalValue: "¿Por qué ahora?",
       signalNote: "Ver qué ha cambiado",
       choice: "Decisión",
-      choiceValue: "Dónde jugar",
-      choiceNote: "Elegir dónde enfocarse",
+      choiceValue: "Dónde concentrarse",
+      choiceNote: "Elegir el foco",
       action: "Acción",
       actionValue: "Qué hacer",
-      actionNote: "Bajarlo a un plan",
+      actionNote: "Convertirlo en un plan",
       data: "Datos",
       insight: "Insight",
       activation: "Activación"
     },
     proof: {
       one: "Oportunidades comerciales identificadas en categorías de consumo y B2B.",
-      two: "Desarrollados como oportunidades comerciales concretas con equipos comerciales.",
-      three: "Reporting manual en Excel sustituido por un modelo de funnel comercial usado entre regiones."
+      two: "Convertidos en oportunidades concretas junto a equipos comerciales.",
+      three: "Reporting manual en Excel reemplazado por un modelo de funnel comercial usado en varias regiones."
     },
     challenges: {
       eyebrow: "Cuándo Marksyte aporta valor",
-      title: "El equipo está ocupado. La decisión de crecimiento aún no está clara.",
+      title: "El equipo está avanzando, pero la siguiente decisión de crecimiento no está clara.",
       oneTitle: "El crecimiento se frena",
-      oneText: "Los resultados se mueven, pero el equipo no coincide sobre qué está causando el freno.",
-      twoTitle: "La investigación no llega a decisiones",
-      twoText: "Hay datos sobre la mesa, pero no ayudan a elegir qué cambiar primero.",
-      threeTitle: "Ventas necesita una historia más fuerte",
-      threeText: "Las conversaciones con retailers o dirección necesitan una razón más clara para creer."
+      oneText: "Los resultados cambian, pero no hay una lectura común sobre qué está detrás del frenazo.",
+      twoTitle: "Los estudios no se traducen en decisiones",
+      twoText: "Hay datos encima de la mesa, pero no terminan de aclarar qué conviene cambiar primero.",
+      threeTitle: "Ventas necesita un argumento más sólido",
+      threeText: "Las conversaciones con retailers o dirección necesitan una razón más clara para apostar por la propuesta."
     },
     offers: {
       eyebrow: "Puntos de partida",
       title: "Empieza por el problema que tu equipo necesita resolver.",
       intro:
-        "Elige el problema más cercano a la decisión actual. Cada punto de partida puede incluir diagnóstico, estrategia, producto, marca, insights, BI o decks según lo que el equipo necesite mover.",
-      primary: "Problema: el crecimiento no está claro",
+        "Elige el punto de partida que más se parece a la decisión que tenéis delante. El trabajo puede combinar diagnóstico, estrategia, producto, marca, insights, BI o presentaciones, según lo que necesite el equipo.",
+      primary: "Problema: no está claro cómo crecer",
       weeks: "2-4 semanas",
-      growthTitle: "Encontrar el verdadero bloqueo de crecimiento",
+      growthTitle: "Detectar qué está frenando el crecimiento",
       growthText:
-        "Un diagnóstico de marketing y crecimiento para entender qué está frenando el impulso, dónde está la mejor oportunidad y qué decisiones deberían venir primero.",
-      growthOne: "Análisis comercial, de categoría y performance de marketing",
+        "Un diagnóstico de marketing y crecimiento para entender qué está frenando el impulso, dónde está la mejor oportunidad y qué decisiones deberían priorizarse.",
+      growthOne: "Análisis comercial, de categoría y de performance de marketing",
       growthTwo: "Barreras, oportunidades e hipótesis de crecimiento prioritarias",
       growthThree: "Hoja de ruta para dirección, marketing y ventas",
-      strategyLabel: "Problema: la estrategia es demasiado amplia",
+      strategyLabel: "Problema: la estrategia es demasiado abierta",
       project: "Por proyecto",
-      strategyTitle: "Afilar la estrategia de marketing o propuesta",
+      strategyTitle: "Aterrizar la estrategia de marketing o la propuesta",
       strategyText:
-        "Optimizar la estrategia de marketing, la propuesta de producto o el plan de marca cuando hay demasiadas opciones y poca claridad sobre la apuesta.",
-      strategyOne: "Decisiones de dónde jugar, audiencia, ocasión o canal",
+        "Ordenar la estrategia de marketing, la propuesta de producto o el plan de marca cuando hay demasiadas opciones y poca claridad sobre la apuesta principal.",
+      strategyOne: "Decisiones sobre mercado, audiencia, ocasión o canal",
       strategyTwo: "Posicionamiento de producto, claims y propuesta de valor",
-      strategyThree: "Prioridades de activación de marca e historia comercial",
-      insightLabel: "Problema: los datos no deciden",
+      strategyThree: "Prioridades de activación de marca y argumento comercial",
+      insightLabel: "Problema: los datos no orientan la decisión",
       insightTitle: "Convertir insights y BI en acción",
       insightText:
-        "Traducir investigación, datos de ventas y señales de mercado en insight utilizable, reporting más claro y decisiones accionables para el equipo.",
+        "Traducir investigación, datos de ventas y señales de mercado en insights útiles, reporting más claro y decisiones que el equipo pueda llevar a la práctica.",
       insightOne: "Síntesis de insights y dimensionamiento de oportunidades",
-      insightTwo: "Lógica de dashboards, KPIs y reporting",
-      insightThree: "Narrativa comercial construida desde la evidencia",
-      presentationLabel: "Problema: la historia no aterriza",
-      presentationTitle: "Construir una presentación lista para decidir",
+      insightTwo: "Lógica de dashboards, KPIs y reporting comercial",
+      insightThree: "Argumentario comercial construido desde la evidencia",
+      presentationLabel: "Problema: el mensaje no convence",
+      presentationTitle: "Construir una presentación para tomar decisiones",
       presentationText:
-        "Crear o mejorar decks estratégicos para que la recomendación sea más simple, visual y fácil de comprar por dirección, ventas o clientes.",
-      presentationOne: "Arquitectura narrativa y flujo de slides",
+        "Crear o mejorar presentaciones estratégicas para que la recomendación sea más clara, visual y fácil de defender ante dirección, ventas o clientes.",
+      presentationOne: "Estructura narrativa y flujo de la presentación",
       presentationTwo: "Recomendaciones, visuales y pruebas más claras",
-      presentationThree: "Deck listo para dirección, retailer o workshop"
+      presentationThree: "Presentación lista para dirección, retailers o workshops"
     },
     case: {
       eyebrow: "Casos de estudio",
-      title: "Mira cómo convierto mercados confusos en decisiones claras de crecimiento.",
+      title: "Mira cómo convierto mercados complejos en decisiones claras de crecimiento.",
       intro:
-        "Revisa ejemplos de cómo Marksyte lee una categoría, detecta la tensión y plantea el siguiente movimiento.",
+        "Revisa ejemplos de cómo Marksyte analiza una categoría, detecta la tensión principal y plantea el siguiente movimiento.",
       kicker: "Biblioteca de casos",
       previewTitle: "Lee los casos detrás del método.",
       previewText:
-        "Cada caso parte de una tensión real de mercado y avanza hacia las decisiones que una marca o distribuidor tendría que validar.",
+        "Cada caso parte de una tensión real de mercado y llega a las decisiones que una marca o distribuidor tendría que validar.",
       implication: "Implicación comercial",
       implicationText:
-        "Diseñar ocasiones más selectivas, formatos moderados y mayor valor social en lugar de empujar frecuencia.",
+        "Diseñar ocasiones más selectivas, formatos moderados y mayor valor social, en vez de intentar forzar la frecuencia.",
       period: "2022 a 2025",
       signals: "Principales señales de consumo",
-      where: "Dónde jugar",
+      where: "Dónde competir",
       territories: "Cuatro territorios comerciales",
       full: "Análisis completo con datos públicos",
       fullText:
@@ -277,15 +277,15 @@ const copy = {
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
-      title: "Un camino simple desde señales desordenadas hasta un plan práctico.",
+      title: "Un camino sencillo desde señales dispersas hasta un plan práctico.",
       oneTitle: "Diagnosticar",
       oneText: "Mapear la evidencia",
       twoTitle: "Priorizar",
       twoText: "Elegir el foco",
       threeTitle: "Diseñar",
-      threeText: "Construir la respuesta",
+      threeText: "Diseñar la respuesta",
       fourTitle: "Activar",
-      fourText: "Hacerlo usable"
+      fourText: "Hacerlo accionable"
     },
     about: {
       eyebrow: "Quién hay detrás de Marksyte",
@@ -294,31 +294,31 @@ const copy = {
       placeholder: "Perfil del fundador",
       text:
         "Marksyte está liderado por un estratega que ha trabajado en BI, insights, RGM, ventas y marketing en gran consumo, salud, SaaS y productos financieros.",
-      proofOne: "Oportunidades comerciales identificadas, incluyendo EUR 7M+ desarrollados como oportunidades comerciales concretas.",
-      proofTwo: "Reporting manual en Excel sustituido con ETL, mappings, refreshes y adopción entre regiones.",
+      proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas.",
+      proofTwo: "Reporting manual en Excel reemplazado por ETL, mapeos, actualizaciones y adopción en varias regiones.",
       tagOne: "Insight de consumidor",
       tagTwo: "Estrategia de marca",
-      tagThree: "Sales enablement",
+      tagThree: "Apoyo a ventas",
       tagFour: "BI y herramientas de decisión"
     },
     contact: {
       eyebrow: "Llamada de crecimiento",
       title: "¿Qué reto de crecimiento estás intentando resolver?",
       text:
-        "El siguiente paso más fácil es elegir una hora en Calendly. Si prefieres escribir primero, usa el formulario y responderé si puedo ayudar.",
-      or: "o escríbeme directamente"
+        "El siguiente paso es reservar una hora en Calendly. Si prefieres escribir primero, usa el formulario y te diré si puedo ayudarte.",
+      or: "o escríbeme por correo"
     },
     form: {
       name: "Nombre",
-      email: "Email profesional",
+      email: "Correo profesional",
       company: "Empresa y cargo",
       challenge: "¿Cuál es el reto?",
       placeholder:
-        "Por ejemplo: el crecimiento se está frenando y necesitamos priorizar decisiones de marca o portafolio.",
+        "Por ejemplo: el crecimiento se está frenando y necesitamos priorizar decisiones de marca o portfolio.",
       note:
-        "Al enviar se abrirá un borrador de email dirigido a Marksyte. Tu información no se almacena en esta web. Suelo responder en 1-2 días laborables.",
+        "Al enviar se abrirá un borrador de correo dirigido a Marksyte. Tu información no se almacena en esta web. Suelo responder en 1-2 días laborables.",
       subject: "Reto de crecimiento desde la web de Marksyte",
-      prepared: "Tu borrador de email está listo. Envíalo para iniciar la conversación."
+      prepared: "Tu borrador de correo está listo. Envíalo para iniciar la conversación."
     },
     kpis: [
       { label: "Nunca alcohol", reading: "Mayor abstención declarada" },
