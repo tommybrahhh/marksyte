@@ -1,111 +1,89 @@
 const copy = {
   en: {
     meta: {
-      title: "Marksyte | Growth consulting for consumer brands",
+      title: "Marksyte | Travel Retail FMCG growth consulting",
       description:
-        "Marksyte helps FMCG and retail brands find the real growth block and turn it into a sales-ready plan in 2 to 4 weeks."
+        "Marksyte helps Travel Retail FMCG teams improve brand growth, customer negotiation, portfolio choices, pricing and trade marketing execution."
     },
-    nav: { services: "Offers", cases: "Study cases", about: "About", contact: "Contact" },
+    nav: { services: "Offers", blog: "Blog", about: "About", contact: "Contact" },
     cta: {
-      schedule: "Schedule a 30-min growth call",
-      email: "Send the challenge by email",
-      case: "Browse study cases"
+      schedule: "Discuss a travel retail growth challenge",
+      email: "Send the challenge by email"
     },
     hero: {
-      eyebrow: "FMCG and retail-focused growth consulting",
-      offer: "2-4 week growth diagnosis for sales-ready action",
-      title: "For FMCG and retail brands that are selling, but not scaling clearly.",
+      eyebrow: "Travel Retail FMCG growth consulting",
+      offer: "Brand, portfolio, pricing and trade marketing advisory",
+      title: "Build stronger FMCG brands in Travel Retail.",
       lead:
-        "I help teams find the real growth block, choose where to focus and turn it into a sales-ready plan in 2 to 4 weeks.",
-      note: "No pitch deck needed. Pick a time or share the category challenge by email."
+        "I help teams sharpen the brand story, optimize the portfolio, strengthen customer negotiation and turn trade marketing into clearer commercial growth.",
+      note: "Start with a category, customer, portfolio or pricing challenge. I will tell you where I can help."
     },
     board: {
-      title: "Growth diagnosis",
-      duration: "2-4 week starting engagement",
-      signal: "Signal",
-      signalValue: "Why now?",
-      signalNote: "Spot what has changed",
-      choice: "Choice",
-      choiceValue: "Where to play",
-      choiceNote: "Choose where to focus",
-      action: "Action",
-      actionValue: "What to do",
-      actionNote: "Turn it into a plan",
-      data: "Data",
-      insight: "Insight",
-      activation: "Activation"
+      title: "Travel Retail growth agenda",
+      duration: "Focused consulting modules",
+      signal: "Brand",
+      signalValue: "Brand role",
+      signalNote: "Define why the brand wins",
+      choice: "Portfolio",
+      choiceValue: "What to push",
+      choiceNote: "Prioritize range and price",
+      action: "Customer",
+      actionValue: "How to sell",
+      actionNote: "Build the negotiation story",
+      data: "Brand",
+      insight: "Portfolio",
+      activation: "Trade"
     },
     proof: {
       one: "Commercial opportunities identified across consumer and B2B categories.",
       two: "Developed into concrete sales opportunities with commercial teams.",
-      three: "Replaced manual Excel reporting with a sales-funnel model used across regions."
+      three: "Commercial strategy across brand building, portfolio choices, pricing and customer stories."
     },
     challenges: {
       eyebrow: "When Marksyte is useful",
-      title: "Your team is busy. The growth decision still is not clear.",
-      oneTitle: "Growth is slowing",
-      oneText: "Results are moving, but the team cannot agree on what is causing the slowdown.",
-      twoTitle: "Research is not becoming decisions",
-      twoText: "There is data on the table, but it is not helping the team choose what to change.",
-      threeTitle: "Sales needs a stronger story",
-      threeText: "Retailer or leadership conversations need a clearer reason to believe."
+      title: "Your Travel Retail plan has pressure, but the growth choices are not sharp enough.",
+      oneTitle: "Brand story is too generic",
+      oneText: "The brand has visibility, but the shopper, customer and channel reason to believe needs to be stronger.",
+      twoTitle: "Portfolio and pricing need focus",
+      twoText: "The range, pack-price logic or premiumization path is too broad for the channel realities.",
+      threeTitle: "Customer negotiation needs a sharper case",
+      threeText: "Retailer and distributor conversations need clearer economics, activation logic and reasons to prioritize the brand."
     },
     offers: {
-      eyebrow: "Starting points",
-      title: "Start with the problem your team needs to solve.",
+      eyebrow: "Consulting services",
+      title: "Focused support for Travel Retail FMCG growth.",
       intro:
-        "Choose the problem closest to your current decision. Each starting point can include diagnosis, strategy, product, brand, insights, BI or deck work depending on what the team needs to move.",
-      primary: "Problem: growth is unclear",
+        "Choose the commercial problem closest to your current decision. Each module is built to help marketing, sales and trade teams move from analysis to customer-ready action.",
+      primary: "Brand and portfolio audit",
       weeks: "2-4 weeks",
-      growthTitle: "Find the real growth block",
+      growthTitle: "Sharpen the growth agenda",
       growthText:
-        "A marketing and growth diagnosis to understand what is slowing momentum, where the best opportunity sits and which decisions should come first.",
-      growthOne: "Commercial, category and marketing performance analysis",
-      growthTwo: "Priority barriers, opportunities and growth hypotheses",
-      growthThree: "Roadmap for leadership, marketing and sales",
-      strategyLabel: "Problem: strategy is too broad",
+        "Diagnose the brand, category, customer and portfolio signals to decide where growth should come from and what the team should prioritize first.",
+      growthOne: "Brand, category and customer performance review",
+      growthTwo: "Portfolio role, growth barriers and opportunity spaces",
+      growthThree: "Clear roadmap for marketing, sales and trade teams",
+      strategyLabel: "Customer negotiation support",
       project: "Project based",
-      strategyTitle: "Sharpen the marketing or proposition strategy",
+      strategyTitle: "Build a stronger sell-in story",
       strategyText:
-        "Optimize the marketing strategy, product proposition or brand plan when the team has too many options and not enough clarity on what to bet on.",
-      strategyOne: "Where-to-play, audience, occasion or channel choices",
-      strategyTwo: "Product positioning, claims and value proposition",
-      strategyThree: "Brand activation priorities and commercial story",
-      insightLabel: "Problem: data is not deciding",
-      insightTitle: "Turn insight and BI into action",
+        "Translate brand and portfolio choices into a customer-facing argument for buyers, distributors and internal commercial leaders.",
+      strategyOne: "Customer proposition and negotiation narrative",
+      strategyTwo: "Category, shopper and brand proof points",
+      strategyThree: "Sell-in deck logic and meeting storyline",
+      insightLabel: "Portfolio and pricing optimization",
+      insightTitle: "Prioritize range, pack and price",
       insightText:
-        "Translate research, sales data and market signals into usable insight, clearer reporting logic and decisions the team can act on.",
-      insightOne: "Insight synthesis and opportunity sizing",
-      insightTwo: "Dashboard, KPI and reporting logic",
-      insightThree: "Commercial narrative from the evidence",
-      presentationLabel: "Problem: story is not landing",
-      presentationTitle: "Build a decision-ready presentation",
+        "Review the portfolio architecture, role of each SKU, price ladder and premiumization logic so the channel has a cleaner growth model.",
+      insightOne: "SKU role and range prioritization",
+      insightTwo: "Pack-price ladder and premiumization logic",
+      insightThree: "Scenario recommendations for customer planning",
+      presentationLabel: "Trade marketing activation",
+      presentationTitle: "Turn strategy into channel execution",
       presentationText:
-        "Create or sharpen strategic decks so the recommendation is simpler, more visual and easier for leadership, sales or customers to buy into.",
-      presentationOne: "Narrative architecture and slide flow",
-      presentationTwo: "Sharper recommendations, visuals and proof points",
-      presentationThree: "Leadership, retailer or workshop-ready deck"
-    },
-    case: {
-      eyebrow: "Study cases",
-      title: "See how I turn messy markets into clear growth choices.",
-      intro:
-        "Browse examples of how Marksyte reads a category, spots the tension and frames the next move.",
-      kicker: "Case library",
-      previewTitle: "Read the cases behind the method.",
-      previewText:
-        "Each case starts with a real market tension, then works toward the choices a brand or distributor would need to test.",
-      implication: "Business implication",
-      implicationText:
-        "Design more selective occasions, moderated formats and stronger social value rather than pushing frequency.",
-      period: "2022 to 2025",
-      signals: "Main consumption signals",
-      where: "Where to play",
-      territories: "Four commercial territories",
-      full: "Full public-data analysis",
-      fullText:
-        "Review the complete Spanish study with age splits, opportunity ranking, segments and strategic playbook. Full case is available in Spanish.",
-      view: "Open study cases"
+        "Shape the activation priorities, retail moments and execution logic that make the brand easier to choose, support and scale in Travel Retail.",
+      presentationOne: "Trade marketing priorities and activation territories",
+      presentationTwo: "Customer-ready calendar, mechanics and claims",
+      presentationThree: "Execution narrative for sales and partner teams"
     },
     method: {
       eyebrow: "How an engagement works",
@@ -121,23 +99,23 @@ const copy = {
     },
     about: {
       eyebrow: "Who is behind Marksyte",
-      title: "A strategist who connects data, brand and sales.",
+      title: "A strategist who connects brand, portfolio and sales.",
       link: "Read the founder profile",
       placeholder: "Founder profile",
       text:
-        "Marksyte is led by a strategist who has moved through BI, insights, RGM, sales and marketing across consumer goods, healthcare, SaaS and financial products.",
+        "Marksyte is led by a strategist with experience across consumer goods, brand activation, commercial planning, pricing logic and customer-facing growth work.",
       proofOne: "Commercial opportunities identified, including EUR 7M+ developed into concrete sales opportunities.",
-      proofTwo: "Manual Excel reporting replaced with ETL, mappings, refreshes and cross-region adoption.",
-      tagOne: "Consumer insight",
+      proofTwo: "Brand, range, pricing and trade priorities translated into commercial action.",
+      tagOne: "Travel Retail",
       tagTwo: "Brand strategy",
-      tagThree: "Sales enablement",
-      tagFour: "BI and decision tools"
+      tagThree: "Portfolio optimization",
+      tagFour: "Trade marketing"
     },
     contact: {
       eyebrow: "Growth call",
-      title: "What growth challenge are you trying to solve?",
+      title: "What Travel Retail growth challenge are you trying to solve?",
       text:
-        "The easiest next step is to choose a time on Calendly. If you prefer to write first, use the form and I will reply with whether I can help.",
+        "Choose a time on Calendly or send the challenge first. I will reply with whether I can help across brand, negotiation, portfolio, pricing or trade marketing.",
       or: "or email me directly"
     },
     form: {
@@ -146,7 +124,7 @@ const copy = {
       company: "Company and role",
       challenge: "What is the challenge?",
       placeholder:
-        "For example: growth is slowing and we need to understand which brand or portfolio decisions to prioritize.",
+        "For example: we need to sharpen the portfolio, pricing logic or customer story for Travel Retail.",
       note:
         "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. I usually reply within 1-2 business days.",
       subject: "Growth challenge from Marksyte website",
@@ -169,111 +147,89 @@ const copy = {
   },
   es: {
     meta: {
-      title: "Marksyte | Estrategia de crecimiento para marcas de consumo",
+      title: "Marksyte | Consultoría de crecimiento Travel Retail FMCG",
       description:
-        "Marksyte ayuda a marcas FMCG y retail a entender qué frena su crecimiento y convertirlo en un plan comercial claro en 2 a 4 semanas."
+        "Marksyte ayuda a equipos FMCG en Travel Retail a mejorar marca, negociación con clientes, portfolio, pricing y trade marketing."
     },
-    nav: { services: "Servicios", cases: "Casos de estudio", about: "Quién soy", contact: "Contacto" },
+    nav: { services: "Servicios", blog: "Blog", about: "Quién soy", contact: "Contacto" },
     cta: {
-      schedule: "Reservar una llamada de 30 min",
-      email: "Enviar el reto por correo",
-      case: "Ver casos de estudio"
+      schedule: "Hablar de un reto Travel Retail",
+      email: "Enviar el reto por correo"
     },
     hero: {
-      eyebrow: "Estrategia de crecimiento para FMCG y retail",
-      offer: "Diagnóstico de crecimiento en 2-4 semanas",
-      title: "Para marcas FMCG y retail que venden, pero aún no crecen con claridad.",
+      eyebrow: "Consultoría de crecimiento Travel Retail FMCG",
+      offer: "Asesoría en marca, portfolio, pricing y trade marketing",
+      title: "Construye marcas FMCG más fuertes en Travel Retail.",
       lead:
-        "Ayudo a los equipos a detectar qué está frenando el crecimiento, decidir dónde concentrar esfuerzos y bajarlo a un plan comercial en 2 a 4 semanas.",
-      note: "No necesitas preparar una presentación. Reserva una hora o cuéntame el reto por correo."
+        "Ayudo a los equipos a afinar la historia de marca, optimizar el portfolio, reforzar la negociación con clientes y convertir el trade marketing en crecimiento comercial.",
+      note: "Empieza por un reto de categoría, cliente, portfolio o pricing. Te diré dónde puedo ayudar."
     },
     board: {
-      title: "Diagnóstico de crecimiento",
-      duration: "Proyecto inicial de 2 a 4 semanas",
-      signal: "Señal",
-      signalValue: "¿Por qué ahora?",
-      signalNote: "Ver qué ha cambiado",
-      choice: "Decisión",
-      choiceValue: "Dónde concentrarse",
-      choiceNote: "Elegir el foco",
-      action: "Acción",
-      actionValue: "Qué hacer",
-      actionNote: "Convertirlo en un plan",
-      data: "Datos",
-      insight: "Insight",
-      activation: "Activación"
+      title: "Agenda de crecimiento Travel Retail",
+      duration: "Módulos de consultoría enfocados",
+      signal: "Marca",
+      signalValue: "Rol de marca",
+      signalNote: "Definir por qué gana",
+      choice: "Portfolio",
+      choiceValue: "Qué empujar",
+      choiceNote: "Priorizar rango y precio",
+      action: "Cliente",
+      actionValue: "Cómo vender",
+      actionNote: "Construir la negociación",
+      data: "Marca",
+      insight: "Portfolio",
+      activation: "Trade"
     },
     proof: {
       one: "Oportunidades comerciales identificadas en categorías de consumo y B2B.",
       two: "Convertidos en oportunidades concretas junto a equipos comerciales.",
-      three: "Reporting manual en Excel reemplazado por un modelo de funnel comercial usado en varias regiones."
+      three: "Estrategia comercial en marca, portfolio, pricing e historias para clientes."
     },
     challenges: {
       eyebrow: "Cuándo Marksyte aporta valor",
-      title: "El equipo está avanzando, pero la siguiente decisión de crecimiento no está clara.",
-      oneTitle: "El crecimiento se frena",
-      oneText: "Los resultados cambian, pero no hay una lectura común sobre qué está detrás del frenazo.",
-      twoTitle: "Los estudios no se traducen en decisiones",
-      twoText: "Hay datos encima de la mesa, pero no terminan de aclarar qué conviene cambiar primero.",
-      threeTitle: "Ventas necesita un argumento más sólido",
-      threeText: "Las conversaciones con retailers o dirección necesitan una razón más clara para apostar por la propuesta."
+      title: "El plan de Travel Retail tiene presión, pero las decisiones de crecimiento necesitan más foco.",
+      oneTitle: "La historia de marca es demasiado genérica",
+      oneText: "La marca tiene visibilidad, pero necesita una razón más fuerte para shopper, cliente y canal.",
+      twoTitle: "Portfolio y pricing necesitan foco",
+      twoText: "El rango, la arquitectura pack-precio o la ruta de premiumización son demasiado amplios para la realidad del canal.",
+      threeTitle: "La negociación con clientes necesita un caso más claro",
+      threeText: "Las conversaciones con retailers y distribuidores necesitan economía, lógica de activación y razones para priorizar la marca."
     },
     offers: {
-      eyebrow: "Puntos de partida",
-      title: "Empieza por el problema que tu equipo necesita resolver.",
+      eyebrow: "Servicios de consultoría",
+      title: "Apoyo enfocado para crecer en Travel Retail FMCG.",
       intro:
-        "Elige el punto de partida que más se parece a la decisión que tenéis delante. El trabajo puede combinar diagnóstico, estrategia, producto, marca, insights, BI o presentaciones, según lo que necesite el equipo.",
-      primary: "Problema: no está claro cómo crecer",
+        "Elige el problema comercial más cercano a la decisión actual. Cada módulo ayuda a marketing, ventas y trade a pasar del análisis a una acción lista para clientes.",
+      primary: "Auditoría de marca y portfolio",
       weeks: "2-4 semanas",
-      growthTitle: "Detectar qué está frenando el crecimiento",
+      growthTitle: "Afinar la agenda de crecimiento",
       growthText:
-        "Un diagnóstico de marketing y crecimiento para entender qué está frenando el impulso, dónde está la mejor oportunidad y qué decisiones deberían priorizarse.",
-      growthOne: "Análisis comercial, de categoría y de performance de marketing",
-      growthTwo: "Barreras, oportunidades e hipótesis de crecimiento prioritarias",
-      growthThree: "Hoja de ruta para dirección, marketing y ventas",
-      strategyLabel: "Problema: la estrategia es demasiado abierta",
+        "Diagnosticar las señales de marca, categoría, cliente y portfolio para decidir de dónde debe venir el crecimiento y qué conviene priorizar primero.",
+      growthOne: "Revisión de performance de marca, categoría y cliente",
+      growthTwo: "Rol del portfolio, barreras de crecimiento y espacios de oportunidad",
+      growthThree: "Hoja de ruta clara para marketing, ventas y trade",
+      strategyLabel: "Apoyo a negociación con clientes",
       project: "Por proyecto",
-      strategyTitle: "Aterrizar la estrategia de marketing o la propuesta",
+      strategyTitle: "Construir una historia de sell-in más fuerte",
       strategyText:
-        "Ordenar la estrategia de marketing, la propuesta de producto o el plan de marca cuando hay demasiadas opciones y poca claridad sobre la apuesta principal.",
-      strategyOne: "Decisiones sobre mercado, audiencia, ocasión o canal",
-      strategyTwo: "Posicionamiento de producto, claims y propuesta de valor",
-      strategyThree: "Prioridades de activación de marca y argumento comercial",
-      insightLabel: "Problema: los datos no orientan la decisión",
-      insightTitle: "Convertir insights y BI en acción",
+        "Traducir las decisiones de marca y portfolio en un argumento para compradores, distribuidores y líderes comerciales internos.",
+      strategyOne: "Propuesta al cliente y narrativa de negociación",
+      strategyTwo: "Pruebas de categoría, shopper y marca",
+      strategyThree: "Lógica de sell-in deck y storyline de reunión",
+      insightLabel: "Optimización de portfolio y pricing",
+      insightTitle: "Priorizar rango, pack y precio",
       insightText:
-        "Traducir investigación, datos de ventas y señales de mercado en insights útiles, reporting más claro y decisiones que el equipo pueda llevar a la práctica.",
-      insightOne: "Síntesis de insights y dimensionamiento de oportunidades",
-      insightTwo: "Lógica de dashboards, KPIs y reporting comercial",
-      insightThree: "Argumentario comercial construido desde la evidencia",
-      presentationLabel: "Problema: el mensaje no convence",
-      presentationTitle: "Construir una presentación para tomar decisiones",
+        "Revisar la arquitectura de portfolio, el rol de cada SKU, la escalera de precio y la lógica de premiumización para que el canal tenga un modelo de crecimiento más claro.",
+      insightOne: "Rol de SKUs y priorización de rango",
+      insightTwo: "Escalera pack-precio y lógica de premiumización",
+      insightThree: "Escenarios recomendados para planificación con clientes",
+      presentationLabel: "Activación de trade marketing",
+      presentationTitle: "Convertir estrategia en ejecución de canal",
       presentationText:
-        "Crear o mejorar presentaciones estratégicas para que la recomendación sea más clara, visual y fácil de defender ante dirección, ventas o clientes.",
-      presentationOne: "Estructura narrativa y flujo de la presentación",
-      presentationTwo: "Recomendaciones, visuales y pruebas más claras",
-      presentationThree: "Presentación lista para dirección, retailers o workshops"
-    },
-    case: {
-      eyebrow: "Casos de estudio",
-      title: "Mira cómo convierto mercados complejos en decisiones claras de crecimiento.",
-      intro:
-        "Revisa ejemplos de cómo Marksyte analiza una categoría, detecta la tensión principal y plantea el siguiente movimiento.",
-      kicker: "Biblioteca de casos",
-      previewTitle: "Lee los casos detrás del método.",
-      previewText:
-        "Cada caso parte de una tensión real de mercado y llega a las decisiones que una marca o distribuidor tendría que validar.",
-      implication: "Implicación comercial",
-      implicationText:
-        "Diseñar ocasiones más selectivas, formatos moderados y mayor valor social, en vez de intentar forzar la frecuencia.",
-      period: "2022 a 2025",
-      signals: "Principales señales de consumo",
-      where: "Dónde competir",
-      territories: "Cuatro territorios comerciales",
-      full: "Análisis completo con datos públicos",
-      fullText:
-        "Consulta el estudio completo con cortes por edad, ranking de oportunidad, segmentos y playbook estratégico.",
-      view: "Abrir casos de estudio"
+        "Definir prioridades de activación, momentos de retail y lógica de ejecución para que la marca sea más fácil de elegir, apoyar y escalar en Travel Retail.",
+      presentationOne: "Prioridades de trade marketing y territorios de activación",
+      presentationTwo: "Calendario, mecánicas y claims listos para clientes",
+      presentationThree: "Narrativa de ejecución para ventas y partners"
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
@@ -289,23 +245,23 @@ const copy = {
     },
     about: {
       eyebrow: "Quién hay detrás de Marksyte",
-      title: "Un estratega que conecta datos, marca y ventas.",
+      title: "Un estratega que conecta marca, portfolio y ventas.",
       link: "Leer el perfil del fundador",
       placeholder: "Perfil del fundador",
       text:
-        "Marksyte está liderado por un estratega que ha trabajado en BI, insights, RGM, ventas y marketing en gran consumo, salud, SaaS y productos financieros.",
+        "Marksyte está liderado por un estratega con experiencia en gran consumo, activación de marca, planificación comercial, lógica de pricing y crecimiento orientado a clientes.",
       proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas.",
-      proofTwo: "Reporting manual en Excel reemplazado por ETL, mapeos, actualizaciones y adopción en varias regiones.",
-      tagOne: "Insight de consumidor",
+      proofTwo: "Prioridades de marca, rango, pricing y trade traducidas en acción comercial.",
+      tagOne: "Travel Retail",
       tagTwo: "Estrategia de marca",
-      tagThree: "Apoyo a ventas",
-      tagFour: "BI y herramientas de decisión"
+      tagThree: "Optimización de portfolio",
+      tagFour: "Trade marketing"
     },
     contact: {
       eyebrow: "Llamada de crecimiento",
-      title: "¿Qué reto de crecimiento estás intentando resolver?",
+      title: "¿Qué reto de crecimiento en Travel Retail estás intentando resolver?",
       text:
-        "El siguiente paso es reservar una hora en Calendly. Si prefieres escribir primero, usa el formulario y te diré si puedo ayudarte.",
+        "Reserva una hora en Calendly o envía primero el reto. Te diré si puedo ayudar en marca, negociación, portfolio, pricing o trade marketing.",
       or: "o escríbeme por correo"
     },
     form: {
@@ -314,7 +270,7 @@ const copy = {
       company: "Empresa y cargo",
       challenge: "¿Cuál es el reto?",
       placeholder:
-        "Por ejemplo: el crecimiento se está frenando y necesitamos priorizar decisiones de marca o portfolio.",
+        "Por ejemplo: necesitamos afinar el portfolio, la lógica de pricing o la historia para clientes en Travel Retail.",
       note:
         "Al enviar se abrirá un borrador de correo dirigido a Marksyte. Tu información no se almacena en esta web. Suelo responder en 1-2 días laborables.",
       subject: "Reto de crecimiento desde la web de Marksyte",
