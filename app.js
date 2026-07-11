@@ -5,34 +5,34 @@ const copy = {
       description:
         "Marksyte helps Travel Retail FMCG teams improve brand growth, customer negotiation, portfolio choices, pricing and trade marketing execution."
     },
-    nav: { services: "Offers", blog: "Blog", about: "About", contact: "Contact" },
+    nav: { services: "Offers", blog: "Blog", about: "Team", contact: "Contact" },
     cta: {
-      schedule: "Discuss a travel retail growth challenge",
+      schedule: "Bring me the challenge",
       email: "Send the challenge by email"
     },
     hero: {
-      eyebrow: "Travel Retail FMCG growth consulting",
-      offer: "Brand, portfolio, pricing and trade marketing advisory",
-      title: "Build stronger FMCG brands in Travel Retail.",
+      eyebrow: "Travel Retail / FMCG / commercial strategy",
+      offer: "Sharper range · stronger buyer story · better activation",
+      title: "Make every Travel Retail decision work harder.",
       lead:
-        "I help teams sharpen the brand story, optimize the portfolio, strengthen customer negotiation and turn trade marketing into clearer commercial growth.",
-      note: "Start with a category, customer, portfolio or pricing challenge. I will tell you where I can help."
+        "From range and price to the buyer story, I help FMCG teams make sharper calls in a channel where space, time and attention are expensive.",
+      note: "A category question, a difficult customer meeting or a portfolio that needs focus — let’s find the commercial unlock."
     },
     board: {
-      title: "Travel Retail growth agenda",
-      duration: "Focused consulting modules",
-      signal: "Brand",
-      signalValue: "Brand role",
-      signalNote: "Define why the brand wins",
-      choice: "Portfolio",
-      choiceValue: "What to push",
-      choiceNote: "Prioritize range and price",
-      action: "Customer",
-      actionValue: "How to sell",
-      actionNote: "Build the negotiation story",
-      data: "Brand",
-      insight: "Portfolio",
-      activation: "Trade"
+      title: "The Travel Retail test",
+      duration: "From signal to sell-in",
+      signal: "Shopper",
+      signalValue: "Win the occasion",
+      signalNote: "Make the trip relevant",
+      choice: "Range",
+      choiceValue: "Earn its place",
+      choiceNote: "Pack, price and mix",
+      action: "Buyer",
+      actionValue: "Make the case",
+      actionNote: "Turn strategy into sell-in",
+      data: "Shopper",
+      insight: "Range",
+      activation: "Sell-in"
     },
     proof: {
       one: "Commercial opportunities identified across consumer and B2B categories.",
@@ -98,10 +98,10 @@ const copy = {
       fourText: "Make it usable"
     },
     about: {
-      eyebrow: "Who is behind Marksyte",
+      eyebrow: "The team behind Marksyte",
       title: "A strategist who connects brand, portfolio and sales.",
-      link: "Read the founder profile",
-      placeholder: "Founder profile",
+      link: "Meet the team",
+      placeholder: "Team profile",
       text:
         "Marksyte is led by a strategist with experience across consumer goods, brand activation, commercial planning, pricing logic and customer-facing growth work.",
       proofOne: "Commercial opportunities identified, including EUR 7M+ developed into concrete sales opportunities.",
@@ -151,34 +151,34 @@ const copy = {
       description:
         "Marksyte ayuda a equipos FMCG en Travel Retail a mejorar marca, negociación con clientes, portfolio, pricing y trade marketing."
     },
-    nav: { services: "Servicios", blog: "Blog", about: "Quién soy", contact: "Contacto" },
+    nav: { services: "Servicios", blog: "Blog", about: "Equipo", contact: "Contacto" },
     cta: {
-      schedule: "Hablar de un reto Travel Retail",
+      schedule: "Trae tu reto",
       email: "Enviar el reto por correo"
     },
     hero: {
-      eyebrow: "Consultoría de crecimiento Travel Retail FMCG",
-      offer: "Asesoría en marca, portfolio, pricing y trade marketing",
-      title: "Construye marcas FMCG más fuertes en Travel Retail.",
+      eyebrow: "Travel Retail / FMCG / estrategia comercial",
+      offer: "Un portfolio más claro · un mejor argumento · más activación",
+      title: "Haz que cada decisión de Travel Retail trabaje más.",
       lead:
-        "Ayudo a los equipos a afinar la historia de marca, optimizar el portfolio, reforzar la negociación con clientes y convertir el trade marketing en crecimiento comercial.",
-      note: "Empieza por un reto de categoría, cliente, portfolio o pricing. Te diré dónde puedo ayudar."
+        "De la gama y el precio al argumento para el comprador, ayudo a equipos FMCG a tomar decisiones más claras en un canal donde el espacio, el tiempo y la atención son limitados.",
+      note: "Una pregunta de categoría, una reunión difícil con un cliente o un portfolio que necesita foco — encontremos la palanca comercial."
     },
     board: {
-      title: "Agenda de crecimiento Travel Retail",
-      duration: "Módulos de consultoría enfocados",
-      signal: "Marca",
-      signalValue: "Rol de marca",
-      signalNote: "Definir por qué gana",
-      choice: "Portfolio",
-      choiceValue: "Qué empujar",
-      choiceNote: "Priorizar rango y precio",
-      action: "Cliente",
-      actionValue: "Cómo vender",
-      actionNote: "Construir la negociación",
-      data: "Marca",
-      insight: "Portfolio",
-      activation: "Trade"
+      title: "El test de Travel Retail",
+      duration: "De la señal al sell-in",
+      signal: "Shopper",
+      signalValue: "Ganar la ocasión",
+      signalNote: "Hacer relevante el viaje",
+      choice: "Gama",
+      choiceValue: "Ganar su espacio",
+      choiceNote: "Pack, precio y mix",
+      action: "Comprador",
+      actionValue: "Construir el caso",
+      actionNote: "Convertir estrategia en sell-in",
+      data: "Shopper",
+      insight: "Gama",
+      activation: "Sell-in"
     },
     proof: {
       one: "Oportunidades comerciales identificadas en categorías de consumo y B2B.",
@@ -244,10 +244,10 @@ const copy = {
       fourText: "Hacerlo accionable"
     },
     about: {
-      eyebrow: "Quién hay detrás de Marksyte",
+      eyebrow: "El equipo detrás de Marksyte",
       title: "Un estratega que conecta marca, portfolio y ventas.",
-      link: "Leer el perfil del fundador",
-      placeholder: "Perfil del fundador",
+      link: "Conocer el equipo",
+      placeholder: "Perfil del equipo",
       text:
         "Marksyte está liderado por un estratega con experiencia en gran consumo, activación de marca, planificación comercial, lógica de pricing y crecimiento orientado a clientes.",
       proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas.",

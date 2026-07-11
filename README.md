@@ -1,11 +1,11 @@
 # Marksyte
 
-Static bilingual website for Marksyte, with localized landing pages, a founder profile, study cases and an English blog.
+Static bilingual website for Marksyte, with localized landing pages, a team page, study cases and an English blog.
 
 ## Site behavior
 
 - English is available at `/` and Spanish at `/es/`, with visible language links between indexable canonical pages.
-- The founder profile is available at `/about/` and `/es/about/`.
+- The team page is available at `/about/` and `/es/about/`.
 - The blog index is available at `/blog/` and `/es/blog/`, with posts under localized blog slugs.
 - The discovery-call form opens a prepared email draft to `roman@marksyte.com`; it does not store submissions or require a backend.
 - Legal basics are available at `/legal/`, `/privacy/`, `/cookies/` and their Spanish equivalents under `/es/`.
@@ -47,12 +47,12 @@ The first command creates a preview deployment and links the local folder to a V
 
 - `/` - Marksyte landing page
 - `/es/` - Spanish Marksyte landing page
-- `/about/` - English founder profile
-- `/es/about/` - Spanish founder profile
+- `/about/` - English team page
+- `/es/about/` - Spanish team page
 - `/blog/` - English blog index
-- `/blog/europe-travel-season-longer-travel-retail/` - first Travel Retail article
+- `/blog/europe-travel-season-longer-travel-retail/` - revised Travel Retail article with assets, metrics, FAQ and sources
 - `/es/blog/` - Spanish blog index
-- `/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/` - Spanish version of the first Travel Retail article
+- `/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/` - Spanish version of the revised Travel Retail article
 - `/legal/`, `/privacy/`, `/cookies/` - English legal basics
 - `/es/aviso-legal/`, `/es/privacidad/`, `/es/cookies/` - Spanish legal basics
 

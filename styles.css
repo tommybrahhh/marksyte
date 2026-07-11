@@ -192,8 +192,9 @@ nav a:focus-visible,
   align-items: center;
   padding: clamp(34px, 4.2vw, 56px) clamp(18px, 5vw, 72px) clamp(30px, 4vw, 52px);
   background:
-    linear-gradient(135deg, rgba(0, 127, 115, 0.14), transparent 38%),
-    linear-gradient(315deg, rgba(215, 100, 74, 0.1), transparent 35%),
+    radial-gradient(circle at 10% 16%, rgba(0, 127, 115, 0.18), transparent 30%),
+    radial-gradient(circle at 91% 74%, rgba(215, 100, 74, 0.14), transparent 32%),
+    linear-gradient(110deg, rgba(255, 253, 248, 0.72), transparent 58%),
     var(--soft);
 }
 
@@ -205,8 +206,9 @@ nav a:focus-visible,
 h1 {
   margin: 13px 0 18px;
   max-width: 730px;
-  font-size: clamp(3.4rem, 5.4vw, 4.55rem);
-  line-height: 0.95;
+  font-size: clamp(3.15rem, 5.15vw, 4.45rem);
+  line-height: 0.94;
+  letter-spacing: -0.035em;
 }
 
 .hero-offer {
@@ -216,8 +218,8 @@ h1 {
   margin: 16px 0 0;
   padding: 0 11px;
   border: 1px solid rgba(0, 127, 115, 0.18);
-  border-radius: var(--radius);
-  background: rgba(255, 253, 248, 0.62);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.78);
   color: var(--teal);
   font-size: 0.86rem;
   font-weight: 820;
@@ -227,8 +229,8 @@ h1 {
   max-width: 650px;
   margin: 0;
   color: #3f4b48;
-  font-size: 1.2rem;
-  line-height: 1.62;
+  font-size: 1.16rem;
+  line-height: 1.58;
 }
 
 .hero-actions {
@@ -258,6 +260,13 @@ h1 {
   color: var(--surface);
 }
 
+.button.primary::after {
+  content: "↗";
+  margin-left: 12px;
+  color: var(--green);
+  font-size: 1.05em;
+}
+
 .button:hover {
   transform: translateY(-1px);
 }
@@ -281,10 +290,10 @@ h1 {
   overflow: hidden;
   padding: clamp(22px, 3vw, 30px);
   border: 1px solid rgba(255, 253, 248, 0.14);
-  border-radius: var(--radius);
+  border-radius: 18px;
   background:
     linear-gradient(145deg, rgba(255, 253, 248, 0.08), rgba(255, 253, 248, 0.03)),
-    var(--dark);
+    linear-gradient(155deg, #1c2926 0%, #101615 100%);
   color: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -320,8 +329,15 @@ h1 {
   gap: 16px;
   padding: 15px;
   border: 1px solid rgba(255, 253, 248, 0.11);
-  border-radius: var(--radius);
-  background: rgba(255, 253, 248, 0.055);
+  border-radius: 12px;
+  background: rgba(255, 253, 248, 0.065);
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.signal-grid article:hover {
+  transform: translateY(-4px);
+  border-color: rgba(191, 216, 79, 0.5);
+  background: rgba(191, 216, 79, 0.1);
 }
 
 .metric-label,
