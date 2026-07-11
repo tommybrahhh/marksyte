@@ -12,14 +12,12 @@
 body.article-page { color: var(--article-ink); background: #fff; }
 .article-hero { padding: clamp(3rem, 7vw, 6rem) 1.25rem 2.25rem; background: linear-gradient(180deg,#f7faf9 0%,#fff 100%); }
 .blog-shell, .article-body, .article-footer-inner { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
-.article-hero-grid { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(280px,.75fr); gap: 2rem; align-items: center; }
+.article-hero-grid { display: block; }
+.article-hero-copy { max-width: 800px; }
 .eyebrow { margin: 0 0 .75rem; text-transform: uppercase; letter-spacing: 0; font-size: .78rem; font-weight: 750; color: var(--article-accent); }
-.article-hero h1 { max-width: 18ch; margin: 0; font-size: clamp(2.2rem,5.2vw,4.8rem); line-height: .98; letter-spacing: 0; }
+.article-hero h1 { max-width: 20ch; margin: 0; font-size: clamp(2.2rem,5.2vw,4.8rem); line-height: .98; letter-spacing: 0; }
 .article-dek { max-width: 62ch; margin: 1.25rem 0; font-size: clamp(1.05rem,2vw,1.35rem); line-height: 1.55; color: var(--article-muted); }
 .article-meta { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; font-size: .92rem; color: var(--article-muted); }
-.article-hero-visual { margin: 0; }
-.article-hero-visual img { width: 100%; display: block; border-radius: 8px; box-shadow: 0 22px 55px rgba(19,48,43,.15); }
-.article-hero-visual figcaption { margin-top: .65rem; font-size: .78rem; color: var(--article-muted); }
 .metric-strip { margin-top: 2rem; display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; border: 1px solid var(--article-line); background: var(--article-line); border-radius: 8px; overflow: hidden; }
 .metric { padding: 1.15rem; background: #fff; }
 .metric strong { display: block; font-size: 1.8rem; line-height: 1; color: var(--article-accent); }
@@ -65,7 +63,6 @@ body.article-page { color: var(--article-ink); background: #fff; }
 .article-cta-box { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; }
 .article-cta h2 { margin: 0; font-size: clamp(1.45rem,3vw,2.3rem); }
 @media (max-width: 800px) {
-  .article-hero-grid { grid-template-columns: 1fr; }
   .metric-strip { grid-template-columns: repeat(2,1fr); }
   .reading-nav ol { columns: 1; }
   .opportunity-grid, .ai-grid { grid-template-columns: 1fr; }

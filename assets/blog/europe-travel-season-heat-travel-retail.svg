@@ -1,38 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="t d">
-<title id="t">European travel season and travel retail</title><desc id="d">Abstract illustration of European destinations, changing seasons, transport routes and shopping.</desc>
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dff3ee"/><stop offset="1" stop-color="#fff4df"/></linearGradient>
-  <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8bc9cc"/><stop offset="1" stop-color="#3f8e98"/></linearGradient>
-</defs>
-<rect width="1200" height="900" rx="48" fill="url(#bg)"/>
-<circle cx="985" cy="150" r="92" fill="#ffd171"/>
-<g opacity=".9" fill="none" stroke="#0d6b5f" stroke-width="7" stroke-linecap="round">
- <path d="M140 650C320 470 470 560 625 390S950 330 1055 190" stroke-dasharray="3 22"/>
- <path d="M165 735C350 640 530 720 710 565S925 470 1080 465" stroke-dasharray="3 22"/>
-</g>
-<path d="M0 710C150 660 240 720 390 680s270-15 400 35 270 10 410-35v220H0Z" fill="url(#sea)"/>
-<g fill="#fff" stroke="#173f3a" stroke-width="6">
- <path d="M240 590l55-135 95-35 88 80-22 126-125 58z"/>
- <path d="M525 390l65-125 100 10 60 95-55 105-110 15z"/>
- <path d="M785 470l62-125 120 20 42 110-83 87-110-25z"/>
-</g>
-<g fill="#0d6b5f">
- <circle cx="355" cy="525" r="14"/><circle cx="622" cy="350" r="14"/><circle cx="902" cy="430" r="14"/>
-</g>
-<g transform="translate(135 115)">
- <rect width="300" height="150" rx="28" fill="#fff" opacity=".94"/>
- <g transform="translate(38 28)" fill="none" stroke="#0d6b5f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M22 83h178"/><path d="M40 83V42h145v41"/><path d="M67 42V18h92v24"/>
-  <path d="M70 110h90"/>
- </g>
-</g>
-<g transform="translate(785 655)">
- <rect width="275" height="150" rx="28" fill="#fff" opacity=".95"/>
- <path d="M72 55h130l-13 65H85z" fill="#fff4df" stroke="#173f3a" stroke-width="6"/>
- <path d="M103 58c0-30 63-30 63 0" fill="none" stroke="#173f3a" stroke-width="6" stroke-linecap="round"/>
- <circle cx="108" cy="92" r="8" fill="#0d6b5f"/><circle cx="168" cy="92" r="8" fill="#0d6b5f"/>
-</g>
-<g fill="#173f3a" font-family="Arial, sans-serif" font-weight="700" font-size="34" text-anchor="middle">
- <text x="230" y="830">APR</text><text x="475" y="830">JUN</text><text x="720" y="830">AUG</text><text x="965" y="830">OCT</text>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Heat is extending Europe's travel season</title>
+  <desc id="desc">Editorial illustration showing a longer European travel season, warmer destinations, passenger routes and travel retail opportunities.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eef8f5"/>
+      <stop offset=".58" stop-color="#fff7e8"/>
+      <stop offset="1" stop-color="#f5fbfa"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#7dc2c5"/>
+      <stop offset="1" stop-color="#3d8b96"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffd171"/>
+      <stop offset="1" stop-color="#f6a552"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#173f3a" flood-opacity=".14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="42" fill="url(#sky)"/>
+
+  <g opacity=".22" fill="none" stroke="#0d6b5f" stroke-width="2">
+    <path d="M70 165h1060"/>
+    <path d="M70 315h1060"/>
+    <path d="M70 465h1060"/>
+    <path d="M70 615h1060"/>
+  </g>
+
+  <circle cx="1000" cy="150" r="88" fill="url(#heat)"/>
+  <g fill="none" stroke="#f6a552" stroke-width="7" stroke-linecap="round" opacity=".72">
+    <path d="M1000 24v48"/>
+    <path d="M1000 228v48"/>
+    <path d="M874 150h48"/>
+    <path d="M1078 150h48"/>
+    <path d="M910 60l34 34"/>
+    <path d="M1056 206l34 34"/>
+    <path d="M1090 60l-34 34"/>
+    <path d="M944 206l-34 34"/>
+  </g>
+
+  <path d="M0 615C130 560 250 620 395 580C560 534 660 565 805 618C925 662 1060 650 1200 590V900H0Z" fill="url(#sea)"/>
+  <path d="M0 655C135 602 260 650 392 620C560 584 660 600 815 645C930 678 1050 676 1200 626" fill="none" stroke="#ffffff" stroke-width="8" opacity=".45"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="92" y="96" width="428" height="250" rx="20" fill="#ffffff" opacity=".96"/>
+    <text x="132" y="154" fill="#0d6b5f" font-family="Arial, sans-serif" font-size="24" font-weight="700">Season window</text>
+    <text x="132" y="194" fill="#172026" font-family="Arial, sans-serif" font-size="48" font-weight="800">More weeks</text>
+    <text x="132" y="235" fill="#5f6b72" font-family="Arial, sans-serif" font-size="25">Demand moves by route,</text>
+    <text x="132" y="268" fill="#5f6b72" font-family="Arial, sans-serif" font-size="25">weather and passenger profile.</text>
+    <g transform="translate(132 304)" fill="#173f3a" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+      <text x="0" y="0">APR</text>
+      <text x="96" y="0">JUN</text>
+      <text x="194" y="0">AUG</text>
+      <text x="296" y="0">OCT</text>
+    </g>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 495C276 402 390 410 505 462C635 520 746 458 854 360C920 300 984 262 1062 246" stroke="#0d6b5f" stroke-width="10"/>
+    <path d="M162 520C286 502 380 548 496 544C642 540 728 458 832 438C930 420 1005 450 1090 390" stroke="#173f3a" stroke-width="5" stroke-dasharray="3 20" opacity=".65"/>
+  </g>
+
+  <g fill="#ffffff" stroke="#173f3a" stroke-width="6">
+    <path d="M206 570l54-110 96-32 75 74-20 110-116 52z"/>
+    <path d="M556 505l62-116 98 12 54 92-58 98-104 8z"/>
+    <path d="M830 392l58-104 112 19 42 92-78 78-104-22z"/>
+  </g>
+  <g fill="#0d6b5f">
+    <circle cx="304" cy="532" r="13"/>
+    <circle cx="654" cy="470" r="13"/>
+    <circle cx="934" cy="382" r="13"/>
+  </g>
+
+  <g transform="translate(705 126)" filter="url(#softShadow)">
+    <rect width="210" height="112" rx="18" fill="#ffffff" opacity=".98"/>
+    <g transform="translate(34 28)" fill="none" stroke="#0d6b5f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 62h132"/>
+      <path d="M32 62V28h104v34"/>
+      <path d="M52 28V12h64v16"/>
+      <path d="M50 82h68"/>
+    </g>
+  </g>
+
+  <g transform="translate(826 612)" filter="url(#softShadow)">
+    <rect width="250" height="142" rx="18" fill="#ffffff" opacity=".98"/>
+    <path d="M58 52h124l-12 60H70z" fill="#fff4df" stroke="#173f3a" stroke-width="6"/>
+    <path d="M88 54c0-28 58-28 58 0" fill="none" stroke="#173f3a" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="92" cy="86" r="7" fill="#0d6b5f"/>
+    <circle cx="148" cy="86" r="7" fill="#0d6b5f"/>
+    <text x="125" y="128" fill="#5f6b72" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">TRAVEL RETAIL</text>
+  </g>
+
+  <g transform="translate(128 700)">
+    <rect width="520" height="96" rx="18" fill="#ffffff" opacity=".92"/>
+    <g font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">
+      <text x="58" y="61" fill="#173f3a" font-size="22">APR</text>
+      <text x="192" y="61" fill="#173f3a" font-size="22">JUN</text>
+      <text x="326" y="61" fill="#173f3a" font-size="22">AUG</text>
+      <text x="462" y="61" fill="#173f3a" font-size="22">OCT</text>
+    </g>
+    <path d="M52 36C142 30 210 52 270 44C346 34 410 28 468 34" fill="none" stroke="#0d6b5f" stroke-width="7" stroke-linecap="round"/>
+  </g>
 </svg>

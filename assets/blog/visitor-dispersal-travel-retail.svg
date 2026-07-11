@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Visitor dispersal and travel retail</title><desc id="desc">A central popular destination connects to regional cities, rural routes, mobility, local experiences and retail nodes.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#e7f5f1"/><stop offset="1" stop-color="#fff4df"/></linearGradient></defs>
+<rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+<g stroke="#9bc5be" stroke-width="5" fill="none" stroke-linecap="round">
+<path d="M515 390C395 335 310 270 260 210"/><path d="M505 470C380 520 300 600 250 690"/><path d="M685 390C805 330 895 265 955 210"/><path d="M695 470C815 520 895 600 955 690"/><path d="M610 545C645 645 700 730 760 790"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif">
+<rect x="390" y="300" width="420" height="290" rx="38" fill="#fff" stroke="#d8e0df" stroke-width="3"/>
+<circle cx="600" cy="420" r="78" fill="#0d6b5f"/><path d="M565 420h70M600 385v70" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+<text x="600" y="530" text-anchor="middle" font-size="34" font-weight="700" fill="#172026">Popular hotspot</text>
+<text x="600" y="568" text-anchor="middle" font-size="22" fill="#5f6b72">from concentration to connected demand</text>
+
+<g>
+<rect x="105" y="115" width="270" height="170" rx="28" fill="#fff" stroke="#d8e0df" stroke-width="3"/>
+<circle cx="180" cy="185" r="34" fill="#dff3ee"/><path d="M160 192h40M180 172v40" stroke="#0d6b5f" stroke-width="8" stroke-linecap="round"/>
+<text x="240" y="255" text-anchor="middle" font-size="27" font-weight="700" fill="#172026">Regional city</text>
+</g>
+<g>
+<rect x="85" y="620" width="300" height="175" rx="28" fill="#fff" stroke="#d8e0df" stroke-width="3"/>
+<path d="M130 720l48-66 46 66z" fill="#0d6b5f"/><circle cx="202" cy="666" r="17" fill="#f3b64c"/>
+<text x="235" y="758" text-anchor="middle" font-size="27" font-weight="700" fill="#172026">Rural route</text>
+</g>
+<g>
+<rect x="825" y="115" width="285" height="175" rx="28" fill="#fff" stroke="#d8e0df" stroke-width="3"/>
+<path d="M865 205h92l-16-58h-60z" fill="#dff3ee" stroke="#0d6b5f" stroke-width="5"/><circle cx="885" cy="224" r="11" fill="#0d6b5f"/><circle cx="936" cy="224" r="11" fill="#0d6b5f"/>
+<text x="968" y="258" text-anchor="middle" font-size="27" font-weight="700" fill="#172026">Retail node</text>
+</g>
+<g>
+<rect x="875" y="620" width="245" height="180" rx="28" fill="#fff" stroke="#d8e0df" stroke-width="3"/>
+<path d="M910 710c24-52 66-52 90 0" fill="none" stroke="#0d6b5f" stroke-width="10"/><circle cx="910" cy="710" r="16" fill="#f3b64c"/><circle cx="1000" cy="710" r="16" fill="#f3b64c"/>
+<text x="998" y="765" text-anchor="middle" font-size="25" font-weight="700" fill="#172026">Local experience</text>
+</g>
+<g>
+<rect x="615" y="715" width="215" height="120" rx="28" fill="#fff" stroke="#d8e0df" stroke-width="3"/>
+<path d="M650 785h65M662 755h40l13 30h-65z" fill="#dff3ee" stroke="#0d6b5f" stroke-width="5"/>
+<text x="722" y="810" text-anchor="middle" font-size="24" font-weight="700" fill="#172026">Mobility</text>
+</g>
+</g></svg>

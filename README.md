@@ -1,6 +1,6 @@
 # Marksyte
 
-Static bilingual website for Marksyte, with localized landing pages, a team page, study cases and an English blog.
+Static bilingual website for Marksyte, with localized landing pages, a team page, study cases and a bilingual blog.
 
 ## Site behavior
 
@@ -51,8 +51,10 @@ The first command creates a preview deployment and links the local folder to a V
 - `/es/about/` - Spanish team page
 - `/blog/` - English blog index
 - `/blog/europe-travel-season-longer-travel-retail/` - revised Travel Retail article with assets, metrics, FAQ and sources
+- `/blog/visitor-dispersal-destinations-travel-retail/` - visitor dispersal Travel Retail article with hero and flow-model assets
 - `/es/blog/` - Spanish blog index
 - `/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/` - Spanish version of the revised Travel Retail article
+- `/es/blog/distribucion-visitantes-destinos-travel-retail/` - Spanish visitor dispersal Travel Retail article
 - `/legal/`, `/privacy/`, `/cookies/` - English legal basics
 - `/es/aviso-legal/`, `/es/privacidad/`, `/es/cookies/` - Spanish legal basics
 
