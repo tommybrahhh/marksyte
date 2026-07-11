@@ -1,22 +1,22 @@
 const copy = {
   en: {
     meta: {
-      title: "Marksyte | Travel Retail FMCG growth consulting",
+      title: "Travel Retail FMCG consulting & AI solutions | Marksyte",
       description:
-        "Marksyte helps Travel Retail FMCG teams improve brand growth, customer negotiation, portfolio choices, pricing and trade marketing execution."
+        "Marksyte is a specialist Travel Retail team helping FMCG companies improve portfolio, RGM and pricing, trade marketing, brand and negotiation decisions with AI-enabled solutions."
     },
     nav: { services: "Offers", blog: "Blog", about: "Team", contact: "Contact" },
     cta: {
-      schedule: "Bring me the challenge",
+      schedule: "Discuss your Travel Retail challenge",
       email: "Send the challenge by email"
     },
     hero: {
-      eyebrow: "Travel Retail / FMCG / commercial strategy",
-      offer: "Sharper range · stronger buyer story · better activation",
-      title: "Make every Travel Retail decision work harder.",
+      eyebrow: "Travel Retail specialists / FMCG / AI-enabled growth",
+      offer: "Portfolio · RGM & pricing · trade marketing · brand · negotiation",
+      title: "Specialist Travel Retail growth support for FMCG teams.",
       lead:
-        "From range and price to the buyer story, I help FMCG teams make sharper calls in a channel where space, time and attention are expensive.",
-      note: "A category question, a difficult customer meeting or a portfolio that needs focus — let’s find the commercial unlock."
+        "We help FMCG companies turn commercial data into sharper portfolio, pricing, brand, trade marketing and negotiation decisions, using AI where it improves speed, depth and usability.",
+      note: "From analysis to customer-ready action: decks, Excel models, dashboards, recommendations and activation assets."
     },
     board: {
       title: "The Travel Retail test",
@@ -50,40 +50,41 @@ const copy = {
       threeText: "Retailer and distributor conversations need clearer economics, activation logic and reasons to prioritize the brand."
     },
     offers: {
-      eyebrow: "Consulting services",
-      title: "Focused support for Travel Retail FMCG growth.",
+      eyebrow: "Specialist consulting modules",
+      title: "Four clear ways we support Travel Retail growth.",
       intro:
-        "Choose the commercial problem closest to your current decision. Each module is built to help marketing, sales and trade teams move from analysis to customer-ready action.",
-      primary: "Brand and portfolio audit",
+        "Each module starts with a specific commercial decision and ends with practical outputs your marketing, sales and trade teams can use. AI is applied where it strengthens the analysis or accelerates delivery.",
+      deliverables: "Typical outputs: decision decks · Excel models · dashboards · commercial analyses · customer and activation assets",
+      primary: "Portfolio optimization",
       weeks: "2-4 weeks",
-      growthTitle: "Sharpen the growth agenda",
+      growthTitle: "Decide what earns space and investment",
       growthText:
-        "Diagnose the brand, category, customer and portfolio signals to decide where growth should come from and what the team should prioritize first.",
-      growthOne: "Brand, category and customer performance review",
-      growthTwo: "Portfolio role, growth barriers and opportunity spaces",
-      growthThree: "Clear roadmap for marketing, sales and trade teams",
-      strategyLabel: "Customer negotiation support",
+        "Combine SKU, category, customer and shopper evidence to define the role of each product and build a portfolio that fits Travel Retail demand and space constraints.",
+      growthOne: "SKU roles, range gaps and opportunity spaces",
+      growthTwo: "Portfolio scenarios and prioritization model",
+      growthThree: "Decision deck, Excel model and management dashboard",
+      strategyLabel: "RGM and pricing",
       project: "Project based",
-      strategyTitle: "Build a stronger sell-in story",
+      strategyTitle: "Build a stronger pack-price architecture",
       strategyText:
-        "Translate brand and portfolio choices into a customer-facing argument for buyers, distributors and internal commercial leaders.",
-      strategyOne: "Customer proposition and negotiation narrative",
-      strategyTwo: "Category, shopper and brand proof points",
-      strategyThree: "Sell-in deck logic and meeting storyline",
-      insightLabel: "Portfolio and pricing optimization",
-      insightTitle: "Prioritize range, pack and price",
+        "Connect price ladders, pack roles, margins and premiumization choices to a coherent Travel Retail revenue growth model.",
+      strategyOne: "Pack-price ladder and margin analysis",
+      strategyTwo: "Pricing and mix scenarios by customer or channel",
+      strategyThree: "Excel simulator, dashboard and recommendation deck",
+      insightLabel: "Brand and trade marketing",
+      insightTitle: "Make the brand easier to choose",
       insightText:
-        "Review the portfolio architecture, role of each SKU, price ladder and premiumization logic so the channel has a cleaner growth model.",
-      insightOne: "SKU role and range prioritization",
-      insightTwo: "Pack-price ladder and premiumization logic",
-      insightThree: "Scenario recommendations for customer planning",
-      presentationLabel: "Trade marketing activation",
-      presentationTitle: "Turn strategy into channel execution",
+        "Translate the brand into relevant Travel Retail occasions, messages and activation priorities that work for shoppers, customers and commercial partners.",
+      insightOne: "Brand proposition and channel reason to believe",
+      insightTwo: "Occasion, activation and trade marketing priorities",
+      insightThree: "Strategy deck, messaging and activation assets",
+      presentationLabel: "Commercial strategy and negotiation",
+      presentationTitle: "Make a stronger customer case",
       presentationText:
-        "Shape the activation priorities, retail moments and execution logic that make the brand easier to choose, support and scale in Travel Retail.",
-      presentationOne: "Trade marketing priorities and activation territories",
-      presentationTwo: "Customer-ready calendar, mechanics and claims",
-      presentationThree: "Execution narrative for sales and partner teams"
+        "Turn portfolio, pricing, category and brand evidence into a focused commercial strategy and a buyer-ready negotiation narrative.",
+      presentationOne: "Customer strategy and value proposition",
+      presentationTwo: "Negotiation scenarios, evidence and argumentation",
+      presentationThree: "Sell-in deck, meeting storyline and supporting analysis"
     },
     method: {
       eyebrow: "How an engagement works",
@@ -99,11 +100,11 @@ const copy = {
     },
     about: {
       eyebrow: "The team behind Marksyte",
-      title: "A strategist who connects brand, portfolio and sales.",
+      title: "A specialist team connecting data, brand and commercial action.",
       link: "Meet the team",
       placeholder: "Team profile",
       text:
-        "Marksyte is led by a strategist with experience across consumer goods, brand activation, commercial planning, pricing logic and customer-facing growth work.",
+        "Marksyte brings together Travel Retail, FMCG, commercial strategy and AI capabilities to help teams solve focused growth decisions and turn the answer into usable tools.",
       proofOne: "Commercial opportunities identified, including EUR 7M+ developed into concrete sales opportunities.",
       proofTwo: "Brand, range, pricing and trade priorities translated into commercial action.",
       tagOne: "Travel Retail",
@@ -115,8 +116,8 @@ const copy = {
       eyebrow: "Growth call",
       title: "What Travel Retail growth challenge are you trying to solve?",
       text:
-        "Choose a time on Calendly or send the challenge first. I will reply with whether I can help across brand, negotiation, portfolio, pricing or trade marketing.",
-      or: "or email me directly"
+        "Choose a time on Calendly or send the challenge first. We will reply with how Marksyte can support the portfolio, pricing, brand, trade marketing or negotiation decision.",
+      or: "or email us directly"
     },
     form: {
       name: "Name",
@@ -126,7 +127,7 @@ const copy = {
       placeholder:
         "For example: we need to sharpen the portfolio, pricing logic or customer story for Travel Retail.",
       note:
-        "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. I usually reply within 1-2 business days.",
+        "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. We usually reply within 1-2 business days.",
       subject: "Growth challenge from Marksyte website",
       prepared: "Your email draft is ready. Send it to start the conversation."
     },
@@ -147,22 +148,22 @@ const copy = {
   },
   es: {
     meta: {
-      title: "Marksyte | Consultoría de crecimiento Travel Retail FMCG",
+      title: "Consultoría Travel Retail FMCG y soluciones IA | Marksyte",
       description:
-        "Marksyte ayuda a equipos FMCG en Travel Retail a mejorar marca, negociación con clientes, portfolio, pricing y trade marketing."
+        "Marksyte es un equipo especialista en Travel Retail que ayuda a compañías FMCG a mejorar portfolio, RGM y pricing, trade marketing, marca y negociación con soluciones apoyadas en IA."
     },
     nav: { services: "Servicios", blog: "Blog", about: "Equipo", contact: "Contacto" },
     cta: {
-      schedule: "Trae tu reto",
+      schedule: "Hablemos de tu reto de Travel Retail",
       email: "Enviar el reto por correo"
     },
     hero: {
-      eyebrow: "Travel Retail / FMCG / estrategia comercial",
-      offer: "Un portfolio más claro · un mejor argumento · más activación",
-      title: "Haz que cada decisión de Travel Retail trabaje más.",
+      eyebrow: "Especialistas en Travel Retail / FMCG / crecimiento con IA",
+      offer: "Portfolio · RGM y pricing · trade marketing · marca · negociación",
+      title: "Apoyo especialista en crecimiento Travel Retail para equipos FMCG.",
       lead:
-        "De la gama y el precio al argumento para el comprador, ayudo a equipos FMCG a tomar decisiones más claras en un canal donde el espacio, el tiempo y la atención son limitados.",
-      note: "Una pregunta de categoría, una reunión difícil con un cliente o un portfolio que necesita foco — encontremos la palanca comercial."
+        "Ayudamos a compañías FMCG a convertir datos comerciales en mejores decisiones de portfolio, pricing, marca, trade marketing y negociación, utilizando IA cuando mejora la velocidad, profundidad y utilidad del trabajo.",
+      note: "Del análisis a la acción lista para el cliente: decks, modelos Excel, dashboards, recomendaciones y activos de activación."
     },
     board: {
       title: "El test de Travel Retail",
@@ -196,40 +197,41 @@ const copy = {
       threeText: "Las conversaciones con retailers y distribuidores necesitan economía, lógica de activación y razones para priorizar la marca."
     },
     offers: {
-      eyebrow: "Servicios de consultoría",
-      title: "Apoyo enfocado para crecer en Travel Retail FMCG.",
+      eyebrow: "Módulos de consultoría especializada",
+      title: "Cuatro formas claras de apoyar el crecimiento en Travel Retail.",
       intro:
-        "Elige el problema comercial más cercano a la decisión actual. Cada módulo ayuda a marketing, ventas y trade a pasar del análisis a una acción lista para clientes.",
-      primary: "Auditoría de marca y portfolio",
+        "Cada módulo parte de una decisión comercial concreta y termina con outputs prácticos para marketing, ventas y trade. Aplicamos IA cuando refuerza el análisis o acelera la entrega.",
+      deliverables: "Outputs habituales: decks de decisión · modelos Excel · dashboards · análisis comerciales · activos para clientes y activación",
+      primary: "Optimización de portfolio",
       weeks: "2-4 semanas",
-      growthTitle: "Afinar la agenda de crecimiento",
+      growthTitle: "Decidir qué merece espacio e inversión",
       growthText:
-        "Diagnosticar las señales de marca, categoría, cliente y portfolio para decidir de dónde debe venir el crecimiento y qué conviene priorizar primero.",
-      growthOne: "Revisión de performance de marca, categoría y cliente",
-      growthTwo: "Rol del portfolio, barreras de crecimiento y espacios de oportunidad",
-      growthThree: "Hoja de ruta clara para marketing, ventas y trade",
-      strategyLabel: "Apoyo a negociación con clientes",
+        "Combinamos evidencia de SKU, categoría, cliente y shopper para definir el rol de cada producto y construir un portfolio adaptado a la demanda y las limitaciones de espacio de Travel Retail.",
+      growthOne: "Roles de SKU, gaps de gama y espacios de oportunidad",
+      growthTwo: "Escenarios de portfolio y modelo de priorización",
+      growthThree: "Deck de decisión, modelo Excel y dashboard de gestión",
+      strategyLabel: "RGM y pricing",
       project: "Por proyecto",
-      strategyTitle: "Construir una historia de sell-in más fuerte",
+      strategyTitle: "Construir una arquitectura pack-precio más sólida",
       strategyText:
-        "Traducir las decisiones de marca y portfolio en un argumento para compradores, distribuidores y líderes comerciales internos.",
-      strategyOne: "Propuesta al cliente y narrativa de negociación",
-      strategyTwo: "Pruebas de categoría, shopper y marca",
-      strategyThree: "Lógica de sell-in deck y storyline de reunión",
-      insightLabel: "Optimización de portfolio y pricing",
-      insightTitle: "Priorizar rango, pack y precio",
+        "Conectamos escalera de precios, rol de packs, márgenes y premiumización con un modelo coherente de revenue growth para Travel Retail.",
+      strategyOne: "Análisis de escalera pack-precio y márgenes",
+      strategyTwo: "Escenarios de pricing y mix por cliente o canal",
+      strategyThree: "Simulador Excel, dashboard y deck de recomendación",
+      insightLabel: "Marca y trade marketing",
+      insightTitle: "Hacer que la marca sea más fácil de elegir",
       insightText:
-        "Revisar la arquitectura de portfolio, el rol de cada SKU, la escalera de precio y la lógica de premiumización para que el canal tenga un modelo de crecimiento más claro.",
-      insightOne: "Rol de SKUs y priorización de rango",
-      insightTwo: "Escalera pack-precio y lógica de premiumización",
-      insightThree: "Escenarios recomendados para planificación con clientes",
-      presentationLabel: "Activación de trade marketing",
-      presentationTitle: "Convertir estrategia en ejecución de canal",
+        "Traducimos la marca en ocasiones, mensajes y prioridades de activación relevantes para shoppers, clientes y socios comerciales de Travel Retail.",
+      insightOne: "Propuesta de marca y razón de ser en el canal",
+      insightTwo: "Prioridades de ocasión, activación y trade marketing",
+      insightThree: "Deck estratégico, mensajes y activos de activación",
+      presentationLabel: "Estrategia comercial y negociación",
+      presentationTitle: "Construir un caso más sólido para el cliente",
       presentationText:
-        "Definir prioridades de activación, momentos de retail y lógica de ejecución para que la marca sea más fácil de elegir, apoyar y escalar en Travel Retail.",
-      presentationOne: "Prioridades de trade marketing y territorios de activación",
-      presentationTwo: "Calendario, mecánicas y claims listos para clientes",
-      presentationThree: "Narrativa de ejecución para ventas y partners"
+        "Convertimos la evidencia de portfolio, pricing, categoría y marca en una estrategia comercial enfocada y una narrativa de negociación lista para compradores.",
+      presentationOne: "Estrategia de cliente y propuesta de valor",
+      presentationTwo: "Escenarios, evidencias y argumentos de negociación",
+      presentationThree: "Deck de sell-in, storyline y análisis de soporte"
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
@@ -245,11 +247,11 @@ const copy = {
     },
     about: {
       eyebrow: "El equipo detrás de Marksyte",
-      title: "Un estratega que conecta marca, portfolio y ventas.",
+      title: "Un equipo especialista que conecta datos, marca y acción comercial.",
       link: "Conocer el equipo",
       placeholder: "Perfil del equipo",
       text:
-        "Marksyte está liderado por un estratega con experiencia en gran consumo, activación de marca, planificación comercial, lógica de pricing y crecimiento orientado a clientes.",
+        "Marksyte reúne capacidades de Travel Retail, FMCG, estrategia comercial e IA para resolver decisiones de crecimiento concretas y convertir la respuesta en herramientas utilizables.",
       proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas.",
       proofTwo: "Prioridades de marca, rango, pricing y trade traducidas en acción comercial.",
       tagOne: "Travel Retail",
@@ -261,8 +263,8 @@ const copy = {
       eyebrow: "Llamada de crecimiento",
       title: "¿Qué reto de crecimiento en Travel Retail estás intentando resolver?",
       text:
-        "Reserva una hora en Calendly o envía primero el reto. Te diré si puedo ayudar en marca, negociación, portfolio, pricing o trade marketing.",
-      or: "o escríbeme por correo"
+        "Reserva una hora en Calendly o envía primero el reto. Te responderemos explicando cómo Marksyte puede apoyar la decisión de portfolio, pricing, marca, trade marketing o negociación.",
+      or: "o escríbenos por correo"
     },
     form: {
       name: "Nombre",
@@ -272,7 +274,7 @@ const copy = {
       placeholder:
         "Por ejemplo: necesitamos afinar el portfolio, la lógica de pricing o la historia para clientes en Travel Retail.",
       note:
-        "Al enviar se abrirá un borrador de correo dirigido a Marksyte. Tu información no se almacena en esta web. Suelo responder en 1-2 días laborables.",
+        "Al enviar se abrirá un borrador de correo dirigido a Marksyte. Tu información no se almacena en esta web. Solemos responder en 1-2 días laborables.",
       subject: "Reto de crecimiento desde la web de Marksyte",
       prepared: "Tu borrador de correo está listo. Envíalo para iniciar la conversación."
     },
