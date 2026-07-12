@@ -54,7 +54,7 @@ const copy = {
       title: "Four clear ways we support Travel Retail growth.",
       intro:
         "Each module starts with a specific commercial decision and ends with practical outputs your marketing, sales and trade teams can use. AI is applied where it strengthens the analysis or accelerates delivery.",
-      deliverables: "Typical outputs: decision decks · Excel models · dashboards · commercial analyses · customer and activation assets",
+      deliverables: "Deliverables: Decision decks · Excel models · Dashboards · Commercial pitches · Customer and Activation Assets",
       primary: "Portfolio optimization",
       weeks: "2-4 weeks",
       growthTitle: "Decide what earns space and investment",
@@ -201,7 +201,7 @@ const copy = {
       title: "Cuatro formas claras de apoyar el crecimiento en Travel Retail.",
       intro:
         "Cada módulo parte de una decisión comercial concreta y termina con outputs prácticos para marketing, ventas y trade. Aplicamos IA cuando refuerza el análisis o acelera la entrega.",
-      deliverables: "Outputs habituales: decks de decisión · modelos Excel · dashboards · análisis comerciales · activos para clientes y activación",
+      deliverables: "Entregables: Decks de decisión · Modelos Excel · Dashboards · Análisis comerciales · Activos para clientes y activación",
       primary: "Optimización de portfolio",
       weeks: "2-4 semanas",
       growthTitle: "Decidir qué merece espacio e inversión",
