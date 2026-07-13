@@ -43,7 +43,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-15</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/services/travel-retail-portfolio-strategy/</loc>
@@ -130,11 +130,25 @@
     <lastmod>2026-07-13</lastmod>
   </url>
   <url>
+    <loc>https://www.marksyte.com/blog/frankfurt-retail-media-experience-point-of-sale/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/frankfurt-retail-media-experience-point-of-sale/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/frankfurt-retail-media-experiencia-punto-venta/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/frankfurt-retail-media-experience-point-of-sale/" />
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/ees-biometric-airport-queues-travel-retail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/ees-biometric-airport-queues-travel-retail/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/ees-biometria-colas-aeropuertos-travel-retail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/ees-biometric-airport-queues-travel-retail/" />
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.marksyte.com/es/blog/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-15</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/</loc>
@@ -163,6 +177,20 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/reservas-tardias-demanda-travel-retail/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/late-booking-travel-demand-travel-retail/" />
     <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/frankfurt-retail-media-experiencia-punto-venta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/frankfurt-retail-media-experience-point-of-sale/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/frankfurt-retail-media-experiencia-punto-venta/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/frankfurt-retail-media-experience-point-of-sale/" />
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/ees-biometria-colas-aeropuertos-travel-retail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/ees-biometric-airport-queues-travel-retail/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/ees-biometria-colas-aeropuertos-travel-retail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/ees-biometric-airport-queues-travel-retail/" />
+    <lastmod>2026-07-15</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/casos-de-estudio/</loc>
