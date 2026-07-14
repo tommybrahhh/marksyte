@@ -119,6 +119,21 @@ body.article-page { color: var(--article-ink); background: #fff; }
 .ees-step.is-response span { background: rgba(255,255,255,.14); color: #fff; }
 .ees-step.is-response h3, .ees-step.is-response p { color: #fff; }
 .ees-flow-model > p { margin: 1rem .1rem 0; color: var(--article-muted); font-size: .96rem; line-height: 1.6; }
+.passenger-mix-model { margin: 2.25rem 0; padding: 1.15rem; border: 1px solid var(--article-line); border-radius: 8px; background: linear-gradient(180deg,#fff 0%,var(--article-soft) 100%); }
+.passenger-mix-model > figcaption { margin: 0 0 .85rem; color: var(--article-muted); font-size: .82rem; font-weight: 700; text-transform: uppercase; }
+.mix-scale { display: grid; grid-template-columns: repeat(3,1fr); margin: 0 4.9rem .35rem 9rem; color: var(--article-muted); font-size: .78rem; font-weight: 700; }
+.mix-scale span:nth-child(2) { text-align: center; }
+.mix-scale span:last-child { text-align: right; }
+.mix-bars { display: grid; gap: .55rem; }
+.mix-row { display: grid; grid-template-columns: 8.5rem minmax(0,1fr) 4.4rem; align-items: center; gap: .75rem; }
+.mix-row strong { font-size: .95rem; line-height: 1.2; }
+.mix-row > span { justify-self: end; font-weight: 800; color: var(--article-ink); }
+.mix-track { position: relative; height: 2rem; border: 1px solid var(--article-line); border-radius: 8px; background: #fff; overflow: hidden; }
+.mix-track::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: #9aa5b4; }
+.mix-bar { position: absolute; left: var(--start); top: .42rem; width: max(var(--width), .45rem); height: 1.1rem; border-radius: 999px; }
+.mix-bar.is-negative { background: #d85f3d; }
+.mix-bar.is-positive { background: #1c7b62; }
+.passenger-mix-model > p { margin: 1rem .1rem 0; color: var(--article-muted); font-size: .92rem; line-height: 1.6; }
 .opportunity-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1.25rem 0; }
 .opportunity-card { padding: 1.25rem; border: 1px solid var(--article-line); border-radius: 8px; background: #fff; }
 .opportunity-card p { margin: 0; font-size: .96rem; line-height: 1.58; }
@@ -148,6 +163,10 @@ body.article-page { color: var(--article-ink); background: #fff; }
   .metric-strip { grid-template-columns: repeat(2,1fr); }
   .reading-nav ol { columns: 1; }
   .opportunity-grid, .ai-grid, .flow-panels, .value-drivers, .booking-path, .loop-map, .ees-flow { grid-template-columns: 1fr; }
+  .mix-scale { margin-left: 0; margin-right: 0; }
+  .mix-row { grid-template-columns: 1fr 4.4rem; gap: .45rem .75rem; }
+  .mix-track { grid-column: 1 / -1; grid-row: 2; }
+  .mix-row > span { grid-column: 2; grid-row: 1; }
   .flow-panel { min-height: 0; }
   .booking-step { min-height: 0; }
   .booking-step::after { top: auto; right: 50%; bottom: -.55rem; transform: translateX(50%) rotate(135deg); }
