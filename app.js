@@ -13,10 +13,10 @@ const copy = {
     hero: {
       eyebrow: "Travel Retail specialists / FMCG / AI-enabled growth",
       offer: "Portfolio · RGM & pricing · trade marketing · brand · negotiation",
-      title: "Specialist Travel Retail growth support for FMCG teams.",
+      title: "Specialist Travel Retail growth support for FMCG teams",
       lead:
-        "We help FMCG companies turn commercial data into sharper portfolio, pricing, brand, trade marketing and negotiation decisions, using AI where it improves speed, depth and usability.",
-      note: "From analysis to customer-ready action: decks, Excel models, dashboards, recommendations and activation assets."
+        "We help FMCG companies turn commercial data into sharper portfolio, pricing, brand, trade marketing and negotiation decisions, using AI where it improves speed, depth and usability",
+      note: "From analysis to customer-ready action: decks, Excel models, dashboards, recommendations and activation assets"
     },
     board: {
       title: "The Travel Retail test",
@@ -35,31 +35,31 @@ const copy = {
       activation: "Sell-in"
     },
     proof: {
-      one: "Commercial opportunities identified across consumer and B2B categories.",
-      two: "Developed into concrete sales opportunities with commercial teams.",
-      three: "Commercial strategy across brand building, portfolio choices, pricing and customer stories."
+      one: "Commercial opportunities identified across consumer and B2B categories",
+      two: "Developed into concrete sales opportunities with commercial teams",
+      three: "Commercial strategy across brand building, portfolio choices, pricing and customer stories"
     },
     challenges: {
       eyebrow: "When Marksyte is useful",
-      title: "Your Travel Retail plan has pressure, but the growth choices are not sharp enough.",
+      title: "Your Travel Retail plan has pressure, but the growth choices are not sharp enough",
       oneTitle: "Brand story is too generic",
-      oneText: "The brand has visibility, but the shopper, customer and channel reason to believe needs to be stronger.",
+      oneText: "The brand has visibility, but the shopper, customer and channel reason to believe needs to be stronger",
       twoTitle: "Portfolio and pricing need focus",
-      twoText: "The range, pack-price logic or premiumization path is too broad for the channel realities.",
+      twoText: "The range, pack-price logic or premiumization path is too broad for the channel realities",
       threeTitle: "Customer negotiation needs a sharper case",
-      threeText: "Retailer and distributor conversations need clearer economics, activation logic and reasons to prioritize the brand."
+      threeText: "Retailer and distributor conversations need clearer economics, activation logic and reasons to prioritize the brand"
     },
     offers: {
       eyebrow: "Specialist consulting modules",
-      title: "Four clear ways we support Travel Retail growth.",
+      title: "Four clear ways we support Travel Retail growth",
       intro:
-        "Each module starts with a specific commercial decision and ends with practical outputs your marketing, sales and trade teams can use. AI is applied where it strengthens the analysis or accelerates delivery.",
+        "Each module starts with a specific commercial decision and ends with practical outputs your marketing, sales and trade teams can use. AI is applied where it strengthens the analysis or accelerates delivery",
       deliverables: "Deliverables: Decision decks · Excel models · Dashboards · Commercial pitches · Customer and Activation Assets",
       primary: "Portfolio optimization",
       weeks: "2-4 weeks",
       growthTitle: "Decide what earns space and investment",
       growthText:
-        "Combine SKU, category, customer and shopper evidence to define the role of each product and build a portfolio that fits Travel Retail demand and space constraints.",
+        "Combine SKU, category, customer and shopper evidence to define the role of each product and build a portfolio that fits Travel Retail demand and space constraints",
       growthOne: "SKU roles, range gaps and opportunity spaces",
       growthTwo: "Portfolio scenarios and prioritization model",
       growthThree: "Decision deck, Excel model and management dashboard",
@@ -67,28 +67,28 @@ const copy = {
       project: "Project based",
       strategyTitle: "Build a stronger pack-price architecture",
       strategyText:
-        "Connect price ladders, pack roles, margins and premiumization choices to a coherent Travel Retail revenue growth model.",
+        "Connect price ladders, pack roles, margins and premiumization choices to a coherent Travel Retail revenue growth model",
       strategyOne: "Pack-price ladder and margin analysis",
       strategyTwo: "Pricing and mix scenarios by customer or channel",
       strategyThree: "Excel simulator, dashboard and recommendation deck",
       insightLabel: "Brand and trade marketing",
       insightTitle: "Make the brand easier to choose",
       insightText:
-        "Translate the brand into relevant Travel Retail occasions, messages and activation priorities that work for shoppers, customers and commercial partners.",
+        "Translate the brand into relevant Travel Retail occasions, messages and activation priorities that work for shoppers, customers and commercial partners",
       insightOne: "Brand proposition and channel reason to believe",
       insightTwo: "Occasion, activation and trade marketing priorities",
       insightThree: "Strategy deck, messaging and activation assets",
       presentationLabel: "Commercial strategy and negotiation",
       presentationTitle: "Make a stronger customer case",
       presentationText:
-        "Turn portfolio, pricing, category and brand evidence into a focused commercial strategy and a buyer-ready negotiation narrative.",
+        "Turn portfolio, pricing, category and brand evidence into a focused commercial strategy and a buyer-ready negotiation narrative",
       presentationOne: "Customer strategy and value proposition",
       presentationTwo: "Negotiation scenarios, evidence and argumentation",
       presentationThree: "Sell-in deck, meeting storyline and supporting analysis"
     },
     method: {
       eyebrow: "How an engagement works",
-      title: "A simple path from messy signals to a practical plan.",
+      title: "A simple path from messy signals to a practical plan",
       oneTitle: "Diagnose",
       oneText: "Map the evidence",
       twoTitle: "Prioritize",
@@ -100,13 +100,13 @@ const copy = {
     },
     about: {
       eyebrow: "The team behind Marksyte",
-      title: "A specialist team connecting data, brand and commercial action.",
+      title: "A specialist team connecting data, brand and commercial action",
       link: "Meet the team",
       placeholder: "Team profile",
       text:
-        "Marksyte brings together Travel Retail, FMCG, commercial strategy and AI capabilities to help teams solve focused growth decisions and turn the answer into usable tools.",
-      proofOne: "Commercial opportunities identified, including EUR 7M+ developed into concrete sales opportunities.",
-      proofTwo: "Brand, range, pricing and trade priorities translated into commercial action.",
+        "Marksyte brings together Travel Retail, FMCG, commercial strategy and AI capabilities to help teams solve focused growth decisions and turn the answer into usable tools",
+      proofOne: "Commercial opportunities identified, including EUR 7M+ developed into concrete sales opportunities",
+      proofTwo: "Brand, range, pricing and trade priorities translated into commercial action",
       tagOne: "Travel Retail",
       tagTwo: "Brand strategy",
       tagThree: "Portfolio optimization",
@@ -116,7 +116,7 @@ const copy = {
       eyebrow: "Growth call",
       title: "What Travel Retail growth challenge are you trying to solve?",
       text:
-        "Choose a time on Calendly or send the challenge first. We will reply with how Marksyte can support the portfolio, pricing, brand, trade marketing or negotiation decision.",
+        "Choose a time on Calendly or send the challenge first. We will reply with how Marksyte can support the portfolio, pricing, brand, trade marketing or negotiation decision",
       or: "or email us directly"
     },
     form: {
@@ -125,11 +125,11 @@ const copy = {
       company: "Company and role",
       challenge: "What is the challenge?",
       placeholder:
-        "For example: we need to sharpen the portfolio, pricing logic or customer story for Travel Retail.",
+        "For example: we need to sharpen the portfolio, pricing logic or customer story for Travel Retail",
       note:
-        "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. We usually reply within 1-2 business days.",
+        "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. We usually reply within 1-2 business days",
       subject: "Growth challenge from Marksyte website",
-      prepared: "Your email draft is ready. Send it to start the conversation."
+      prepared: "Your email draft is ready. Send it to start the conversation"
     },
     kpis: [
       { label: "Never alcohol", reading: "More declared abstention" },
@@ -160,10 +160,10 @@ const copy = {
     hero: {
       eyebrow: "Especialistas en Travel Retail / FMCG / crecimiento con IA",
       offer: "Portfolio · RGM y pricing · trade marketing · marca · negociación",
-      title: "Apoyo especialista en crecimiento Travel Retail para equipos FMCG.",
+      title: "Apoyo especialista en crecimiento Travel Retail para equipos FMCG",
       lead:
-        "Ayudamos a compañías FMCG a convertir datos comerciales en mejores decisiones de portfolio, pricing, marca, trade marketing y negociación, utilizando IA cuando mejora la velocidad, profundidad y utilidad del trabajo.",
-      note: "Del análisis a la acción lista para el cliente: decks, modelos Excel, dashboards, recomendaciones y activos de activación."
+        "Ayudamos a compañías FMCG a convertir datos comerciales en mejores decisiones de portfolio, pricing, marca, trade marketing y negociación, utilizando IA cuando mejora la velocidad, profundidad y utilidad del trabajo",
+      note: "Del análisis a la acción lista para el cliente: decks, modelos Excel, dashboards, recomendaciones y activos de activación"
     },
     board: {
       title: "El test de Travel Retail",
@@ -182,31 +182,31 @@ const copy = {
       activation: "Sell-in"
     },
     proof: {
-      one: "Oportunidades comerciales identificadas en categorías de consumo y B2B.",
-      two: "Convertidos en oportunidades concretas junto a equipos comerciales.",
-      three: "Estrategia comercial en marca, portfolio, pricing e historias para clientes."
+      one: "Oportunidades comerciales identificadas en categorías de consumo y B2B",
+      two: "Convertidos en oportunidades concretas junto a equipos comerciales",
+      three: "Estrategia comercial en marca, portfolio, pricing e historias para clientes"
     },
     challenges: {
       eyebrow: "Cuándo Marksyte aporta valor",
-      title: "El plan de Travel Retail tiene presión, pero las decisiones de crecimiento necesitan más foco.",
+      title: "El plan de Travel Retail tiene presión, pero las decisiones de crecimiento necesitan más foco",
       oneTitle: "La historia de marca es demasiado genérica",
-      oneText: "La marca tiene visibilidad, pero necesita una razón más fuerte para shopper, cliente y canal.",
+      oneText: "La marca tiene visibilidad, pero necesita una razón más fuerte para shopper, cliente y canal",
       twoTitle: "Portfolio y pricing necesitan foco",
-      twoText: "El rango, la arquitectura pack-precio o la ruta de premiumización son demasiado amplios para la realidad del canal.",
+      twoText: "El rango, la arquitectura pack-precio o la ruta de premiumización son demasiado amplios para la realidad del canal",
       threeTitle: "La negociación con clientes necesita un caso más claro",
-      threeText: "Las conversaciones con retailers y distribuidores necesitan economía, lógica de activación y razones para priorizar la marca."
+      threeText: "Las conversaciones con retailers y distribuidores necesitan economía, lógica de activación y razones para priorizar la marca"
     },
     offers: {
       eyebrow: "Módulos de consultoría especializada",
-      title: "Cuatro formas claras de apoyar el crecimiento en Travel Retail.",
+      title: "Cuatro formas claras de apoyar el crecimiento en Travel Retail",
       intro:
-        "Cada módulo parte de una decisión comercial concreta y termina con outputs prácticos para marketing, ventas y trade. Aplicamos IA cuando refuerza el análisis o acelera la entrega.",
+        "Cada módulo parte de una decisión comercial concreta y termina con outputs prácticos para marketing, ventas y trade. Aplicamos IA cuando refuerza el análisis o acelera la entrega",
       deliverables: "Entregables: Decks de decisión · Modelos Excel · Dashboards · Análisis comerciales · Activos para clientes y activación",
       primary: "Optimización de portfolio",
       weeks: "2-4 semanas",
       growthTitle: "Decidir qué merece espacio e inversión",
       growthText:
-        "Combinamos evidencia de SKU, categoría, cliente y shopper para definir el rol de cada producto y construir un portfolio adaptado a la demanda y las limitaciones de espacio de Travel Retail.",
+        "Combinamos evidencia de SKU, categoría, cliente y shopper para definir el rol de cada producto y construir un portfolio adaptado a la demanda y las limitaciones de espacio de Travel Retail",
       growthOne: "Roles de SKU, gaps de gama y espacios de oportunidad",
       growthTwo: "Escenarios de portfolio y modelo de priorización",
       growthThree: "Deck de decisión, modelo Excel y dashboard de gestión",
@@ -214,28 +214,28 @@ const copy = {
       project: "Por proyecto",
       strategyTitle: "Construir una arquitectura pack-precio más sólida",
       strategyText:
-        "Conectamos escalera de precios, rol de packs, márgenes y premiumización con un modelo coherente de revenue growth para Travel Retail.",
+        "Conectamos escalera de precios, rol de packs, márgenes y premiumización con un modelo coherente de revenue growth para Travel Retail",
       strategyOne: "Análisis de escalera pack-precio y márgenes",
       strategyTwo: "Escenarios de pricing y mix por cliente o canal",
       strategyThree: "Simulador Excel, dashboard y deck de recomendación",
       insightLabel: "Marca y trade marketing",
       insightTitle: "Hacer que la marca sea más fácil de elegir",
       insightText:
-        "Traducimos la marca en ocasiones, mensajes y prioridades de activación relevantes para shoppers, clientes y socios comerciales de Travel Retail.",
+        "Traducimos la marca en ocasiones, mensajes y prioridades de activación relevantes para shoppers, clientes y socios comerciales de Travel Retail",
       insightOne: "Propuesta de marca y razón de ser en el canal",
       insightTwo: "Prioridades de ocasión, activación y trade marketing",
       insightThree: "Deck estratégico, mensajes y activos de activación",
       presentationLabel: "Estrategia comercial y negociación",
       presentationTitle: "Construir un caso más sólido para el cliente",
       presentationText:
-        "Convertimos la evidencia de portfolio, pricing, categoría y marca en una estrategia comercial enfocada y una narrativa de negociación lista para compradores.",
+        "Convertimos la evidencia de portfolio, pricing, categoría y marca en una estrategia comercial enfocada y una narrativa de negociación lista para compradores",
       presentationOne: "Estrategia de cliente y propuesta de valor",
       presentationTwo: "Escenarios, evidencias y argumentos de negociación",
       presentationThree: "Deck de sell-in, storyline y análisis de soporte"
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
-      title: "Un camino sencillo desde señales dispersas hasta un plan práctico.",
+      title: "Un camino sencillo desde señales dispersas hasta un plan práctico",
       oneTitle: "Diagnosticar",
       oneText: "Mapear la evidencia",
       twoTitle: "Priorizar",
@@ -247,13 +247,13 @@ const copy = {
     },
     about: {
       eyebrow: "El equipo detrás de Marksyte",
-      title: "Un equipo especialista que conecta datos, marca y acción comercial.",
+      title: "Un equipo especialista que conecta datos, marca y acción comercial",
       link: "Conocer el equipo",
       placeholder: "Perfil del equipo",
       text:
-        "Marksyte reúne capacidades de Travel Retail, FMCG, estrategia comercial e IA para resolver decisiones de crecimiento concretas y convertir la respuesta en herramientas utilizables.",
-      proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas.",
-      proofTwo: "Prioridades de marca, rango, pricing y trade traducidas en acción comercial.",
+        "Marksyte reúne capacidades de Travel Retail, FMCG, estrategia comercial e IA para resolver decisiones de crecimiento concretas y convertir la respuesta en herramientas utilizables",
+      proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas",
+      proofTwo: "Prioridades de marca, rango, pricing y trade traducidas en acción comercial",
       tagOne: "Travel Retail",
       tagTwo: "Estrategia de marca",
       tagThree: "Optimización de portfolio",
@@ -263,7 +263,7 @@ const copy = {
       eyebrow: "Llamada de crecimiento",
       title: "¿Qué reto de crecimiento en Travel Retail estás intentando resolver?",
       text:
-        "Reserva una hora en Calendly o envía primero el reto. Te responderemos explicando cómo Marksyte puede apoyar la decisión de portfolio, pricing, marca, trade marketing o negociación.",
+        "Reserva una hora en Calendly o envía primero el reto. Te responderemos explicando cómo Marksyte puede apoyar la decisión de portfolio, pricing, marca, trade marketing o negociación",
       or: "o escríbenos por correo"
     },
     form: {
@@ -272,11 +272,11 @@ const copy = {
       company: "Empresa y cargo",
       challenge: "¿Cuál es el reto?",
       placeholder:
-        "Por ejemplo: necesitamos afinar el portfolio, la lógica de pricing o la historia para clientes en Travel Retail.",
+        "Por ejemplo: necesitamos afinar el portfolio, la lógica de pricing o la historia para clientes en Travel Retail",
       note:
-        "Al enviar se abrirá un borrador de correo dirigido a Marksyte. Tu información no se almacena en esta web. Solemos responder en 1-2 días laborables.",
+        "Al enviar se abrirá un borrador de correo dirigido a Marksyte. Tu información no se almacena en esta web. Solemos responder en 1-2 días laborables",
       subject: "Reto de crecimiento desde la web de Marksyte",
-      prepared: "Tu borrador de correo está listo. Envíalo para iniciar la conversación."
+      prepared: "Tu borrador de correo está listo. Envíalo para iniciar la conversación"
     },
     kpis: [
       { label: "Nunca alcohol", reading: "Mayor abstención declarada" },
