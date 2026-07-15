@@ -43,7 +43,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/services/travel-retail-portfolio-strategy/</loc>
@@ -151,11 +151,18 @@
     <lastmod>2026-07-16</lastmod>
   </url>
   <url>
+    <loc>https://www.marksyte.com/blog/gen-z-travel-essentials-airport-retail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/gen-z-travel-essentials-airport-retail/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/gen-z-productos-esenciales-retail-aeroportuario/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/gen-z-travel-essentials-airport-retail/" />
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
     <loc>https://www.marksyte.com/es/blog/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/</loc>
@@ -205,6 +212,13 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/heathrow-mezcla-pasajeros-travel-retail/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/heathrow-passenger-mix-travel-retail/" />
     <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/gen-z-productos-esenciales-retail-aeroportuario/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/gen-z-travel-essentials-airport-retail/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/gen-z-productos-esenciales-retail-aeroportuario/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/gen-z-travel-essentials-airport-retail/" />
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/casos-de-estudio/</loc>
