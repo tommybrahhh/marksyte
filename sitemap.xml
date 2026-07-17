@@ -43,7 +43,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-21</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/services/travel-retail-portfolio-strategy/</loc>
@@ -179,11 +179,18 @@
     <lastmod>2026-07-20</lastmod>
   </url>
   <url>
+    <loc>https://www.marksyte.com/blog/china-duty-free-profit-revenue-profitability/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/china-duty-free-profit-revenue-profitability/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/china-duty-free-beneficio-ventas-rentabilidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/china-duty-free-profit-revenue-profitability/" />
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
     <loc>https://www.marksyte.com/es/blog/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-21</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/</loc>
@@ -261,6 +268,13 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/lotte-chatgpt-compra-ia-duty-free/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/lotte-chatgpt-ai-shopping-duty-free/" />
     <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/china-duty-free-beneficio-ventas-rentabilidad/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/china-duty-free-profit-revenue-profitability/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/china-duty-free-beneficio-ventas-rentabilidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/china-duty-free-profit-revenue-profitability/" />
+    <lastmod>2026-07-21</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/casos-de-estudio/</loc>

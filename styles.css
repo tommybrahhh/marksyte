@@ -1000,6 +1000,240 @@ h1 {
   line-height: 1.55;
 }
 
+.service-deck-preview {
+  padding: clamp(46px, 6vw, 76px) 0;
+  background: var(--surface);
+}
+
+.sample-preview-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
+  gap: clamp(28px, 6vw, 78px);
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.sample-preview-head h2 {
+  max-width: 760px;
+  margin: 8px 0 0;
+  font-size: clamp(1.9rem, 3.3vw, 2.8rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.sample-preview-head .service-lead {
+  max-width: 660px;
+}
+
+.sample-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+  gap: 14px;
+}
+
+.sample-preview-card {
+  overflow: hidden;
+  border: 1px solid rgba(21, 32, 29, 0.14);
+  border-radius: var(--radius);
+  background: linear-gradient(120deg, rgba(0, 127, 115, 0.06), transparent 58%), var(--surface);
+  box-shadow: 0 18px 42px rgba(21, 32, 29, 0.08);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.sample-preview-trigger {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.72fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: stretch;
+  padding: 14px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sample-preview-trigger:focus-visible {
+  outline: 2px solid rgba(0, 127, 115, 0.45);
+  outline-offset: -4px;
+}
+
+.sample-preview-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 127, 115, 0.42);
+  box-shadow: 0 24px 56px rgba(21, 32, 29, 0.12);
+}
+
+.sample-preview-thumb {
+  position: relative;
+  overflow: hidden;
+  align-self: center;
+  border: 1px solid rgba(21, 32, 29, 0.11);
+  border-radius: 7px;
+  background: var(--soft);
+}
+
+.sample-preview-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.sample-preview-badge {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 9px;
+  border-radius: 6px;
+  background: rgba(20, 27, 26, 0.82);
+  color: var(--surface);
+  font: 760 0.72rem var(--font-mono);
+  text-transform: uppercase;
+}
+
+.sample-preview-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 6px 4px 6px 0;
+}
+
+.sample-preview-copy strong {
+  display: block;
+  margin: 12px 0 8px;
+  font-size: clamp(1.22rem, 2vw, 1.58rem);
+  line-height: 1.08;
+}
+
+.sample-preview-copy span:not(.eyebrow):not(.sample-preview-link) {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.sample-preview-link {
+  margin-top: 18px;
+  color: var(--teal);
+  font-weight: 850;
+}
+
+.sample-preview-note {
+  max-width: 760px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.deliverable-preview-open {
+  overflow: hidden;
+}
+
+.deliverable-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  padding: clamp(16px, 3vw, 34px);
+}
+
+.deliverable-modal[aria-hidden="false"] {
+  display: grid;
+  place-items: center;
+}
+
+.deliverable-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 27, 26, 0.74);
+  backdrop-filter: blur(10px);
+}
+
+.deliverable-modal-panel {
+  position: relative;
+  width: min(1120px, 100%);
+  max-height: min(92vh, 820px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  padding: clamp(16px, 2vw, 22px);
+  border: 1px solid rgba(255, 253, 248, 0.18);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.32);
+}
+
+.deliverable-modal-head,
+.deliverable-modal-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.deliverable-modal-head h2 {
+  margin: 6px 0 0;
+  font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+  line-height: 1.05;
+}
+
+.deliverable-modal-close,
+.deliverable-modal-controls button {
+  min-height: 40px;
+  border: 1px solid rgba(21, 32, 29, 0.14);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font: 820 0.86rem var(--font-sans);
+}
+
+.deliverable-modal-close {
+  width: 42px;
+  padding: 0;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.deliverable-modal-figure {
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  border: 1px solid rgba(21, 32, 29, 0.1);
+  border-radius: var(--radius);
+  background: var(--soft);
+  overflow: hidden;
+}
+
+.deliverable-modal-figure img {
+  display: block;
+  width: 100%;
+  max-height: calc(92vh - 190px);
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.deliverable-modal-controls button {
+  min-width: 112px;
+  padding: 0 16px;
+}
+
+.deliverable-modal-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.deliverable-modal-controls span {
+  color: var(--muted);
+  font: 800 0.8rem var(--font-mono);
+}
+
 .service-ai {
   padding: clamp(36px, 4.5vw, 56px) 0;
   background: var(--dark);
@@ -2941,6 +3175,7 @@ h1 {
   .service-page .service-hero-grid,
   .service-page .service-overview-grid,
   .service-page .service-deliverables-grid,
+  .service-page .sample-preview-head,
   .service-page .service-ai-grid {
     gap: 26px;
   }
@@ -3019,6 +3254,7 @@ h1 {
 
   .service-page .service-overview,
   .service-page .service-deliverables,
+  .service-page .service-deck-preview,
   .service-page .service-case-proof,
   .service-page .service-related {
     padding: 42px 0;
@@ -3029,7 +3265,8 @@ h1 {
   }
 
   .service-page .service-overview h2,
-  .service-page .service-deliverables h2 {
+  .service-page .service-deliverables h2,
+  .service-page .sample-preview-head h2 {
     font-size: 2rem;
     line-height: 1.03;
   }
@@ -3041,6 +3278,7 @@ h1 {
   }
 
   .service-page .deliverable-grid,
+  .service-page .sample-preview-grid,
   .service-page .related-service-grid {
     gap: 9px;
   }
@@ -3089,6 +3327,39 @@ h1 {
   .deliverable-grid article,
   .related-service-grid a {
     min-height: auto;
+  }
+
+  .sample-preview-head,
+  .sample-preview-grid,
+  .sample-preview-trigger {
+    grid-template-columns: 1fr;
+  }
+
+  .sample-preview-trigger {
+    gap: 14px;
+  }
+
+  .sample-preview-copy {
+    padding: 2px 2px 4px;
+  }
+
+  .deliverable-modal {
+    padding: 10px;
+  }
+
+  .deliverable-modal-panel {
+    max-height: 94vh;
+    gap: 10px;
+  }
+
+  .deliverable-modal-head,
+  .deliverable-modal-controls {
+    align-items: flex-start;
+  }
+
+  .deliverable-modal-controls button {
+    min-width: 0;
+    padding: 0 12px;
   }
 
   .service-cta-box {
