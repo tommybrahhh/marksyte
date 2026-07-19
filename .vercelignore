@@ -1,3 +1,6 @@
 preview-*.png
 .vercel
 .env*
+outputs/
+tmp/
+work/
