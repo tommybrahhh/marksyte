@@ -43,7 +43,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-07-25</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/services/travel-retail-portfolio-strategy/</loc>
@@ -200,11 +200,25 @@
     <lastmod>2026-07-23</lastmod>
   </url>
   <url>
+    <loc>https://www.marksyte.com/blog/border-duty-free-commercial-destination/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/border-duty-free-commercial-destination/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/duty-free-frontera-destino-comercial/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/border-duty-free-commercial-destination/" />
+    <lastmod>2026-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/asia-pacific-reshapes-global-airport-map/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/asia-pacific-reshapes-global-airport-map/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/asia-pacifico-mapa-mundial-aeropuertos-travel-retail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/asia-pacific-reshapes-global-airport-map/" />
+    <lastmod>2026-07-25</lastmod>
+  </url>
+  <url>
     <loc>https://www.marksyte.com/es/blog/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-07-25</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/</loc>
@@ -303,6 +317,20 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/bacardi-packaging-circular-cruceros-travel-retail/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/bacardi-circular-packaging-cruise-travel-retail/" />
     <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/duty-free-frontera-destino-comercial/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/border-duty-free-commercial-destination/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/duty-free-frontera-destino-comercial/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/border-duty-free-commercial-destination/" />
+    <lastmod>2026-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/asia-pacifico-mapa-mundial-aeropuertos-travel-retail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/asia-pacific-reshapes-global-airport-map/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/asia-pacifico-mapa-mundial-aeropuertos-travel-retail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/asia-pacific-reshapes-global-airport-map/" />
+    <lastmod>2026-07-25</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/casos-de-estudio/</loc>
