@@ -7,7 +7,7 @@ Static bilingual website for Marksyte, with localized landing pages, a team page
 - English is available at `/` and Spanish at `/es/`, with visible language links between indexable canonical pages.
 - The team page is available at `/about/` and `/es/about/`.
 - The blog index is available at `/blog/` and `/es/blog/`, with posts under localized blog slugs.
-- The discovery-call form opens a prepared email draft to `roman@marksyte.com`; it does not store submissions or require a backend.
+- The discovery-call form opens a prepared email draft to `contact@marksyte.com`; it does not store submissions or require a backend.
 - Legal basics are available at `/legal/`, `/privacy/`, `/cookies/` and their Spanish equivalents under `/es/`.
 
 ## Search discovery

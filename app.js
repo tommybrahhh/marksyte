@@ -393,7 +393,7 @@ function initializeForm() {
             ["Challenge", data.get("challenge")]
           ];
     const body = fields.map(([label, value]) => `${label}: ${value}`).join("\n\n");
-    const mailto = `mailto:roman@marksyte.com?subject=${encodeURIComponent(text.subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:contact@marksyte.com?subject=${encodeURIComponent(text.subject)}&body=${encodeURIComponent(body)}`;
     status.textContent = text.prepared;
     window.location.href = mailto;
   });
