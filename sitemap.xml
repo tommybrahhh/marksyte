@@ -43,7 +43,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/services/travel-retail-portfolio-strategy/</loc>
@@ -235,11 +235,25 @@
     <lastmod>2026-07-28</lastmod>
   </url>
   <url>
+    <loc>https://www.marksyte.com/blog/sydney-airport-mecca-local-brands-duty-free/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sydney-airport-mecca-local-brands-duty-free/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/sydney-airport-mecca-marcas-locales-duty-free/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sydney-airport-mecca-local-brands-duty-free/" />
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/banks-airport-hospitality-chase-dfw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/banks-airport-hospitality-chase-dfw/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/bancos-hospitality-aeroportuaria-chase-dfw/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/banks-airport-hospitality-chase-dfw/" />
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.marksyte.com/es/blog/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/" />
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/blog/la-temporada-turistica-europea-se-esta-alargando-travel-retail/</loc>
@@ -373,6 +387,20 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/china-duty-free-sanya-parque-ocio-retail/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/china-duty-free-sanya-leisure-destination/" />
     <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/sydney-airport-mecca-marcas-locales-duty-free/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sydney-airport-mecca-local-brands-duty-free/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/sydney-airport-mecca-marcas-locales-duty-free/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sydney-airport-mecca-local-brands-duty-free/" />
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/bancos-hospitality-aeroportuaria-chase-dfw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/banks-airport-hospitality-chase-dfw/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/bancos-hospitality-aeroportuaria-chase-dfw/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/banks-airport-hospitality-chase-dfw/" />
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.marksyte.com/es/casos-de-estudio/</loc>
