@@ -4,10 +4,21 @@
   "buildCommand": null,
   "installCommand": "",
   "outputDirectory": ".",
+  "trailingSlash": true,
   "redirects": [
+    {
+      "source": "/es/study-cases/brand-relevance-distribution",
+      "destination": "/es/casos-de-estudio/relevancia-marca-distribucion/",
+      "permanent": true
+    },
     {
       "source": "/es/study-cases/brand-relevance-distribution/:path*",
       "destination": "/es/casos-de-estudio/relevancia-marca-distribucion/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es/study-cases/ai-flows-fmcg",
+      "destination": "/es/casos-de-estudio/flujos-ia-fmcg/",
       "permanent": true
     },
     {
@@ -16,8 +27,18 @@
       "permanent": true
     },
     {
+      "source": "/es/study-cases/energy-drinks",
+      "destination": "/es/casos-de-estudio/bebidas-energeticas/",
+      "permanent": true
+    },
+    {
       "source": "/es/study-cases/energy-drinks/:path*",
       "destination": "/es/casos-de-estudio/bebidas-energeticas/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es/study-cases/protein-rtd",
+      "destination": "/es/casos-de-estudio/proteina-rtd/",
       "permanent": true
     },
     {
@@ -26,8 +47,18 @@
       "permanent": true
     },
     {
+      "source": "/es/study-cases",
+      "destination": "/es/casos-de-estudio/",
+      "permanent": true
+    },
+    {
       "source": "/es/study-cases/:path*",
       "destination": "/es/casos-de-estudio/",
+      "permanent": true
+    },
+    {
+      "source": "/study-cases/alc-spain",
+      "destination": "/es/casos-de-estudio/alcohol-espana/",
       "permanent": true
     },
     {
