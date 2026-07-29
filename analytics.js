@@ -3,9 +3,14 @@
 
   var measurementId = "G-VZ749HVPK6";
   var consentKey = "marksyte-analytics-consent";
+  var consentMaxAge = 60 * 60 * 24 * 365;
   var analyticsLoaded = false;
 
-  function getStoredConsent() {
+  function isValidConsent(value) {
+    return value === "granted" || value === "denied";
+  }
+
+  function getLocalConsent() {
     try {
       return window.localStorage.getItem(consentKey);
     } catch (error) {
@@ -13,12 +18,63 @@
     }
   }
 
-  function storeConsent(value) {
+  function storeLocalConsent(value) {
     try {
       window.localStorage.setItem(consentKey, value);
     } catch (error) {
-      // If storage is unavailable, the visitor can choose again next time.
+      // The consent cookie remains available when local storage is blocked.
     }
+  }
+
+  function getCookieConsent() {
+    var prefix = consentKey + "=";
+    var cookies = document.cookie ? document.cookie.split(";") : [];
+
+    for (var index = 0; index < cookies.length; index += 1) {
+      var cookie = cookies[index].trim();
+      if (cookie.indexOf(prefix) === 0) return decodeURIComponent(cookie.slice(prefix.length));
+    }
+
+    return null;
+  }
+
+  function storeConsentCookie(value) {
+    var parts = [
+      consentKey + "=" + encodeURIComponent(value),
+      "Max-Age=" + consentMaxAge,
+      "Path=/",
+      "SameSite=Lax"
+    ];
+    var hostname = window.location.hostname.toLowerCase();
+
+    if (hostname === "marksyte.com" || hostname.slice(-13) === ".marksyte.com") {
+      parts.push("Domain=marksyte.com");
+    }
+    if (window.location.protocol === "https:") parts.push("Secure");
+
+    document.cookie = parts.join("; ");
+  }
+
+  function getStoredConsent() {
+    var cookieConsent = getCookieConsent();
+    if (isValidConsent(cookieConsent)) {
+      storeLocalConsent(cookieConsent);
+      return cookieConsent;
+    }
+
+    var localConsent = getLocalConsent();
+    if (isValidConsent(localConsent)) {
+      // Migrate existing choices to a site-wide cookie shared by the apex and www hosts.
+      storeConsentCookie(localConsent);
+      return localConsent;
+    }
+
+    return null;
+  }
+
+  function storeConsent(value) {
+    storeLocalConsent(value);
+    storeConsentCookie(value);
   }
 
   function initialiseGtag() {
