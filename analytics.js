@@ -180,9 +180,15 @@
     if (banner) banner.remove();
   }
 
+  function isCookiePolicyPage() {
+    return /\/cookies\/?$/.test(window.location.pathname);
+  }
+
   function showPreferencesButton() {
+    if (!isCookiePolicyPage()) return;
     if (document.getElementById("analytics-preferences")) return;
 
+    addStyles();
     var labels = copy();
     var button = document.createElement("button");
     button.type = "button";
@@ -252,10 +258,10 @@
   }
 
   function startConsentUi() {
-    addStyles();
     var storedConsent = getStoredConsent();
-    if (storedConsent === "granted" && !analyticsLoaded) loadAnalytics();
-    else if (storedConsent !== "denied") {
+    if (storedConsent === "granted") {
+      if (!analyticsLoaded) loadAnalytics();
+    } else if (storedConsent !== "denied") {
       showBanner();
       return;
     }
