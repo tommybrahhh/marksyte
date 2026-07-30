@@ -8,6 +8,7 @@ const copy = {
     nav: { services: "Offers", blog: "Blog", about: "Team", contact: "Contact" },
     cta: {
       schedule: "Discuss an account growth challenge",
+      explore: "See how Marksyte can help",
       email: "Send the challenge by email"
     },
     hero: {
@@ -19,20 +20,24 @@ const copy = {
       note: "For brands, distributors, retailers and operators across categories and markets worldwide"
     },
     board: {
-      title: "The account growth case",
-      duration: "From opportunity to buyer decision",
+      title: "Account decision brief",
+      duration: "Buyer-ready",
+      questionLabel: "Decision to make",
+      question: "Where can this account grow profitably?",
       signal: "Opportunity",
-      signalValue: "Find the growth",
-      signalNote: "Market, shopper and account",
+      signalValue: "Find the opportunity",
+      signalNote: "Market, traveller and account evidence",
       choice: "Strategy",
-      choiceValue: "Choose the move",
-      choiceNote: "Range, value and activation",
+      choiceValue: "Choose the commercial move",
+      choiceNote: "Range, value and activation choices",
       action: "Buyer",
-      actionValue: "Win the decision",
-      actionNote: "Evidence, economics and story",
-      data: "Opportunity",
-      insight: "Account",
-      activation: "Decision"
+      actionValue: "Build the buyer case",
+      actionNote: "Evidence, economics and negotiation",
+      outputLabel: "What the team leaves with",
+      output: "One clear recommendation. A case the buyer can act on.",
+      data: "Growth plan",
+      insight: "Commercial model",
+      activation: "Buyer story"
     },
     proof: {
       one: "Commercial opportunities identified across consumer and B2B categories",
@@ -50,41 +55,44 @@ const copy = {
       threeText: "Objectives, economics, scenarios and boundaries need to be aligned before the tender or buyer meeting"
     },
     offers: {
-      eyebrow: "Commercial strategy projects",
-      title: "Built around the account decision in front of you",
+      eyebrow: "Choose the decision",
+      title: "Four decisions. One senior strategy partner.",
       intro:
-        "Marksyte works as a senior strategy partner to commercial leaders across brands, distributors, retailers and operators—globally and across categories",
+        "Start with the commercial decision you need to make. Marksyte brings the analysis, structure and senior support to move it forward.",
       deliverables: "From analysis to action: decision deck · working model · management view · activation tools",
-      primary: "Account portfolio strategy",
+      primary: "Account range strategy",
       weeks: "Custom project",
-      growthTitle: "Focus the range behind the account opportunity",
+      growthTitle: "Which products should this customer list?",
       growthText:
-        "Combine SKU, category, customer and shopper evidence to build a portfolio that fits demand and space constraints",
+        "Prioritise the range and build the evidence for listings, delistings and growth.",
       growthOne: "SKU roles and range gaps",
       growthTwo: "Portfolio scenarios",
       growthThree: "Prioritization model and decision deck",
       strategyLabel: "Customer economics and pricing",
       project: "Custom project",
-      strategyTitle: "Build a value case that works for both sides",
+      strategyTitle: "How do we grow value for both sides?",
       strategyText:
-        "Connect price ladders, pack roles, margins and premiumization choices in one coherent growth model",
+        "Test price, pack, mix and margin choices before taking a proposal to the customer.",
       strategyOne: "Pack-price and margin analysis",
       strategyTwo: "Pricing and mix scenarios",
       strategyThree: "Simulator and recommendation deck",
-      insightLabel: "Commercial activation planning",
-      insightTitle: "Turn the agreement into measurable execution",
+      insightLabel: "Commercial activation",
+      insightTitle: "How will the agreement win in store?",
       insightText:
-        "Translate the brand into relevant occasions, messages and activation priorities for shoppers and commercial partners",
+        "Turn the commercial agreement into clear priorities, actions and measures.",
       insightOne: "Channel proposition",
       insightTwo: "Occasion and activation priorities",
       insightThree: "Messaging and activation assets",
       presentationLabel: "Buyer proposition and negotiation",
-      presentationTitle: "Win the decision with a stronger commercial case",
+      presentationTitle: "What will make the buyer say yes?",
       presentationText:
-        "Turn portfolio, pricing, category and brand evidence into a buyer-ready strategy and negotiation narrative",
+        "Build the customer-specific case, scenarios and negotiation position.",
       presentationOne: "Customer value proposition",
       presentationTwo: "Negotiation scenarios",
-      presentationThree: "Sell-in deck and meeting storyline"
+      presentationThree: "Sell-in deck and meeting storyline",
+      explore: "Explore service →",
+      unsure: "Not sure which service fits? Start with the decision you need to make.",
+      unsureCta: "Discuss it with Marksyte →"
     },
     method: {
       eyebrow: "How an engagement works",
@@ -155,6 +163,7 @@ const copy = {
     nav: { services: "Servicios", blog: "Blog", about: "Equipo", contact: "Contacto" },
     cta: {
       schedule: "Cuéntanos qué cuenta quieres hacer crecer",
+      explore: "Ver cómo puede ayudarte Marksyte",
       email: "Enviar el reto por correo"
     },
     hero: {
@@ -166,20 +175,24 @@ const copy = {
       note: "Trabajamos con marcas, distribuidores, retailers y operadores de cualquier categoría y mercado"
     },
     board: {
-      title: "El caso comercial de la cuenta",
-      duration: "De la oportunidad a la decisión del comprador",
+      title: "Ficha de decisión de cuenta",
+      duration: "Lista para el comprador",
+      questionLabel: "Decisión que hay que tomar",
+      question: "¿Dónde puede crecer esta cuenta de forma rentable?",
       signal: "Oportunidad",
-      signalValue: "Detectar dónde crecer",
-      signalNote: "Mercado, viajero y cliente",
+      signalValue: "Detectar la oportunidad",
+      signalNote: "Datos de mercado, viajero y cuenta",
       choice: "Estrategia",
-      choiceValue: "Definir la apuesta",
-      choiceNote: "Surtido, valor y activación",
+      choiceValue: "Elegir la apuesta comercial",
+      choiceNote: "Decisiones de surtido, valor y activación",
       action: "Comprador",
-      actionValue: "Conseguir el sí",
-      actionNote: "Pruebas, rentabilidad y relato",
-      data: "Oportunidad",
-      insight: "Cuenta",
-      activation: "Decisión"
+      actionValue: "Construir el caso para el comprador",
+      actionNote: "Pruebas, rentabilidad y negociación",
+      outputLabel: "Lo que se lleva el equipo",
+      output: "Una recomendación clara. Un caso sobre el que el comprador puede actuar.",
+      data: "Plan de crecimiento",
+      insight: "Modelo comercial",
+      activation: "Argumento de venta"
     },
     proof: {
       one: "Oportunidades comerciales identificadas en categorías de consumo y B2B",
@@ -197,41 +210,44 @@ const copy = {
       threeText: "Antes de un concurso o una reunión con el comprador hay que alinear objetivos, rentabilidad, escenarios y límites"
     },
     offers: {
-      eyebrow: "Consultoría de estrategia comercial",
-      title: "Cada proyecto responde a una decisión comercial concreta",
+      eyebrow: "Elige la decisión",
+      title: "Cuatro decisiones. Un único socio estratégico senior.",
       intro:
-        "Marksyte trabaja junto a los equipos comerciales de marcas, distribuidores, retailers y operadores, en cualquier categoría y mercado",
+        "Empieza por la decisión comercial que necesitas tomar. Marksyte aporta análisis, estructura y apoyo senior para hacerla avanzar.",
       deliverables: "De la oportunidad a la reunión: plan de crecimiento · modelo económico · argumento de venta · escenarios de negociación",
       primary: "Estrategia de surtido por cuenta",
       weeks: "Proyecto a medida",
-      growthTitle: "Alinea el surtido con la oportunidad de cada cliente",
+      growthTitle: "¿Qué productos debería incorporar este cliente?",
       growthText:
-        "Combinamos datos de SKU, categoría, cliente y viajero para definir un surtido adaptado a la demanda y al espacio disponible",
+        "Prioriza el surtido y construye las pruebas para altas, bajas y crecimiento.",
       growthOne: "Función de cada SKU y huecos de surtido",
       growthTwo: "Escenarios de gama",
       growthThree: "Modelo de priorización y recomendación",
       strategyLabel: "Rentabilidad y arquitectura de precios",
       project: "Proyecto a medida",
-      strategyTitle: "Construye una propuesta rentable para ambas partes",
+      strategyTitle: "¿Cómo crear valor para ambas partes?",
       strategyText:
-        "Conectamos escalones de precio, función de cada formato, márgenes y premiumización en un modelo de crecimiento coherente",
+        "Compara precios, formatos, mezcla y margen antes de presentar la propuesta.",
       strategyOne: "Análisis de precios, formatos y margen",
       strategyTwo: "Escenarios de precio y mezcla",
       strategyThree: "Simulador y recomendación",
-      insightLabel: "Plan de activación comercial",
-      insightTitle: "Convierte el acuerdo en resultados medibles",
+      insightLabel: "Activación comercial",
+      insightTitle: "¿Cómo hacer que el acuerdo funcione en tienda?",
       insightText:
-        "Traducimos la marca en ocasiones, mensajes y prioridades de activación relevantes para viajeros y socios comerciales",
+        "Convierte el acuerdo en prioridades, acciones y métricas claras.",
       insightOne: "Propuesta para el canal",
       insightTwo: "Prioridades de ocasión y activación",
       insightThree: "Mensajes y activos de activación",
       presentationLabel: "Propuesta comercial y negociación",
-      presentationTitle: "Llega al comprador con un caso difícil de rechazar",
+      presentationTitle: "¿Qué hará que el comprador diga que sí?",
       presentationText:
-        "Convertimos los datos de surtido, precios, categoría y marca en una posición clara para el cliente y la negociación",
+        "Construye el caso para ese cliente, los escenarios y la posición negociadora.",
       presentationOne: "Propuesta de valor para el cliente",
       presentationTwo: "Escenarios de negociación",
-      presentationThree: "Presentación e hilo argumental"
+      presentationThree: "Presentación e hilo argumental",
+      explore: "Ver servicio →",
+      unsure: "¿No sabes qué servicio encaja? Empieza por la decisión que necesitas tomar.",
+      unsureCta: "Coméntala con Marksyte →"
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
