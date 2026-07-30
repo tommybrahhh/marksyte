@@ -150,33 +150,33 @@ const copy = {
     meta: {
       title: "Estrategia comercial Travel Retail y Duty Free | Marksyte",
       description:
-        "Marksyte es el socio de estrategia comercial para KAMs, KADs, Business Developers y responsables de ventas en Travel Retail y Duty Free a nivel global."
+        "Consultoría estratégica para KAMs, KADs, responsables de desarrollo de negocio y directores comerciales de Travel Retail y Duty Free en todo el mundo."
     },
     nav: { services: "Servicios", blog: "Blog", about: "Equipo", contact: "Contacto" },
     cta: {
-      schedule: "Hablemos de un reto de crecimiento de cuenta",
+      schedule: "Cuéntanos qué cuenta quieres hacer crecer",
       email: "Enviar el reto por correo"
     },
     hero: {
-      eyebrow: "Socio estratégico de responsables comerciales de Travel Retail y Duty Free",
-      offer: "Portfolio · RGM y pricing · trade marketing · marca · negociación",
-      title: "Gana mejores listings, negociaciones y crecimiento de cuentas en Travel Retail",
+      eyebrow: "Consultoría estratégica para equipos comerciales de Travel Retail y Duty Free",
+      offer: "Crecimiento de cuentas · nuevas implantaciones · revisiones de surtido · concursos · negociación",
+      title: "Haz crecer tus cuentas y afronta cada negociación con una propuesta más sólida",
       lead:
-        "Ayudamos a KAMs, KADs, Business Developers y responsables de ventas a convertir evidencia de mercado, shopper, portfolio y pricing en estrategias de cuenta, argumentos para compradores y planes de crecimiento ejecutables",
-      note: "Para marcas, distribuidores, retailers y operadores de cualquier categoría y mercado del mundo"
+        "Ayudamos a KAMs, KADs, responsables de desarrollo de negocio y directores comerciales a convertir datos dispersos de mercado, viajero, surtido y precios en prioridades claras, argumentos para el comprador y planes que se pueden ejecutar",
+      note: "Trabajamos con marcas, distribuidores, retailers y operadores de cualquier categoría y mercado"
     },
     board: {
-      title: "El caso de crecimiento de cuenta",
+      title: "El caso comercial de la cuenta",
       duration: "De la oportunidad a la decisión del comprador",
       signal: "Oportunidad",
-      signalValue: "Encontrar el crecimiento",
-      signalNote: "Mercado, shopper y cuenta",
+      signalValue: "Detectar dónde crecer",
+      signalNote: "Mercado, viajero y cliente",
       choice: "Estrategia",
-      choiceValue: "Elegir el movimiento",
-      choiceNote: "Gama, valor y activación",
+      choiceValue: "Definir la apuesta",
+      choiceNote: "Surtido, valor y activación",
       action: "Comprador",
-      actionValue: "Ganar la decisión",
-      actionNote: "Evidencia, economía e historia",
+      actionValue: "Conseguir el sí",
+      actionNote: "Pruebas, rentabilidad y relato",
       data: "Oportunidad",
       insight: "Cuenta",
       activation: "Decisión"
@@ -184,58 +184,58 @@ const copy = {
     proof: {
       one: "Oportunidades comerciales identificadas en categorías de consumo y B2B",
       two: "Convertidos en oportunidades concretas junto a equipos comerciales",
-      three: "Estrategia comercial en marca, portfolio, pricing e historias para clientes"
+      three: "Estrategia comercial aplicada a marca, surtido, precios y propuestas para clientes"
     },
     challenges: {
       eyebrow: "Cuándo Marksyte aporta valor",
-      title: "Las decisiones importantes de cuenta necesitan más que un deck de ventas genérico",
-      oneTitle: "Las prioridades de crecimiento de la cuenta no están claras",
-      oneText: "Un ciclo de planificación, entrada en mercado o cuenta con bajo rendimiento necesita un foco claro sobre dónde crecer",
-      twoTitle: "Un listing o revisión de gama necesita un caso más sólido",
-      twoText: "La evidencia de portfolio, pricing, categoría y shopper debe convertirse en una razón específica para que el cliente actúe",
-      threeTitle: "El equipo no está preparado para la negociación",
-      threeText: "Objetivos, economía, escenarios y límites deben estar alineados antes del tender o reunión con el comprador"
+      title: "Las decisiones clave de una cuenta no se resuelven con una presentación genérica",
+      oneTitle: "Falta claridad sobre dónde crecer",
+      oneText: "La planificación anual, la entrada en un mercado o una cuenta que no despega exigen saber qué oportunidades merecen atención",
+      twoTitle: "Una alta o revisión de surtido necesita mejores argumentos",
+      twoText: "Los datos de categoría, surtido, precios y viajero deben explicar con claridad por qué le conviene actuar al cliente",
+      threeTitle: "El equipo llega a la negociación sin una posición común",
+      threeText: "Antes de un concurso o una reunión con el comprador hay que alinear objetivos, rentabilidad, escenarios y límites"
     },
     offers: {
-      eyebrow: "Proyectos de estrategia comercial",
-      title: "Construidos alrededor de la decisión de cuenta que tienes delante",
+      eyebrow: "Consultoría de estrategia comercial",
+      title: "Cada proyecto responde a una decisión comercial concreta",
       intro:
-        "Marksyte trabaja como socio estratégico senior de responsables comerciales en marcas, distribuidores, retailers y operadores, a nivel global y en todas las categorías",
-      deliverables: "Del análisis a la acción: deck de decisión · modelo de trabajo · vista de gestión · herramientas de activación",
-      primary: "Estrategia de portfolio por cuenta",
+        "Marksyte trabaja junto a los equipos comerciales de marcas, distribuidores, retailers y operadores, en cualquier categoría y mercado",
+      deliverables: "De la oportunidad a la reunión: plan de crecimiento · modelo económico · argumento de venta · escenarios de negociación",
+      primary: "Estrategia de surtido por cuenta",
       weeks: "Proyecto a medida",
-      growthTitle: "Enfocar la gama detrás de la oportunidad de cuenta",
+      growthTitle: "Alinea el surtido con la oportunidad de cada cliente",
       growthText:
-        "Combinamos evidencia de SKU, categoría, cliente y shopper para construir un portfolio adaptado a la demanda y al espacio disponible",
-      growthOne: "Roles de SKU y gaps de gama",
-      growthTwo: "Escenarios de portfolio",
-      growthThree: "Modelo de priorización y deck de decisión",
-      strategyLabel: "Economía del cliente y pricing",
+        "Combinamos datos de SKU, categoría, cliente y viajero para definir un surtido adaptado a la demanda y al espacio disponible",
+      growthOne: "Función de cada SKU y huecos de surtido",
+      growthTwo: "Escenarios de gama",
+      growthThree: "Modelo de priorización y recomendación",
+      strategyLabel: "Rentabilidad y arquitectura de precios",
       project: "Proyecto a medida",
-      strategyTitle: "Construir un caso de valor que funcione para ambas partes",
+      strategyTitle: "Construye una propuesta rentable para ambas partes",
       strategyText:
-        "Conectamos escalera de precios, rol de packs, márgenes y premiumización en un modelo de crecimiento coherente",
-      strategyOne: "Análisis pack-precio y margen",
-      strategyTwo: "Escenarios de pricing y mix",
-      strategyThree: "Simulador y deck de recomendación",
-      insightLabel: "Planificación de activación comercial",
-      insightTitle: "Convertir el acuerdo en ejecución medible",
+        "Conectamos escalones de precio, función de cada formato, márgenes y premiumización en un modelo de crecimiento coherente",
+      strategyOne: "Análisis de precios, formatos y margen",
+      strategyTwo: "Escenarios de precio y mezcla",
+      strategyThree: "Simulador y recomendación",
+      insightLabel: "Plan de activación comercial",
+      insightTitle: "Convierte el acuerdo en resultados medibles",
       insightText:
-        "Traducimos la marca en ocasiones, mensajes y prioridades de activación relevantes para shoppers y socios comerciales",
+        "Traducimos la marca en ocasiones, mensajes y prioridades de activación relevantes para viajeros y socios comerciales",
       insightOne: "Propuesta para el canal",
       insightTwo: "Prioridades de ocasión y activación",
       insightThree: "Mensajes y activos de activación",
-      presentationLabel: "Propuesta para compradores y negociación",
-      presentationTitle: "Ganar la decisión con un caso comercial más sólido",
+      presentationLabel: "Propuesta comercial y negociación",
+      presentationTitle: "Llega al comprador con un caso difícil de rechazar",
       presentationText:
-        "Convertimos la evidencia de portfolio, pricing, categoría y marca en una estrategia y narrativa de negociación lista para compradores",
+        "Convertimos los datos de surtido, precios, categoría y marca en una posición clara para el cliente y la negociación",
       presentationOne: "Propuesta de valor para el cliente",
       presentationTwo: "Escenarios de negociación",
-      presentationThree: "Deck de sell-in y storyline de reunión"
+      presentationThree: "Presentación e hilo argumental"
     },
     method: {
       eyebrow: "Cómo funciona un proyecto",
-      title: "Apoyo estratégico senior desde la oportunidad hasta la decisión del comprador",
+      title: "Criterio comercial y apoyo senior desde el análisis hasta la reunión",
       oneTitle: "Diagnosticar",
       oneText: "Mapear la evidencia",
       twoTitle: "Priorizar",
@@ -247,23 +247,23 @@ const copy = {
     },
     about: {
       eyebrow: "El equipo detrás de Marksyte",
-      title: "Un socio senior de estrategia comercial detrás de decisiones importantes de cuenta",
+      title: "Estrategia senior para las decisiones comerciales que no admiten improvisación",
       link: "Conocer el equipo",
       placeholder: "Perfil del equipo",
       text:
-        "Marksyte combina experiencia en Travel Retail, estrategia comercial y profundidad analítica para ayudar a responsables de ventas a tomar mejores decisiones y llegar mejor preparados a las conversaciones con clientes",
+        "Marksyte combina experiencia en Travel Retail, estrategia comercial y capacidad analítica para que los equipos decidan con más criterio y lleguen mejor preparados a cada conversación con el cliente",
       proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas",
-      proofTwo: "Prioridades de marca, rango, pricing y trade traducidas en acción comercial",
+      proofTwo: "Prioridades de marca, surtido, precios y activación convertidas en acciones comerciales",
       tagOne: "Travel Retail",
       tagTwo: "Estrategia de marca",
-      tagThree: "Optimización de portfolio",
+      tagThree: "Estrategia de surtido",
       tagFour: "Trade marketing"
     },
     contact: {
-      eyebrow: "Llamada de estrategia comercial",
-      title: "¿Qué decisión de cuenta o conversación con comprador estás preparando?",
+      eyebrow: "Hablemos de tu próximo reto comercial",
+      title: "¿Qué cuenta quieres hacer crecer o qué negociación tienes por delante?",
       text:
-        "Cuéntanos sobre la cuenta, ciclo de planificación, listing, revisión de gama, tender o negociación. Te responderemos indicando dónde puede aportar valor un apoyo estratégico enfocado",
+        "Cuéntanos si estás preparando un plan de cuenta, una nueva alta, una revisión de surtido, un concurso o una negociación. Te diremos con claridad dónde podemos aportar valor",
       or: "o escríbenos por correo"
     },
     form: {
