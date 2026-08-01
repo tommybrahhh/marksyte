@@ -540,6 +540,74 @@ body.article-page { color: var(--article-ink); background: #fff; }
 .generation-factor.is-offer h3, .generation-factor.is-offer p { color: #fff; }
 .segment-operator { display: grid; place-items: center; min-width: 1.15rem; color: var(--article-muted); font-size: 1.3rem; }
 .generation-segment-model > p { margin: 1rem .1rem 0; color: var(--article-muted); font-size: .96rem; line-height: 1.6; }
+.airport-demand-funnel { margin: 2.25rem 0; padding: 1.15rem; border: 1px solid var(--article-line); border-radius: 8px; background: linear-gradient(180deg,#fff 0%,var(--article-soft) 100%); }
+.airport-demand-funnel > figcaption { margin: 0 0 .85rem; color: var(--article-muted); font-size: .82rem; font-weight: 700; text-transform: uppercase; }
+.airport-demand-flow { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 1px; border: 1px solid var(--article-line); border-radius: 8px; background: var(--article-line); overflow: hidden; }
+.airport-demand-step { min-height: 210px; padding: 1rem; background: #fff; position: relative; }
+.airport-demand-step::after { content: ""; position: absolute; top: 50%; right: -.55rem; z-index: 2; width: 1.1rem; height: 1.1rem; border-top: 1px solid var(--article-line); border-right: 1px solid var(--article-line); background: inherit; transform: translateY(-50%) rotate(45deg); }
+.airport-demand-step:last-child::after { display: none; }
+.airport-demand-step span { display: grid; place-items: center; width: 2rem; height: 2rem; margin-bottom: .85rem; border-radius: 50%; background: var(--article-accent-2); color: var(--article-accent); font-size: .8rem; font-weight: 800; }
+.airport-demand-step h3 { margin-bottom: .45rem; }
+.airport-demand-step p { margin: 0; color: var(--article-muted); font-size: .9rem; line-height: 1.5; }
+.airport-demand-step.is-capacity { background: #eef6fb; }
+.airport-demand-step.is-operation { background: #f6f3fb; }
+.airport-demand-step.is-passengers { background: #fff9eb; }
+.airport-demand-step.is-eligible { background: #f1f8f5; }
+.airport-demand-step.is-value { background: #152b29; color: #fff; }
+.airport-demand-step.is-value span { background: rgba(255,255,255,.14); color: #fff; }
+.airport-demand-step.is-value h3, .airport-demand-step.is-value p { color: #fff; }
+.airport-demand-funnel > p { margin: 1rem .1rem 0; color: var(--article-muted); font-size: .96rem; line-height: 1.6; }
+.inventory-planning-cycle { margin: 2.25rem 0; padding: 1.15rem; border: 1px solid var(--article-line); border-radius: 8px; background: linear-gradient(180deg,#fff 0%,var(--article-soft) 100%); }
+.inventory-planning-cycle > figcaption { margin: 0 0 .85rem; color: var(--article-muted); font-size: .82rem; font-weight: 700; text-transform: uppercase; }
+.inventory-cycle-flow { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 1px; border: 1px solid var(--article-line); border-radius: 8px; background: var(--article-line); overflow: hidden; }
+.inventory-cycle-step { min-height: 210px; padding: 1rem; background: #fff; position: relative; }
+.inventory-cycle-step::after { content: ""; position: absolute; top: 50%; right: -.55rem; z-index: 2; width: 1.1rem; height: 1.1rem; border-top: 1px solid var(--article-line); border-right: 1px solid var(--article-line); background: inherit; transform: translateY(-50%) rotate(45deg); }
+.inventory-cycle-step:last-child::after { display: none; }
+.inventory-cycle-step span { display: grid; place-items: center; width: 2rem; height: 2rem; margin-bottom: .85rem; border-radius: 50%; background: var(--article-accent-2); color: var(--article-accent); font-size: .8rem; font-weight: 800; }
+.inventory-cycle-step h3 { margin-bottom: .45rem; }
+.inventory-cycle-step p { margin: 0; color: var(--article-muted); font-size: .9rem; line-height: 1.5; }
+.inventory-cycle-step.is-signals { background: #eef6fb; }
+.inventory-cycle-step.is-model { background: #f6f3fb; }
+.inventory-cycle-step.is-decision { background: #fff9eb; }
+.inventory-cycle-step.is-execution { background: #f1f8f5; }
+.inventory-cycle-step.is-learning { background: #152b29; color: #fff; }
+.inventory-cycle-step.is-learning span { background: rgba(255,255,255,.14); color: #fff; }
+.inventory-cycle-step.is-learning h3, .inventory-cycle-step.is-learning p { color: #fff; }
+.inventory-planning-cycle > p { margin: 1rem .1rem 0; color: var(--article-muted); font-size: .96rem; line-height: 1.6; }
+.fragrance-value-model { margin: 2.25rem 0; padding: 1.15rem; border: 1px solid var(--article-line); border-radius: 8px; background: linear-gradient(180deg,#fff 0%,var(--article-soft) 100%); }
+.fragrance-value-model > figcaption { margin: 0 0 .85rem; color: var(--article-muted); font-size: .82rem; font-weight: 700; text-transform: uppercase; }
+.fragrance-value-flow { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 1px; border: 1px solid var(--article-line); border-radius: 8px; background: var(--article-line); overflow: hidden; }
+.fragrance-value-step { min-height: 210px; padding: 1rem; background: #fff; position: relative; }
+.fragrance-value-step::after { content: ""; position: absolute; top: 50%; right: -.55rem; z-index: 2; width: 1.1rem; height: 1.1rem; border-top: 1px solid var(--article-line); border-right: 1px solid var(--article-line); background: inherit; transform: translateY(-50%) rotate(45deg); }
+.fragrance-value-step:last-child::after { display: none; }
+.fragrance-value-step span { display: grid; place-items: center; width: 2rem; height: 2rem; margin-bottom: .85rem; border-radius: 50%; background: var(--article-accent-2); color: var(--article-accent); font-size: .8rem; font-weight: 800; }
+.fragrance-value-step h3 { margin-bottom: .45rem; }
+.fragrance-value-step p { margin: 0; color: var(--article-muted); font-size: .9rem; line-height: 1.5; }
+.fragrance-value-step.is-discovery { background: #eef6fb; }
+.fragrance-value-step.is-occasion { background: #f6f3fb; }
+.fragrance-value-step.is-format { background: #fff9eb; }
+.fragrance-value-step.is-premium { background: #f1f8f5; }
+.fragrance-value-step.is-value { background: #152b29; color: #fff; }
+.fragrance-value-step.is-value span { background: rgba(255,255,255,.14); color: #fff; }
+.fragrance-value-step.is-value h3, .fragrance-value-step.is-value p { color: #fff; }
+.fragrance-value-model > p { margin: 1rem .1rem 0; color: var(--article-muted); font-size: .96rem; line-height: 1.6; }
+.proprietary-brand-model { margin: 2.25rem 0; padding: 1.15rem; border: 1px solid var(--article-line); border-radius: 8px; background: linear-gradient(180deg,#fff 0%,var(--article-soft) 100%); }
+.proprietary-brand-model > figcaption { margin: 0 0 .85rem; color: var(--article-muted); font-size: .82rem; font-weight: 700; text-transform: uppercase; }
+.proprietary-brand-flow { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 1px; border: 1px solid var(--article-line); border-radius: 8px; background: var(--article-line); overflow: hidden; }
+.proprietary-brand-step { min-height: 210px; padding: 1rem; background: #fff; position: relative; }
+.proprietary-brand-step::after { content: ""; position: absolute; top: 50%; right: -.55rem; z-index: 2; width: 1.1rem; height: 1.1rem; border-top: 1px solid var(--article-line); border-right: 1px solid var(--article-line); background: inherit; transform: translateY(-50%) rotate(45deg); }
+.proprietary-brand-step:last-child::after { display: none; }
+.proprietary-brand-step span { display: grid; place-items: center; width: 2rem; height: 2rem; margin-bottom: .85rem; border-radius: 50%; background: var(--article-accent-2); color: var(--article-accent); font-size: .8rem; font-weight: 800; }
+.proprietary-brand-step h3 { margin-bottom: .45rem; }
+.proprietary-brand-step p { margin: 0; color: var(--article-muted); font-size: .9rem; line-height: 1.5; }
+.proprietary-brand-step.is-insight { background: #eef6fb; }
+.proprietary-brand-step.is-design { background: #f6f3fb; }
+.proprietary-brand-step.is-operations { background: #fff9eb; }
+.proprietary-brand-step.is-learning { background: #f1f8f5; }
+.proprietary-brand-step.is-scale { background: #152b29; color: #fff; }
+.proprietary-brand-step.is-scale span { background: rgba(255,255,255,.14); color: #fff; }
+.proprietary-brand-step.is-scale h3, .proprietary-brand-step.is-scale p { color: #fff; }
+.proprietary-brand-model > p { margin: 1rem .1rem 0; color: var(--article-muted); font-size: .96rem; line-height: 1.6; }
 .opportunity-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1.25rem 0; }
 .opportunity-card { padding: 1.25rem; border: 1px solid var(--article-line); border-radius: 8px; background: #fff; }
 .opportunity-card p { margin: 0; font-size: .96rem; line-height: 1.58; }
@@ -568,7 +636,7 @@ body.article-page { color: var(--article-ink); background: #fff; }
 @media (max-width: 800px) {
   .metric-strip { grid-template-columns: repeat(2,1fr); }
   .reading-nav ol { columns: 1; }
-  .opportunity-grid, .ai-grid, .flow-panels, .value-drivers, .booking-path, .loop-map, .ees-flow, .essentials-loop, .flywheel-ring, .ai-commerce-grid, .profitability-flow, .regulatory-flow, .circular-loop, .stop-economy-flow, .airport-opportunity-flow, .voucher-cycle-flow, .pretravel-funnel, .sanya-destination-flow, .local-curation-flow, .hospitality-value-flow, .agentic-chain-flow, .tourism-corridor-flow, .forecast-lag-flow, .platform-map, .final-value-equation, .ai-visibility-flow, .airline-network-flow, .k-content-demand-flow, .pcf-cycle-flow, .generation-segment-equation { grid-template-columns: 1fr; }
+  .opportunity-grid, .ai-grid, .flow-panels, .value-drivers, .booking-path, .loop-map, .ees-flow, .essentials-loop, .flywheel-ring, .ai-commerce-grid, .profitability-flow, .regulatory-flow, .circular-loop, .stop-economy-flow, .airport-opportunity-flow, .voucher-cycle-flow, .pretravel-funnel, .sanya-destination-flow, .local-curation-flow, .hospitality-value-flow, .agentic-chain-flow, .tourism-corridor-flow, .forecast-lag-flow, .platform-map, .final-value-equation, .ai-visibility-flow, .airline-network-flow, .k-content-demand-flow, .pcf-cycle-flow, .generation-segment-equation, .airport-demand-flow, .inventory-cycle-flow, .fragrance-value-flow, .proprietary-brand-flow { grid-template-columns: 1fr; }
   .mix-scale { margin-left: 0; margin-right: 0; }
   .mix-row { grid-template-columns: 1fr 4.4rem; gap: .45rem .75rem; }
   .mix-track { grid-column: 1 / -1; grid-row: 2; }
@@ -607,8 +675,8 @@ body.article-page { color: var(--article-ink); background: #fff; }
   .sanya-stage::after { top: auto; right: 50%; bottom: -.55rem; transform: translateX(50%) rotate(135deg); }
   .curation-step { min-height: 0; }
   .curation-step::after { top: auto; right: 50%; bottom: -.55rem; transform: translateX(50%) rotate(135deg); }
-  .hospitality-step, .agentic-step, .corridor-step, .lag-step, .platform-step, .value-factor, .ai-visibility-step, .network-step, .k-content-step, .pcf-step { min-height: 0; }
-  .hospitality-step::after, .agentic-step::after, .corridor-step::after, .lag-step::after, .platform-step::after, .ai-visibility-step::after, .network-step::after, .k-content-step::after, .pcf-step::after { top: auto; right: 50%; bottom: -.55rem; transform: translateX(50%) rotate(135deg); }
+  .hospitality-step, .agentic-step, .corridor-step, .lag-step, .platform-step, .value-factor, .ai-visibility-step, .network-step, .k-content-step, .pcf-step, .airport-demand-step, .inventory-cycle-step, .fragrance-value-step, .proprietary-brand-step { min-height: 0; }
+  .hospitality-step::after, .agentic-step::after, .corridor-step::after, .lag-step::after, .platform-step::after, .ai-visibility-step::after, .network-step::after, .k-content-step::after, .pcf-step::after, .airport-demand-step::after, .inventory-cycle-step::after, .fragrance-value-step::after, .proprietary-brand-step::after { top: auto; right: 50%; bottom: -.55rem; transform: translateX(50%) rotate(135deg); }
   .generation-factor { min-height: 0; }
   .segment-operator { min-height: 1rem; }
   .inline-cta, .article-cta-box { align-items: flex-start; flex-direction: column; }
