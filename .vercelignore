@@ -4,3 +4,6 @@ preview-*.png
 outputs/
 tmp/
 work/
+
+# Historical pivot archive; retained in Git for recovery, never deployed.
+.archive/

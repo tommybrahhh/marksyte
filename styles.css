@@ -724,6 +724,31 @@ h1 {
   overflow: hidden;
 }
 
+.audience-strip {
+  display: grid;
+  gap: 18px;
+}
+
+.audience-strip .eyebrow {
+  margin: 0;
+}
+
+.audience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.audience-list span {
+  padding: 9px 13px;
+  border: 1px solid rgba(0, 127, 115, 0.2);
+  border-radius: 999px;
+  background: rgba(0, 127, 115, 0.06);
+  color: var(--ink);
+  font: 800 0.76rem var(--font-mono);
+  text-transform: uppercase;
+}
+
 .logo-marquee {
   position: relative;
   overflow: hidden;
@@ -2186,6 +2211,10 @@ h1 {
   gap: clamp(12px, 2vw, 20px);
 }
 
+.method-steps.five-step {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .method-steps::before {
   content: "";
   position: absolute;
@@ -3250,6 +3279,10 @@ h1 {
 
   .method-steps,
   .fit-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .method-steps.five-step {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 

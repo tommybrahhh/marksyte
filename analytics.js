@@ -6,6 +6,11 @@
   var consentMaxAge = 60 * 60 * 24 * 365;
   var analyticsLoaded = false;
 
+  function trackEvent(name, parameters) {
+    if (!analyticsLoaded || typeof window.gtag !== "function") return;
+    window.gtag("event", name, parameters || {});
+  }
+
   function isValidConsent(value) {
     return value === "granted" || value === "denied";
   }
@@ -199,6 +204,52 @@
     document.body.appendChild(button);
   }
 
+  function getCtaLabel(link) {
+    return (link.getAttribute("data-analytics-label") || link.textContent || "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 80);
+  }
+
+  function initialiseConversionTracking() {
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a") : null;
+      if (!link) return;
+
+      var href = link.getAttribute("href") || "";
+      var label = getCtaLabel(link);
+      var pagePath = window.location.pathname;
+
+      if (href.indexOf("https://calendly.com/") === 0) {
+        trackEvent("generate_lead", {
+          method: "calendly",
+          cta_label: label,
+          page_path: pagePath
+        });
+      } else if (href.indexOf("mailto:") === 0) {
+        trackEvent("contact_email_click", {
+          cta_label: label || "contact email",
+          page_path: pagePath
+        });
+      } else if (href === "#contact" || href.slice(-7) === "#contact") {
+        trackEvent("contact_intent", {
+          cta_label: label,
+          page_path: pagePath
+        });
+      }
+    });
+
+    document.addEventListener("submit", function (event) {
+      var form = event.target;
+      if (!form || form.id !== "discovery-form" || !form.checkValidity()) return;
+      trackEvent("contact_draft_open", {
+        method: "email_draft",
+        form_id: form.id,
+        page_path: window.location.pathname
+      });
+    });
+  }
+
   function chooseConsent(value) {
     storeConsent(value);
     if (value === "granted") loadAnalytics();
@@ -269,6 +320,8 @@
   }
 
   if (getStoredConsent() === "granted") loadAnalytics();
+
+  initialiseConversionTracking();
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", startConsentUi);

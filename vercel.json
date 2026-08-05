@@ -52,11 +52,6 @@
       "permanent": true
     },
     {
-      "source": "/es/study-cases/:path*",
-      "destination": "/es/casos-de-estudio/",
-      "permanent": true
-    },
-    {
       "source": "/study-cases/alc-spain",
       "destination": "/es/casos-de-estudio/alcohol-espana/",
       "permanent": true

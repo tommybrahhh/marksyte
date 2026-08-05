@@ -1,142 +1,7 @@
 const copy = {
   en: {
-    meta: {
-      title: "Travel Retail & Duty Free commercial strategy | Marksyte",
-      description:
-        "Marksyte is the commercial strategy partner for KAMs, KADs, Business Developers and sales leaders growing brands and accounts in global Travel Retail and Duty Free."
-    },
-    nav: { services: "Offers", blog: "Blog", about: "Team", contact: "Contact" },
-    cta: {
-      schedule: "Discuss an account growth challenge",
-      explore: "See how Marksyte can help",
-      email: "Send the challenge by email"
-    },
-    hero: {
-      eyebrow: "Strategy partner to Travel Retail & Duty Free sales leaders",
-      offer: "Portfolio · RGM & pricing · trade marketing · brand · negotiation",
-      title: "Win stronger listings, negotiations and account growth in Travel Retail",
-      lead:
-        "We help KAMs, KADs, Business Developers and sales leaders turn market, shopper, portfolio and pricing evidence into clear account strategies, buyer-ready arguments and executable growth plans",
-      note: "For brands, distributors, retailers and operators across categories and markets worldwide"
-    },
-    board: {
-      title: "Account decision brief",
-      duration: "Buyer-ready",
-      questionLabel: "Decision to make",
-      question: "Where can this account grow profitably?",
-      signal: "Opportunity",
-      signalValue: "Find the opportunity",
-      signalNote: "Market, traveller and account evidence",
-      choice: "Strategy",
-      choiceValue: "Choose the commercial move",
-      choiceNote: "Range, value and activation choices",
-      action: "Buyer",
-      actionValue: "Build the buyer case",
-      actionNote: "Evidence, economics and negotiation",
-      outputLabel: "What the team leaves with",
-      output: "One clear recommendation. A case the buyer can act on.",
-      data: "Growth plan",
-      insight: "Commercial model",
-      activation: "Buyer story"
-    },
-    proof: {
-      one: "Commercial opportunities identified across consumer and B2B categories",
-      two: "Developed into concrete sales opportunities with commercial teams",
-      three: "Global commercial strategy across brands, distributors, retailers and operators"
-    },
-    challenges: {
-      eyebrow: "When Marksyte is useful",
-      title: "Important account decisions need more than a generic sales deck",
-      oneTitle: "The account growth priorities are unclear",
-      oneText: "A planning cycle, market entry or underperforming account needs a focused view of where growth can come from",
-      twoTitle: "A listing or range review needs a stronger case",
-      twoText: "Portfolio, pricing, category and shopper evidence must become a customer-specific reason to act",
-      threeTitle: "The team is not ready for the negotiation",
-      threeText: "Objectives, economics, scenarios and boundaries need to be aligned before the tender or buyer meeting"
-    },
-    offers: {
-      eyebrow: "Choose the decision",
-      title: "Four decisions. One senior strategy partner.",
-      intro:
-        "Start with the commercial decision you need to make. Marksyte brings the analysis, structure and senior support to move it forward.",
-      deliverables: "From analysis to action: decision deck · working model · management view · activation tools",
-      primary: "Account range strategy",
-      weeks: "Custom project",
-      growthTitle: "Which products should this customer list?",
-      growthText:
-        "Prioritise the range and build the evidence for listings, delistings and growth.",
-      growthOne: "SKU roles and range gaps",
-      growthTwo: "Portfolio scenarios",
-      growthThree: "Prioritization model and decision deck",
-      strategyLabel: "Customer economics and pricing",
-      project: "Custom project",
-      strategyTitle: "How do we grow value for both sides?",
-      strategyText:
-        "Test price, pack, mix and margin choices before taking a proposal to the customer.",
-      strategyOne: "Pack-price and margin analysis",
-      strategyTwo: "Pricing and mix scenarios",
-      strategyThree: "Simulator and recommendation deck",
-      insightLabel: "Commercial activation",
-      insightTitle: "How will the agreement win in store?",
-      insightText:
-        "Turn the commercial agreement into clear priorities, actions and measures.",
-      insightOne: "Channel proposition",
-      insightTwo: "Occasion and activation priorities",
-      insightThree: "Messaging and activation assets",
-      presentationLabel: "Buyer proposition and negotiation",
-      presentationTitle: "What will make the buyer say yes?",
-      presentationText:
-        "Build the customer-specific case, scenarios and negotiation position.",
-      presentationOne: "Customer value proposition",
-      presentationTwo: "Negotiation scenarios",
-      presentationThree: "Sell-in deck and meeting storyline",
-      explore: "Explore service →",
-      unsure: "Not sure which service fits? Start with the decision you need to make.",
-      unsureCta: "Discuss it with Marksyte →"
-    },
-    method: {
-      eyebrow: "How an engagement works",
-      title: "Senior strategy support from opportunity to buyer decision",
-      oneTitle: "Diagnose",
-      oneText: "Map the evidence",
-      twoTitle: "Prioritize",
-      twoText: "Choose the focus",
-      threeTitle: "Design",
-      threeText: "Shape the answer",
-      fourTitle: "Activate",
-      fourText: "Make it usable"
-    },
-    about: {
-      eyebrow: "The team behind Marksyte",
-      title: "A senior commercial strategy partner behind important account decisions",
-      link: "Meet the team",
-      placeholder: "Team profile",
-      text:
-        "Marksyte combines Travel Retail experience, commercial strategy and analytical depth to help sales leaders make stronger choices and enter customer conversations better prepared",
-      proofOne: "Commercial opportunities identified, including EUR 7M+ developed into concrete sales opportunities",
-      proofTwo: "Brand, range, pricing and trade priorities translated into commercial action",
-      tagOne: "Travel Retail",
-      tagTwo: "Brand strategy",
-      tagThree: "Portfolio optimization",
-      tagFour: "Trade marketing"
-    },
-    contact: {
-      eyebrow: "Commercial strategy call",
-      title: "What account decision or buyer conversation are you preparing for?",
-      text:
-        "Tell us about the account, planning cycle, listing, range review, tender or negotiation. We will respond with where focused strategy support can add value",
-      or: "or email us directly"
-    },
     form: {
-      name: "Name",
-      email: "Work email",
-      company: "Company and role",
-      challenge: "What is the challenge?",
-      placeholder:
-        "For example: we are preparing for a range review and need a stronger customer-specific growth case",
-      note:
-        "Submitting opens an email draft addressed to Marksyte. Your information is not stored on this website. We usually reply within 1-2 business days",
-      subject: "Growth challenge from Marksyte website",
+      subject: "Data challenge from Marksyte website",
       prepared: "Your email draft is ready. Send it to start the conversation"
     },
     kpis: [
@@ -155,143 +20,8 @@ const copy = {
     }
   },
   es: {
-    meta: {
-      title: "Estrategia comercial Travel Retail y Duty Free | Marksyte",
-      description:
-        "Consultoría estratégica para KAMs, KADs, responsables de desarrollo de negocio y directores comerciales de Travel Retail y Duty Free en todo el mundo."
-    },
-    nav: { services: "Servicios", blog: "Blog", about: "Equipo", contact: "Contacto" },
-    cta: {
-      schedule: "Cuéntanos qué cuenta quieres hacer crecer",
-      explore: "Ver cómo puede ayudarte Marksyte",
-      email: "Enviar el reto por correo"
-    },
-    hero: {
-      eyebrow: "Consultoría estratégica para equipos comerciales de Travel Retail y Duty Free",
-      offer: "Crecimiento de cuentas · nuevas implantaciones · revisiones de surtido · concursos · negociación",
-      title: "Haz crecer tus cuentas y afronta cada negociación con una propuesta más sólida",
-      lead:
-        "Ayudamos a KAMs, KADs, responsables de desarrollo de negocio y directores comerciales a convertir datos dispersos de mercado, viajero, surtido y precios en prioridades claras, argumentos para el comprador y planes que se pueden ejecutar",
-      note: "Trabajamos con marcas, distribuidores, retailers y operadores de cualquier categoría y mercado"
-    },
-    board: {
-      title: "Ficha de decisión de cuenta",
-      duration: "Lista para el comprador",
-      questionLabel: "Decisión que hay que tomar",
-      question: "¿Dónde puede crecer esta cuenta de forma rentable?",
-      signal: "Oportunidad",
-      signalValue: "Detectar la oportunidad",
-      signalNote: "Datos de mercado, viajero y cuenta",
-      choice: "Estrategia",
-      choiceValue: "Elegir la apuesta comercial",
-      choiceNote: "Decisiones de surtido, valor y activación",
-      action: "Comprador",
-      actionValue: "Construir el caso para el comprador",
-      actionNote: "Pruebas, rentabilidad y negociación",
-      outputLabel: "Lo que se lleva el equipo",
-      output: "Una recomendación clara. Un caso sobre el que el comprador puede actuar.",
-      data: "Plan de crecimiento",
-      insight: "Modelo comercial",
-      activation: "Argumento de venta"
-    },
-    proof: {
-      one: "Oportunidades comerciales identificadas en categorías de consumo y B2B",
-      two: "Convertidos en oportunidades concretas junto a equipos comerciales",
-      three: "Estrategia comercial aplicada a marca, surtido, precios y propuestas para clientes"
-    },
-    challenges: {
-      eyebrow: "Cuándo Marksyte aporta valor",
-      title: "Las decisiones clave de una cuenta no se resuelven con una presentación genérica",
-      oneTitle: "Falta claridad sobre dónde crecer",
-      oneText: "La planificación anual, la entrada en un mercado o una cuenta que no despega exigen saber qué oportunidades merecen atención",
-      twoTitle: "Una alta o revisión de surtido necesita mejores argumentos",
-      twoText: "Los datos de categoría, surtido, precios y viajero deben explicar con claridad por qué le conviene actuar al cliente",
-      threeTitle: "El equipo llega a la negociación sin una posición común",
-      threeText: "Antes de un concurso o una reunión con el comprador hay que alinear objetivos, rentabilidad, escenarios y límites"
-    },
-    offers: {
-      eyebrow: "Elige la decisión",
-      title: "Cuatro decisiones. Un único socio estratégico senior.",
-      intro:
-        "Empieza por la decisión comercial que necesitas tomar. Marksyte aporta análisis, estructura y apoyo senior para hacerla avanzar.",
-      deliverables: "De la oportunidad a la reunión: plan de crecimiento · modelo económico · argumento de venta · escenarios de negociación",
-      primary: "Estrategia de surtido por cuenta",
-      weeks: "Proyecto a medida",
-      growthTitle: "¿Qué productos debería incorporar este cliente?",
-      growthText:
-        "Prioriza el surtido y construye las pruebas para altas, bajas y crecimiento.",
-      growthOne: "Función de cada SKU y huecos de surtido",
-      growthTwo: "Escenarios de gama",
-      growthThree: "Modelo de priorización y recomendación",
-      strategyLabel: "Rentabilidad y arquitectura de precios",
-      project: "Proyecto a medida",
-      strategyTitle: "¿Cómo crear valor para ambas partes?",
-      strategyText:
-        "Compara precios, formatos, mezcla y margen antes de presentar la propuesta.",
-      strategyOne: "Análisis de precios, formatos y margen",
-      strategyTwo: "Escenarios de precio y mezcla",
-      strategyThree: "Simulador y recomendación",
-      insightLabel: "Activación comercial",
-      insightTitle: "¿Cómo hacer que el acuerdo funcione en tienda?",
-      insightText:
-        "Convierte el acuerdo en prioridades, acciones y métricas claras.",
-      insightOne: "Propuesta para el canal",
-      insightTwo: "Prioridades de ocasión y activación",
-      insightThree: "Mensajes y activos de activación",
-      presentationLabel: "Propuesta comercial y negociación",
-      presentationTitle: "¿Qué hará que el comprador diga que sí?",
-      presentationText:
-        "Construye el caso para ese cliente, los escenarios y la posición negociadora.",
-      presentationOne: "Propuesta de valor para el cliente",
-      presentationTwo: "Escenarios de negociación",
-      presentationThree: "Presentación e hilo argumental",
-      explore: "Ver servicio →",
-      unsure: "¿No sabes qué servicio encaja? Empieza por la decisión que necesitas tomar.",
-      unsureCta: "Coméntala con Marksyte →"
-    },
-    method: {
-      eyebrow: "Cómo funciona un proyecto",
-      title: "Criterio comercial y apoyo senior desde el análisis hasta la reunión",
-      oneTitle: "Diagnosticar",
-      oneText: "Mapear la evidencia",
-      twoTitle: "Priorizar",
-      twoText: "Elegir el foco",
-      threeTitle: "Diseñar",
-      threeText: "Diseñar la respuesta",
-      fourTitle: "Activar",
-      fourText: "Hacerlo accionable"
-    },
-    about: {
-      eyebrow: "El equipo detrás de Marksyte",
-      title: "Estrategia senior para las decisiones comerciales que no admiten improvisación",
-      link: "Conocer el equipo",
-      placeholder: "Perfil del equipo",
-      text:
-        "Marksyte combina experiencia en Travel Retail, estrategia comercial y capacidad analítica para que los equipos decidan con más criterio y lleguen mejor preparados a cada conversación con el cliente",
-      proofOne: "Oportunidades comerciales identificadas, incluyendo más de EUR 7M convertidos en oportunidades concretas",
-      proofTwo: "Prioridades de marca, surtido, precios y activación convertidas en acciones comerciales",
-      tagOne: "Travel Retail",
-      tagTwo: "Estrategia de marca",
-      tagThree: "Estrategia de surtido",
-      tagFour: "Trade marketing"
-    },
-    contact: {
-      eyebrow: "Hablemos de tu próximo reto comercial",
-      title: "¿Qué cuenta quieres hacer crecer o qué negociación tienes por delante?",
-      text:
-        "Cuéntanos si estás preparando un plan de cuenta, una nueva alta, una revisión de surtido, un concurso o una negociación. Te diremos con claridad dónde podemos aportar valor",
-      or: "o escríbenos por correo"
-    },
     form: {
-      name: "Nombre",
-      email: "Correo profesional",
-      company: "Empresa y cargo",
-      challenge: "¿Cuál es el reto?",
-      placeholder:
-        "Por ejemplo: preparamos una revisión de gama y necesitamos un caso de crecimiento más sólido para ese cliente",
-      note:
-        "Al enviar se abrirá un borrador de correo dirigido a Marksyte. Tu información no se almacena en esta web. Solemos responder en 1-2 días laborables",
-      subject: "Reto de crecimiento desde la web de Marksyte",
+      subject: "Reto de datos desde la web de Marksyte",
       prepared: "Tu borrador de correo está listo. Envíalo para iniciar la conversación"
     },
     kpis: [
@@ -324,96 +54,42 @@ const territoryData = [
   { x: 26, y: 74, accent: "#d7644a" }
 ];
 
-let activeLanguage = document.documentElement.lang.toLowerCase().startsWith("es") ? "es" : "en";
-
+const activeLanguage = document.documentElement.lang.toLowerCase().startsWith("es") ? "es" : "en";
 const percent = (value) => `${value.toFixed(1)}%`;
 const delta = (start, end) => `${end - start > 0 ? "+" : ""}${(end - start).toFixed(1)} pp`;
 
 function renderKpis() {
   const target = document.querySelector("#case-kpis");
   if (!target) return;
-
-  target.innerHTML = kpiData
-    .map((item, index) => {
-      const text = copy[activeLanguage].kpis[index];
-      return `
-        <article class="kpi-row" style="--accent: ${item.accent}; --bar: ${item.end}%">
-          <div class="kpi-topline">
-            <span>${text.label}</span>
-            <strong>${delta(item.start, item.end)}</strong>
-          </div>
-          <div class="kpi-values">
-            <strong>${percent(item.start)}</strong>
-            <span>${activeLanguage === "es" ? "a" : "to"}</span>
-            <strong>${percent(item.end)}</strong>
-          </div>
-          <div class="kpi-track" aria-hidden="true"><span></span></div>
-          <p class="metric-reading">${text.reading}</p>
-        </article>
-      `;
-    })
-    .join("");
+  target.innerHTML = kpiData.map((item, index) => {
+    const text = copy[activeLanguage].kpis[index];
+    return `<article class="kpi-row" style="--accent: ${item.accent}; --bar: ${item.end}%"><div class="kpi-topline"><span>${text.label}</span><strong>${delta(item.start, item.end)}</strong></div><div class="kpi-values"><strong>${percent(item.start)}</strong><span>${activeLanguage === "es" ? "a" : "to"}</span><strong>${percent(item.end)}</strong></div><div class="kpi-track" aria-hidden="true"><span></span></div><p class="metric-reading">${text.reading}</p></article>`;
+  }).join("");
 }
 
 function renderTerritories() {
   const target = document.querySelector("#territory-map");
   if (!target) return;
   const translated = copy[activeLanguage].territories;
-
-  target.innerHTML = `
-    <span class="map-axis x-low">${translated.axes[0]}</span>
-    <span class="map-axis x-high">${translated.axes[1]}</span>
-    <span class="map-axis y-high">${translated.axes[2]}</span>
-    <span class="map-axis y-low">${translated.axes[3]}</span>
-    ${territoryData
-      .map(
-        (item, index) => `
-          <article class="map-point" style="--x: ${item.x}%; --y: ${item.y}%; --accent: ${item.accent};">
-            <strong>${translated.points[index][0]}</strong>
-            <span>${translated.points[index][1]}</span>
-          </article>
-        `
-      )
-      .join("")}
-  `;
-}
-
-function renderLanguageSpecificVisuals() {
-  renderKpis();
-  renderTerritories();
+  target.innerHTML = `<span class="map-axis x-low">${translated.axes[0]}</span><span class="map-axis x-high">${translated.axes[1]}</span><span class="map-axis y-high">${translated.axes[2]}</span><span class="map-axis y-low">${translated.axes[3]}</span>${territoryData.map((item, index) => `<article class="map-point" style="--x: ${item.x}%; --y: ${item.y}%; --accent: ${item.accent};"><strong>${translated.points[index][0]}</strong><span>${translated.points[index][1]}</span></article>`).join("")}`;
 }
 
 function initializeForm() {
   const form = document.querySelector("#discovery-form");
   const status = document.querySelector("#form-status");
   if (!form || !status) return;
-
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!form.reportValidity()) return;
-
     const data = new FormData(form);
-    const text = copy[activeLanguage].form;
-    const fields =
-      activeLanguage === "es"
-        ? [
-            ["Nombre", data.get("name")],
-            ["Email", data.get("email")],
-            ["Empresa y cargo", data.get("company")],
-            ["Reto", data.get("challenge")]
-          ]
-        : [
-            ["Name", data.get("name")],
-            ["Email", data.get("email")],
-            ["Company and role", data.get("company")],
-            ["Challenge", data.get("challenge")]
-          ];
-    const body = fields.map(([label, value]) => `${label}: ${value}`).join("\n\n");
-    const mailto = `mailto:contact@marksyte.com?subject=${encodeURIComponent(text.subject)}&body=${encodeURIComponent(body)}`;
-    status.textContent = text.prepared;
+    const labels = activeLanguage === "es" ? [["Nombre", data.get("name")], ["Email", data.get("email")], ["Organización y cargo", data.get("company")], ["Reto de datos", data.get("challenge")]] : [["Name", data.get("name")], ["Email", data.get("email")], ["Organization and role", data.get("company")], ["Data challenge", data.get("challenge")]];
+    const body = labels.map(([label, value]) => `${label}: ${value}`).join("\n\n");
+    const mailto = `mailto:contact@marksyte.com?subject=${encodeURIComponent(copy[activeLanguage].form.subject)}&body=${encodeURIComponent(body)}`;
+    status.textContent = copy[activeLanguage].form.prepared;
     window.location.href = mailto;
   });
 }
 
-renderLanguageSpecificVisuals();
+renderKpis();
+renderTerritories();
 initializeForm();
