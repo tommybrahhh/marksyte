@@ -1,0 +1,50 @@
+{
+  "source": {
+    "url": "https://dribbble.com/shots/27622781-Cirro-Finance-Landing-Page",
+    "extractedAt": "2026-08-05T15:20:22.453Z",
+    "extractor": "dembrandt"
+  },
+  "colors": {
+    "primary": "rgb(234, 76, 137)",
+    "secondary": "rgb(255, 255, 255)",
+    "palette": [
+      "rgb(234, 76, 137)",
+      "rgb(255, 255, 255)"
+    ],
+    "cssVariables": {}
+  },
+  "typography": {
+    "headingFont": "Mona Sans",
+    "bodyFont": "Mona Sans"
+  },
+  "spacing": {
+    "scale": [
+      "1px",
+      "3px",
+      "4px",
+      "5px",
+      "6px",
+      "8px",
+      "10px",
+      "12px",
+      "14px",
+      "15px",
+      "16px",
+      "18px",
+      "20px",
+      "22px",
+      "24px",
+      "36px",
+      "44px",
+      "50px",
+      "64px",
+      "197.25px"
+    ]
+  },
+  "radius": {
+    "scale": []
+  },
+  "shadows": {
+    "scale": []
+  }
+}

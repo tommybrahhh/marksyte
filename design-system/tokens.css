@@ -1,0 +1,26 @@
+:root {
+  --color-primary: rgb(234, 76, 137);
+  --color-secondary: rgb(255, 255, 255);
+  --font-heading: Mona Sans;
+  --font-body: Mona Sans;
+  --space-1: 1px;
+  --space-2: 3px;
+  --space-3: 4px;
+  --space-4: 5px;
+  --space-5: 6px;
+  --space-6: 8px;
+  --space-7: 10px;
+  --space-8: 12px;
+  --space-9: 14px;
+  --space-10: 15px;
+  --space-11: 16px;
+  --space-12: 18px;
+  --space-13: 20px;
+  --space-14: 22px;
+  --space-15: 24px;
+  --space-16: 36px;
+  --space-17: 44px;
+  --space-18: 50px;
+  --space-19: 64px;
+  --space-20: 197.25px;
+}

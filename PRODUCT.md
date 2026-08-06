@@ -12,15 +12,15 @@ static HTML, CSS and browser JavaScript; no build step or backend.
 
 ## Users
 
-**Inferred from the existing site:** B2B teams working with fragmented operational, commercial or analytical data across multiple sources. Their job is to make data more consistent, connected, explainable and useful for decisions.
+Retailer and seller teams that exchange commercial and operational data across company boundaries. They need sales, stock, orders, invoices or settlements to use shared definitions and reconcile to an explainable result.
 
 ## Product Purpose
 
-**Inferred from the existing site:** Marksyte is a specialist data-services consultancy site. It helps prospective clients understand and discuss services for data standardization, mapping and integration, reconciliation, and managed data operations and analysis.
+Marksyte is a specialist retail data reconciliation service. It maps, standardizes, integrates, validates and manages the data exchanged between retailers and sellers so both sides can work from a controlled comparison.
 
 ## Positioning
 
-**Inferred from the existing site:** The site positions Marksyte around practical, traceable data workflows and decision support rather than abstract transformation language. It emphasizes visible controls, mappings, exceptions, evidence and operating guidance.
+The site positions Marksyte as the practical bridge between retailer and seller data. Reconciliation is the core offer; mapping, standardization, integration and managed operations are modules of the same service rather than unrelated consulting capabilities.
 
 ## Operating Context
 
@@ -28,7 +28,8 @@ The public site is bilingual English/Spanish, with indexable canonical routes an
 
 ## Capabilities and Constraints
 
-- Four active service pairs: data standardization; data mapping and integration; data reconciliation and controls; managed data operations and analysis.
+- One reconciliation offer with four active service modules: data mapping and integration; data standardization; reconciliation and controls; managed reconciliation operations.
+- Two commercial engagement models: reconciliation setup or repair; and recurring managed reconciliation.
 - A flagship illustrative reconciliation case exists at `study-cases/data-reconciliation-fmcg/`.
 - The discovery-call flow does not store form submissions or require a backend.
 - Preserve existing public routes, English/Spanish parity, canonical metadata, JSON-LD, and Vercel-compatible static deployment.
@@ -38,7 +39,8 @@ The public site is bilingual English/Spanish, with indexable canonical routes an
 
 - Existing name: Marksyte.
 - Existing voice is practical, analytical, direct and operationally grounded.
-- Preserve the current restrained dark/teal/green visual system and bilingual navigation.
+- User-approved visual direction: simple, bright, spacious and confident, inspired by the supplied travel landing-page reference.
+- Keep the bilingual navigation and the Marksyte name; the visual system may be replaced.
 
 ## Evidence on Hand
 
