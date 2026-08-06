@@ -1,7 +1,7 @@
 const copy = {
   en: {
     form: {
-      subject: "Reconciliation challenge from Marksyte website",
+      subject: "Retailer data mismatch from Marksyte website",
       prepared: "Your draft is ready. Send it to share the mismatch with Marksyte"
     },
     kpis: [
@@ -21,7 +21,7 @@ const copy = {
   },
   es: {
     form: {
-      subject: "Reto de conciliación desde la web de Marksyte",
+      subject: "Descuadre de datos desde la web de Marksyte",
       prepared: "Tu borrador está listo. Envíalo para compartir el descuadre con Marksyte"
     },
     kpis: [
@@ -82,7 +82,7 @@ function initializeForm() {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    const labels = activeLanguage === "es" ? [["Nombre", data.get("name")], ["Email", data.get("email")], ["Organización y cargo", data.get("company")], ["Datos que no cuadran", data.get("challenge")]] : [["Name", data.get("name")], ["Email", data.get("email")], ["Organization and role", data.get("company")], ["Data that does not match", data.get("challenge")]];
+    const labels = activeLanguage === "es" ? [["Nombre", data.get("name")], ["Correo profesional", data.get("email")], ["Organización y cargo", data.get("company")], ["Datos que no cuadran", data.get("challenge")]] : [["Name", data.get("name")], ["Work email", data.get("email")], ["Organization and role", data.get("company")], ["What does not match", data.get("challenge")]];
     const body = labels.map(([label, value]) => `${label}: ${value}`).join("\n\n");
     const mailto = `mailto:contact@marksyte.com?subject=${encodeURIComponent(copy[activeLanguage].form.subject)}&body=${encodeURIComponent(body)}`;
     status.textContent = copy[activeLanguage].form.prepared;
