@@ -1,188 +1,262 @@
 ---
 name: Marksyte
-description: Make complex data flows clear, connected and actionable
+description: A controlled European evidence archive for retail data reconciliation
 colors:
-  ink: "#0B0D12"
-  body: "#667085"
-  white: "#FFFFFF"
-  cloud: "#F4F6FA"
-  line: "#E6EBF2"
-  blue: "#2588F5"
-  blue-deep: "#1476DF"
-  sky: "#EAF4FF"
-  aqua: "#EAF4FF"
+  paper: "#FFFFFF"
+  evidence-ink: "#09111F"
+  archive-navy: "#0B1F38"
+  archive-navy-secondary: "#132B48"
+  action-blue: "#2588F5"
+  action-blue-hover: "#1476DF"
+  field-blue: "#0875E1"
+  working-paper-blue: "#EAF4FF"
+  archive-line: "#CFDAE8"
+  metadata-muted: "#536176"
+  pass-wash: "#DFF5EB"
+  pass-ink: "#096344"
+  open-wash: "#E6F1FF"
+  open-ink: "#075CAE"
 typography:
   display:
     fontFamily: "Sora, sans-serif"
-    fontSize: "clamp(2.6rem, 6vw, 5.6rem)"
-    fontWeight: 800
-    lineHeight: 0.98
-    letterSpacing: "-0.055em"
+    fontSize: "clamp(3.6rem, 5.7vw, 5.8rem)"
+    fontWeight: 700
+    lineHeight: 0.95
+    letterSpacing: "-0.04em"
+  headline:
+    fontFamily: "Sora, sans-serif"
+    fontSize: "clamp(2.5rem, 4.5vw, 4.5rem)"
+    fontWeight: 700
+    lineHeight: 1
+    letterSpacing: "-0.035em"
   body:
     fontFamily: "Manrope, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.6
-  label:
+    lineHeight: 1.7
+  metadata:
     fontFamily: "Manrope, sans-serif"
-    fontSize: "0.72rem"
+    fontSize: "0.68rem"
     fontWeight: 800
     lineHeight: 1.2
-    letterSpacing: "0.08em"
+    letterSpacing: "0.06em"
 rounded:
-  sm: "14px"
-  md: "20px"
-  lg: "28px"
+  document: "12px"
+  field: "14px"
+  dossier: "16px"
+  pill: "999px"
 spacing:
+  xs: "8px"
   sm: "12px"
-  md: "24px"
-  lg: "48px"
+  md: "16px"
+  lg: "24px"
+  xl: "32px"
 components:
   button-primary:
-    backgroundColor: "{colors.blue}"
-    textColor: "{colors.white}"
-    rounded: "{rounded.lg}"
-    padding: "0 22px"
+    backgroundColor: "{colors.action-blue}"
+    textColor: "{colors.paper}"
+    typography: "{typography.body}"
+    rounded: "{rounded.pill}"
+    padding: "0 19px"
     height: "48px"
   button-primary-hover:
-    backgroundColor: "{colors.blue-deep}"
-    textColor: "{colors.white}"
-    rounded: "{rounded.lg}"
-  proof-card:
-    backgroundColor: "{colors.white}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.md}"
+    backgroundColor: "{colors.action-blue-hover}"
+    textColor: "{colors.paper}"
+    rounded: "{rounded.pill}"
+  reconciliation-dossier:
+    backgroundColor: "{colors.working-paper-blue}"
+    textColor: "{colors.evidence-ink}"
+    rounded: "{rounded.dossier}"
     padding: "24px"
+  working-paper:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.evidence-ink}"
+    rounded: "{rounded.document}"
+    padding: "24px"
+  status-chip-open:
+    backgroundColor: "{colors.open-wash}"
+    textColor: "{colors.open-ink}"
+    typography: "{typography.metadata}"
+    rounded: "{rounded.pill}"
+    padding: "5px 8px"
+  input-field:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.evidence-ink}"
+    typography: "{typography.body}"
+    rounded: "{rounded.field}"
+    padding: "13px 14px"
 ---
 
 # Design System: Marksyte
 
 ## Overview
 
-**Creative North Star: "The Clear Signal"**
+**Creative North Star: "The Controlled Evidence File"**
 
-Marksyte should feel like a clear signal moving through a noisy system: bright, legible and immediately directional. The supplied reference establishes the new bar—white space, bold black typography, bright blue action, soft sky-toned surfaces and large rounded modules that make the journey easy to follow.
+Marksyte looks like a European reconciliation archive opened for review: white and pale-blue working papers, disciplined navy rules, compact metadata, and bright-blue control states. The atmosphere is analytical and exact without becoming cold. Realistic, selectable tables, ledgers, diagrams, and document previews make the methodology visible; generic dashboard chrome does not.
 
-This is a replacement for the previous warm-paper consulting language. The new system is lighter, more optimistic and more visual, while staying grounded in operational data work. It should make complexity feel navigable without pretending the work is simple.
+The visual system moves between broad tonal fields and precise evidence artifacts. Large editorial propositions establish the conclusion, while smaller Manrope labels, references, statuses, and rows show how that conclusion can be audited. The resulting density is deliberate: spacious at the page level, compact inside controlled records.
 
 **Key Characteristics:**
 
-- Bright white canvas with cool cloud sections.
-- One confident blue action color, supported by sky, aqua and cloud surfaces.
-- Large black sans-serif statements with short, plain-language copy.
-- Rounded 22–30px proof modules and image/data panels.
-- Spacious, modular storytelling with obvious next actions.
+- Editorial Sora propositions paired with operational Manrope records.
+- White and pale-blue papers structured by navy rules and hairlines.
+- Bright blue reserved for action, active paths, and controlled outputs.
+- Flat tonal sections with depth concentrated on evidence artifacts.
+- Realistic, selectable data objects instead of generic software mockups.
+- A wide, asymmetric first-view rhythm that gives the dossier equal authority to the proposition.
 
 ## Colors
 
-The palette uses white and cloud neutrals as the field, blue as the directional signal, and soft sky/aqua tones to organize proof without visual noise.
+The palette is a controlled archive: white paper and pale-blue working fields carry evidence, navy gives it authority, and blue marks the active reconciliation path.
 
 ### Primary
 
-- **Signal Blue** (#2F80ED): Primary CTAs, active states, highlighted proof and key data emphasis.
-- **Deep Signal Blue** (#1769D1): Hover and pressed states only.
+- **Action Blue** (`action-blue`): Primary actions, active mapping bands, reconciliation paths, and current control states.
+- **Action Blue Hover** (`action-blue-hover`): Hover and pressed treatment for primary controls.
 
 ### Secondary
 
-- **Sky Wash** (#E7F3FF): Hero and explanatory surfaces.
-- **Aqua Wash** (#C8F0F2): Data-flow and reconciliation visuals.
-- **Mint Wash** (#DDF7EE): Positive state, resolved control or completed step.
+- **Field Blue** (`field-blue`): Full-width evidence fields and high-emphasis process sections; use it for a decisive chapter, not a second CTA color.
+- **Archive Navy** (`archive-navy`): Structural rules, controlled output fields, and dark methodology sections.
+- **Secondary Archive Navy** (`archive-navy-secondary`): Supporting dark fields and the blue-black basis of ambient shadows.
+
+### Tertiary
+
+- **Working-Paper Blue** (`working-paper-blue`): Dossier grounds, explanatory fields, and low-emphasis status context.
+- **Pass Wash / Pass Ink** (`pass-wash`, `pass-ink`): A reconciled or ready state with sufficient text contrast.
+- **Open Wash / Open Ink** (`open-wash`, `open-ink`): An exception or item still in review.
 
 ### Neutral
 
-- **Near Black** (#101318): Headlines, navigation and high-confidence text.
-- **Body Gray** (#4B5563): Supporting copy.
-- **White** (#FFFFFF): Primary page and card surface.
-- **Cloud** (#F6F8FB): Alternating section field.
-- **Cool Line** (#E5EAF0): Borders and dividers.
+- **Paper** (`paper`): The main canvas, document sheets, form surfaces, and diagram cards.
+- **Evidence Ink** (`evidence-ink`): Primary text and values on light surfaces.
+- **Metadata Muted** (`metadata-muted`): Explanatory copy, document metadata, and secondary values.
+- **Archive Line** (`archive-line`): Hairlines, table rules, input borders, and dossier boundaries.
 
-**The One Signal Rule.** Blue owns action and direction. Soft colors organize context; they do not compete with the CTA.
+**The Controlled Blue Rule.** Blue must communicate action, path, output, or state. It is never ambient decoration.
+
+**The Paper-and-Rule Rule.** Establish hierarchy with paper tone and a navy or cool hairline before adding another color.
 
 ## Typography
 
-**Display Font:** Aptos with Inter, Segoe UI and system fallbacks.
-**Body Font:** Aptos with system fallbacks.
-**Label Font:** Aptos with system fallbacks; no mono-first visual language.
+**Display Font:** Sora with a sans-serif fallback.
 
-**Character:** Bold, compact sans-serif headlines create confidence and momentum. Body text stays quiet and highly readable. Labels are small and spaced, but never visually technical for its own sake.
+**Body Font:** Manrope with a sans-serif fallback.
+
+**Metadata Font:** Manrope; compact, tracked, and usually uppercase.
+
+**Character:** Sora makes the conclusions feel editorial and decisive. Manrope keeps dense working records readable and contemporary. The contrast between the two mirrors the service itself: a clear commercial conclusion supported by controlled operational detail.
 
 ### Hierarchy
 
-- **Display** (800, `clamp(2.6rem, 6vw, 5.6rem)`, 0.98): Hero thesis and major proof statement.
-- **Headline** (750–800, responsive 2.2–3.6rem, 1.0): Section proposition.
-- **Title** (750, 1.2–1.6rem, 1.1): Card or step title.
-- **Body** (400, 1rem, 1.6): Supporting explanation, limited to comfortable line lengths.
-- **Label** (800, 0.72rem, 0.08em tracking): Small orientation cues and section labels.
+- **Display** (700, `display`, 0.95): First-view propositions only; balance the lines and hold the measure near ten characters where the composition allows.
+- **Headline** (700, `headline`, 1): Major section conclusions and the titles of evidence chapters.
+- **Title** (600–700, about 1–1.45rem, 1–1.2): Working-paper titles, stage conclusions, and artifact headings.
+- **Body** (400, `body`): Explanations with generous leading and a comfortable measure around 49–58 characters.
+- **Metadata** (700–800, 0.61–0.78rem, 0.035–0.08em tracking): References, owners, column headers, stage numbers, and state labels; uppercase when it acts as a locator.
 
-**The One-Thought Rule.** Every headline should communicate one decision, outcome or change—not a list of capabilities.
+**The Conclusion-and-Evidence Rule.** Use Sora to state what matters and Manrope to show how it is controlled.
+
+**The Compact Metadata Rule.** Metadata may be small because it is repeated and structured, but it must remain high-contrast, tracked, and legible.
 
 ## Layout
 
-The page uses a centered white canvas with a max content width around 1180px and generous outer margins. The first viewport is a large rounded visual/proof module with the thesis on the left and the mechanism or evidence on the right. Following sections use modular cards, horizontal proof rails and alternating content/proof compositions.
+The system uses generous page-scale spacing around compact evidence. Primary compositions sit in a wide shell of roughly 1280px, with the hero allowed to reach 1440px. The first viewport is an asymmetric two-column arrangement: a direct proposition beside a large reconciliation dossier. Later layouts alternate full-width tonal chapters with flat white sections, working-paper stacks, and line-based process rows.
 
-Navigation is minimal: brand, a short set of links, language switch and one pill-shaped CTA. Avoid persistent texture, dense borders or multiple competing navigation actions.
+The durable field rhythm is white, pale blue, white, navy, white, strong blue, white, pale blue. This alternating sequence makes long pages navigable without cardifying every section. Major section padding scales from roughly 86px to 150px; internal artifacts use the compact 8–32px spacing vocabulary.
 
-On mobile, the hero remains a single dominant module; cards stack with generous spacing; important CTA buttons become full-width or near full-width; decorative proof can move below the primary explanation.
+At 1180px, complex grids simplify and supporting layouts begin to stack. At 900px, the hero becomes a single column and four-stage flows become two columns. At 760px, navigation is reduced, artifacts stack or compress, the dossier uses a 14px corner, and nonessential connector lines disappear. Preserve readable records on mobile by reflowing metadata and columns before shrinking text.
+
+**The Spacious-Outside, Dense-Inside Rule.** Give evidence artifacts air at the page level, then allow their internal rows and metadata to be compact.
 
 ## Elevation & Depth
 
-Depth comes primarily from white space, large rounded silhouettes and tonal section changes. Use only soft, broad shadows on hero/proof modules. Avoid the previous heavy dark-panel hierarchy and avoid making every card appear elevated.
+This is a flat-by-default system. Tonal fields, navy blocks, white papers, and one-pixel rules establish most hierarchy. Depth is concentrated on artifacts that should read as physical evidence placed on a working surface; ordinary sections, service rows, and form containers remain flat.
 
 ### Shadow Vocabulary
 
-- **Soft module lift** (`0 18px 50px rgba(31, 67, 105, 0.10)`): Hero proof, featured artifact and key conversion module.
-- **Quiet card lift** (`0 10px 28px rgba(31, 67, 105, 0.06)`): Optional hover state for interactive cards.
+- **Dossier lift** (`0 26px 60px rgba(19, 55, 94, 0.12)`): The large reconciliation dossier in the primary evidence position.
+- **Working-paper lift** (`0 18px 38px rgba(21, 49, 83, 0.09)`): Layered document previews and other literal paper artifacts.
 
-**The Air-First Rule.** Space and tonal contrast establish hierarchy before borders and shadows do.
+**The Evidence-Only Elevation Rule.** A shadow means “this is an inspectable artifact,” not merely “this is a container.”
 
 ## Shapes
 
-The system uses generous rounded rectangles: 14px for small controls, 22px for cards and 30px for hero/proof modules. Pills are reserved for primary actions, compact ratings or tags. Images and data artifacts should share the same rounded clipping as their containers.
+The form language is disciplined and lightly softened. Document and diagram artifacts use a 12px corner. Forms and compressed mobile modules use 14px. The major dossier uses 16px. Hairlines and square-edged navy fields keep those curves from feeling playful.
+
+Pills are reserved for buttons and compact status chips. A pill is a control or state, never a general-purpose container. Tables, mapping bands, ledgers, and large tonal chapters remain rectilinear so the page retains the character of a controlled archive.
+
+**The Restricted Curve Rule.** Use the 12/14/16px radius vocabulary for artifacts and fields; reserve the full pill for actions and status.
 
 ## Components
 
-### Navigation
-
-White, compact and quiet. Use a small brand mark, short text links, a pill CTA and a restrained language switch. Remove heavy header backgrounds and decorative chrome.
-
 ### Primary Button
 
-- **Shape:** Pill silhouette (30px radius), minimum 48px height.
-- **Color:** Signal Blue with white text.
-- **Hover / Focus:** Deep blue hover; visible focus ring using a blue/white contrast pair.
-- **Copy:** Action plus object, such as “Discuss your data” or “See the reconciliation”.
+- **Character:** Direct, compact, and unmistakably actionable.
+- **Shape:** Full pill with a 48px minimum height.
+- **Color:** Action Blue on Paper; hover shifts to Action Blue Hover.
+- **States:** Move upward by only 1px on hover. Use a visible, offset focus outline; keep reduced-motion behavior intact.
 
-### Proof Module
+### Navigation
 
-- **Shape:** Large rounded container (22–30px).
-- **Background:** Sky, aqua or cloud wash with white content surfaces.
-- **Content:** One visible mechanism: a reconciliation flow, exception list, mapping sample or control status.
-- **Rule:** Demonstrate the work; do not use decorative gradients where a real data artifact can live.
+- **Character:** Quiet archive index rather than application chrome.
+- **Structure:** White translucent bar, Marksyte identifier, short text-link set, one primary action, and a two-option language control.
+- **Responsive behavior:** At 760px, keep the brand and language access; remove secondary navigation and the header CTA rather than crowding the line.
 
-### Service Card
+### Reconciliation Dossier
 
-- **Shape:** 22px rounded white card with minimal or no border.
-- **Content:** Short title, one outcome sentence and a directional link.
-- **Interaction:** Entire card can be clickable when the destination is clear; use a small lift on hover only.
+- **Character:** The signature evidence object and visual thesis of the system.
+- **Surface:** Pale-blue gridded field with a cool border, 16px corner, and the dossier lift.
+- **Contents:** Two white source papers, one blue mapping band, a controlled ledger, status chips, and a navy output field. Records should look selectable and operational, not illustrated as a decorative screenshot.
+- **Motion:** One reconciliation path draws for 1.15s with `cubic-bezier(.16, 1, .3, 1)` after a short delay. Disable the animation when reduced motion is requested.
 
-### Data Artifact
+### Service-Stage Line Diagram
 
-Use compact rows, labels and status chips to show how Marksyte makes complexity visible. Use blue for the active path, aqua for source context and near-black for values. Synthetic examples must be labeled as illustrative.
+- **Character:** A concise methodological diagram, not a feature icon.
+- **Shape:** White 12px paper field inside a flat navy process row.
+- **Drawing:** Thin navy lines with pale-blue fills and bright-blue status marks. Keep geometry simple enough to scan at compact sizes.
+
+### Working-Paper Preview
+
+- **Character:** A real deliverable placed on the page for inspection.
+- **Shape:** White document with a 12px corner, cool border, and working-paper lift.
+- **Structure:** Strong navy header rule, compact owner and status metadata, and a fixed-layout table. Slight rotations may distinguish a physical stack, but content must remain readable.
+
+### Status Chip
+
+- **Character:** Small, factual, and state-specific.
+- **Shape:** Pill with compact 5px by 8px padding.
+- **Color:** Use the pass pair for ready/reconciled states and the open pair for items needing review. Do not use status color without text.
+
+### Input / Form
+
+- **Character:** A plain working field on a white evidence surface.
+- **Shape:** 14px form container and control corners, with cool one-pixel borders.
+- **Focus:** Shift the border to Action Blue and add a restrained blue outline. Preserve native labels, required semantics, and visible status messaging.
+
+### FMCG Flow Artifact
+
+- **Character:** A four-stage evidence chain that shows source, mapping, comparison, and controlled output.
+- **Structure:** White 12px artifacts sit on a Strong Blue field and connect with one thin rule. Each stage leads with compact uppercase metadata and ends with an operational note.
+- **Responsive behavior:** Four columns become two at 900px and one at 760px; remove the cross-stage connector when it no longer clarifies sequence.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** make the first viewport feel like a clear guided journey, not a document header.
-- **Do** use one strong blue signal and plenty of white space.
-- **Do** show real or clearly labeled illustrative data artifacts.
-- **Do** use rounded modules to group a story, not to decorate every element.
-- **Do** keep the product bilingual and preserve accessible focus, contrast and mobile behavior.
+- **Do** pair large editorial conclusions with realistic, selectable evidence artifacts.
+- **Do** use the white → pale blue → white → navy → white → strong blue → white → pale blue field rhythm to pace long explanatory surfaces.
+- **Do** reserve bright blue for action, active paths, outputs, and explicit status.
+- **Do** keep metadata compact, structured, and clearly subordinate to the conclusion it supports.
+- **Do** flatten ordinary sections and spend depth only on dossiers and literal working papers.
+- **Do** preserve bilingual navigation, visible focus, strong contrast, touch-friendly actions, and reduced-motion behavior.
 
 ### Don't:
 
-- **Don't** bring back the warm cream grid, dark-panel-heavy hierarchy or mono-first consulting aesthetic.
-- **Don't** scatter multiple accent colors across one screen.
-- **Don't** fill the page with repeated text cards when one visual proof module would explain more.
-- **Don't** imitate the travel reference's claims, imagery or content; borrow its clarity and spatial confidence only.
-- **Don't** invent customers, testimonials, metrics or commercial proof.
+- **Don't** turn reconciliation evidence into a generic SaaS dashboard, floating metric-card grid, or decorative analytics mockup.
+- **Don't** soften every container into a large rounded card; the system depends on rectilinear fields, hairlines, and paper edges.
+- **Don't** use blue as an ambient decoration or introduce competing accents that weaken its control meaning.
+- **Don't** make metadata look like code for its own sake; it should read as an archive locator or operational label.
+- **Don't** add shadows to service rows, tonal chapters, or every form field.
+- **Don't** substitute invented proof, client identities, claims, or decorative charts for inspectable process artifacts.

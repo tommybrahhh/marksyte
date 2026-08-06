@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260806-1" />
+    <link rel="stylesheet" href="styles.css?v=20260806-2" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,6 +43,14 @@
     <script src="/analytics.js" defer></script>
   </head>
   <body class="home-page">
+    <!--
+      THESIS: Reconciliation is shown as a controlled evidence file, not described through a generic SaaS dashboard
+      OWN-WORLD: White and blue working papers, navy rules, editorial typography, compact metadata and bright-blue control states
+      STORY: See the mismatch, understand the four-part method, inspect the deliverables, follow the FMCG flow and review a real challenge
+      FIRST VIEWPORT: A direct proposition occupies the left half while a large layered reconciliation dossier proves the mechanism on the right
+      FORM: European controlled archive, selected as the seventh grounded direction with seed 849e335d
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+    -->
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Marksyte home"><span class="brand-mark" aria-hidden="true">M</span><span>Marksyte</span></a>
       <div class="header-actions">
@@ -64,22 +72,23 @@
           <p class="hero-note">Sales · inventory · orders · invoices · settlements</p>
         </div>
 
-        <div class="hero-visual" aria-label="Illustrative retailer and seller reconciliation">
-          <div class="recon-workspace">
-            <div class="recon-head"><span>Retailer ↔ Seller</span><span>Illustrative view</span></div>
-            <div class="recon-sources">
-              <article><span>Retailer report</span><strong>Sell-out + stock</strong><small>1,248 records</small></article>
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M5 8h12m0 0-3-3m3 3-3 3M19 16H7m0 0 3-3m-3 3 3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
-              <article><span>Seller report</span><strong>Shipments + invoices</strong><small>1,263 records</small></article>
+        <div class="hero-visual" aria-label="Illustrative retailer and seller reconciliation system">
+          <figure class="recon-system">
+            <figcaption><span>Reconciliation file</span><strong>REC / 042</strong><span>Illustrative data</span></figcaption>
+            <div class="recon-system-sources">
+              <article class="data-paper retailer-paper"><header><span>Retailer source</span><small>Sell-out + stock</small></header><strong>1,248</strong><p>records received</p><div class="data-rule"><span>Product</span><b>EAN</b></div><div class="data-rule"><span>Location</span><b>Store</b></div></article>
+              <article class="data-paper seller-paper"><header><span>Seller source</span><small>Shipments + invoices</small></header><strong>1,263</strong><p>records received</p><div class="data-rule"><span>Product</span><b>SKU</b></div><div class="data-rule"><span>Location</span><b>Customer</b></div></article>
             </div>
-            <div class="recon-summary">
-              <div><span>Check</span><span>Status</span></div>
-              <article><strong>Matched product and period</strong><span class="status-good">1,214 matched</span></article>
-              <article><strong>Quantity difference</strong><span class="status-review">27 to review</span></article>
-              <article><strong>Product code not mapped</strong><span class="status-review">7 to assign</span></article>
+            <div class="mapping-band"><span>Product mapping</span><strong>SKU ↔ EAN</strong><i></i><span>Location mapping</span><strong>Customer ↔ Store</strong></div>
+            <div class="control-ledger" role="table" aria-label="Reconciliation controls">
+              <div class="ledger-head" role="row"><span role="columnheader">Control</span><span role="columnheader">Count</span><span role="columnheader">State</span></div>
+              <div role="row"><strong role="cell">Matched records</strong><span role="cell">1,214</span><em class="state-pass" role="cell">Controlled</em></div>
+              <div role="row"><strong role="cell">Quantity differences</strong><span role="cell">27</span><em class="state-open" role="cell">Review</em></div>
+              <div role="row"><strong role="cell">Unmapped products</strong><span role="cell">7</span><em class="state-open" role="cell">Assign</em></div>
             </div>
-            <div class="recon-output"><span>Controlled output</span><strong>One reconciled view, with every exception visible and assigned</strong></div>
-          </div>
+            <div class="controlled-output"><span>Controlled reporting output</span><strong>One reconciled view</strong><small>Every exception visible and assigned</small></div>
+            <svg class="recon-system-lines" aria-hidden="true" viewBox="0 0 600 520" preserveAspectRatio="none"><path d="M145 124V180H300M455 124V180H300V222M300 376V420"/><circle cx="300" cy="180" r="5"/><circle cx="300" cy="420" r="5"/></svg>
+          </figure>
         </div>
       </section>
 
@@ -102,25 +111,39 @@
         <div class="services-shell">
           <div class="section-intro services-intro"><h2 id="services-title">One reconciliation service. Four parts that make the numbers agree</h2><p>We diagnose the mismatch and apply the parts your process needs. You do not have to choose a data service before talking to us</p></div>
           <div class="service-map" aria-label="Four parts of the reconciliation method">
-            <article class="service-map-item"><span class="service-map-index">01</span><div class="service-map-copy"><p class="service-map-name">Map the exchange</p><h3>Define what moves between both sides</h3><p>Sources, fields, formats, frequency, ownership and the business question the data must answer</p></div><div class="service-map-result"><span>Creates</span><strong>A shared specification for the exchange</strong></div></article>
-            <article class="service-map-item"><span class="service-map-index">02</span><div class="service-map-copy"><p class="service-map-name">Standardize shared keys</p><h3>Make both datasets speak the same language</h3><p>Align products, locations, customers, dates, currencies, units and business definitions</p></div><div class="service-map-result"><span>Creates</span><strong>Mappings and rules both sides understand</strong></div></article>
-            <article class="service-map-item"><span class="service-map-index">03</span><div class="service-map-copy"><p class="service-map-name">Reconcile and validate</p><h3>Match records and explain every difference</h3><p>Compare totals and detail, apply tolerances and classify mapping, timing and business exceptions</p></div><div class="service-map-result"><span>Creates</span><strong>Trusted totals and an exception queue</strong></div></article>
-            <article class="service-map-item"><span class="service-map-index">04</span><div class="service-map-copy"><p class="service-map-name">Manage the cycle</p><h3>Keep the reconciliation working</h3><p>Run recurring controls, assign exceptions, monitor data quality and prepare the agreed reporting view</p></div><div class="service-map-result"><span>Creates</span><strong>A repeatable close with clear owners</strong></div></article>
+            <article class="service-map-item"><span class="service-map-index">01</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><rect class="diagram-paper" x="8" y="20" width="48" height="68" rx="5"/><path d="M19 37h26M19 48h18M19 59h23"/><rect class="diagram-paper" x="124" y="20" width="48" height="68" rx="5"/><path d="M135 37h26M135 48h18M135 59h23M56 42h29M95 42h29M82 36l7 6-7 6M98 36l-7 6 7 6"/><rect class="diagram-status" x="72" y="64" width="36" height="24" rx="4"/></svg></div><div class="service-map-copy"><p class="service-map-name">Map the exchange</p><h3>Define what moves between both sides</h3><p>Sources, fields, formats, frequency, ownership and the business question the data must answer</p></div><div class="service-map-result"><span>Creates</span><strong>A shared specification for the exchange</strong></div></article>
+            <article class="service-map-item"><span class="service-map-index">02</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><rect class="diagram-fill" x="10" y="14" width="58" height="82" rx="5"/><rect class="diagram-paper" x="112" y="14" width="58" height="82" rx="5"/><path d="M25 34h28M25 52h28M25 70h28M127 34h28M127 52h28M127 70h28M68 34h44M68 52h44M68 70h44"/><circle class="diagram-status" cx="90" cy="34" r="6"/><circle class="diagram-status" cx="90" cy="52" r="6"/><circle class="diagram-status" cx="90" cy="70" r="6"/></svg></div><div class="service-map-copy"><p class="service-map-name">Standardize shared keys</p><h3>Make both datasets speak the same language</h3><p>Align products, locations, customers, dates, currencies, units and business definitions</p></div><div class="service-map-result"><span>Creates</span><strong>Mappings and rules both sides understand</strong></div></article>
+            <article class="service-map-item"><span class="service-map-index">03</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><path d="M12 27h58M12 55h58M12 83h58M110 27h58M110 55h58M110 83h58M70 27h40M70 55h40M70 83h40"/><circle class="diagram-status" cx="90" cy="27" r="7"/><circle class="diagram-status" cx="90" cy="55" r="7"/><circle class="diagram-alert" cx="90" cy="83" r="7"/><path class="diagram-check" d="m86 27 3 3 6-7m-9 32 3 3 6-7"/></svg></div><div class="service-map-copy"><p class="service-map-name">Reconcile and validate</p><h3>Match records and explain every difference</h3><p>Compare totals and detail, apply tolerances and classify mapping, timing and business exceptions</p></div><div class="service-map-result"><span>Creates</span><strong>Trusted totals and an exception queue</strong></div></article>
+            <article class="service-map-item"><span class="service-map-index">04</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><circle class="diagram-fill" cx="90" cy="55" r="34"/><path d="M90 15a40 40 0 0 1 37 25M130 35l-2 11-10-5M130 70a40 40 0 0 1-35 25M101 98l-10-6 7-9M55 83a40 40 0 0 1-4-40M46 49l5-10 9 6M61 25a40 40 0 0 1 28-10"/><rect class="diagram-paper" x="72" y="38" width="36" height="34" rx="4"/><path class="diagram-check" d="m80 55 7 7 14-17"/></svg></div><div class="service-map-copy"><p class="service-map-name">Manage the cycle</p><h3>Keep the reconciliation working</h3><p>Run recurring controls, assign exceptions, monitor data quality and prepare the agreed reporting view</p></div><div class="service-map-result"><span>Creates</span><strong>A repeatable close with clear owners</strong></div></article>
           </div>
           <div class="engagement-models" aria-labelledby="engagement-title"><div class="engagement-heading"><h3 id="engagement-title">Two ways to work with Marksyte</h3><p>The same reconciliation method, with the level of ongoing support your team needs</p></div><div class="engagement-options"><article><span>Setup</span><h4>Build or repair the reconciliation</h4><p>We map the flow, align the data and leave the controls, exception process and operating guidance ready for your team</p></article><article><span>Managed</span><h4>Run the reconciliation every cycle</h4><p>We operate the agreed checks, maintain mappings, surface exceptions and prepare the controlled reporting view</p></article></div></div>
           <div class="services-conversion"><p><strong>Not sure which part is failing?</strong> Bring one mismatch and we will start from the evidence</p><a class="button primary" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Review a reconciliation challenge</a></div>
         </div>
       </section>
 
+      <section class="section deliverables-section" aria-labelledby="deliverables-title">
+        <div class="deliverables-copy"><h2 id="deliverables-title">The work leaves a controlled reconciliation pack</h2><p>Source ownership, shared mappings and unresolved differences stay visible in documents another team can review and operate</p></div>
+        <div class="document-stack" aria-label="Illustrative reconciliation deliverables">
+          <article class="document-sheet document-source"><header><div><span>Source register</span><strong>SRC / 01</strong></div><small>Illustrative · Month-end</small></header><dl><div><dt>Owner</dt><dd>Retail data team</dd></div><div><dt>Status</dt><dd><i class="doc-status ready"></i>Ready</dd></div></dl><table><thead><tr><th>Source</th><th>Cadence</th><th>Cutoff</th></tr></thead><tbody><tr><td>Supplier shipments</td><td>Weekly</td><td>Friday</td></tr><tr><td>Internal ERP</td><td>Daily</td><td>18:00</td></tr><tr><td>Retailer sell-out</td><td>Monthly</td><td>Day 3</td></tr></tbody></table></article>
+          <article class="document-sheet document-mapping"><header><div><span>Product + location mapping</span><strong>MAP / 07</strong></div><small>Illustrative · Version controlled</small></header><dl><div><dt>Owner</dt><dd>Data operations</dd></div><div><dt>Status</dt><dd><i class="doc-status review"></i>7 to assign</dd></div></dl><table><thead><tr><th>Seller key</th><th>Retailer key</th><th>Rule</th></tr></thead><tbody><tr><td>SKU</td><td>EAN</td><td>Exact</td></tr><tr><td>Customer</td><td>Store</td><td>Mapped</td></tr><tr><td>Invoice date</td><td>Sales period</td><td>Calendar</td></tr></tbody></table></article>
+          <article class="document-sheet document-exceptions"><header><div><span>Exception queue</span><strong>EXC / 27</strong></div><small>Illustrative · Active review</small></header><dl><div><dt>Owner</dt><dd>Control owner</dd></div><div><dt>Status</dt><dd><i class="doc-status open"></i>Open</dd></div></dl><table><thead><tr><th>Exception</th><th>Evidence</th><th>State</th></tr></thead><tbody><tr><td>Quantity difference</td><td>Shipment vs sell-out</td><td>Review</td></tr><tr><td>Product not mapped</td><td>Missing EAN</td><td>Assign</td></tr><tr><td>Period timing</td><td>Cutoff rule</td><td>Explain</td></tr></tbody></table></article>
+        </div>
+      </section>
+
       <section class="section case-proof-section" aria-labelledby="case-proof-title">
         <div class="case-proof-grid">
           <div class="case-proof-copy"><h2 id="case-proof-title">See the method on a realistic FMCG data flow</h2><p>A synthetic composite case shows how a supplier file, an internal ERP and retailer sell-out data become a controlled comparison and exception process</p><a class="button secondary" href="study-cases/data-reconciliation-fmcg/">Explore the reconciliation example</a><small>Illustrative example. No client, logo or commercial result is implied</small></div>
-          <div class="case-proof-artifact" aria-label="Example reconciliation deliverables"><span>Reconciliation pack</span><ul><li><strong>Source register</strong><small>Owner, cadence and cutoff</small></li><li><strong>Mapping table</strong><small>Product, location and period keys</small></li><li><strong>Exception queue</strong><small>Cause, owner, evidence and status</small></li></ul></div>
+          <div class="fmcg-flow" aria-label="Four-stage FMCG reconciliation example">
+            <article><span>Source files</span><div class="fmcg-artifact source-files"><b>Supplier</b><small>Shipments by product code</small><b>Retailer</b><small>Sell-out by product and store</small></div><p>Three operating views enter with different structures and timing</p></article>
+            <article><span>Mapping + standardization</span><div class="fmcg-artifact mapping-file"><div><small>SKU</small><b>↔</b><small>EAN</small></div><div><small>Customer</small><b>↔</b><small>Store</small></div><div><small>Invoice date</small><b>↔</b><small>Sales period</small></div></div><p>Products, locations and periods are translated into shared keys</p></article>
+            <article><span>Reconciliation + classification</span><div class="fmcg-artifact exception-file"><div><b>1,214</b><small>Matched</small></div><div><b>27</b><small>Quantity</small></div><div><b>7</b><small>Unmapped</small></div></div><p>Differences are separated by cause instead of hidden in totals</p></article>
+            <article><span>Controlled output</span><div class="fmcg-artifact output-file"><strong>Trusted comparison</strong><div><span>Owner</span><b>Assigned</b></div><div><span>Evidence</span><b>Attached</b></div><div><span>Next cycle</span><b>Ready</b></div></div><p>One governed view carries totals, evidence and clear ownership</p></article>
+          </div>
         </div>
       </section>
 
       <section class="section about-section" aria-labelledby="about-title">
-        <div class="about-grid"><div><h2 id="about-title">A practical bridge between both sides of the data</h2><a class="home-text-link" href="about/">Meet Marksyte</a></div><div class="profile-panel"><p>Marksyte combines commercial context, data analysis and workflow design. We work across retailer, seller and technical teams to make definitions explicit, differences traceable and the recurring process maintainable</p><div class="profile-proof" aria-label="Delivery principles"><article><strong>Hands-on</strong><span>Senior analysis from source review to operating handover</span></article><article><strong>Tool-independent</strong><span>Clear rules and controls that fit the systems already in use</span></article></div></div></div>
+        <div class="about-grid"><div class="about-heading"><h2 id="about-title">A practical bridge between both sides of the data</h2><a class="home-text-link" href="about/">Meet Marksyte</a></div><div class="founder-photo-placeholder" role="img" aria-label="Reserved space for a real photograph of the Marksyte founder working with data"><span>Founder photograph</span><strong>Real working session</strong><small>Temporary neutral placeholder</small></div><div class="profile-panel"><p>Marksyte combines commercial context, data analysis and workflow design. We work across retailer, seller and technical teams to make definitions explicit, differences traceable and the recurring process maintainable</p><div class="profile-proof" aria-label="Delivery principles"><article><strong>Hands-on</strong><span>Senior analysis from source review to operating handover</span></article><article><strong>Tool-independent</strong><span>Clear rules and controls that fit the systems already in use</span></article></div></div></div>
       </section>
 
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
@@ -129,6 +152,6 @@
       </section>
     </main>
     <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="legal/">Legal notice</a><a href="privacy/">Privacy</a><a href="cookies/">Cookies</a></nav></footer>
-    <script src="app.js?v=20260806-1"></script>
+    <script src="app.js?v=20260806-2"></script>
   </body>
 </html>
