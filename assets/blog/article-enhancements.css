@@ -691,3 +691,146 @@ body.article-page { color: var(--article-ink); background: #fff; }
   .flow-line::after { right: 50%; top: auto; bottom: -1px; transform: translateX(50%) rotate(135deg); }
   .flow-network { grid-template-columns: 1fr 1fr; }
 }
+
+/* Marksyte editorial route layer: bring every article into the archive system. */
+body.article-page {
+  --article-ink: #0b0d12;
+  --article-muted: #667085;
+  --article-soft: #f4f6fa;
+  --article-accent: #2588f5;
+  --article-accent-2: #eaf4ff;
+  --article-line: #dce5ef;
+  --article-warm: #eef5ff;
+  color: var(--article-ink);
+  background: #f4f6fa;
+}
+
+body.article-page .site-header {
+  border-bottom-color: var(--article-line);
+  background: rgba(255, 255, 255, 0.94);
+}
+
+body.article-page .brand-mark {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--article-accent);
+  color: transparent;
+  font-size: 0;
+}
+
+body.article-page .article-hero {
+  padding-block: clamp(68px, 9vw, 118px) clamp(56px, 7vw, 88px);
+  border-bottom: 1px solid var(--article-line);
+  background:
+    linear-gradient(135deg, rgba(37, 136, 245, 0.1), transparent 44%),
+    linear-gradient(315deg, rgba(20, 118, 223, 0.07), transparent 36%),
+    #eaf4ff;
+}
+
+body.article-page .article-hero h1 {
+  max-width: 920px;
+  letter-spacing: -0.045em;
+}
+
+body.article-page .article-dek,
+body.article-page .article-body p,
+body.article-page .article-body li {
+  color: var(--article-muted);
+}
+
+body.article-page .article-body {
+  padding-block: clamp(62px, 8vw, 104px);
+  background: #ffffff;
+}
+
+body.article-page .article-body h2,
+body.article-page .article-body h3,
+body.article-page .article-body strong {
+  color: var(--article-ink);
+}
+
+body.article-page .article-body a,
+body.article-page .article-meta,
+body.article-page .article-hero .eyebrow,
+body.article-page .article-body .visual-note strong {
+  color: var(--article-accent);
+}
+
+body.article-page .reading-nav,
+body.article-page .visual-note,
+body.article-page .figure-card,
+body.article-page .total-value-model,
+body.article-page .booking-window-model,
+body.article-page .retail-media-loop,
+body.article-page .ees-flow-model,
+body.article-page .essentials-loop-model,
+body.article-page .duty-free-flywheel,
+body.article-page .commercial-chain-model,
+body.article-page .ai-commerce-system,
+body.article-page .profitability-bridge,
+body.article-page .regulatory-flow-model,
+body.article-page .circular-loop-model,
+body.article-page .stop-economy-model,
+body.article-page .opportunity-card,
+body.article-page .action-list li {
+  border-color: var(--article-line);
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+body.article-page .key-takeaway,
+body.article-page .inline-cta {
+  border-radius: 14px;
+  background: var(--article-accent-2);
+}
+
+body.article-page .button.primary {
+  border-radius: 999px;
+  background: var(--article-accent);
+}
+
+body.article-page .ai-panel,
+body.article-page .loop-node.is-result,
+body.article-page .ees-step.is-response,
+body.article-page .essentials-step.is-learn,
+body.article-page .flywheel-core,
+body.article-page .ai-commerce-core,
+body.article-page .profit-stage.is-result,
+body.article-page .regulatory-step.is-action,
+body.article-page .circular-step.is-data,
+body.article-page .chain-step.is-revenue {
+  background: var(--article-ink);
+}
+
+body.article-page .ai-panel p,
+body.article-page .flywheel-core span,
+body.article-page .ai-commerce-core span {
+  color: #d9e8f7;
+}
+
+body.article-page [class*="is-"] {
+  border-color: var(--article-line);
+}
+
+body.article-page .mix-bar.is-positive,
+body.article-page .mix-bar.is-negative {
+  background: var(--article-accent);
+}
+
+body.article-page .article-cta {
+  border-top: 1px solid var(--article-line);
+  background: var(--article-soft);
+}
+
+body.article-page .article-cta-box {
+  border: 1px solid var(--article-line);
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  body.article-page .article-body {
+    width: min(100% - 32px, 560px);
+  }
+}
