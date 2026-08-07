@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
@@ -7,8 +7,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-    <title>Conciliación de datos de retailers | Marksyte</title>
-    <meta name="description" content="Haz que los datos del retailer cuadren con tus datos internos, explica las diferencias y deja preparado el siguiente cierre" />
+    <title>Conciliaci&oacute;n de datos de retailers y distribuidores para FMCG | Marksyte</title>
+    <meta name="description" content="Marksyte ayuda a equipos de gran consumo a conciliar datos de retailers, distribuidores, POS y ERP, resolviendo mapeos SKU y diferencias recurrentes." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://www.marksyte.com/es/" />
     <link rel="alternate" hreflang="en" href="https://www.marksyte.com/" />
@@ -16,17 +16,18 @@
     <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Marksyte" />
-    <meta property="og:title" content="Haz que los datos del retailer cuadren con tus datos internos | Marksyte" />
-    <meta property="og:description" content="Un servicio especializado para comparar informes del retailer con ERP, ventas, envíos y producto" />
+    <meta property="og:title" content="Conciliaci&oacute;n de datos de retailers y distribuidores para FMCG | Marksyte" />
+    <meta property="og:description" content="Concilia datos de retailers, distribuidores, POS y ERP, resuelve mapeos de producto y crea un proceso mensual repetible." />
     <meta property="og:url" content="https://www.marksyte.com/es/" />
     <meta property="og:locale" content="es_ES" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Haz que los datos del retailer cuadren con tus datos internos | Marksyte" />
-    <meta name="twitter:description" content="Compara datos del retailer con datos internos, explica las diferencias y prepara el siguiente cierre" />
+    <meta name="twitter:title" content="Conciliaci&oacute;n de datos de retailers y distribuidores para FMCG | Marksyte" />
+    <meta name="twitter:description" content="Concilia datos de retailers, distribuidores, POS y ERP, resuelve mapeos de producto y crea un proceso mensual repetible." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles.css?v=20260806-2" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=20260807-1" />
+    <link rel="stylesheet" href="../home.css?v=20260807-4" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -34,126 +35,138 @@
         "name": "Marksyte",
         "url": "https://www.marksyte.com/es/",
         "email": "contact@marksyte.com",
-        "description": "Conciliación de datos de retailers para fabricantes y proveedores que comparten archivos, sistemas y procesos de reporting",
-        "serviceType": "Conciliación de datos de retailers",
+        "description": "Conciliaci\u00f3n de datos de retailers y distribuidores para marcas y fabricantes de gran consumo",
+        "serviceType": ["Conciliaci\u00f3n de datos FMCG", "Conciliaci\u00f3n de datos de retailers", "Conciliaci\u00f3n de datos de distribuidores"],
         "areaServed": "Worldwide",
-        "knowsAbout": ["Datos de retail", "Sell-in y sell-out", "Datos de inventario", "Integración de datos", "Conciliación de datos", "Gestión de excepciones"]
+        "knowsAbout": ["Datos POS de retail", "Conciliaci\u00f3n de sell-out", "Inventario", "Mapeo SKU", "Mapeo EAN", "Mapeo GTIN", "Conciliaci\u00f3n ERP", "Armonizaci\u00f3n de datos FMCG", "Gesti\u00f3n de excepciones"]
       }
     </script>
     <script src="/analytics.js" defer></script>
   </head>
   <body class="home-page">
-    <!--
-      THESIS: La conciliación se muestra como un expediente de evidencia controlado, no como un dashboard SaaS genérico
-      OWN-WORLD: Documentos de trabajo blancos y azules, reglas navy, tipografía editorial, metadatos compactos y estados en azul vivo
-      STORY: Ver el descuadre, entender el método, inspeccionar entregables, seguir el flujo FMCG y revisar un reto real
-      FIRST VIEWPORT: Una propuesta directa ocupa la mitad izquierda y un gran expediente de conciliación demuestra el mecanismo a la derecha
-      FORM: Archivo controlado europeo, séptima dirección fundamentada seleccionada con la semilla 849e335d
-      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
-    -->
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Inicio de Marksyte"><span class="brand-mark" aria-hidden="true">M</span><span>Marksyte</span></a>
-      <div class="header-actions">
-        <nav aria-label="Navegación principal"><a href="#services">Cómo funciona</a><a href="#case-proof-title">Ejemplo</a><a href="about/">Sobre Marksyte</a></nav>
-        <a class="header-cta" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Revisar un descuadre</a>
-        <div class="language-switch" aria-label="Idioma"><a href="../" lang="en" hreflang="en">EN</a><a href="./" lang="es" hreflang="es" aria-current="page">ES</a></div>
+      <a class="brand" href="#top" aria-label="Inicio de Marksyte"><span class="brand-dot" aria-hidden="true"></span><span>Marksyte</span></a>
+      <nav class="main-nav" aria-label="Navegaci&oacute;n principal">
+        <a href="#method">Qu&eacute; hacemos</a>
+        <a href="#walkthrough">Ejemplo</a>
+        <a href="about/">Sobre Marksyte</a>
+      </nav>
+      <div class="header-tools">
+        <a class="header-cta" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Revisar tu proceso <span aria-hidden="true">&#8599;</span></a>
+        <div class="language-switch" aria-label="Idioma"><a href="../" lang="en" hreflang="en">EN</a><span aria-hidden="true">/</span><a href="./" lang="es" hreflang="es" aria-current="page">ES</a></div>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero-section" aria-labelledby="hero-title">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Datos del retailer y datos internos</p>
-          <h1 id="hero-title">Haz que los datos del retailer cuadren con tus datos internos</h1>
-          <p class="hero-lead">Marksyte conecta los informes del retailer con los datos de ERP, ventas, envíos y producto, identifica la causa de cada diferencia y deja preparado un proceso que funciona también en el siguiente cierre</p>
-          <div class="hero-actions" aria-label="Acciones principales">
-            <a class="button primary" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Revisar un descuadre</a>
-            <a class="home-text-link" href="#services">Ver cómo trabajamos</a>
+          <p class="eyebrow">Para marcas y fabricantes de gran consumo</p>
+          <h1 id="hero-title">Conciliaci&oacute;n de datos de retailers y distribuidores para FMCG</h1>
+          <p class="hero-deck">Ayudamos a equipos de gran consumo a conciliar datos de retailers, distribuidores y ERP interno, resolviendo mapeos de producto, diferencias de reporting y problemas recurrentes de calidad de datos.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Revisar tu proceso de conciliaci&oacute;n <span aria-hidden="true">&#8599;</span></a>
+            <a class="text-link" href="#walkthrough">Ver c&oacute;mo funciona la conciliaci&oacute;n de datos <span aria-hidden="true">&#8594;</span></a>
           </div>
-          <p class="hero-note">Sell-out · stock · pedidos · devoluciones · facturas · ERP</p>
+          <p class="hero-note">Sell-out / POS / inventario / env&iacute;os / maestro de producto / ERP</p>
         </div>
-
-        <div class="hero-visual" aria-label="Sistema ilustrativo para comparar datos del retailer con datos internos">
-          <figure class="recon-system">
-            <figcaption><span>Expediente de conciliación</span><strong>REC / 042</strong><span>Datos ilustrativos</span></figcaption>
-            <div class="recon-system-sources">
-              <article class="data-paper retailer-paper"><header><span>Fuente retailer</span><small>Sell-out + stock</small></header><strong>1.248</strong><p>registros recibidos</p><div class="data-rule"><span>Producto</span><b>EAN</b></div><div class="data-rule"><span>Ubicación</span><b>Tienda</b></div></article>
-              <article class="data-paper seller-paper"><header><span>Fuente interna</span><small>Envíos + ERP</small></header><strong>1.263</strong><p>registros recibidos</p><div class="data-rule"><span>Producto</span><b>SKU</b></div><div class="data-rule"><span>Ubicación</span><b>Cliente</b></div></article>
+        <figure class="review-sheet" aria-labelledby="review-title">
+          <figcaption class="sheet-meta"><span>REVISI&Oacute;N DE CONCILIACI&Oacute;N</span><strong>REC / 042</strong><span>Datos ilustrativos &middot; v1.4</span></figcaption>
+          <div class="sheet-body">
+            <div class="source-grid">
+              <section class="source-fragment" aria-labelledby="retailer-file">
+                <div class="fragment-heading"><span id="retailer-file">ARCHIVO RETAILER</span><small>retailer_sellout_w14.xlsx</small></div>
+                <table><thead><tr><th>EAN</th><th>Tienda</th><th>Periodo</th><th>Sell-out</th></tr></thead><tbody><tr><td>8412345678901</td><td>ES-042</td><td>W14</td><td>124</td></tr><tr class="marked-row"><td>8412345678918</td><td>ES-042</td><td>W14</td><td>86</td></tr><tr><td>8412345678925</td><td>ES-107</td><td>W14</td><td>43</td></tr></tbody></table>
+              </section>
+              <section class="source-fragment" aria-labelledby="seller-file">
+                <div class="fragment-heading"><span id="seller-file">ARCHIVO INTERNO</span><small>supplier_shipments_apr.csv</small></div>
+                <table><thead><tr><th>SKU</th><th>Cliente</th><th>Fecha factura</th><th>Cantidad</th></tr></thead><tbody><tr><td>SKU-8901</td><td>CUST-042</td><td>08 abr</td><td>124</td></tr><tr class="marked-row"><td>SKU-8918</td><td>CUST-042</td><td>07 abr</td><td>91</td></tr><tr><td>SKU-8925</td><td>CUST-107</td><td>09 abr</td><td>43</td></tr></tbody></table>
+              </section>
             </div>
-            <div class="mapping-band"><span>Mapeo de producto</span><strong>SKU ↔ EAN</strong><i></i><span>Mapeo de ubicación</span><strong>Cliente ↔ Tienda</strong></div>
-            <div class="control-ledger" role="table" aria-label="Controles de conciliación">
-              <div class="ledger-head" role="row"><span role="columnheader">Control</span><span role="columnheader">Cantidad</span><span role="columnheader">Estado</span></div>
-              <div role="row"><strong role="cell">Registros coincidentes</strong><span role="cell">1.214</span><em class="state-pass" role="cell">Controlado</em></div>
-              <div role="row"><strong role="cell">Diferencias de cantidad</strong><span role="cell">27</span><em class="state-open" role="cell">Revisar</em></div>
-              <div role="row"><strong role="cell">Productos sin mapear</strong><span role="cell">7</span><em class="state-open" role="cell">Asignar</em></div>
-            </div>
-            <div class="controlled-output"><span>Salida de reporting controlada</span><strong>Una vista conciliada</strong><small>Cada excepción visible y asignada</small></div>
-            <svg class="recon-system-lines" aria-hidden="true" viewBox="0 0 600 520" preserveAspectRatio="none"><path d="M145 124V180H300M455 124V180H300V222M300 376V420"/><circle cx="300" cy="180" r="5"/><circle cx="300" cy="420" r="5"/></svg>
-          </figure>
-        </div>
-      </section>
-
-      <section class="proof-strip" aria-label="Resultados de la conciliación">
-        <article><strong>Cierres más lentos</strong><p>El equipo compara versiones antes de poder publicar un informe</p></article>
-        <article><strong>Diferencias sin explicar</strong><p>Ventas, finanzas y datos discuten qué cifra deben utilizar</p></article>
-        <article><strong>Responsables poco claros</strong><p>El proceso depende de una hoja que solo una persona sabe reparar</p></article>
-      </section>
-
-      <section class="section challenge-section" aria-labelledby="challenge-title">
-        <div class="section-intro"><p class="eyebrow">Reconocer el problema</p><h2 id="challenge-title">Los archivos llegan cada mes<br /><em>Los mismos descuadres vuelven con ellos</em></h2><p>El total del retailer no coincide con el nuestro y la comparación vuelve a empezar desde una hoja en blanco</p></div>
-        <div class="challenge-grid">
-          <article><span>Ventas y stock</span><h3>El retailer y el sistema interno dan totales distintos</h3><p>Sell-in, sell-out, inventario o devoluciones usan cierres, unidades o estados diferentes</p></article>
-          <article><span>Productos y tiendas</span><h3>Los códigos de producto, tienda y cliente no encajan</h3><p>SKU, EAN, tiendas, clientes y jerarquías se identifican de forma distinta</p></article>
-          <article><span>Cierre de mes</span><h3>Cada equipo corrige el problema a su manera</h3><p>Hojas de cálculo, correos y ajustes sin documentar hacen que las diferencias vuelvan cada mes</p></article>
-        </div>
-      </section>
-
-      <section class="section services-section" id="services" aria-labelledby="services-title">
-        <div class="services-shell">
-          <div class="section-intro services-intro"><p class="eyebrow">La solución</p><h2 id="services-title">Una misma estructura para comparar ambos lados</h2><p>Entendemos qué contiene cada fuente, definimos qué se debe comparar, mapeamos las claves comunes, aplicamos las reglas de negocio, conciliamos los registros y separamos cada diferencia por causa</p></div>
-          <div class="service-map" aria-label="Cinco etapas del método de conciliación">
-            <article class="service-map-item"><span class="service-map-index">01</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><rect class="diagram-paper" x="8" y="20" width="48" height="68" rx="5"/><path d="M19 37h26M19 48h18M19 59h23"/><rect class="diagram-paper" x="124" y="20" width="48" height="68" rx="5"/><path d="M135 37h26M135 48h18M135 59h23M56 42h29M95 42h29M82 36l7 6-7 6M98 36l-7 6 7 6"/><rect class="diagram-status" x="72" y="64" width="36" height="24" rx="4"/></svg></div><div class="service-map-copy"><p class="service-map-name">Entender el intercambio</p><h3>Registramos qué recibe y qué envía cada parte</h3><p>Fuentes, campos, formatos, fechas, frecuencia, responsables y la pregunta de negocio</p></div><div class="service-map-result"><span>Deja</span><strong>Un registro común de las fuentes</strong></div></article>
-            <article class="service-map-item"><span class="service-map-index">02</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><rect class="diagram-fill" x="10" y="14" width="58" height="82" rx="5"/><rect class="diagram-paper" x="112" y="14" width="58" height="82" rx="5"/><path d="M25 34h28M25 52h28M25 70h28M127 34h28M127 52h28M127 70h28M68 34h44M68 52h44M68 70h44"/><circle class="diagram-status" cx="90" cy="34" r="6"/><circle class="diagram-status" cx="90" cy="52" r="6"/><circle class="diagram-status" cx="90" cy="70" r="6"/></svg></div><div class="service-map-copy"><p class="service-map-name">Mapear las claves</p><h3>Conectamos productos, clientes, tiendas y periodos</h3><p>SKU, EAN, códigos de cliente, tiendas, fechas, unidades y definiciones pasan a una estructura compartida</p></div><div class="service-map-result"><span>Deja</span><strong>Mapeos y reglas que ambas partes entienden</strong></div></article>
-            <article class="service-map-item"><span class="service-map-index">03</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><path d="M12 27h58M12 55h58M12 83h58M110 27h58M110 55h58M110 83h58M70 27h40M70 55h40M70 83h40"/><circle class="diagram-status" cx="90" cy="27" r="7"/><circle class="diagram-status" cx="90" cy="55" r="7"/><circle class="diagram-alert" cx="90" cy="83" r="7"/><path class="diagram-check" d="m86 27 3 3 6-7m-9 32 3 3 6-7"/></svg></div><div class="service-map-copy"><p class="service-map-name">Conciliar los registros</p><h3>Comparamos el detalle y los totales</h3><p>Aplicamos las reglas acordadas para distinguir coincidencias, diferencias y registros pendientes</p></div><div class="service-map-result"><span>Deja</span><strong>Un archivo de conciliación revisable</strong></div></article>
-            <article class="service-map-item"><span class="service-map-index">04</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><circle class="diagram-fill" cx="90" cy="55" r="34"/><path d="M90 15a40 40 0 0 1 37 25M130 35l-2 11-10-5M130 70a40 40 0 0 1-35 25M101 98l-10-6 7-9M55 83a40 40 0 0 1-4-40M46 49l5-10 9 6M61 25a40 40 0 0 1 28-10"/><rect class="diagram-paper" x="72" y="38" width="36" height="34" rx="4"/><path class="diagram-check" d="m80 55 7 7 14-17"/></svg></div><div class="service-map-copy"><p class="service-map-name">Explicar las diferencias</p><h3>Encontramos qué causa cada descuadre</h3><p>Separamos tiempos, mapeos, devoluciones y excepciones de negocio, con responsable y evidencia</p></div><div class="service-map-result"><span>Deja</span><strong>Una cola de excepciones con siguiente acción</strong></div></article>
-            <article class="service-map-item"><span class="service-map-index">05</span><div class="service-diagram" aria-hidden="true"><svg viewBox="0 0 180 110"><circle class="diagram-fill" cx="90" cy="55" r="34"/><path d="M90 15a40 40 0 0 1 37 25M130 35l-2 11-10-5M130 70a40 40 0 0 1-35 25M101 98l-10-6 7-9M55 83a40 40 0 0 1-4-40M46 49l5-10 9 6M61 25a40 40 0 0 1 28-10"/><rect class="diagram-paper" x="72" y="38" width="36" height="34" rx="4"/><path class="diagram-check" d="m80 55 7 7 14-17"/></svg></div><div class="service-map-copy"><p class="service-map-name">Mantener el ciclo</p><h3>Dejamos preparado el siguiente cierre</h3><p>Controles, responsables, documentación y reporting parten de una estructura ya definida</p></div><div class="service-map-result"><span>Deja</span><strong>Un proceso que se puede repetir</strong></div></article>
+            <div class="annotation annotation-a"><span class="annotation-mark">01</span><span>El SKU se mapea al EAN</span></div>
+            <div class="annotation annotation-b"><span class="annotation-mark">02</span><span>El cliente corresponde a dos tiendas</span></div>
+            <div class="annotation annotation-c"><span class="annotation-mark">03</span><span>El cierre de reporting es distinto</span></div>
+            <div class="annotation annotation-d"><span class="annotation-mark">04</span><span>La diferencia de cantidad requiere revisi&oacute;n</span></div>
+            <div class="sheet-rules"><span>Clave de producto <strong>SKU &#8594; EAN</strong></span><span>Nivel de ubicaciÃ³n <strong>Cliente &#8594; Tienda</strong></span><span>Cierre <strong>Calendario retailer W14</strong></span></div>
+            <div class="review-totals" aria-label="Totales ilustrativos de la revisi&oacute;n"><div><strong>1.214</strong><span>coinciden</span></div><div><strong>27</strong><span>diferencias</span></div><div><strong>7</strong><span>sin mapear</span></div></div>
           </div>
-          <div class="engagement-models" aria-labelledby="engagement-title"><div class="engagement-heading"><h3 id="engagement-title">Dos formas de trabajar con Marksyte</h3><p>El mismo método de conciliación, con el nivel de apoyo continuo que necesita tu equipo</p></div><div class="engagement-options"><article><span>Puesta en marcha</span><h4>Construir o reparar la conciliación</h4><p>Mapeamos el flujo, alineamos las fuentes y dejamos listos los controles, el proceso de excepciones y la guía operativa</p></article><article><span>Gestión recurrente</span><h4>Ejecutar la conciliación en cada ciclo</h4><p>Operamos los controles acordados, mantenemos los mapeos, mostramos las excepciones y preparamos la salida de reporting</p></article></div></div>
-          <div class="services-conversion"><p><strong>¿No sabes qué está causando el descuadre?</strong> Trae un caso real y empezaremos por la evidencia</p><a class="button primary" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Revisar un descuadre</a></div>
+          <span class="sheet-stamp">REVISADO<br /><b>PUNTOS ABIERTOS</b></span>
+        </figure>
+      </section>
+
+      <section class="proof-statement" aria-labelledby="proof-title">
+        <div class="proof-lead"><p class="eyebrow">El problema de los datos</p><h2 id="proof-title">Cada partner env&iacute;a una versi&oacute;n distinta de la realidad</h2></div>
+        <div class="proof-notes"><p><strong>Estructuras distintas</strong><span>Cada retailer y distribuidor utiliza sus propias plantillas, campos y niveles de agregaci&oacute;n</span></p><p><strong>Definiciones distintas</strong><span>Los c&oacute;digos, periodos y fechas de cierre no coinciden con el ERP</span></p><p><strong>Trabajo manual recurrente</strong><span>El equipo reconstruye comparaciones fr&aacute;giles en Excel en cada ciclo de reporting</span></p></div>
+      </section>
+
+      <section class="problems section-rule" aria-labelledby="problems-title">
+        <div class="section-heading"><p class="eyebrow">Reconocer el problema</p><h2 id="problems-title">Los archivos llegan cada mes<br /><em>Los mismos descuadres vuelven con ellos</em></h2><p>Los problemas de conciliaci&oacute;n son pr&aacute;cticos, repetitivos y costosos de investigar desde cero.</p></div>
+        <div class="problem-list">
+          <article class="problem-row"><span class="row-number">01</span><div><h3>Las ventas del retailer no coinciden con el ERP</h3><p>Sell-out semana 14 / env&iacute;os del 01 al 07 de abril</p></div><span class="row-note">El cierre de reporting es distinto</span></article>
+          <article class="problem-row"><span class="row-number">02</span><div><h3>Los c&oacute;digos de producto, tienda y cliente no encajan</h3><p>SKU retailer / SKU interno / EAN / GTIN</p></div><span class="row-note">Los mapeos est&aacute;n incompletos</span></article>
+          <article class="problem-row"><span class="row-number">03</span><div><h3>Cada distribuidor env&iacute;a un formato diferente</h3><p>Las columnas, unidades, fechas y niveles cambian por partner</p></div><span class="row-note">Falta estandarizaci&oacute;n</span></article>
+          <article class="problem-row"><span class="row-number">04</span><div><h3>La misma hoja de c&aacute;lculo se reconstruye cada mes</h3><p>Hilos de correo / pesta&ntilde;as copiadas / ajustes sin documentar</p></div><span class="row-note">Las excepciones no tienen responsable</span></article>
         </div>
       </section>
 
-      <section class="section deliverables-section" aria-labelledby="deliverables-title">
-        <div class="deliverables-copy"><p class="eyebrow">Materiales de trabajo</p><h2 id="deliverables-title">El trabajo deja un proceso que otro equipo puede utilizar</h2><p>Las fuentes, reglas, responsables y diferencias abiertas permanecen visibles en documentos que se pueden revisar y operar</p></div>
-        <div class="document-stack" aria-label="Entregables ilustrativos de conciliación">
-              <article class="document-sheet document-source"><header><div><span>Registro de fuentes</span><strong>SRC / 01</strong></div><small>Material de trabajo · cierre mensual</small></header><dl><div><dt>Responsable</dt><dd>Equipo de datos retail</dd></div><div><dt>Estado</dt><dd><i class="doc-status ready"></i>Listo</dd></div></dl><table><thead><tr><th>Fuente</th><th>Frecuencia</th><th>Cierre</th></tr></thead><tbody><tr><td>Envíos proveedor</td><td>Semanal</td><td>Viernes</td></tr><tr><td>ERP interno</td><td>Diaria</td><td>18:00</td></tr><tr><td>Sell-out retailer</td><td>Mensual</td><td>Día 3</td></tr></tbody></table></article>
-              <article class="document-sheet document-mapping"><header><div><span>Mapeo de productos y tiendas</span><strong>MAP / 07</strong></div><small>Material de trabajo · versionado</small></header><dl><div><dt>Responsable</dt><dd>Operaciones de datos</dd></div><div><dt>Estado</dt><dd><i class="doc-status review"></i>7 por asignar</dd></div></dl><table><thead><tr><th>Clave interna</th><th>Clave retailer</th><th>Regla</th></tr></thead><tbody><tr><td>SKU</td><td>EAN</td><td>Exacta</td></tr><tr><td>Cliente</td><td>Tienda</td><td>Mapeada</td></tr><tr><td>Fecha factura</td><td>Periodo venta</td><td>Calendario</td></tr></tbody></table></article>
-              <article class="document-sheet document-exceptions"><header><div><span>Cola de excepciones</span><strong>EXC / 27</strong></div><small>Material de trabajo · revisión activa</small></header><dl><div><dt>Responsable</dt><dd>Responsable del control</dd></div><div><dt>Estado</dt><dd><i class="doc-status open"></i>Abierto</dd></div></dl><table><thead><tr><th>Excepción</th><th>Evidencia</th><th>Estado</th></tr></thead><tbody><tr><td>Diferencia de cantidad</td><td>Envío vs sell-out</td><td>Revisar</td></tr><tr><td>Producto sin mapear</td><td>EAN ausente</td><td>Asignar</td></tr><tr><td>Desfase de periodo</td><td>Regla de cierre</td><td>Explicar</td></tr></tbody></table></article>
+      <section class="walkthrough" id="walkthrough" aria-labelledby="walkthrough-title">
+        <div class="walkthrough-intro"><p class="eyebrow eyebrow-light">Revisi&oacute;n de trabajo ilustrativa</p><h2 id="walkthrough-title">Un descuadre<br />hasta encontrar su causa</h2><p>Observa c&oacute;mo se alinean, comparan y trasladan a la siguiente revisi&oacute;n el sell-out del retailer y los env&iacute;os internos.</p><a class="light-link" href="casos-de-estudio/conciliacion-datos-fmcg/">Abrir el ejemplo completo <span aria-hidden="true">&#8599;</span></a></div>
+        <div class="walkthrough-trail">
+          <article class="walk-step step-arrived"><div class="step-label"><span>A</span><strong>Registro del retailer</strong></div><div class="dark-paper file-list"><div><b>EAN 8412345678918</b><small>Tienda ES-042 &middot; Semana W14 &middot; Sell-out 86</small></div><div><b>RETAILER_SELLOUT_W14.xlsx</b><small>Producto &middot; Tienda &middot; Semana natural &middot; Sell-out</small></div></div><p>El archivo del retailer informa de 86 unidades en el periodo</p></article>
+          <article class="walk-step step-align"><div class="step-label"><span>B</span><strong>Registro interno</strong></div><div class="dark-paper file-list"><div><b>SKU-8918</b><small>Cliente CUST-042 &middot; Factura 07 abr &middot; Cantidad 91</small></div><div><b>SUPPLIER_SHIPMENTS_APR.csv</b><small>SKU &middot; Cliente &middot; Fecha factura &middot; Cantidad</small></div></div><p>El archivo interno de env&iacute;os informa de 91 unidades</p></article>
+          <article class="walk-step step-agreed"><div class="step-label"><span>C</span><strong>Regla de comparaci&oacute;n</strong></div><div class="dark-paper spec-sheet"><div><span>Clave de producto</span><b>El SKU se mapea al EAN</b></div><div><span>Nivel de ubicaci&oacute;n</span><b>El cliente se mapea a la tienda</b></div><div><span>Periodo de comparaci&oacute;n</span><b>Semana del calendario retailer</b></div><div><span>Devoluciones</span><b>Clase de excepci&oacute;n separada</b></div><div><span>Responsable</span><b>Operaciones comerciales</b></div></div><p>La comparaci&oacute;n usa claves comunes y el cierre del retailer</p></article>
+          <article class="walk-step step-result"><div class="step-label"><span>D</span><strong>Estado final</strong></div><div class="dark-paper result-sheet"><div class="result-line"><span>Diferencia encontrada</span><b>5 unidades</b></div><div class="result-line"><span>Causa</span><b>Desfase de cierre</b></div><div class="result-checks"><span>&#10003; Responsable asignado</span><span>&#10003; Evidencia adjunta</span><span>&#10003; Abierto para la siguiente revisi&oacute;n</span></div></div><p>La diferencia queda visible, explicada y lista para la siguiente acci&oacute;n</p></article>
+        </div>
+        <p class="illustrative-note">Solo un ejemplo ilustrativo &middot; No implica cliente, logo ni resultado comercial</p>
+      </section>
+
+      <section class="method section-rule" id="method" aria-labelledby="method-title">
+        <div class="section-heading method-heading"><p class="eyebrow">Qu&eacute; hace Marksyte</p><h2 id="method-title">De archivos fragmentados<br /><em>a un reporting controlado</em></h2><p>Conciliamos datos externos e internos y dejamos reglas y controles que tu equipo puede repetir.</p></div>
+        <div class="method-trail">
+          <article class="method-step"><div class="method-index">01</div><div class="method-copy"><h3>Estandarizar las fuentes</h3><p>Normalizamos archivos, campos, fechas y unidades de retailers y distribuidores</p></div><div class="mini-document register-mini"><span>REGISTRO DE FUENTES</span><b>Fuente / frecuencia / responsable</b><i></i><i></i><i></i></div></article>
+          <article class="method-step"><div class="method-index">02</div><div class="method-copy"><h3>Mapear las claves compartidas</h3><p>Conectamos SKU, EAN, GTIN, clientes y tiendas</p></div><div class="mini-document mapping-mini"><span>ESPECIFICACI&Oacute;N / 07</span><b>SKU <em>con</em> EAN</b><b>Cliente <em>con</em> Tienda</b></div></article>
+          <article class="method-step"><div class="method-index">03</div><div class="method-copy"><h3>Conciliar los registros</h3><p>Aplicamos las reglas acordadas al detalle y a los totales</p></div><div class="mini-document compare-mini"><span>REVISI&Oacute;N / 042</span><b>1.214 <small>coinciden</small></b><b>27 <small>revisi&oacute;n</small></b></div></article>
+          <article class="method-step"><div class="method-index">04</div><div class="method-copy"><h3>Clasificar las diferencias</h3><p>Separamos tiempos, mapeos, devoluciones y excepciones de negocio</p></div><div class="mini-document owner-mini"><span>REGISTRO DE EXCEPCIONES</span><b>Causa asignada</b><b>Evidencia adjunta</b></div></article>
+          <article class="method-step"><div class="method-index">05</div><div class="method-copy"><h3>Hacer repetible el ciclo</h3><p>Documentamos reglas, asignamos responsables y automatizamos los pasos estables</p></div><div class="mini-document owner-mini"><span>SIGUIENTE CIERRE</span><b>Reglas documentadas</b><b>Listo para repetir</b></div></article>
         </div>
       </section>
 
-      <section class="section case-proof-section" aria-labelledby="case-proof-title">
-        <div class="case-proof-grid">
-          <div class="case-proof-copy"><h2 id="case-proof-title">Un descuadre con la causa identificada</h2><p>Ejemplo ilustrativo de una revisión entre un registro del retailer y un registro interno</p><a class="button secondary" href="casos-de-estudio/conciliacion-datos-fmcg/">Ver el ejemplo completo</a><small>Ejemplo ilustrativo. No implica cliente, logo ni resultado comercial</small></div>
-          <div class="fmcg-flow" aria-label="Ejemplo ilustrativo de una revisión de conciliación">
-            <article><span>Registro del retailer</span><div class="fmcg-artifact source-files"><b>EAN 8412345678918</b><small>Tienda ES-042 · Semana W14</small><b>Sell-out 86</b><small>Retailer_SELLOUT_W14.xlsx</small></div><p>El retailer informa 86 unidades</p></article>
-            <article><span>Registro interno</span><div class="fmcg-artifact mapping-file"><div><small>SKU</small><b>SKU-8918</b></div><div><small>Cliente</small><b>CUST-042</b></div><div><small>Factura</small><b>07 abr · 91 unidades</b></div></div><p>El archivo interno informa 91 unidades</p></article>
-            <article><span>Regla de comparación</span><div class="fmcg-artifact exception-file"><div><b>SKU ↔ EAN</b><small>Producto</small></div><div><b>Cliente ↔ tienda</b><small>Ubicación</small></div><div><b>W14 retailer</b><small>Periodo</small></div></div><p>La comparación usa claves comunes y el cierre del retailer</p></article>
-            <article><span>Estado final</span><div class="fmcg-artifact output-file"><strong>Diferencia: 5 unidades</strong><div><span>Causa</span><b>Desfase de cierre</b></div><div><span>Responsable</span><b>Operaciones comerciales</b></div><div><span>Estado</span><b>Explicada · abierta</b></div></div><p>La excepción queda lista para la siguiente revisión</p></article>
-          </div>
+      <section class="data-sources section-rule" aria-labelledby="sources-title">
+        <div class="section-heading"><p class="eyebrow">Fuentes de datos habituales</p><h2 id="sources-title">Los datos que hay detr&aacute;s de la cifra mensual</h2><p>Trabajamos con los archivos que ya reciben y mantienen tus equipos comerciales, de supply y finanzas.</p></div>
+        <div class="source-list">
+          <p><span>01</span><strong>POS y sell-out de retailers</strong><small>Tienda, producto, periodo, unidades y valor</small></p>
+          <p><span>02</span><strong>Sell-out de distribuidores</strong><small>Reporting por cliente, territorio y canal</small></p>
+          <p><span>03</span><strong>Ventas y env&iacute;os del ERP</strong><small>Pedidos, facturas, entregas y devoluciones</small></p>
+          <p><span>04</span><strong>Inventario</strong><small>Stock disponible, en tr&aacute;nsito y a cierre de periodo</small></p>
+          <p><span>05</span><strong>Maestro de producto</strong><small>SKU, EAN, GTIN, jerarqu&iacute;a y formato</small></p>
+          <p><span>06</span><strong>Maestros de clientes y tiendas</strong><small>Cuentas, ense&ntilde;as, ubicaciones y propiedad</small></p>
         </div>
       </section>
 
-      <section class="section about-section" aria-labelledby="about-title">
-          <div class="about-grid"><div class="about-heading"><h2 id="about-title">Un puente práctico entre ambos lados de los datos</h2><a class="home-text-link" href="about/">Conocer Marksyte</a></div><div class="founder-photo-placeholder" role="img" aria-label="Papeles de trabajo ilustrativos para comparar datos del retailer y datos internos"><span>Fotografía del fundador</span><strong>Sesión de trabajo real</strong><small>Placeholder neutro temporal</small></div><div class="profile-panel"><p>Marksyte trabaja entre equipos de retailer, fabricante y tecnología para aclarar definiciones, hacer trazables las diferencias y dejar un proceso que se pueda mantener</p><div class="profile-proof" aria-label="Principios de trabajo"><article><strong>Práctico</strong><span>Análisis senior desde la revisión de fuentes hasta la entrega operativa</span></article><article><strong>Independiente de la herramienta</strong><span>Reglas y controles claros que encajan con los sistemas existentes</span></article></div></div></div>
+      <section class="outcomes" aria-labelledby="outcomes-title">
+        <div class="outcomes-copy"><p class="eyebrow eyebrow-light">Resultados de negocio</p><h2 id="outcomes-title">Una cifra en la que confiar<br /><em>y que poder explicar</em></h2><p>La conciliaci&oacute;n de datos FMCG debe reducir el trabajo recurrente y hacer visible cada excepci&oacute;n pendiente.</p></div>
+        <div class="outcome-list">
+          <p><span>01</span><strong>Datos de ventas fiables</strong></p><p><span>02</span><strong>Conciliaci&oacute;n mensual m&aacute;s r&aacute;pida</strong></p>
+          <p><span>03</span><strong>Menos ajustes manuales</strong></p><p><span>04</span><strong>Seguimiento claro de excepciones</strong></p>
+          <p><span>05</span><strong>Reporting consistente entre mercados</strong></p><p><span>06</span><strong>Menor dependencia de Excel fr&aacute;gil</strong></p>
+        </div>
       </section>
 
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-copy"><p class="eyebrow">Una primera conversación práctica</p><h2 id="contact-title">Trae un descuadre real<br /><em>Te ayudaremos a encontrar qué lo está causando</em></h2><p>Cuéntanos qué partes, archivos o sistemas intervienen, cada cuánto se mueven los datos y qué decisión está esperando una respuesta</p><div class="contact-actions"><a class="button primary" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Revisar un descuadre</a></div><a class="email-link" href="mailto:contact@marksyte.com">contact@marksyte.com</a></div>
-        <form class="contact-form" id="discovery-form"><div class="form-grid"><label><span>Nombre</span><input type="text" name="name" required autocomplete="name" /></label><label><span>Correo profesional</span><input type="email" name="email" required autocomplete="email" /></label><label class="full"><span>Organización y cargo</span><input type="text" name="company" required autocomplete="organization-title" /></label><label class="full"><span>¿Qué datos no cuadran?</span><textarea name="challenge" rows="5" required placeholder="Por ejemplo: el sell-out del retailer y nuestro informe de envíos usan códigos de producto distintos y los totales mensuales no coinciden"></textarea></label></div><button class="button primary submit-button" type="submit">Preparar correo</button><p class="form-note">Se abrirá un borrador en tu aplicación de correo. Esta web no almacena ningún dato</p><p class="form-status" id="form-status" aria-live="polite"></p></form>
+      <section class="pack section-rule" aria-labelledby="pack-title">
+        <div class="section-heading"><p class="eyebrow">Resultados tangibles</p><h2 id="pack-title">El trabajo deja un proceso<br /><em>que otro equipo puede utilizar</em></h2><p>Los materiales de trabajo mantienen visibles las reglas, diferencias y siguientes acciones</p></div>
+        <div class="document-spread" aria-label="Entregables ilustrativos de conciliaci&oacute;n">
+          <article class="deliverable source-register"><header><div><span>REGISTRO DE FUENTES</span><b>SRC / 01</b></div><small>Material de trabajo &middot; cierre mensual</small></header><div class="deliverable-meta"><span>RESPONSABLE <b>Equipo de datos retail</b></span><span>ESTADO <b>Listo</b></span></div><table><thead><tr><th>Fuente</th><th>Frecuencia</th><th>Cierre</th></tr></thead><tbody><tr><td>Env&iacute;os del proveedor</td><td>Semanal</td><td>Viernes</td></tr><tr><td>ERP interno</td><td>Diaria</td><td>18:00</td></tr><tr><td>Sell-out retailer</td><td>Mensual</td><td>D&iacute;a 3</td></tr><tr><td>Archivo de devoluciones</td><td>Semanal</td><td>Lunes</td></tr></tbody></table><p class="document-footer">Fuentes, frecuencia y responsables registrados</p></article>
+          <article class="deliverable mapping-spec"><header><div><span>ESPECIFICACI&Oacute;N DE MAPEOS</span><b>MAP / 07</b></div><small>Material de trabajo &middot; versionado</small></header><div class="deliverable-meta"><span>RESPONSABLE <b>Operaciones de datos</b></span><span>ESTADO <b class="status-open">7 por asignar</b></span></div><table><thead><tr><th>Clave interna</th><th>Clave retailer</th><th>Regla</th></tr></thead><tbody><tr><td>SKU</td><td>EAN</td><td>Exacta</td></tr><tr><td>Cliente</td><td>Tienda</td><td>Mapeada</td></tr><tr><td>Fecha factura</td><td>Periodo venta</td><td>Calendario</td></tr></tbody></table><p class="document-footer">Los mapeos pendientes quedan visibles para revisi&oacute;n</p></article>
+          <article class="deliverable exception-queue"><header><div><span>COLA DE EXCEPCIONES</span><b>EXC / 27</b></div><small>Material de trabajo &middot; revisi&oacute;n activa</small></header><div class="deliverable-meta"><span>RESPONSABLE <b>Responsable del control</b></span><span>ESTADO <b class="status-warning">Abierto</b></span></div><table><thead><tr><th>Excepci&oacute;n</th><th>Evidencia</th><th>Siguiente</th></tr></thead><tbody><tr><td>Diferencia de cantidad</td><td>Env&iacute;o vs sell-out</td><td>Revisar</td></tr><tr><td>Producto sin mapear</td><td>EAN ausente</td><td>Asignar</td></tr><tr><td>Desfase de periodo</td><td>Regla de cierre</td><td>Explicar</td></tr></tbody></table><p class="document-footer">Cada diferencia tiene una causa y una siguiente acci&oacute;n</p></article>
+        </div>
       </section>
+
+      <section class="ways section-rule" aria-labelledby="ways-title"><div class="ways-copy"><p class="eyebrow">Modelos de trabajo</p><h2 id="ways-title">Empieza por donde est&aacute; el descuadre</h2><p>Los dos modelos usan el mismo m&eacute;todo basado en evidencias, con distinto nivel de apoyo continuo</p></div><div class="ways-compare"><article><span>01 / PUESTA EN MARCHA</span><h3>Construir o reparar la conciliaci&oacute;n</h3><p>Mapeamos el flujo, alineamos las fuentes y dejamos listos los controles, el proceso de excepciones y la gu&iacute;a operativa</p></article><article><span>02 / SERVICIO GESTIONADO</span><h3>Ejecutar la conciliaci&oacute;n en cada ciclo</h3><p>Operamos las comprobaciones acordadas, mantenemos los mapeos, mostramos las excepciones y preparamos la salida de reporting</p></article></div><p class="ways-note"><strong>&iquest;No sabes qu&eacute; parte est&aacute; fallando?</strong> Trae un descuadre y empezamos por la evidencia</p></section>
+
+      <section class="about section-rule" id="about" aria-labelledby="about-title"><div class="expertise-file" aria-label="Experiencia en Travel Retail"><span>EXPERIENCIA DE CANAL / TRAVEL RETAIL</span><strong>Entornos de datos complejos y multimercado</strong><p>M&uacute;ltiples operadores, distribuidores, divisas, calendarios y maestros de producto convierten Travel Retail en un entorno especialmente exigente para la conciliaci&oacute;n.</p><small>Experiencia especializada, aplicada al gran consumo</small></div><div class="about-copy"><p class="eyebrow">Por qu&eacute; Marksyte</p><h2 id="about-title">Contexto comercial,<br />an&aacute;lisis de datos,<br /><em>dise&ntilde;o del proceso</em></h2><p>Experiencia profunda en canales complejos como Travel Retail, aplicada de forma m&aacute;s amplia a la conciliaci&oacute;n de datos FMCG.</p><div class="editorial-notes"><p><strong>Pr&aacute;ctico</strong><span>An&aacute;lisis senior desde la revisi&oacute;n de fuentes hasta la entrega operativa</span></p><p><strong>Independiente de la herramienta</strong><span>Reglas y controles que encajan con los sistemas ya existentes</span></p></div><a class="text-link" href="about/">M&aacute;s sobre Marksyte <span aria-hidden="true">&#8594;</span></a></div></section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title"><div class="contact-copy"><p class="eyebrow eyebrow-light">Una primera conversaci&oacute;n pr&aacute;ctica</p><h2 id="contact-title">Revisa tu proceso actual<br /><em>de conciliaci&oacute;n</em></h2><p>Trae un descuadre recurrente o un flujo mensual de archivos. Revisaremos las fuentes, mapeos, reglas de reporting y excepciones que hay detr&aacute;s.</p><a class="contact-email" href="mailto:contact@marksyte.com">contact@marksyte.com</a><a class="light-link" href="https://calendly.com/roman-marksyte/30min" target="_blank" rel="noopener">Reservar una revisi&oacute;n de conciliaci&oacute;n <span aria-hidden="true">&#8599;</span></a></div><form class="contact-form" id="discovery-form"><div class="form-grid"><label><span>Nombre</span><input type="text" name="name" required autocomplete="name" /></label><label><span>Correo profesional</span><input type="email" name="email" required autocomplete="email" /></label><label class="full"><span>Organizaci&oacute;n y cargo</span><input type="text" name="company" required autocomplete="organization-title" /></label><label class="full"><span>&iquest;Qu&eacute; no coincide?</span><textarea name="challenge" rows="4" required placeholder="Por ejemplo: el sell-out del retailer y los env&iacute;os del ERP usan identificadores de producto distintos"></textarea></label></div><button class="button button-blue submit-button" type="submit">Preparar correo <span aria-hidden="true">&#8599;</span></button><p class="form-note">Se abrir&aacute; un borrador en tu aplicaci&oacute;n de correo. Esta web no almacena ning&uacute;n dato</p><p class="form-status" id="form-status" aria-live="polite"></p></form></section>
     </main>
     <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Enlaces legales"><a href="aviso-legal/">Aviso legal</a><a href="privacidad/">Privacidad</a><a href="cookies/">Cookies</a></nav></footer>
-    <script src="../app.js?v=20260806-2"></script>
+    <script src="../app.js?v=20260806-3"></script>
   </body>
 </html>
