@@ -1,15 +1,15 @@
 
 :root {
-  --article-ink: #172026;
-  --article-muted: #5f6b72;
-  --article-soft: #f3f6f5;
-  --article-accent: #0d6b5f;
-  --article-accent-2: #dff3ee;
-  --article-line: #d8e0df;
-  --article-warm: #fff4df;
+  --article-ink: #101114;
+  --article-muted: #62666d;
+  --article-soft: #f5f5f2;
+  --article-accent: #105fc0;
+  --article-accent-2: #eaf3fd;
+  --article-line: #d9dde3;
+  --article-warm: #eaf3fd;
 }
 * { box-sizing: border-box; }
-body.article-page { color: var(--article-ink); background: #fff; }
+body.article-page { color: var(--article-ink); background: var(--article-soft); }
 .article-hero { padding: clamp(3rem, 7vw, 6rem) 1.25rem 2.25rem; background: linear-gradient(180deg,#f7faf9 0%,#fff 100%); }
 .blog-shell, .article-body, .article-footer-inner { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
 .article-hero-grid { display: block; }
@@ -56,7 +56,7 @@ body.article-page { color: var(--article-ink); background: #fff; }
 .value-drivers { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1px; margin-top: 1rem; border: 1px solid var(--article-line); border-radius: 8px; background: var(--article-line); overflow: hidden; }
 .value-driver { min-height: 190px; padding: 1rem; background: #fff; position: relative; }
 .value-driver::before { content: ""; position: absolute; inset: 0 0 auto; height: 5px; background: var(--driver-color,var(--article-accent)); }
-.value-driver.price { --driver-color: #0d6b5f; }
+.value-driver.price { --driver-color: #105fc0; }
 .value-driver.time { --driver-color: #2c6fbb; }
 .value-driver.friction { --driver-color: #d89024; }
 .value-driver.risk { --driver-color: #8b5aa8; }
@@ -700,15 +700,15 @@ body.article-page { color: var(--article-ink); background: #fff; }
 
 /* Marksyte editorial route layer: bring every article into the archive system. */
 body.article-page {
-  --article-ink: #0b0d12;
-  --article-muted: #667085;
-  --article-soft: #f4f6fa;
-  --article-accent: #2588f5;
-  --article-accent-2: #eaf4ff;
-  --article-line: #dce5ef;
-  --article-warm: #eef5ff;
+  --article-ink: #101114;
+  --article-muted: #62666d;
+  --article-soft: #f5f5f2;
+  --article-accent: #105fc0;
+  --article-accent-2: #eaf3fd;
+  --article-line: #d9dde3;
+  --article-warm: #eaf3fd;
   color: var(--article-ink);
-  background: #f4f6fa;
+  background: var(--article-soft);
 }
 
 body.article-page .site-header {
@@ -729,9 +729,9 @@ body.article-page .article-hero {
   padding-block: clamp(68px, 9vw, 118px) clamp(56px, 7vw, 88px);
   border-bottom: 1px solid var(--article-line);
   background:
-    linear-gradient(135deg, rgba(37, 136, 245, 0.1), transparent 44%),
-    linear-gradient(315deg, rgba(20, 118, 223, 0.07), transparent 36%),
-    #eaf4ff;
+    linear-gradient(135deg, rgba(16, 95, 192, 0.1), transparent 44%),
+    linear-gradient(315deg, rgba(16, 95, 192, 0.07), transparent 36%),
+    var(--article-accent-2);
 }
 
 body.article-page .article-hero h1 {
@@ -838,5 +838,388 @@ body.article-page .article-cta-box {
 @media (max-width: 640px) {
   body.article-page .article-body {
     width: min(100% - 32px, 560px);
+  }
+}
+
+/* Retailer-to-ERP reconciliation figures (editorial route). */
+.recon-map,
+.recon-process {
+  margin: 2.25rem 0;
+  padding: 1.15rem;
+  border: 1px solid var(--article-line);
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.recon-map > figcaption,
+.recon-process > figcaption,
+.recon-dossier > figcaption,
+.recon-timing > figcaption {
+  margin: 0 0 0.85rem;
+  color: var(--article-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recon-map-chain {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.recon-map-node {
+  display: grid;
+  gap: 0.3rem;
+  place-items: center;
+  min-height: 86px;
+  padding: 0.8rem 0.6rem;
+  border: 1px solid var(--article-line);
+  border-radius: 10px;
+  background: var(--article-soft);
+  text-align: center;
+}
+
+.recon-map-node small {
+  color: var(--article-muted);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.recon-map-node strong {
+  color: var(--article-ink);
+  font-size: 1rem;
+}
+
+.recon-map-arrow {
+  width: 2rem;
+  height: 2px;
+  align-self: center;
+  background: var(--article-accent);
+  position: relative;
+}
+
+.recon-map-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--article-accent);
+  border-right: 2px solid var(--article-accent);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.recon-map > p,
+.recon-process > p {
+  margin: 1rem 0.1rem 0;
+  color: var(--article-muted);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.recon-process-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--article-line);
+  border-radius: 10px;
+  background: var(--article-line);
+  overflow: hidden;
+}
+
+.recon-process-stage {
+  min-height: 150px;
+  padding: 1rem 1.1rem;
+  background: #ffffff;
+}
+
+.recon-process-stage span {
+  display: inline-grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 50%;
+  background: var(--article-accent-2);
+  color: var(--article-accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.recon-process-stage h3 {
+  margin: 0 0 0.35rem;
+  color: var(--article-ink);
+  font-size: 1rem;
+}
+
+.recon-process-stage p {
+  margin: 0;
+  color: var(--article-muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.recon-process-stage.is-output {
+  background: var(--article-ink);
+}
+
+.recon-process-stage.is-output span {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.recon-process-stage.is-output h3 {
+  color: #ffffff;
+}
+
+.recon-process-stage.is-output p {
+  color: #d9e8f7;
+}
+
+.recon-dossier {
+  margin: 2.25rem 0;
+}
+
+.recon-dossier-shell {
+  max-width: 640px;
+  padding: 24px;
+  border: 1px solid #cfdae8;
+  border-radius: 14px;
+  background-color: var(--article-accent-2);
+  background-image:
+    linear-gradient(#dbe8f5 1px, transparent 1px),
+    linear-gradient(90deg, #dbe8f5 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: #0b1f38;
+  box-shadow: 0 24px 48px rgba(11, 31, 56, 0.1);
+}
+
+.recon-dossier-shell > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 18px;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+
+.recon-dossier-shell > header span {
+  color: #536176;
+  font-weight: 700;
+}
+
+.recon-dossier-sources {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.recon-dossier-sources article {
+  padding: 18px;
+  border-top: 3px solid #0b1f38;
+  background: #ffffff;
+}
+
+.recon-dossier-sources small {
+  display: block;
+  color: #0b1f38;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.recon-dossier-sources b {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.7rem;
+  line-height: 1;
+  color: #0b1f38;
+}
+
+.recon-dossier-sources span {
+  display: block;
+  margin-top: 6px;
+  color: #536176;
+  font-size: 0.7rem;
+}
+
+.recon-dossier-map {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--article-accent);
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.recon-dossier-map i {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.recon-dossier-ledger {
+  border: 1px solid #dbe8f5;
+  background: #ffffff;
+}
+
+.recon-dossier-ledger > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e6eef8;
+  font-size: 0.78rem;
+}
+
+.recon-dossier-ledger > div:last-child {
+  border-bottom: 0;
+}
+
+.recon-dossier-ledger b {
+  color: #0b1f38;
+  font-weight: 700;
+}
+
+.recon-dossier-ledger span {
+  color: #536176;
+}
+
+.recon-dossier-ledger em {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #dff5eb;
+  color: #096344;
+  font-size: 0.58rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.recon-dossier-ledger em.recon-open {
+  background: #e6f1ff;
+  color: #075cae;
+}
+
+.recon-dossier-shell > footer {
+  margin-top: 18px;
+  padding: 16px 18px;
+  background: #0b1f38;
+  color: #ffffff;
+}
+
+.recon-dossier-shell > footer span {
+  display: block;
+  color: #9ecbff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.recon-dossier-shell > footer strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.95rem;
+}
+
+.recon-timing {
+  margin: 2.25rem 0;
+}
+
+.recon-timing-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.recon-timing-panel {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--article-line);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.recon-timing-panel small {
+  display: block;
+  color: var(--article-muted);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.recon-timing-panel strong {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--article-ink);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.recon-timing-panel span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--article-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.recon-timing-panel em {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e6f1ff;
+  color: #075cae;
+  font-size: 0.58rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.recon-timing-panel.is-closed em {
+  background: #dff5eb;
+  color: #096344;
+}
+
+@media (max-width: 800px) {
+  .recon-map-chain {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+  .recon-map-arrow {
+    width: 2px;
+    height: 22px;
+    justify-self: center;
+    transform: none;
+  }
+  .recon-map-arrow::after {
+    top: auto;
+    right: 50%;
+    bottom: -1px;
+    transform: translateX(50%) rotate(135deg);
+  }
+  .recon-process-flow,
+  .recon-timing-row {
+    grid-template-columns: 1fr;
+  }
+  .recon-process-stage {
+    min-height: 0;
+  }
+  .recon-dossier-sources {
+    grid-template-columns: 1fr;
   }
 }
