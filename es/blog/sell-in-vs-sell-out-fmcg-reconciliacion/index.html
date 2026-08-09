@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sell-in vs sell-out en FMCG: cómo conciliar los números | Marksyte</title>
+<meta name="description" content="Entienda qué miden el sell-in y el sell-out, por qué divergen y cómo conciliarlos con el stock, el calendario y las devoluciones.">
+<meta name="keywords" content="sell-in vs sell-out FMCG, conciliación sell-in sell-out, datos comerciales CPG, conciliación datos sell-out, puente de stock conciliación">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.marksyte.com/es/blog/sell-in-vs-sell-out-fmcg-reconciliacion/"><link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/"><link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/sell-in-vs-sell-out-fmcg-reconciliacion/"><link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Marksyte"><meta property="og:title" content="Sell-in vs sell-out en FMCG: cómo conciliar los números"><meta property="og:description" content="Entienda qué miden el sell-in y el sell-out, por qué divergen y cómo conciliarlos con el stock, el calendario y las devoluciones."><meta property="og:url" content="https://www.marksyte.com/es/blog/sell-in-vs-sell-out-fmcg-reconciliacion/"><meta property="og:locale" content="es_ES"><meta property="article:author" content="Marksyte">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Sell-in vs sell-out en FMCG: cómo conciliar los números"><meta name="twitter:description" content="El sell-in registra el producto que sale de su control; el sell-out registra la demanda en caja. Concilie ambos con stock, calendario y devoluciones.">
+<link rel="stylesheet" href="../../../styles.css?v=20260809-3"><link rel="stylesheet" href="../../../assets/blog/article-enhancements.css?v=20260809-3">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sell-in vs sell-out en FMCG: cómo conciliar los números","description":"Entienda qué miden el sell-in y el sell-out, por qué divergen y cómo conciliarlos con el stock, el calendario y las devoluciones.","inLanguage":"es","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/es/blog/sell-in-vs-sell-out-fmcg-reconciliacion/"},"articleSection":["Conciliación de datos FMCG","Sell-in vs sell-out","Datos comerciales CPG","Datos de sell-out del retailer","Conciliación de datos"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es la diferencia entre sell-in y sell-out?","acceptedAnswer":{"@type":"Answer","text":"El sell-in registra el producto que sale de su control cuando lo vende y envía a un retailer o distribuidor. El sell-out registra el producto que llega a los consumidores en el punto de venta. Miden eventos distintos, por lo que solo coinciden cuando el stock del canal no cambia."}},{"@type":"Question","name":"¿Por qué el sell-in no coincide con el sell-out?","acceptedAnswer":{"@type":"Answer","text":"Porque entre ambos eventos se sitúan el inventario, el calendario y las devoluciones. Las unidades enviadas en un período pueden venderse en otro, y las devoluciones pueden registrarse más tarde. Un puente de stock explica la diferencia en lugar de tratarla como un error."}},{"@type":"Question","name":"¿Cómo se concilian los datos de sell-in y sell-out?","acceptedAnswer":{"@type":"Answer","text":"Reconstruya la identidad de stock: stock inicial más sell-in menos sell-out menos devoluciones y daños es igual al stock final. Concilie contra el stock contado y después clasifique la diferencia restante por causa, con evidencia y responsable."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head><body class="blog-page article-page">
+<header class="site-header"><a class="brand" href="../../" aria-label="Inicio de Marksyte"><span class="brand-mark" aria-hidden="true">M</span><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Navegación principal"><a href="../../#services">Servicios</a><a href="../../casos-de-estudio/">Casos de estudio</a><a href="../" aria-current="page">Blog</a><a href="../../about/">Sobre Marksyte</a><a href="../../#contact">Contacto</a></nav><div class="language-switch" aria-label="Idioma"><a href="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/" lang="en" hreflang="en">EN</a><a href="./" lang="es" hreflang="es" aria-current="page">ES</a></div></div></header>
+<main><article><header class="article-hero"><div class="blog-shell article-hero-grid"><div><p class="eyebrow">Conciliación de datos FMCG · Sell-in vs sell-out</p><h1>Sell-in vs sell-out en FMCG: cómo conciliar los números</h1><p class="article-dek">El sell-in registra el producto que sale de su control. El sell-out registra la demanda en caja. Concilie ambos a través del stock, el calendario y las devoluciones en lugar de comparar totales.</p><div class="article-meta"><span>Marksyte</span><span>10 min de lectura</span></div></div></div></header>
+<div class="article-body">
+<p class="lead">El archivo de la semana 14 de un retailer informa 86 unidades vendidas a consumidores. Su ERP informa 120 unidades enviadas a ese retailer en el mismo período. La diferencia de 34 unidades no es automáticamente un error: 28 unidades pueden seguir en el stock del retailer y 6 pueden volver como devoluciones. El sell-in y el sell-out son eventos de negocio distintos, y comparar sus totales directamente oculta el stock y el calendario que hay entre ellos.</p>
+<p>Esta guía define ambas medidas, muestra por qué divergen y ofrece un puente de stock reutilizable para conciliarlas. Termina con los pasos prácticos y los límites de la comparación.</p>
+<div class="key-takeaway"><strong>La idea clave</strong> El sell-in registra el producto que sale de su control; el sell-out registra el producto que llega al consumidor. Concilíelos a través del stock, el calendario y las devoluciones, no forzando los dos totales a coincidir.</div>
+<nav class="reading-nav" aria-label="Contenido del artículo"><strong>En este artículo</strong><ol><li><a href="#definitions">Qué registra cada medida</a></li><li><a href="#relationship">Por qué los números rara vez coinciden</a></li><li><a href="#bridge">El puente de stock</a></li><li><a href="#example">Ejemplo práctico</a></li><li><a href="#timing">Calendario y devoluciones</a></li><li><a href="#process">Proceso de conciliación</a></li><li><a href="#limits">Límites y errores</a></li><li><a href="#faq">Preguntas frecuentes</a></li></ol></nav>
+<h2 id="definitions">Qué miden realmente el sell-in y el sell-out</h2>
+<p>El sell-in es el evento de suministro: pedidos, envíos, entregas y facturas que mueven producto de usted a un retailer o distribuidor. Se registra en su calendario, a su granularidad, y se cierra cuando las mercancías salen de su control. El sell-out es el evento de demanda: unidades que pasan del retailer o distribuidor a los consumidores en el punto de venta. Se registra en el calendario comercial, a menudo semanal, y es lo que el mercado considera consumo real.</p>
+<figure class="recon-map" aria-labelledby="recon-map-titulo">
+<figcaption id="recon-map-titulo">El mismo producto, tres eventos distintos</figcaption>
+<div class="recon-map-chain">
+<div class="recon-map-node"><small>Sell-in &middot; suministro</small><strong>Usted envía al canal</strong></div>
+<div class="recon-map-arrow" aria-hidden="true"></div>
+<div class="recon-map-node"><small>Stock del canal</small><strong>Dentro de la red del retailer</strong></div>
+<div class="recon-map-arrow" aria-hidden="true"></div>
+<div class="recon-map-node"><small>Sell-out &middot; demanda</small><strong>Los consumidores compran en caja</strong></div>
+</div>
+<p>Las unidades entre el segundo y el tercer nodo no son ni una pérdida ni un error. Son el inventario de trabajo que el canal necesita para vender.</p>
+</figure>
+<p>Los dos archivos pueden llamarse <em>ventas</em>, pero responden a preguntas distintas. El sell-in responde a &ldquo;qué enviamos y facturamos este período&rdquo;. El sell-out responde a &ldquo;qué compraron realmente los consumidores este período&rdquo;. El sell-out de un retailer es su señal de demanda; su propio archivo de envíos es una señal de suministro que depende de los pedidos del socio y de sus decisiones de stock.</p>
+<h2 id="relationship">Por qué los dos números rara vez coinciden</h2>
+<p>Si el sell-in y el sell-out fueran copias del mismo evento coincidirían. No lo son. El producto pasa por pedido, envío, recepción, estante y caja en calendarios distintos, y las devoluciones vuelven en sentido contrario. Cada paso vive en su propio archivo, con sus propios identificadores y fechas.</p>
+<figure class="flow-comparison" aria-labelledby="flow-titulo-es">
+<figcaption id="flow-titulo-es">La misma semana, dos visiones distintas</figcaption>
+<div class="flow-panels" role="img" aria-label="Comparación entre la visión de suministro del sell-in y la visión de demanda del sell-out">
+<div class="flow-panel">
+<div class="flow-panel-header"><span>Sell-in &middot; visión de suministro</span><strong>Se registra cuando usted envía al canal</strong></div>
+<div class="flow-stage">
+<span class="flow-node hub">Pedido confirmado</span>
+<span class="flow-line main-line"></span>
+<span class="flow-node hub">Mercancía enviada</span>
+<span class="flow-line main-line"></span>
+<span class="flow-node hub">Factura emitida</span>
+</div>
+<p>Registra el producto que sale de su control en su calendario financiero.</p>
+</div>
+<div class="flow-panel">
+<div class="flow-panel-header"><span>Sell-out &middot; visión de demanda</span><strong>Se registra cuando los consumidores compran</strong></div>
+<div class="flow-stage">
+<span class="flow-node hub">Producto en el estante</span>
+<span class="flow-line main-line"></span>
+<span class="flow-node hub">Compra del consumidor</span>
+<span class="flow-line main-line"></span>
+<span class="flow-node hub">POS registrado</span>
+</div>
+<p>Registra la demanda del consumidor en el calendario comercial, a menudo por semana.</p>
+</div>
+</div>
+</figure>
+<p>La brecha entre ambos paneles es el calendario, el inventario y las devoluciones. Es la sustancia de la conciliación, no un defecto que eliminar. Comparar los dos totales sin ese punto intermedio no explica nada y genera falsas alarmas.</p>
+<h2 id="bridge">El puente de stock conecta ambos números</h2>
+<p>Las dos medidas se encuentran dentro de una identidad de stock: stock inicial más sell-in, menos sell-out, menos devoluciones y daños, debe ser igual al stock final. Reconstruya esa identidad y cada unidad tiene un lugar.</p>
+<div class="value-equation" role="img" aria-label="Stock inicial más sell-in menos sell-out menos devoluciones y daños es igual al stock final"><span>Stock inicial</span><strong>+</strong><span>Sell-in</span><strong>−</strong><span>Sell-out</span><strong>−</strong><span>Devoluciones y daños</span><strong>=</strong><span>Stock final</span></div>
+<p class="value-reading">Si la identidad cuadra, la diferencia entre sell-in y sell-out queda explicada por el stock y las devoluciones. Si no cuadra, el residual es una excepción que clasificar, no un número que forzar a cero.</p>
+<p>Comparar sell-in y sell-out sin el puente trata cada diferencia como si debiera ser cero. Por eso los informes simples de variación crean falsas alarmas, correcciones manuales y un proceso que nadie puede reproducir.</p>
+<h2 id="example">Un ejemplo práctico de sell-in / sell-out</h2>
+<p>Suponga un SKU de bebidas, un retailer y una semana comercial. El retailer abrió con 40 unidades, recibió 120 de sell-in e informó 86 de sell-out. Seis unidades se devolvieron o se dieron de baja por daños.</p>
+<figure class="recon-dossier" aria-labelledby="dossier-titulo-es">
+<figcaption id="dossier-titulo-es">Puente de stock &middot; SKU ES-4582 &middot; Semana 14</figcaption>
+<div class="recon-dossier-shell">
+<header><span>Dossier de conciliación</span><span>Retailer ES-042</span></header>
+<div class="recon-dossier-sources">
+<article><small>Sell-in</small><b>120</b><span>unidades enviadas en la W14</span></article>
+<article><small>Sell-out</small><b>86</b><span>unidades vendidas a consumidores</span></article>
+</div>
+<div class="recon-dossier-map"><span>Mapa de SKU &middot; ES-4582 &rarr; EAN 8412345678901</span><i></i></div>
+<div class="recon-dossier-ledger">
+<div><b>Stock inicial</b><span>40 unidades</span><em>Conciliado</em></div>
+<div><b>Sell-in &middot; entregas</b><span>+120 unidades</span><em>Conciliado</em></div>
+<div><b>Sell-out &middot; POS</b><span>−86 unidades</span><em>Conciliado</em></div>
+<div><b>Devoluciones y daños</b><span>−6 unidades</span><em class="recon-open">Abierta &middot; evidencia</em></div>
+<div><b>Stock final</b><span>68 = 68 unidades</span><em>Conciliado</em></div>
+</div>
+<footer><span>Resultado</span><strong>0 diferencias sin explicar &middot; 6 unidades pendientes de evidencia de devolución</strong></footer>
+</div>
+</figure>
+<p>La brecha de 34 unidades entre los dos totales principales queda totalmente explicada: 28 unidades están en el stock final y 6 están pendientes de evidencia de devolución. Lo único abierto es la evidencia, no una variación sin explicar. Sin el puente, esas mismas 34 unidades parecen un error de previsión o un problema de facturación que exige un ajuste manual.</p>
+<h2 id="timing">Por qué el calendario y las devoluciones abren una brecha</h2>
+<p>Incluso un puente limpio mueve partidas entre períodos. Una entrega que llega después del corte de una semana es sell-in en una semana y puede venderse en otra. Una devolución registrada en un archivo POS puede aparecer en un archivo posterior a la venta original.</p>
+<figure class="recon-timing" aria-labelledby="timing-titulo-es">
+<figcaption id="timing-titulo-es">Calendario y devoluciones en el límite de la semana</figcaption>
+<div class="recon-timing-row">
+<div class="recon-timing-panel"><small>Sell-in en el límite</small><strong>+6 unidades</strong><span>Entregado después del corte de la W14 y registrado como sell-in en la W15.</span><em>Calendario, no pérdida</em></div>
+<div class="recon-timing-panel is-closed"><small>Devoluciones de sell-out</small><strong>−6 unidades</strong><span>Registradas en el archivo de la W15 y emparejadas con la venta de la W14.</span><em>Se cierra con evidencia</em></div>
+</div>
+</figure>
+<p>Acuerde de antemano dónde pertenece cada movimiento: qué calendario, qué corte y qué evidencia lo cierra. Entonces una excepción de calendario debería compensarse en el siguiente ciclo en lugar de arrastrarse y &ldquo;corregirse&rdquo;.</p>
+<h2 id="process">Cómo conciliar los números</h2>
+<p>Use el puente como columna vertebral del proceso. Cada etapa prepara una entrada para que la identidad pueda reconstruirse y el residual clasificarse.</p>
+<figure class="recon-process" aria-labelledby="recon-process-titulo">
+<figcaption id="recon-process-titulo">Una conciliación de sell-in / sell-out repetible</figcaption>
+<div class="recon-process-flow">
+<div class="recon-process-stage"><span>1</span><h3>Registre las fuentes</h3><p>Capture cifras de sell-in, sell-out y stock con sus calendarios y reglas de corte.</p></div>
+<div class="recon-process-stage"><span>2</span><h3>Mapee los identificadores</h3><p>Conecte SKU, EAN, GTIN, tienda y códigos de cliente entre los archivos.</p></div>
+<div class="recon-process-stage"><span>3</span><h3>Reconstruya el puente</h3><p>Aplique la identidad de stock al grano y período acordados.</p></div>
+<div class="recon-process-stage is-output"><span>4</span><h3>Clasifique el residual</h3><p>Separe lo que queda en calendario, devoluciones, mapeo y excepciones de datos.</p></div>
+</div>
+</figure>
+<ol class="action-list">
+<li><strong>Registre las entradas.</strong> Anote el retailer, el período, las fechas de archivo, las columnas esperadas y si cada archivo es original o corregido.</li>
+<li><strong>Mapee los identificadores de producto y ubicación.</strong> Conecte los códigos del retailer a EAN o GTIN y al SKU interno, y las tiendas a clientes.</li>
+<li><strong>Alinee el calendario.</strong> Aplique la semana comercial y el período financiero con una única regla de corte acordada.</li>
+<li><strong>Estandarice las unidades.</strong> Convierta cajas, packs y unidades a una sola unidad de medida con fechas de vigencia.</li>
+<li><strong>Defina el grano de stock.</strong> Decida si el puente opera a producto-tienda-semana o producto-cliente-mes.</li>
+<li><strong>Reconstruya la identidad.</strong> Stock inicial más sell-in menos sell-out menos devoluciones y daños es igual al stock final.</li>
+<li><strong>Compare el stock final.</strong> Empareje la cifra calculada contra el stock contado o informado.</li>
+<li><strong>Calcule el residual.</strong> Conserve sell-in, sell-out, cambio de stock, devoluciones y residual como campos separados.</li>
+<li><strong>Clasifique el residual.</strong> Use causas controladas: calendario, devolución, mapeo, duplicado, datos faltantes o diferencia de negocio sin explicar.</li>
+<li><strong>Cierre el ciclo.</strong> Guarde versiones, evidencia, responsable y estado, y lleve los elementos sin resolver al siguiente período.</li>
+</ol>
+<h2 id="limits">Límites y errores comunes</h2>
+<p>El puente explica la mayoría de las diferencias, pero no toda comparación es significativa. La cifra de stock debe venir de una fuente fiable y el calendario debe ser comparable; si no, el puente produce una respuesta errónea con apariencia de confianza.</p>
+<div class="visual-note"><strong>Límites de la comparación</strong><ul><li>La cifra de stock debe medirse o informarse en el mismo momento que el cierre del período.</li><li>Las semanas comerciales y los meses financieros rara vez coinciden; mapee el calendario antes de comparar.</li><li>El reporte del distribuidor puede mezclar el sell-out con otros eventos comerciales.</li><li>El puente es un control, no una previsión; la demanda necesita su propio modelo.</li></ul></div>
+<ul class="risk-list"><li><strong>Tratar el sell-in como demanda del consumidor.</strong> La demanda es el sell-out, no los envíos.</li><li><strong>Forzar que los totales coincidan.</strong> Ajustar archivos para eliminar una brecha oculta la posición real de stock.</li><li><strong>Comparar sell-in bruto con sell-out neto de devoluciones.</strong> Defina el signo y el tratamiento de devoluciones antes de comparar.</li><li><strong>Cerrar diferencias de calendario de forma permanente.</strong> Una excepción de calendario debería compensarse en un período posterior.</li><li><strong>Reconstruir los mapeos en cada ciclo.</strong> Sin versiones, el resultado del mes anterior no puede reproducirse.</li><li><strong>Informar un puente equilibrado sin evidencia.</strong> Un residual de cero todavía necesita la prueba que lo respalda.</li></ul>
+<h2 id="takeaway">Conclusión práctica</h2>
+<p>El sell-in y el sell-out miden eventos distintos. Concilíelos a través de un puente de stock que explique stock, calendario y devoluciones, y después clasifique el residual por causa con evidencia y responsable. Así una variación recurrente se convierte en un proceso controlado y explicable.</p>
+<p>Si su equipo concilia datos de retailers y distribuidores cada mes, el servicio de <a href="../../servicios/conciliacion-datos/">conciliación de datos y controles</a> de Marksyte puede revisar el proceso. El trabajo relacionado puede incluir <a href="../../servicios/mapeo-integracion-datos/">mapear identificadores de producto, cliente y tienda</a> o <a href="../../servicios/estandarizacion-datos/">estandarizar archivos de socios y reglas de calidad de datos</a>.</p>
+<div class="internal-links"><strong>Recursos relacionados de Marksyte</strong><ul><li><a href="../conciliar-datos-sell-out-retailer-con-erp/">Cómo conciliar los datos de sell-out del retailer con los datos del ERP</a></li><li><a href="../../casos-de-estudio/conciliacion-datos-fmcg/">Ver un caso ilustrativo de conciliación de datos FMCG</a></li><li><a href="../../servicios/conciliacion-datos/">Explorar conciliación de datos y control de excepciones</a></li><li><a href="../../servicios/mapeo-integracion-datos/">Revisar soporte de mapeo de datos e integración</a></li></ul></div>
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="faq"><details><summary>¿Cuál es la diferencia entre sell-in y sell-out?</summary><p>El sell-in registra el producto que sale de su control cuando lo vende y envía a un retailer o distribuidor. El sell-out registra el producto que llega a los consumidores en el punto de venta. Miden eventos distintos, por lo que solo coinciden cuando el stock del canal no cambia.</p></details><details><summary>¿Por qué el sell-in no coincide con el sell-out?</summary><p>Porque entre ambos eventos se sitúan el inventario, el calendario y las devoluciones. Las unidades enviadas en un período pueden venderse en otro, y las devoluciones pueden registrarse más tarde. Un puente de stock explica la diferencia en lugar de tratarla como un error.</p></details><details><summary>¿Cómo se concilian los datos de sell-in y sell-out?</summary><p>Reconstruya la identidad de stock: stock inicial más sell-in menos sell-out menos devoluciones y daños es igual al stock final. Concilie contra el stock contado y después clasifique la diferencia restante por causa, con evidencia y responsable.</p></details></div>
+</div></article>
+<section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Dos números, una historia</p><h2 id="article-cta-title">Convierta el sell-in y el sell-out en una única visión explicable</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Revisar su proceso</a></div></section>
+</main><footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Enlaces legales"><a href="../../aviso-legal/">Aviso legal</a><a href="../../privacidad/">Privacidad</a><a href="../../cookies/">Cookies</a></nav></footer></body></html>

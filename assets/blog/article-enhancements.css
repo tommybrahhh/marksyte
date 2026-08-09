@@ -740,8 +740,8 @@ body.article-page .article-hero h1 {
 }
 
 body.article-page .article-dek,
-body.article-page .article-body p,
-body.article-page .article-body li {
+:where(body.article-page .article-body) p,
+:where(body.article-page .article-body) li {
   color: var(--article-muted);
 }
 
@@ -750,9 +750,9 @@ body.article-page .article-body {
   background: #ffffff;
 }
 
-body.article-page .article-body h2,
-body.article-page .article-body h3,
-body.article-page .article-body strong {
+:where(body.article-page .article-body) h2,
+:where(body.article-page .article-body) h3,
+:where(body.article-page .article-body) strong {
   color: var(--article-ink);
 }
 
@@ -980,11 +980,11 @@ body.article-page .article-cta-box {
   color: #ffffff;
 }
 
-.recon-process-stage.is-output h3 {
+body.article-page .article-body .recon-process-stage.is-output h3 {
   color: #ffffff;
 }
 
-.recon-process-stage.is-output p {
+body.article-page .article-body .recon-process-stage.is-output p {
   color: #d9e8f7;
 }
 
@@ -1136,10 +1136,11 @@ body.article-page .article-cta-box {
   letter-spacing: 0.06em;
 }
 
-.recon-dossier-shell > footer strong {
+body.article-page .article-body .recon-dossier-shell > footer strong {
   display: block;
   margin-top: 4px;
   font-size: 0.95rem;
+  color: #ffffff;
 }
 
 .recon-timing {

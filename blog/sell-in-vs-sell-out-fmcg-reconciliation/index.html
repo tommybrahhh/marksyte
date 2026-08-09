@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>Sell-in vs sell-out in FMCG: how to reconcile the numbers | Marksyte</title>
+  <meta name="description" content="Understand what sell-in and sell-out measure, why they diverge and how to reconcile them with inventory and timing." />
+  <meta name="keywords" content="sell-in vs sell-out FMCG, sell-in sell-out reconciliation, CPG commercial data, sell-out data reconciliation, stock bridge reconciliation" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/sell-in-vs-sell-out-fmcg-reconciliacion/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="Sell-in vs sell-out in FMCG: how to reconcile the numbers" />
+  <meta property="og:description" content="Understand what sell-in and sell-out measure, why they diverge and how to reconcile them with inventory and timing." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sell-in vs sell-out in FMCG: how to reconcile the numbers" />
+  <meta name="twitter:description" content="Sell-in records product leaving your control; sell-out records demand at the till. Bridge them with stock, timing and returns." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-3" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sell-in vs sell-out in FMCG: how to reconcile the numbers","description":"Understand what sell-in and sell-out measure, why they diverge and how to reconcile them with inventory and timing.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/"},"articleSection":["FMCG data reconciliation","Sell-in vs sell-out","CPG commercial data","Retailer sell-out data","Data reconciliation"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between sell-in and sell-out?","acceptedAnswer":{"@type":"Answer","text":"Sell-in records product leaving your control as you sell and ship to a retailer or distributor. Sell-out records product reaching consumers at the point of sale. They measure different events, so they only coincide when stock in the channel does not change."}},{"@type":"Question","name":"Why does sell-in not match sell-out?","acceptedAnswer":{"@type":"Answer","text":"Because inventory, timing and returns sit between the two events. Units shipped in one period can be sold in another, and returns can be recorded later. A stock bridge explains the difference instead of treating it as an error."}},{"@type":"Question","name":"How do you reconcile sell-in and sell-out data?","acceptedAnswer":{"@type":"Answer","text":"Rebuild the stock identity: opening stock plus sell-in minus sell-out minus returns and damage equals closing stock. Reconcile against counted stock, then classify the remaining difference by cause with evidence and an owner."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><span class="brand-mark" aria-hidden="true">M</span><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/sell-in-vs-sell-out-fmcg-reconciliacion/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">FMCG data reconciliation &middot; Sell-in vs sell-out</p><h1>Sell-in vs sell-out in FMCG: how to reconcile the numbers</h1><p class="article-dek">Sell-in records product leaving your control. Sell-out records demand at the till. Bridge the two through stock, timing and returns instead of comparing totals.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">A retailer's week 14 file reports 86 units sold to consumers. Your ERP reports 120 units shipped to that retailer in the same period. The 34-unit difference is not automatically an error: 28 units may still sit in the retailer's stock and 6 may come back as returns. Sell-in and sell-out are different business events, and comparing their totals directly hides the stock and timing between them.</p>
+        <p>This guide defines both measures, shows why they diverge and gives a stock bridge you can reuse to reconcile them. It ends with the practical steps and the limits of the comparison.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> Sell-in records product leaving your control; sell-out records product reaching the consumer. Reconcile them through stock, timing and returns, not by forcing the two totals to match.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#definitions">What each measure records</a></li><li><a href="#relationship">Why the numbers rarely match</a></li><li><a href="#bridge">The stock bridge</a></li><li><a href="#example">Worked example</a></li><li><a href="#timing">Timing and returns</a></li><li><a href="#process">Reconciliation process</a></li><li><a href="#limits">Limits and mistakes</a></li><li><a href="#faq">Frequently asked questions</a></li></ol></nav>
+
+        <h2 id="definitions">What sell-in and sell-out actually measure</h2>
+        <p>Sell-in is the supply event: orders, shipments, deliveries and invoices that move product from you to a retailer or distributor. It is recorded on your calendar, at your granularity, and it closes when the goods leave your control. Sell-out is the demand event: units that move from the retailer or distributor to consumers at the point of sale. It is recorded on the retail calendar, often weekly, and it is what the trade sees as the market's real consumption.</p>
+        <figure class="recon-map" aria-labelledby="recon-map-title">
+          <figcaption id="recon-map-title">The same product, three different events</figcaption>
+          <div class="recon-map-chain">
+            <div class="recon-map-node"><small>Sell-in &middot; supply</small><strong>You ship to trade</strong></div>
+            <div class="recon-map-arrow" aria-hidden="true"></div>
+            <div class="recon-map-node"><small>Channel stock</small><strong>Inside the retailer network</strong></div>
+            <div class="recon-map-arrow" aria-hidden="true"></div>
+            <div class="recon-map-node"><small>Sell-out &middot; demand</small><strong>Consumers buy at the till</strong></div>
+          </div>
+          <p>The units between the second and third node are neither a loss nor an error. They are the working inventory the channel needs to sell.</p>
+        </figure>
+        <p>The two files may both be called <em>sales</em>, but they answer different questions. Sell-in answers "what did we ship and invoice this period". Sell-out answers "what did consumers actually buy this period". A retailer's sell-out is your demand signal; your own shipment file is a supply signal that depends on their ordering and your stocking decisions.</p>
+
+        <h2 id="relationship">Why the two numbers rarely match</h2>
+        <p>If sell-in and sell-out were copies of the same event they would match. They are not. Product moves through order, shipment, receipt, shelf and till across different calendars, and returns move back the other way. Each step sits in its own file, with its own identifiers and dates.</p>
+        <figure class="flow-comparison" aria-labelledby="flow-title-en">
+          <figcaption id="flow-title-en">The same week, two different views</figcaption>
+          <div class="flow-panels" role="img" aria-label="Comparison between the sell-in supply view and the sell-out demand view">
+            <div class="flow-panel">
+              <div class="flow-panel-header"><span>Sell-in &middot; supply view</span><strong>Recorded as you ship to trade</strong></div>
+              <div class="flow-stage">
+                <span class="flow-node hub">Order confirmed</span>
+                <span class="flow-line main-line"></span>
+                <span class="flow-node hub">Goods shipped</span>
+                <span class="flow-line main-line"></span>
+                <span class="flow-node hub">Invoice raised</span>
+              </div>
+              <p>Records product leaving your control on your financial calendar.</p>
+            </div>
+            <div class="flow-panel">
+              <div class="flow-panel-header"><span>Sell-out &middot; demand view</span><strong>Recorded as consumers buy</strong></div>
+              <div class="flow-stage">
+                <span class="flow-node hub">Product on shelf</span>
+                <span class="flow-line main-line"></span>
+                <span class="flow-node hub">Consumer purchase</span>
+                <span class="flow-line main-line"></span>
+                <span class="flow-node hub">POS recorded</span>
+              </div>
+              <p>Records consumer demand on the retail calendar, often per week.</p>
+            </div>
+          </div>
+        </figure>
+        <p>The gap between the two panels is timing, inventory and returns. It is the substance of the reconciliation, not a defect to remove. Comparing the two totals without that middle explains nothing and produces false alarms.</p>
+
+        <h2 id="bridge">The stock bridge connects both numbers</h2>
+        <p>The two measures meet inside a stock identity: opening stock plus sell-in, minus sell-out, minus returns and damage, must equal closing stock. Rebuild that identity and every unit has a place.</p>
+        <div class="value-equation" role="img" aria-label="Opening stock plus sell-in minus sell-out minus returns and damage equals closing stock"><span>Opening stock</span><strong>+</strong><span>Sell-in</span><strong>−</strong><span>Sell-out</span><strong>−</strong><span>Returns and damage</span><strong>=</strong><span>Closing stock</span></div>
+        <p class="value-reading">If the identity balances, the difference between sell-in and sell-out is explained by stock and returns. If it does not, the residual is an exception to classify, not a number to force to zero.</p>
+        <p>Comparing sell-in and sell-out without the bridge treats every difference as if it should be zero. That is why simple variance reports create false alarms, manual corrections and a process nobody can reproduce.</p>
+
+        <h2 id="example">A worked sell-in / sell-out example</h2>
+        <p>Assume one beverage SKU, one retailer and one retail week. The retailer opened with 40 units, received 120 units of sell-in and reported 86 units of sell-out. Six units were returned or written off as damage.</p>
+        <figure class="recon-dossier" aria-labelledby="dossier-title-en">
+          <figcaption id="dossier-title-en">Stock bridge &middot; SKU ES-4582 &middot; Week 14</figcaption>
+          <div class="recon-dossier-shell">
+            <header><span>Recon dossier</span><span>Retailer ES-042</span></header>
+            <div class="recon-dossier-sources">
+              <article><small>Sell-in</small><b>120</b><span>units shipped in W14</span></article>
+              <article><small>Sell-out</small><b>86</b><span>units sold to consumers</span></article>
+            </div>
+            <div class="recon-dossier-map"><span>SKU map &middot; ES-4582 &rarr; EAN 8412345678901</span><i></i></div>
+            <div class="recon-dossier-ledger">
+              <div><b>Opening stock</b><span>40 units</span><em>Reconciled</em></div>
+              <div><b>Sell-in &middot; deliveries</b><span>+120 units</span><em>Reconciled</em></div>
+              <div><b>Sell-out &middot; POS</b><span>−86 units</span><em>Reconciled</em></div>
+              <div><b>Returns and damage</b><span>−6 units</span><em class="recon-open">Open &middot; evidence</em></div>
+              <div><b>Closing stock</b><span>68 = 68 units</span><em>Reconciled</em></div>
+            </div>
+            <footer><span>Result</span><strong>0 unexplained difference &middot; 6 units pending return evidence</strong></footer>
+          </div>
+        </figure>
+        <p>The 34-unit gap between the two headline totals is fully explained: 28 units sit in closing stock and 6 are pending return evidence. The only open item is evidence, not an unexplained variance. Without the bridge, the same 34 units look like a forecast error or a billing problem that needs a manual adjustment.</p>
+
+        <h2 id="timing">Why timing and returns open a gap</h2>
+        <p>Even a clean bridge moves items across periods. A delivery arriving after a week's cutoff is sell-in in one week and may be sold in another. A return recorded in a POS file can appear in a later file than the original sale.</p>
+        <figure class="recon-timing" aria-labelledby="timing-title-en">
+          <figcaption id="timing-title-en">Timing and returns at the week boundary</figcaption>
+          <div class="recon-timing-row">
+            <div class="recon-timing-panel"><small>Sell-in at the boundary</small><strong>+6 units</strong><span>Delivered after the W14 cutoff and recorded as sell-in in W15.</span><em>Timing, not a loss</em></div>
+            <div class="recon-timing-panel is-closed"><small>Sell-out returns</small><strong>−6 units</strong><span>Recorded in the W15 file and matched to the W14 sale.</span><em>Closes with evidence</em></div>
+          </div>
+        </figure>
+        <p>Agree in advance where each movement belongs: which calendar, which cutoff and which evidence closes it. Then a timing exception should clear in the next cycle instead of being carried forward and "corrected".</p>
+
+        <h2 id="process">How to reconcile the numbers</h2>
+        <p>Use the bridge as the spine of the process. Each stage below prepares one input so the identity can be rebuilt and the residual classified.</p>
+        <figure class="recon-process" aria-labelledby="recon-process-title">
+          <figcaption id="recon-process-title">A repeatable sell-in / sell-out reconciliation</figcaption>
+          <div class="recon-process-flow">
+            <div class="recon-process-stage"><span>1</span><h3>Register the sources</h3><p>Capture sell-in, sell-out and stock figures with their calendars and cutoff rules.</p></div>
+            <div class="recon-process-stage"><span>2</span><h3>Map the identifiers</h3><p>Connect SKU, EAN, GTIN, store and customer codes across the files.</p></div>
+            <div class="recon-process-stage"><span>3</span><h3>Rebuild the bridge</h3><p>Apply the stock identity at the agreed grain and period.</p></div>
+            <div class="recon-process-stage is-output"><span>4</span><h3>Classify the residual</h3><p>Split what remains into timing, returns, mapping and data exceptions.</p></div>
+          </div>
+        </figure>
+        <ol class="action-list">
+          <li><strong>Register the inputs.</strong> Record the retailer, period, file dates, expected columns and whether each file is original or corrected.</li>
+          <li><strong>Map product and location identifiers.</strong> Connect retailer codes to EAN or GTIN and internal SKU, and stores to customers.</li>
+          <li><strong>Align the calendar.</strong> Apply the retail week and the financial period with one agreed cutoff rule.</li>
+          <li><strong>Standardize units.</strong> Convert cases, packs and eaches to one unit of measure with effective dates.</li>
+          <li><strong>Set the stock grain.</strong> Decide whether the bridge runs at product-store-week or product-customer-month.</li>
+          <li><strong>Rebuild the identity.</strong> Opening stock plus sell-in minus sell-out minus returns and damage equals closing stock.</li>
+          <li><strong>Compare closing stock.</strong> Match the computed figure against counted or reported stock.</li>
+          <li><strong>Calculate the residual.</strong> Keep sell-in, sell-out, stock change, returns and residual as separate fields.</li>
+          <li><strong>Classify the residual.</strong> Use controlled causes: timing, return, mapping, duplicate, missing data or unexplained business difference.</li>
+          <li><strong>Close the cycle.</strong> Save versions, evidence, owner and status, and carry unresolved items into the next period.</li>
+        </ol>
+
+        <h2 id="limits">Limits and common mistakes</h2>
+        <p>The bridge explains most differences, but not every comparison is meaningful. The stock figure must come from a reliable source and the calendar must be comparable, or the bridge produces a confident-looking wrong answer.</p>
+        <div class="visual-note"><strong>Limits of the comparison</strong><ul><li>The stock figure must be measured or reported at the same point in time as the period close.</li><li>Retail weeks and financial months rarely align; map the calendar before comparing.</li><li>Distributor reporting may mix sell-out with other commercial events.</li><li>The bridge is a control, not a forecast; demand still needs its own model.</li></ul></div>
+        <ul class="risk-list"><li><strong>Treating sell-in as consumer demand.</strong> Demand is sell-out, not shipments.</li><li><strong>Forcing the totals to match.</strong> Adjusting files to remove a gap hides the real stock position.</li><li><strong>Comparing gross sell-in with net-of-returns sell-out.</strong> Define the sign and returns treatment before comparing.</li><li><strong>Closing timing differences permanently.</strong> A timing exception should clear in a later period.</li><li><strong>Rebuilding mappings each cycle.</strong> Without versions, last month's result cannot be reproduced.</li><li><strong>Reporting a balanced bridge without evidence.</strong> A zero residual still needs the proof behind it.</li></ul>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Sell-in and sell-out measure different events. Reconcile them through a stock bridge that explains stock, timing and returns, then classify the residual by cause with evidence and an owner. That turns a recurring variance into a controlled, explainable process.</p>
+        <p>If your team reconciles retailer and distributor data every month, Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can review the process. Related work may include <a href="../../services/data-mapping-integration/">mapping product, customer and store identifiers</a> or <a href="../../services/data-standardization/">standardizing partner files and data-quality rules</a>.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li><li><a href="../../services/data-mapping-integration/">Review data mapping and integration support</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>What is the difference between sell-in and sell-out?</summary><p>Sell-in records product leaving your control as you sell and ship to a retailer or distributor. Sell-out records product reaching consumers at the point of sale. They measure different events, so they only coincide when stock in the channel does not change.</p></details><details><summary>Why does sell-in not match sell-out?</summary><p>Because inventory, timing and returns sit between the two events. Units shipped in one period can be sold in another, and returns can be recorded later. A stock bridge explains the difference instead of treating it as an error.</p></details><details><summary>How do you reconcile sell-in and sell-out data?</summary><p>Rebuild the stock identity: opening stock plus sell-in minus sell-out minus returns and damage equals closing stock. Reconcile against counted stock, then classify the remaining difference by cause with evidence and an owner.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Two numbers, one story</p><h2 id="article-cta-title">Turn sell-in and sell-out into one explainable view</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your process</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>
