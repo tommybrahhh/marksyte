@@ -740,4 +740,32 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sell-in-vs-sell-out-fmcg-reconciliation/" />
     <lastmod>2026-08-09</lastmod>
   </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/consolidar-datos-sell-out-varios-distribuidores/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/consolidar-datos-sell-out-varios-distribuidores/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/consolidar-datos-sell-out-varios-distribuidores/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+    <lastmod>2026-08-09</lastmod>
+  </url>
 </urlset>

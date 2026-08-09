@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>SKU-to-EAN and GTIN mapping for FMCG teams | Marksyte</title>
+  <meta name="description" content="Build and maintain reliable mappings between internal SKUs, retailer codes, EANs and GTINs across packs and markets." />
+  <meta name="keywords" content="SKU to EAN mapping, GTIN mapping, product-code mapping, FMCG master data, SKU EAN GTIN mapping" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="SKU-to-EAN and GTIN mapping: a practical guide for FMCG teams" />
+  <meta property="og:description" content="Build and maintain reliable mappings between internal SKUs, retailer codes, EANs and GTINs across packs and markets." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="SKU-to-EAN and GTIN mapping: a practical guide for FMCG teams" />
+  <meta name="twitter:description" content="SKUs describe your catalogue; EANs and GTINs identify products for the trade. Connect them once, with effective dates and an owner." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"SKU-to-EAN and GTIN mapping: a practical guide for FMCG teams","description":"Build and maintain reliable mappings between internal SKUs, retailer codes, EANs and GTINs across packs and markets.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/"},"articleSection":["SKU to EAN mapping","GTIN mapping","Product-code mapping","FMCG master data","Data mapping and integration"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between SKU, EAN and GTIN?","acceptedAnswer":{"@type":"Answer","text":"A SKU is your internal catalogue key for one product and pack. An EAN is a barcode that identifies a consumer unit in the trade. A GTIN is the identifier family to which EAN and similar barcodes belong. They are different keys with different lifetimes, which is why a mapping is needed between them."}},{"@type":"Question","name":"Can one EAN map to more than one SKU?","acceptedAnswer":{"@type":"Answer","text":"Only when the same physical unit is genuinely split across internal pack records, and that split should be resolved. As a rule, keep one active mapping row per product and market, and record pack conversions as a separate relationship with its own effective dates."}},{"@type":"Question","name":"How do you maintain a SKU-to-EAN mapping table?","acceptedAnswer":{"@type":"Answer","text":"Keep one canonical row per product with SKU, EAN or GTIN, retailer codes, effective dates, status and an owner. Validate check digits, uniqueness and coverage before each cycle, and record every change so last period's result can be reproduced."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><span class="brand-mark" aria-hidden="true">M</span><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/mapeo-sku-ean-gtin-fmcg/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">FMCG master data &middot; SKU-to-EAN mapping</p><h1>SKU-to-EAN and GTIN mapping: a practical guide for FMCG teams</h1><p class="article-dek">SKUs describe your catalogue. EANs and GTINs identify products for the trade. Connect them once, with effective dates and an owner, so joins stop failing.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">A retailer file reports weekly sales by its own product code. Your ERP joins by internal SKU. The GS1 registry identifies the unit by EAN. When these codes do not agree, every join fails and every difference looks like an error. This guide explains what each identifier records, shows a mapping model you can build, and covers how to keep it reliable across packs and markets.</p>
+        <p>You will see the fields that belong in a mapping, how pack and case codes relate, how effective dates protect history and which checks run before you trust the result.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> A mapping is reliable when each product has one canonical row, effective dates are explicit and validation runs before the join.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#roles">What each identifier records</a></li><li><a href="#model">The mapping model</a></li><li><a href="#packs">Pack hierarchy</a></li><li><a href="#dates">Effective dates</a></li><li><a href="#many">Many-to-one cases</a></li><li><a href="#validation">Validation</a></li><li><a href="#ownership">Ownership</a></li><li><a href="#example">Worked example</a></li><li><a href="#faq">Frequently asked questions</a></li></ol></nav>
+
+        <h2 id="roles">What each identifier actually records</h2>
+        <p>SKU, EAN, GTIN and retailer code are different keys with different lifetimes. Treating them as interchangeable is the most common cause of failed joins.</p>
+        <p>A SKU is your internal catalogue key. You create it, you retire it, and you can use it to describe a specific pack such as a 500&nbsp;ml bottle or a four-pack. An EAN identifies the consumer unit in the trade; it is assigned by the brand through GS1 and should not be reissued while the product exists. A retailer code is the key the retailer uses to order, receive and report the product in its own files.</p>
+        <figure class="table-scroll" aria-labelledby="roles-table-title">
+          <figcaption id="roles-table-title">Identifier roles compared</figcaption>
+          <table class="article-data-table">
+            <thead>
+              <tr><th>Identifier</th><th>What it identifies</th><th>Scope</th><th>Lifetime</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>SKU</code></td><td>Your catalogue item, including the pack variant</td><td>Internal to you</td><td>Until you retire it</td></tr>
+              <tr><td><code>EAN-13 / GTIN</code></td><td>The consumer unit at the point of sale</td><td>Global, assigned by the brand</td><td>For the product's existence</td></tr>
+              <tr><td><code>GTIN-14 / ITF-14</code></td><td>The case or carton used in logistics</td><td>Global, assigned by the brand</td><td>Matches the pack it describes</td></tr>
+              <tr><td><code>Retailer code</code></td><td>The product as the retailer orders and reports it</td><td>Within one retailer</td><td>Retailer's product lifecycle</td></tr>
+            </tbody>
+          </table>
+        </figure>
+        <p>The lifetimes differ. A SKU changes when you change systems, an EAN changes when the barcode changes and a retailer code changes when the retailer's master data changes. That is why a single code column is not enough: you need a mapping that records each identifier against a canonical product.</p>
+
+        <h2 id="model">The mapping model: one canonical row, not a web of joins</h2>
+        <p>Build one canonical row per product and market instead of rebuilding joins from file to file. The row holds the internal SKU as the anchor and lists every external identifier that points to it: the consumer EAN, the case GTIN when it exists, and each retailer or distributor code.</p>
+        <figure class="map-model" aria-labelledby="map-model-title">
+          <figcaption id="map-model-title">One canonical product, many external codes</figcaption>
+          <div class="map-hub">
+            <div class="map-core"><small>Canonical product</small><strong>SKU MX-2041</strong><span>Sparkling water &middot; 500 ml</span></div>
+            <div class="map-spokes">
+              <div class="map-code"><small>Consumer EAN</small><strong>8412345678901</strong><span>Unit scanned at the till</span></div>
+              <div class="map-code"><small>Case GTIN</small><strong>08412345678909</strong><span>Carton used in logistics</span></div>
+              <div class="map-code"><small>Retailer ES-042</small><strong>883221</strong><span>Key used in ordering files</span></div>
+              <div class="map-code"><small>Distributor MX</small><strong>4491</strong><span>Key used in distributor files</span></div>
+            </div>
+          </div>
+        </figure>
+        <p>Every process then joins through the canonical row. A POS file joins by retailer code, a distributor file joins by its own code, and your ERP joins by SKU. They all resolve to the same product because each code points to the same canonical identity.</p>
+        <p>The alternative is a web of pairwise tables, one for EAN-to-SKU, another for SKU-to-retailer and another for EAN-to-retailer. They drift apart, contradict each other and produce different results depending on which table you happened to use.</p>
+
+        <h2 id="packs">Pack hierarchy: one product, several codes</h2>
+        <p>One product usually has several trade codes. The consumer unit, the tray and the case are different pack levels, and each can carry its own EAN or GTIN. A sell-out file reports units, an invoice reports cases; the mapping must know how they relate.</p>
+        <figure class="pack-chain" aria-labelledby="pack-chain-title">
+          <figcaption id="pack-chain-title">Pack hierarchy &middot; SKU MX-2041</figcaption>
+          <div class="pack-level is-each"><small>Each</small><strong>EAN 8412345678901</strong><span>1 unit &middot; what the consumer buys</span></div>
+          <div class="pack-level is-pack"><small>Tray</small><strong>EAN 8412345678905</strong><span>12 units &middot; how the store shelves it</span></div>
+          <div class="pack-level is-case"><small>Case</small><strong>GTIN 08412345678909</strong><span>6 trays &middot; how logistics ships it</span></div>
+        </figure>
+        <p>The mapping should record the pack relationship and a conversion factor, not assume one. When a POS file reports 120 units and an invoice shows 20 cases, the reconciliation only works if you know that a case holds 72 units.</p>
+
+        <h2 id="dates">Effective dates: when a mapping is true</h2>
+        <p>A mapping is a statement about a period. A relaunch, a pack change or a retailer code migration ends one mapping and starts another. Without effective dates, history is overwritten and last month's result cannot be reproduced.</p>
+        <figure class="eff-track" aria-labelledby="eff-track-title">
+          <figcaption id="eff-track-title">Versioned mapping &middot; SKU MX-2041</figcaption>
+          <div class="eff-band">
+            <div class="eff-dates"><strong>2019-03-01 &rarr; 2024-06-30</strong><span>EAN 8412345678890</span></div>
+            <p>Original consumer barcode, retired at the pack redesign.</p>
+            <em>Closed</em>
+          </div>
+          <div class="eff-band is-active">
+            <div class="eff-dates"><strong>2024-07-01 &rarr; open</strong><span>EAN 8412345678901</span></div>
+            <p>Current barcode for the redesigned pack.</p>
+            <em>Active</em>
+          </div>
+        </figure>
+        <p>Store each version with a valid-from date, a status and, ideally, a reason and a change reference. Then a report can join a sale to the EAN that was correct on the sale date, not the one that is correct today.</p>
+
+        <h2 id="many">Many-to-one cases: when one code points to several products</h2>
+        <p>Not every mapping is one-to-one. The same physical product can have a different EAN in each market, which is legitimate. A single retailer code can also cover several of your SKUs, which forces a decision about granularity.</p>
+        <div class="map-grid">
+          <div class="map-card"><small>One product, several EANs</small><h3>Market-level codes</h3><p>Same unit, different barcode per country. Keep one canonical row per market with its own effective dates.</p></div>
+          <div class="map-card"><small>One retailer code, several SKUs</small><h3>Retailer packs a range</h3><p>The retailer orders a flavour range under one code. Decide whether the row represents the range or each SKU.</p></div>
+          <div class="map-card"><small>One EAN, several internal SKUs</small><h3>Split pack records</h3><p>Two internal records for the same physical unit. Merge them or map the EAN to one canonical row.</p></div>
+          <div class="map-card"><small>Same code, different meanings</small><h3>Duplicate code reuse</h3><p>A retailer reuses a retired code for another product. Overlap must be resolved by effective dates before it creates a join error.</p></div>
+        </div>
+        <p>Resolve many-to-one cases explicitly. Leave them ambiguous and each downstream team picks a different side of the relationship, which recreates the exact mismatches you built the mapping to remove.</p>
+
+        <h2 id="validation">Validation: check the mapping before you trust it</h2>
+        <p>A mapping that is not validated will fail at the moment you depend on it. Run these checks before each cycle and surface every exception as a controlled queue rather than a silent default.</p>
+        <ol class="action-list">
+          <li><strong>Check the digits.</strong> Validate the EAN or GTIN check digit and the correct number of digits for the format.</li>
+          <li><strong>Check uniqueness.</strong> No active SKU maps to two EANs in the same market, and no EAN maps to two canonical rows.</li>
+          <li><strong>Check coverage.</strong> Every active SKU has a mapping, and every code seen in partner files resolves to one.</li>
+          <li><strong>Check the round trip.</strong> Code to SKU and back to code returns the same code, and SKU to EAN and back returns the same SKU.</li>
+          <li><strong>Check effective dates.</strong> No overlapping active versions and no gaps on dates that appear in the files.</li>
+          <li><strong>Check the queue.</strong> Unmapped codes and failed validations go to a named queue with an owner and a target close date.</li>
+        </ol>
+        <p>Validation turns a mapping from a hopeful assumption into an input you can defend. It is the difference between a reconciliation that passes because the join matched and one that is correct because the identity was proven.</p>
+
+        <h2 id="ownership">Ownership: who keeps the mapping correct</h2>
+        <p>A mapping needs a single owner, not a committee. The owner approves changes, publishes versions and answers when a downstream team disagrees with a row. Approval keeps the mapping from drifting when a commercial or logistics team changes a code informally.</p>
+        <div class="visual-note"><strong>Operating rules</strong><ul><li>One owner per product set, named and reachable in the operating rhythm.</li><li>Approval required before an EAN, GTIN or retailer code is replaced or retired.</li><li>Change log records who changed what, when and why.</li><li>Status is part of the row: draft, active, superseded or pending confirmation.</li><li>The owner reviews unmapped and failed codes each cycle, not once a quarter.</li></ul></div>
+        <p>Without ownership, a mapping decays silently. Codes get added by one team, corrected by another and retired by nobody, until the next reconciliation surfaces the contradiction.</p>
+
+        <h2 id="example">Worked example: a full mapping record</h2>
+        <p>Here is the canonical row for the sparkling water product used in the figures, as it would sit in a mapping table.</p>
+        <figure class="recon-dossier" aria-labelledby="mapping-dossier-title">
+          <figcaption id="mapping-dossier-title">Mapping record &middot; SKU MX-2041 &middot; Market ES</figcaption>
+          <div class="recon-dossier-shell">
+            <header><span>Mapping dossier</span><span>Owner &middot; Master data team</span></header>
+            <div class="recon-dossier-sources">
+              <article><small>Canonical product</small><b>MX-2041</b><span>Sparkling water &middot; 500 ml</span></article>
+              <article><small>Market</small><b>ES</b><span>Effective from 2024-07-01</span></article>
+            </div>
+            <div class="recon-dossier-map"><span>SKU MX-2041 &rarr; EAN 8412345678901</span><i></i></div>
+            <div class="recon-dossier-ledger">
+              <div><b>Consumer EAN</b><span>8412345678901</span><em>Active</em></div>
+              <div><b>Case GTIN</b><span>08412345678909</span><em>Active</em></div>
+              <div><b>Retailer ES-042</b><span>883221</span><em>Active</em></div>
+              <div><b>Conversion</b><span>72 units per case</span><em>Active</em></div>
+              <div><b>Previous EAN</b><span>8412345678890</span><em class="recon-open">Closed &middot; 2024-06-30</em></div>
+            </div>
+            <footer><span>Status</span><strong>0 unmapped codes &middot; validation passed this cycle</strong></footer>
+          </div>
+        </figure>
+        <p>Every downstream file joins through this row. A POS file reports 883221, an invoice shows GTIN 08412345678909, and the ERP knows MX-2041. One row answers all three, and the check digit, uniqueness and round-trip checks passed before the row was published.</p>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Build one canonical mapping row per product and market, anchor it on the internal SKU, record pack conversions and effective dates, validate before each cycle and give it a single owner. That turns failed joins and ambiguous product identities into a controlled, repeatable input.</p>
+        <p>If your team reconciles retailer and distributor data every month, Marksyte's <a href="../../services/data-mapping-integration/">data mapping and integration service</a> can build and maintain the mapping. Related work may include <a href="../../services/data-standardization/">standardizing partner files and data-quality rules</a> or <a href="../../services/data-reconciliation/">reconciling the numbers once identifiers agree</a>.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../sell-in-vs-sell-out-fmcg-reconciliation/">Sell-in vs sell-out in FMCG: how to reconcile the numbers</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-mapping-integration/">Review data mapping and integration support</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>What is the difference between SKU, EAN and GTIN?</summary><p>A SKU is your internal catalogue key for one product and pack. An EAN is a barcode that identifies a consumer unit in the trade. A GTIN is the identifier family to which EAN and similar barcodes belong. They are different keys with different lifetimes, which is why a mapping is needed between them.</p></details><details><summary>Can one EAN map to more than one SKU?</summary><p>Only when the same physical unit is genuinely split across internal pack records, and that split should be resolved. As a rule, keep one active mapping row per product and market, and record pack conversions as a separate relationship with its own effective dates.</p></details><details><summary>How do you maintain a SKU-to-EAN mapping table?</summary><p>Keep one canonical row per product with SKU, EAN or GTIN, retailer codes, effective dates, status and an owner. Validate check digits, uniqueness and coverage before each cycle, and record every change so last period's result can be reproduced.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">One product, many codes</p><h2 id="article-cta-title">Make every product identity resolve in one place</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your mapping</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

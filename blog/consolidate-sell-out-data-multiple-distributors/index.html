@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>How to consolidate sell-out data from multiple distributors | Marksyte</title>
+  <meta name="description" content="Standardize distributor templates, map master data and consolidate market-level sell-out into one controlled dataset." />
+  <meta name="keywords" content="distributor sell-out consolidation, multi-distributor reporting, distributor data harmonization, consolidate distributor sell-out, distributor reporting templates" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/consolidar-datos-sell-out-varios-distribuidores/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="How to consolidate sell-out data from multiple distributors" />
+  <meta property="og:description" content="Standardize distributor templates, map master data and consolidate market-level sell-out into one controlled dataset." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="How to consolidate sell-out data from multiple distributors" />
+  <meta name="twitter:description" content="Distributor files arrive in different templates, codes, units and calendars. Standardize them and consolidate into one controlled market-level dataset." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to consolidate sell-out data from multiple distributors","description":"Standardize distributor templates, map master data and consolidate market-level sell-out into one controlled dataset.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/consolidate-sell-out-data-multiple-distributors/"},"articleSection":["Distributor sell-out consolidation","Multi-distributor reporting","Distributor data harmonization","Sell-out data","Data mapping and integration"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do distributor sell-out files differ so much?","acceptedAnswer":{"@type":"Answer","text":"Each distributor prepares its own file with its own columns, product codes, units, currency and calendar. The differences are not errors; they are local reporting decisions that must be made comparable before totals are compared."}},{"@type":"Question","name":"How do you consolidate sell-out data from multiple distributors?","acceptedAnswer":{"@type":"Answer","text":"Inventory the sources, define one canonical schema, map product and customer dimensions, apply calendar, currency and unit rules, and run a workflow that keeps exceptions visible instead of merging them silently."}},{"@type":"Question","name":"Can you compare sell-out across distributors in different markets?","acceptedAnswer":{"@type":"Answer","text":"Only when currency, units, calendar and coverage are aligned and documented. Differences that are not converted remain visible and should never be presented as a clean market total."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><span class="brand-mark" aria-hidden="true">M</span><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/consolidar-datos-sell-out-varios-distribuidores/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Distributor data &middot; Multi-market consolidation</p><h1>How to consolidate sell-out data from multiple distributors</h1><p class="article-dek">Distributor files arrive in different templates, codes, units and calendars. Standardize them, map the master data and consolidate into one controlled market-level dataset.</p><div class="article-meta"><span>Marksyte</span><span>11 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">A region sells through five distributors and receives five different files. Columns change, product codes change, units change, currencies change. If you join them as they arrive, the total looks plausible and the detail is wrong. This guide builds a consolidation you can defend: inventory the sources, define a canonical schema, map the dimensions, apply calendar, currency and unit rules, and run a workflow that keeps exceptions visible.</p>
+        <p>You will see the fields a canonical schema needs, how product and customer mappings attach to it, the rules that make files comparable, and the controls that let you trust the resulting market total.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> Consolidation is reliable when one canonical schema holds every source, dimensions map to controlled references and exceptions are managed before the total is used.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#sources">Source inventory</a></li><li><a href="#schema">Canonical schema</a></li><li><a href="#mappings">Mapping dimensions</a></li><li><a href="#rules">Calendar, currency and unit rules</a></li><li><a href="#workflow">Consolidation workflow</a></li><li><a href="#example">Worked example</a></li><li><a href="#exceptions">Exceptions</a></li><li><a href="#controls">Controls</a></li><li><a href="#takeaway">Practical takeaway</a></li><li><a href="#faq">Frequently asked questions</a></li></ol></nav>
+
+        <h2 id="sources">Source inventory: know every file before you build anything</h2>
+        <p>Start with a written inventory of every distributor file that arrives: who sends it, how often, at what grain, in which units and currency, and which codes it uses. Without this list, the consolidation schema is guesswork and every exception later becomes a surprise.</p>
+        <figure class="table-scroll" aria-labelledby="source-inventory-title">
+          <figcaption id="source-inventory-title">Distributor source inventory &middot; Market MX</figcaption>
+          <table class="article-data-table">
+            <thead>
+              <tr><th>Distributor</th><th>File</th><th>Grain</th><th>Units</th><th>Product key</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>MX-Norte</td><td>Sell-out monthly</td><td>Store</td><td>Units</td><td>Own code + EAN</td></tr>
+              <tr><td>MX-Centro</td><td>Sell-out monthly</td><td>Market</td><td>Cases</td><td>EAN-13</td></tr>
+              <tr><td>MX-Sur</td><td>Sell-out monthly</td><td>Store</td><td>Units</td><td>Own code</td></tr>
+            </tbody>
+          </table>
+        </figure>
+        <p>Record the grain precisely. A file at store level supports different questions than one at market level, and a consolidation that hides the difference will mislead later analysis.</p>
+
+        <h2 id="schema">The canonical schema: one structure for every source</h2>
+        <p>Define one output structure that every distributor file is transformed into, and keep the source files untouched. The canonical schema is the contract between raw partner data and every downstream report, so it must be explicit and stable.</p>
+        <figure class="map-model" aria-labelledby="canonical-schema-title">
+          <figcaption id="canonical-schema-title">Three files, one canonical schema</figcaption>
+          <div class="map-hub">
+            <div class="map-core"><small>Canonical row</small><strong>Sell-out &middot; Market MX</strong><span>Period &middot; Market &middot; Distributor &middot; Product &middot; Qty &middot; Value</span></div>
+            <div class="map-spokes">
+              <div class="map-code"><small>MX-Norte</small><strong>Store-level units</strong><span>Own code + EAN</span></div>
+              <div class="map-code"><small>MX-Centro</small><strong>Market-level cases</strong><span>EAN-13</span></div>
+              <div class="map-code"><small>MX-Sur</small><strong>Store-level units</strong><span>Own code</span></div>
+            </div>
+          </div>
+        </figure>
+        <p>Minimal canonical fields: reporting period, market, distributor, product key, quantity in a standard unit, value in a standard currency, and a lineage reference back to the source file and row. Lineage is what makes a consolidated number explainable when someone challenges it.</p>
+
+        <h2 id="mappings">Mapping dimensions: products, customers and periods</h2>
+        <p>Every distributor identifies the same product differently. Build reference mappings once and let every file join through them, rather than repairing lookups in each file.</p>
+        <div class="visual-note"><strong>Mapping layers</strong><ul><li>Product: distributor code or EAN to canonical SKU, following the <a href="../sku-ean-gtin-mapping-fmcg/">SKU-to-EAN and GTIN mapping</a> model.</li><li>Customer: distributor store codes to market, region or reporting hierarchy.</li><li>Period: distributor reporting weeks to the calendar used in the consolidated output.</li></ul></div>
+        <p>Keep each mapping versioned and effective-dated. When a distributor renames a code or a store closes, the mapping changes without breaking historical periods.</p>
+
+        <h2 id="rules">Calendar, currency and unit rules</h2>
+        <p>Files become comparable only when the same conversion rules apply to all of them. Write the rules once, with a reference date, so the consolidation does not depend on whoever pressed recalculate.</p>
+        <ol class="action-list">
+          <li><strong>Calendar.</strong> Convert each file's reporting weeks or cutoffs to the consolidated period with an explicit boundary rule.</li>
+          <li><strong>Currency.</strong> Apply a fixed exchange rate with a stated reference date, and keep the original currency in the raw layer.</li>
+          <li><strong>Units.</strong> Convert cases, trays and eaches to one standard unit using effective-dated conversion factors.</li>
+          <li><strong>Coverage.</strong> Record how much of the expected market each file represents, so totals carry a coverage note.</li>
+          <li><strong>Rounding.</strong> Fix where rounding happens, at source or at consolidation, and record it.</li>
+        </ol>
+        <p>Document every rule with an owner and an effective date. When a distributor changes its template or a new market joins, the rule set is the first thing to review.</p>
+
+        <h2 id="workflow">A consolidation workflow you can run every cycle</h2>
+        <p>The consolidation should run as a repeatable sequence, not a series of manual steps. Each stage has a defined input, output and check so a failure is caught where it happens.</p>
+        <ol class="action-list">
+          <li><strong>Intake.</strong> Register each file with its distributor, version and receipt date.</li>
+          <li><strong>Validate.</strong> Check schema, required fields, duplicates and totals against the source file.</li>
+          <li><strong>Map.</strong> Resolve product, customer and period keys through the reference mappings.</li>
+          <li><strong>Convert.</strong> Apply calendar, currency and unit rules to build canonical rows.</li>
+          <li><strong>Consolidate.</strong> Aggregate canonical rows into the market-level dataset.</li>
+          <li><strong>Check.</strong> Compare consolidated totals against the sum of validated source totals.</li>
+          <li><strong>Publish.</strong> Release the dataset with a version, lineage and coverage note.</li>
+        </ol>
+        <p>Each stage writes a log entry. A year later you should be able to say which file version, which mapping version and which exchange rate produced any published number.</p>
+
+        <h2 id="example">Worked example: consolidating three distributor files</h2>
+        <p>Three distributors report the same sparkling water product in May 2026. Each file uses a different key, grain and unit; the canonical rows make them one number.</p>
+        <figure class="recon-dossier" aria-labelledby="consolidation-dossier-title">
+          <figcaption id="consolidation-dossier-title">Consolidation record &middot; SKU MX-2041 &middot; Market MX &middot; 2026-05</figcaption>
+          <div class="recon-dossier-shell">
+            <header><span>Consolidation dossier</span><span>Owner &middot; Regional commercial team</span></header>
+            <div class="recon-dossier-sources">
+              <article><small>Canonical product</small><b>MX-2041</b><span>Sparkling water &middot; 500 ml</span></article>
+              <article><small>Market</small><b>MX</b><span>Period 2026-05</span></article>
+            </div>
+            <div class="recon-dossier-map"><span>MX-Norte + MX-Centro + MX-Sur &rarr; MX-2041</span><i></i></div>
+            <div class="recon-dossier-ledger">
+              <div><b>MX-Norte</b><span>1,200 cases &rarr; 86,400 units</span><em>Converted</em></div>
+              <div><b>MX-Centro</b><span>54,300 units</span><em>Mapped</em></div>
+              <div><b>MX-Sur</b><span>39,600 units</span><em>Mapped</em></div>
+              <div><b>Conversion</b><span>72 units per case</span><em>Applied</em></div>
+              <div><b>Coverage</b><span>3 of 3 files</span><em>Complete</em></div>
+            </div>
+            <footer><span>Status</span><strong>180,300 units consolidated &middot; 0 exceptions open</strong></footer>
+          </div>
+        </figure>
+        <p>The number is usable because every component is traceable: MX-Norte's cases were converted with a recorded factor, MX-Centro and MX-Sur mapped through the product reference, and the total reconciles to the three validated source files.</p>
+
+        <h2 id="exceptions">Exceptions: keep them visible, never merge them silently</h2>
+        <p>Not every row consolidates cleanly. Unmapped codes, missing periods and negative quantities are normal in real files. The discipline is to surface them as a controlled queue with an owner and a status, not to drop them into the total.</p>
+        <div class="visual-note"><strong>Exception classes</strong><ul><li>Unmapped product or customer code.</li><li>Quantity or value outside a defined range.</li><li>Period or file missing from an expected cycle.</li><li>Conversion factor not available for the period.</li><li>Correction arriving after the first consolidation.</li></ul></div>
+        <p>Each exception keeps its amount visible in the output as an explicit adjustment line. Excluded volume is a fact to explain, and the reconciliation only closes when the exception has an owner and an agreed resolution.</p>
+
+        <h2 id="controls">Controls before the total is used</h2>
+        <p>The consolidated total should pass a fixed control set before it reaches commercial reporting. These checks are cheap and catch the differences that break a month-end number.</p>
+        <ol class="action-list">
+          <li><strong>Totals.</strong> Consolidated volume equals the sum of validated source files after conversion.</li>
+          <li><strong>Coverage.</strong> All expected files and periods are present, and gaps are flagged.</li>
+          <li><strong>Mappings.</strong> No canonical row is built from an expired mapping version.</li>
+          <li><strong>Rules.</strong> Currency and unit factors carry an effective date and a recorded source.</li>
+          <li><strong>Exceptions.</strong> Open exceptions are listed with amount, owner and target resolution date.</li>
+          <li><strong>Sign-off.</strong> A named owner accepts the dataset before release.</li>
+        </ol>
+        <p>Run the same controls every cycle so a deviation stands out. A consolidation that cannot pass its own checks has not failed the process; it has correctly refused to publish.</p>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Consolidating sell-out from multiple distributors works when the sources are inventoried, one canonical schema holds the output, dimensions map through controlled references and the same calendar, currency and unit rules apply to every file. Exceptions stay visible, and a fixed control set signs off the total.</p>
+        <p>Marksyte's <a href="../../services/data-mapping-integration/">data mapping and integration service</a> can design the canonical schema and reference mappings, while <a href="../../services/managed-data-analysis/">managed data operations</a> runs the monthly consolidation with lineage and exception control. Related work includes <a href="../../services/data-standardization/">standardizing distributor templates</a> and <a href="../../services/data-reconciliation/">reconciling consolidated totals</a>.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../sell-in-vs-sell-out-fmcg-reconciliation/">Sell-in vs sell-out in FMCG: how to reconcile the numbers</a></li><li><a href="../sku-ean-gtin-mapping-fmcg/">SKU-to-EAN and GTIN mapping for FMCG teams</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-mapping-integration/">Review data mapping and integration support</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>Why do distributor sell-out files differ so much?</summary><p>Each distributor prepares its own file with its own columns, product codes, units, currency and calendar. The differences are not errors; they are local reporting decisions that must be made comparable before totals are compared.</p></details><details><summary>How do you consolidate sell-out data from multiple distributors?</summary><p>Inventory the sources, define one canonical schema, map product and customer dimensions, apply calendar, currency and unit rules, and run a workflow that keeps exceptions visible instead of merging them silently.</p></details><details><summary>Can you compare sell-out across distributors in different markets?</summary><p>Only when currency, units, calendar and coverage are aligned and documented. Differences that are not converted remain visible and should never be presented as a clean market total.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">One region, many distributors</p><h2 id="article-cta-title">Turn five distributor files into one controlled market view</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your consolidation</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

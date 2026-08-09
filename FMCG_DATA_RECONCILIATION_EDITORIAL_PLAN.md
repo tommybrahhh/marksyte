@@ -1,7 +1,8 @@
 # Marksyte FMCG data reconciliation editorial plan
 
 Created: 2026-08-07  
-Scope: English-first SEO library; no content has been published or deployed.
+Scope: English-first SEO library.  
+Published: 1, 2, 13 and 7 (EN + ES). In progress per the recommended publishing order.
 
 ## Website and blog findings
 
@@ -372,7 +373,7 @@ Each supporting article should link to its cluster pillar, the most relevant ser
 - Article 1 links to articles 5 and 7 once live; both link back to article 1.
 - Article 2 links to article 8; article 8 links back to article 2 and across to article 1.
 - Article 3 receives links from articles 1, 4 and 6; it links to the mapping service.
-- Article 4 links to article 6 and to article 3 for identifier mapping.
+- Article 4 links to article 6 and to article 3 for identifier mapping (article 6 to be added once live).
 - Article 9 links to articles 1 and 4 as applied examples; those pillars link back from their exception sections.
 - Article 10 links to articles 6 and 9 as prerequisites and to managed data operations as the understated commercial next step.
 

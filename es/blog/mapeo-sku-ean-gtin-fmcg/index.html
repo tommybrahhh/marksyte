@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapeo SKU-EAN y GTIN: una guía práctica para equipos FMCG | Marksyte</title>
+<meta name="description" content="Cree y mantenga mapeos fiables entre SKUs internos, códigos de retailer, EANs y GTINs entre packs y mercados.">
+<meta name="keywords" content="mapeo SKU a EAN, mapeo GTIN, mapeo de códigos de producto, datos maestros FMCG, tabla mapeo SKU EAN GTIN">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/"><link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/"><link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/"><link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Marksyte"><meta property="og:title" content="Mapeo SKU-EAN y GTIN: una guía práctica para equipos FMCG"><meta property="og:description" content="Cree y mantenga mapeos fiables entre SKUs internos, códigos de retailer, EANs y GTINs entre packs y mercados."><meta property="og:url" content="https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/"><meta property="og:locale" content="es_ES"><meta property="article:author" content="Marksyte">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Mapeo SKU-EAN y GTIN: una guía práctica para equipos FMCG"><meta name="twitter:description" content="Los SKU describen su catálogo; los EAN y GTIN identifican los productos para el canal. Conéctelos una vez, con fechas de vigencia y un responsable.">
+<link rel="stylesheet" href="../../../styles.css?v=20260809-3"><link rel="stylesheet" href="../../../assets/blog/article-enhancements.css?v=20260809-4">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Mapeo SKU-EAN y GTIN: una guía práctica para equipos FMCG","description":"Cree y mantenga mapeos fiables entre SKUs internos, códigos de retailer, EANs y GTINs entre packs y mercados.","inLanguage":"es","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/es/blog/mapeo-sku-ean-gtin-fmcg/"},"articleSection":["Mapeo SKU a EAN","Mapeo GTIN","Mapeo de códigos de producto","Datos maestros FMCG","Mapeo e integración de datos"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es la diferencia entre SKU, EAN y GTIN?","acceptedAnswer":{"@type":"Answer","text":"Un SKU es su clave interna de catálogo para un producto y pack concretos. Un EAN es un código de barras que identifica la unidad de consumo en el canal. Un GTIN es la familia de identificadores a la que pertenecen el EAN y códigos similares. Son claves distintas con ciclos de vida distintos, por lo que se necesita un mapeo entre ellas."}},{"@type":"Question","name":"¿Puede un EAN mapearse a más de un SKU?","acceptedAnswer":{"@type":"Answer","text":"Solo cuando la misma unidad física está dividida de forma justificada en varios registros internos de pack, y esa división debería resolverse. Como regla, conserve una fila canónica activa por producto y mercado, y registre las conversiones de pack como una relación aparte con sus propias fechas de vigencia."}},{"@type":"Question","name":"¿Cómo se mantiene una tabla de mapeo SKU-EAN?","acceptedAnswer":{"@type":"Answer","text":"Conserve una fila canónica por producto con SKU, EAN o GTIN, códigos de retailer, fechas de vigencia, estado y un responsable. Valide dígitos de control, unicidad y cobertura antes de cada ciclo, y registre cada cambio para que el resultado del período anterior pueda reproducirse."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head><body class="blog-page article-page">
+<header class="site-header"><a class="brand" href="../../" aria-label="Inicio de Marksyte"><span class="brand-mark" aria-hidden="true">M</span><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Navegación principal"><a href="../../#services">Servicios</a><a href="../../casos-de-estudio/">Casos de estudio</a><a href="../" aria-current="page">Blog</a><a href="../../about/">Sobre Marksyte</a><a href="../../#contact">Contacto</a></nav><div class="language-switch" aria-label="Idioma"><a href="https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/" lang="en" hreflang="en">EN</a><a href="./" lang="es" hreflang="es" aria-current="page">ES</a></div></div></header>
+<main><article><header class="article-hero"><div class="blog-shell article-hero-grid"><div><p class="eyebrow">Datos maestros FMCG · Mapeo SKU-EAN</p><h1>Mapeo SKU-EAN y GTIN: una guía práctica para equipos FMCG</h1><p class="article-dek">Los SKU describen su catálogo. Los EAN y GTIN identifican los productos para el canal. Conéctelos una vez, con fechas de vigencia y un responsable, para que las uniones dejen de fallar.</p><div class="article-meta"><span>Marksyte</span><span>10 min de lectura</span></div></div></div></header>
+<div class="article-body">
+<p class="lead">Un archivo de retailer informa ventas semanales con su propio código de producto. Su ERP une por el SKU interno. El registro GS1 identifica la unidad por el EAN. Cuando estos códigos no coinciden, cada unión falla y cada diferencia parece un error. Esta guía explica qué registra cada identificador, muestra un modelo de mapeo que puede construir y cómo mantenerlo fiable entre packs y mercados.</p>
+<p>Verá los campos que pertenecen a un mapeo, cómo se relacionan los códigos de pack y caja, cómo las fechas de vigencia protegen el histórico y qué comprobaciones se ejecutan antes de confiar en el resultado.</p>
+<div class="key-takeaway"><strong>La idea clave</strong> Un mapeo es fiable cuando cada producto tiene una fila canónica, las fechas de vigencia son explícitas y la validación se ejecuta antes de la unión.</div>
+<nav class="reading-nav" aria-label="Contenido del artículo"><strong>En este artículo</strong><ol><li><a href="#roles">Qué registra cada identificador</a></li><li><a href="#model">El modelo de mapeo</a></li><li><a href="#packs">Jerarquía de packs</a></li><li><a href="#dates">Fechas de vigencia</a></li><li><a href="#many">Casos muchos a uno</a></li><li><a href="#validation">Validación</a></li><li><a href="#ownership">Propiedad y responsable</a></li><li><a href="#example">Ejemplo práctico</a></li><li><a href="#faq">Preguntas frecuentes</a></li></ol></nav>
+<h2 id="roles">Qué registra realmente cada identificador</h2>
+<p>SKU, EAN, GTIN y código de retailer son claves distintas con ciclos de vida distintos. Tratarlas como intercambiables es la causa más habitual de uniones fallidas.</p>
+<p>Un SKU es su clave interna de catálogo. Usted lo crea, lo retira y puede usarlo para describir un pack concreto, como una botella de 500&nbsp;ml o un pack de cuatro. Un EAN identifica la unidad de consumo en el canal; lo asigna la marca a través de GS1 y no debería reasignarse mientras exista el producto. Un código de retailer es la clave que el retailer usa para pedir, recibir e informar el producto en sus propios archivos.</p>
+<figure class="table-scroll" aria-labelledby="roles-table-titulo">
+<figcaption id="roles-table-titulo">Comparativa de funciones de los identificadores</figcaption>
+<table class="article-data-table">
+<thead>
+<tr><th>Identificador</th><th>Qué identifica</th><th>Alcance</th><th>Ciclo de vida</th></tr>
+</thead>
+<tbody>
+<tr><td><code>SKU</code></td><td>Su artículo de catálogo, incluida la variante de pack</td><td>Interno a su empresa</td><td>Hasta que usted lo retira</td></tr>
+<tr><td><code>EAN-13 / GTIN</code></td><td>La unidad de consumo en el punto de venta</td><td>Global, asignado por la marca</td><td>Mientras exista el producto</td></tr>
+<tr><td><code>GTIN-14 / ITF-14</code></td><td>La caja o cartón usado en logística</td><td>Global, asignado por la marca</td><td>Según el pack que describe</td></tr>
+<tr><td><code>Código de retailer</code></td><td>El producto tal como el retailer lo pide e informa</td><td>Dentro de un retailer</td><td>Ciclo de vida del producto del retailer</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Los ciclos de vida difieren. Un SKU cambia cuando usted cambia de sistemas, un EAN cambia cuando cambia el código de barras y un código de retailer cambia cuando cambia el dato maestro del retailer. Por eso una sola columna de código no basta: necesita un mapeo que registre cada identificador contra un producto canónico.</p>
+<h2 id="model">El modelo de mapeo: una fila canónica, no una red de uniones</h2>
+<p>Construya una fila canónica por producto y mercado en lugar de reconstruir uniones de archivo en archivo. La fila usa el SKU interno como ancla y enumera cada identificador externo que apunta a él: el EAN de consumo, el GTIN de caja cuando existe y cada código de retailer o distribuidor.</p>
+<figure class="map-model" aria-labelledby="map-model-titulo">
+<figcaption id="map-model-titulo">Un producto canónico, muchos códigos externos</figcaption>
+<div class="map-hub">
+<div class="map-core"><small>Producto canónico</small><strong>SKU MX-2041</strong><span>Agua con gas · 500 ml</span></div>
+<div class="map-spokes">
+<div class="map-code"><small>EAN de consumo</small><strong>8412345678901</strong><span>Unidad escaneada en caja</span></div>
+<div class="map-code"><small>GTIN de caja</small><strong>08412345678909</strong><span>Cartón usado en logística</span></div>
+<div class="map-code"><small>Retailer ES-042</small><strong>883221</strong><span>Clave usada en archivos de pedido</span></div>
+<div class="map-code"><small>Distribuidor MX</small><strong>4491</strong><span>Clave usada en archivos del distribuidor</span></div>
+</div>
+</div>
+</figure>
+<p>Cada proceso se une entonces a través de la fila canónica. Un archivo POS se une por el código de retailer, un archivo de distribuidor por su propio código y su ERP por el SKU. Todos resuelven al mismo producto porque cada código apunta a la misma identidad canónica.</p>
+<p>La alternativa es una red de tablas por pares: una de EAN a SKU, otra de SKU a retailer y otra de EAN a retailer. Se desalinean, se contradicen y producen resultados distintos según la tabla que se haya usado.</p>
+<h2 id="packs">Jerarquía de packs: un producto, varios códigos</h2>
+<p>Un producto suele tener varios códigos comerciales. La unidad de consumo, la bandeja y la caja son niveles de pack distintos, y cada uno puede llevar su propio EAN o GTIN. Un archivo de sell-out informa unidades y una factura informa cajas; el mapeo debe saber cómo se relacionan.</p>
+<figure class="pack-chain" aria-labelledby="pack-chain-titulo">
+<figcaption id="pack-chain-titulo">Jerarquía de packs · SKU MX-2041</figcaption>
+<div class="pack-level is-each"><small>Unidad</small><strong>EAN 8412345678901</strong><span>1 unidad · lo que compra el consumidor</span></div>
+<div class="pack-level is-pack"><small>Bandeja</small><strong>EAN 8412345678905</strong><span>12 unidades · cómo la repone la tienda</span></div>
+<div class="pack-level is-case"><small>Caja</small><strong>GTIN 08412345678909</strong><span>6 bandejas · cómo la envía la logística</span></div>
+</figure>
+<p>El mapeo debe registrar la relación de packs y un factor de conversión, no asumirlo. Cuando un archivo POS informa 120 unidades y una factura muestra 20 cajas, la conciliación solo funciona si sabe que una caja contiene 72 unidades.</p>
+<h2 id="dates">Fechas de vigencia: cuándo un mapeo es verdadero</h2>
+<p>Un mapeo es una afirmación sobre un período. Un relanzamiento, un cambio de pack o una migración de código de retailer terminan un mapeo y empiezan otro. Sin fechas de vigencia, el histórico se sobrescribe y el resultado del mes anterior no puede reproducirse.</p>
+<figure class="eff-track" aria-labelledby="eff-track-titulo">
+<figcaption id="eff-track-titulo">Mapeo versionado · SKU MX-2041</figcaption>
+<div class="eff-band">
+<div class="eff-dates"><strong>2019-03-01 &rarr; 2024-06-30</strong><span>EAN 8412345678890</span></div>
+<p>Código de barras original, retirado en el rediseño del pack.</p>
+<em>Cerrado</em>
+</div>
+<div class="eff-band is-active">
+<div class="eff-dates"><strong>2024-07-01 &rarr; abierto</strong><span>EAN 8412345678901</span></div>
+<p>Código de barras actual del pack rediseñado.</p>
+<em>Activo</em>
+</div>
+</figure>
+<p>Guarde cada versión con una fecha de inicio de vigencia, un estado y, a ser posible, un motivo y una referencia de cambio. Así un informe puede unir una venta con el EAN correcto en la fecha de la venta, no con el que es correcto hoy.</p>
+<h2 id="many">Casos muchos a uno: cuando un código apunta a varios productos</h2>
+<p>No todo mapeo es de uno a uno. El mismo producto físico puede tener un EAN distinto en cada mercado, lo cual es legítimo. Un único código de retailer también puede cubrir varios de sus SKU, lo que obliga a decidir la granularidad.</p>
+<div class="map-grid">
+<div class="map-card"><small>Un producto, varios EAN</small><h3>Códigos por mercado</h3><p>La misma unidad, con código de barras distinto por país. Conserve una fila canónica por mercado con sus propias fechas de vigencia.</p></div>
+<div class="map-card"><small>Un código de retailer, varios SKU</small><h3>El retailer agrupa una gama</h3><p>El retailer pide una gama de sabores bajo un solo código. Decida si la fila representa la gama o cada SKU.</p></div>
+<div class="map-card"><small>Un EAN, varios SKU internos</small><h3>Registros de pack divididos</h3><p>Dos registros internos para la misma unidad física. Fúndalos o mapee el EAN a una fila canónica.</p></div>
+<div class="map-card"><small>Mismo código, significados distintos</small><h3>Reutilización de códigos</h3><p>Un retailer reutiliza un código retirado para otro producto. El solapamiento debe resolverse con fechas de vigencia antes de crear un error de unión.</p></div>
+</div>
+<p>Resuelva los casos muchos a uno de forma explícita. Si los deja ambiguos, cada equipo aguas abajo elige un lado distinto de la relación y se recrean exactamente los desajustes que el mapeo debía eliminar.</p>
+<h2 id="validation">Validación: compruebe el mapeo antes de confiar en él</h2>
+<p>Un mapeo sin validar fallará justo en el momento en que dependa de él. Ejecute estas comprobaciones antes de cada ciclo y lleve cada excepción a una cola controlada en lugar de a un valor por defecto silencioso.</p>
+<ol class="action-list">
+<li><strong>Compruebe los dígitos.</strong> Valide el dígito de control del EAN o GTIN y el número de dígitos correcto para el formato.</li>
+<li><strong>Compruebe la unicidad.</strong> Ningún SKU activo mapea a dos EAN en el mismo mercado, y ningún EAN mapea a dos filas canónicas.</li>
+<li><strong>Compruebe la cobertura.</strong> Cada SKU activo tiene un mapeo, y cada código visto en los archivos de socios resuelve a uno.</li>
+<li><strong>Compruebe el viaje de ida y vuelta.</strong> De código a SKU y de vuelta a código se obtiene el mismo código, y de SKU a EAN y de vuelta el mismo SKU.</li>
+<li><strong>Compruebe las fechas de vigencia.</strong> Sin versiones activas solapadas ni huecos en las fechas que aparecen en los archivos.</li>
+<li><strong>Compruebe la cola.</strong> Los códigos sin mapear y las validaciones fallidas van a una cola con nombre, responsable y fecha de cierre objetivo.</li>
+</ol>
+<p>La validación convierte un mapeo de una suposición esperanzadora en una entrada defendible. Es la diferencia entre una conciliación que pasa porque la unión coincidió y una que es correcta porque la identidad quedó demostrada.</p>
+<h2 id="ownership">Propiedad: quién mantiene el mapeo correcto</h2>
+<p>Un mapeo necesita un único responsable, no un comité. El responsable aprueba los cambios, publica las versiones y responde cuando un equipo aguas abajo discrepa de una fila. La aprobación evita que el mapeo se desvíe cuando un equipo comercial o logístico cambia un código de forma informal.</p>
+<div class="visual-note"><strong>Reglas de funcionamiento</strong><ul><li>Un responsable por conjunto de productos, nombrado y localizable en el ritmo operativo.</li><li>Aprobación obligatoria antes de sustituir o retirar un EAN, GTIN o código de retailer.</li><li>Registro de cambios con quién, qué, cuándo y por qué.</li><li>El estado forma parte de la fila: borrador, activo, sustituido o pendiente de confirmación.</li><li>El responsable revisa los códigos sin mapear y fallidos cada ciclo, no una vez al trimestre.</li></ul></div>
+<p>Sin propiedad, un mapeo se degrada en silencio. Un equipo añade códigos, otro los corrige y nadie los retira, hasta que la siguiente conciliación saca a la luz la contradicción.</p>
+<h2 id="example">Ejemplo práctico: un registro de mapeo completo</h2>
+<p>Aquí está la fila canónica del producto de agua con gas usado en las figuras, tal como aparecería en una tabla de mapeo.</p>
+<figure class="recon-dossier" aria-labelledby="mapping-dossier-titulo">
+<figcaption id="mapping-dossier-titulo">Registro de mapeo · SKU MX-2041 · Mercado ES</figcaption>
+<div class="recon-dossier-shell">
+<header><span>Dossier de mapeo</span><span>Responsable · Equipo de datos maestros</span></header>
+<div class="recon-dossier-sources">
+<article><small>Producto canónico</small><b>MX-2041</b><span>Agua con gas · 500 ml</span></article>
+<article><small>Mercado</small><b>ES</b><span>Vigente desde 2024-07-01</span></article>
+</div>
+<div class="recon-dossier-map"><span>SKU MX-2041 &rarr; EAN 8412345678901</span><i></i></div>
+<div class="recon-dossier-ledger">
+<div><b>EAN de consumo</b><span>8412345678901</span><em>Activo</em></div>
+<div><b>GTIN de caja</b><span>08412345678909</span><em>Activo</em></div>
+<div><b>Retailer ES-042</b><span>883221</span><em>Activo</em></div>
+<div><b>Conversión</b><span>72 unidades por caja</span><em>Activo</em></div>
+<div><b>EAN anterior</b><span>8412345678890</span><em class="recon-open">Cerrado · 2024-06-30</em></div>
+</div>
+<footer><span>Estado</span><strong>0 códigos sin mapear · validación superada este ciclo</strong></footer>
+</div>
+</figure>
+<p>Cada archivo aguas abajo se une a través de esta fila. Un archivo POS informa 883221, una factura muestra el GTIN 08412345678909 y el ERP conoce MX-2041. Una fila responde a los tres, y el dígito de control, la unicidad y el viaje de ida y vuelta se comprobaron antes de publicar la fila.</p>
+<h2 id="takeaway">Conclusión práctica</h2>
+<p>Construya una fila de mapeo canónica por producto y mercado, ancórela en el SKU interno, registre las conversiones de pack y las fechas de vigencia, valide antes de cada ciclo y asigne un único responsable. Así las uniones fallidas y las identidades de producto ambiguas se convierten en una entrada controlada y repetible.</p>
+<p>Si su equipo concilia datos de retailers y distribuidores cada mes, el servicio de <a href="../../servicios/mapeo-integracion-datos/">mapeo e integración de datos</a> de Marksyte puede construir y mantener el mapeo. El trabajo relacionado puede incluir <a href="../../servicios/estandarizacion-datos/">estandarizar archivos de socios y reglas de calidad de datos</a> o <a href="../../servicios/conciliacion-datos/">conciliar los números una vez que los identificadores coinciden</a>.</p>
+<div class="internal-links"><strong>Recursos relacionados de Marksyte</strong><ul><li><a href="../conciliar-datos-sell-out-retailer-con-erp/">Cómo conciliar los datos de sell-out del retailer con los datos del ERP</a></li><li><a href="../sell-in-vs-sell-out-fmcg-reconciliacion/">Sell-in vs sell-out en FMCG: cómo conciliar los números</a></li><li><a href="../../casos-de-estudio/conciliacion-datos-fmcg/">Ver un caso ilustrativo de conciliación de datos FMCG</a></li><li><a href="../../servicios/mapeo-integracion-datos/">Revisar soporte de mapeo de datos e integración</a></li></ul></div>
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="faq"><details><summary>¿Cuál es la diferencia entre SKU, EAN y GTIN?</summary><p>Un SKU es su clave interna de catálogo para un producto y pack concretos. Un EAN es un código de barras que identifica la unidad de consumo en el canal. Un GTIN es la familia de identificadores a la que pertenecen el EAN y códigos similares. Son claves distintas con ciclos de vida distintos, por lo que se necesita un mapeo entre ellas.</p></details><details><summary>¿Puede un EAN mapearse a más de un SKU?</summary><p>Solo cuando la misma unidad física está dividida de forma justificada en varios registros internos de pack, y esa división debería resolverse. Como regla, conserve una fila canónica activa por producto y mercado, y registre las conversiones de pack como una relación aparte con sus propias fechas de vigencia.</p></details><details><summary>¿Cómo se mantiene una tabla de mapeo SKU-EAN?</summary><p>Conserve una fila canónica por producto con SKU, EAN o GTIN, códigos de retailer, fechas de vigencia, estado y un responsable. Valide dígitos de control, unicidad y cobertura antes de cada ciclo, y registre cada cambio para que el resultado del período anterior pueda reproducirse.</p></details></div>
+</div></article>
+<section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Un producto, muchos códigos</p><h2 id="article-cta-title">Consiga que cada identidad de producto resuelva en un solo lugar</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Revisar su mapeo</a></div></section>
+</main><footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Enlaces legales"><a href="../../aviso-legal/">Aviso legal</a><a href="../../privacidad/">Privacidad</a><a href="../../cookies/">Cookies</a></nav></footer></body></html>
