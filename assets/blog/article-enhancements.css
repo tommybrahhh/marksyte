@@ -2,7 +2,7 @@
 :root {
   --article-ink: #101114;
   --article-muted: #62666d;
-  --article-soft: #f5f5f2;
+  --article-soft: #ffffff;
   --article-accent: #105fc0;
   --article-accent-2: #eaf3fd;
   --article-line: #d9dde3;
@@ -14,7 +14,7 @@ body.article-page { color: var(--article-ink); background: var(--article-soft); 
 .blog-shell, .article-body, .article-footer-inner { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
 .article-hero-grid { display: block; }
 .article-hero-copy { max-width: 800px; }
-.eyebrow { margin: 0 0 .75rem; text-transform: uppercase; letter-spacing: 0; font-size: .78rem; font-weight: 750; color: var(--article-accent); }
+.eyebrow { margin: 0 0 .75rem; text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 800; color: var(--article-accent); }
 .article-hero h1 { max-width: 20ch; margin: 0; font-size: clamp(2.2rem,5.2vw,4.8rem); line-height: .98; letter-spacing: 0; }
 .article-dek { max-width: 62ch; margin: 1.25rem 0; font-size: clamp(1.05rem,2vw,1.35rem); line-height: 1.55; color: var(--article-muted); }
 .article-meta { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; font-size: .92rem; color: var(--article-muted); }
@@ -25,9 +25,9 @@ body.article-page { color: var(--article-ink); background: var(--article-soft); 
 .metric a { color: inherit; text-decoration-thickness: 1px; }
 .article-body { padding: 2.5rem 0 5rem; max-width: 860px; }
 .article-body p, .article-body li { font-size: 1.05rem; line-height: 1.72; }
-.article-body h2 { margin: 3.25rem 0 1rem; font-size: clamp(1.7rem,3vw,2.45rem); line-height: 1.12; letter-spacing: 0; scroll-margin-top: 6rem; }
-.article-body h3 { margin: 0 0 .5rem; font-size: 1.15rem; }
-.article-body a { color: var(--article-accent); text-underline-offset: 3px; }
+.article-body h2 { margin: 3.25rem 0 1rem; font-size: clamp(2rem,3.5vw,3rem); line-height: 1.12; letter-spacing: 0; scroll-margin-top: 6rem; }
+.article-body h3 { margin: 0 0 .5rem; font-size: clamp(1.3rem,1.8vw,1.5rem); }
+.article-body a:not(.button) { color: var(--article-accent); text-underline-offset: 3px; }
 .reading-nav { padding: 1rem 1.1rem; border: 1px solid var(--article-line); border-radius: 8px; background: #fff; }
 .reading-nav strong { display: block; margin-bottom: .5rem; }
 .reading-nav ol { margin: 0; padding-left: 1.2rem; columns: 2; gap: 2rem; }
@@ -629,7 +629,7 @@ body.article-page { color: var(--article-ink); background: var(--article-soft); 
 .ai-item p { margin: 0; font-size: .93rem; line-height: 1.55; }
 .inline-cta { margin: 2.5rem 0; padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; border-radius: 8px; background: var(--article-warm); }
 .inline-cta p { margin: .35rem 0 0; font-size: .96rem; }
-.button.primary { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: .75rem 1rem; border-radius: 8px; background: var(--article-accent); color: #fff; text-decoration: none; white-space: nowrap; font-weight: 700; }
+.button.primary { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 0 1.25rem; border-radius: 999px; background: var(--article-ink); color: #fff; text-decoration: none; white-space: nowrap; font-weight: 800; }
 .faq details { border-top: 1px solid var(--article-line); padding: 1rem 0; }
 .faq details:last-child { border-bottom: 1px solid var(--article-line); }
 .faq summary { cursor: pointer; font-weight: 700; }
@@ -702,7 +702,7 @@ body.article-page { color: var(--article-ink); background: var(--article-soft); 
 body.article-page {
   --article-ink: #101114;
   --article-muted: #62666d;
-  --article-soft: #f5f5f2;
+  --article-soft: #ffffff;
   --article-accent: #105fc0;
   --article-accent-2: #eaf3fd;
   --article-line: #d9dde3;
@@ -756,8 +756,7 @@ body.article-page .article-body strong {
   color: var(--article-ink);
 }
 
-body.article-page .article-body a,
-body.article-page .article-meta,
+body.article-page .article-body a:not(.button),
 body.article-page .article-hero .eyebrow,
 body.article-page .article-body .visual-note strong {
   color: var(--article-accent);
@@ -793,7 +792,15 @@ body.article-page .inline-cta {
 
 body.article-page .button.primary {
   border-radius: 999px;
-  background: var(--article-accent);
+  background: var(--article-ink);
+}
+
+body.article-page .button.primary:hover {
+  background: var(--editorial-blue);
+}
+
+body.article-page .button.primary::after {
+  color: #fff;
 }
 
 body.article-page .ai-panel,

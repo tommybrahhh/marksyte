@@ -312,7 +312,7 @@ Marksyte helps Travel Retail commercial teams prioritise accounts, define the ri
 
 Bring one live distribution question—a new market, a retailer opportunity, an underperforming range or an upcoming negotiation—and we will use the first conversation to define the decision, available evidence and practical next step.
 
-**[Book a 30-minute discussion](https://calendly.com/roman-marksyte/30min)**  
+**[Book a 30-minute discussion](mailto:contact@marksyte.com)**  
 **[Email Marksyte](mailto:contact@marksyte.com)**
 
 ---
