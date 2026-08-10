@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>Why retailer sales data does not match your ERP | Marksyte</title>
+  <meta name="description" content="Diagnose the product, timing, location, returns and data-quality issues behind retailer-to-ERP discrepancies." />
+  <meta name="keywords" content="retailer data discrepancies, retailer sales vs ERP, POS data mismatch, FMCG data reconciliation, commercial data reconciliation" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/why-retailer-sales-data-does-not-match-erp/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/why-retailer-sales-data-does-not-match-erp/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/por-que-los-datos-de-ventas-del-retailer-no-coinciden-con-el-erp/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/why-retailer-sales-data-does-not-match-erp/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="Why retailer sales data does not match your ERP" />
+  <meta property="og:description" content="A structured cause tree for product, timing, location, returns and data-quality differences between retailer sales and internal ERP data." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/why-retailer-sales-data-does-not-match-erp/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Why retailer sales data does not match your ERP" />
+  <meta name="twitter:description" content="A structured cause tree for product, timing, location, returns and data-quality differences between retailer sales and internal ERP data." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Why retailer sales data does not match your ERP","description":"Diagnose the product, timing, location, returns and data-quality issues behind retailer-to-ERP discrepancies.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/why-retailer-sales-data-does-not-match-erp/"},"articleSection":["FMCG data reconciliation","Retailer sell-out data","ERP reconciliation","Retail POS data","Commercial data"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does retailer sales data not match ERP data?","acceptedAnswer":{"@type":"Answer","text":"The sources usually describe different events: retailer data records consumer purchases, while the ERP holds orders, shipments, invoices and returns. Product identifiers, locations, calendars, pack sizes and data-quality issues add further differences."}},{"@type":"Question","name":"What are the most common causes of retailer-to-ERP discrepancies?","acceptedAnswer":{"@type":"Answer","text":"The most common causes are different business events, missing or outdated product mappings, mismatched location grains, reporting cutoffs, returns in different periods, pack and unit differences, duplicate or corrected files, missing store data and filtered system exports."}},{"@type":"Question","name":"Should I adjust retailer sales data to match the ERP?","acceptedAnswer":{"@type":"Answer","text":"No. Adjust a number only after the cause is isolated and documented. Adjusting without evidence hides the issue, breaks the audit trail and tends to repeat every cycle."}},{"@type":"Question","name":"How do I isolate the cause of a retailer-to-ERP variance?","acceptedAnswer":{"@type":"Answer","text":"Confirm the business event, map product and location identifiers, build a calendar bridge, separate returns and credits, apply unit conversions, check for duplicates and coverage, and compare value rules before changing anything."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/por-que-los-datos-de-ventas-del-retailer-no-coinciden-con-el-erp/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">FMCG data reconciliation &middot; Retailer sell-out &middot; ERP</p><h1>Why retailer sales data does not match your ERP</h1><p class="article-dek">A structured way to find the real cause of retailer-to-ERP variances before anyone changes a number.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">Retailer sales data does not match the ERP, but nobody can say exactly why. The gap is quoted in meetings as a number, adjusted in a workbook and never resolved. Before anyone changes the number, the difference needs a cause tree: a controlled set of possible explanations and a method for testing each one.</p>
+        <p>A retailer-to-ERP discrepancy is not an error until the cause is known. It can come from the business event being recorded, the product or location identifier, the reporting period, returns and credits, pack sizes, corrected files or system exports. This guide turns those possibilities into a diagnosis you can run before adjusting anything.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> A discrepancy is not yet an error. Diagnose product, timing, location, returns and data-quality causes with evidence before changing any number.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#compared">Define the comparison</a></li><li><a href="#causes">Ten causes</a></li><li><a href="#isolate">How to isolate each cause</a></li><li><a href="#diagnostic">Diagnostic table</a></li><li><a href="#dont-adjust">What not to adjust</a></li><li><a href="#escalation">Escalation path</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="compared">Define the comparison before listing causes</h2>
+        <p>The first step is to state precisely what each number records. Retailer sales data usually means POS or sell-out data: units or value sold to consumers, reported by store and retail period. The ERP typically records commercial documents: orders, shipments, invoices, credit notes and returns, dated by document or posting date. The same word, such as <em>sales</em>, can refer to different events in the two systems.</p>
+        <p>Write down four things for each source before investigating the gap: the business event, the product identifier and its mapping path, the location grain, and the reporting period or cutoff. If the sources cannot be compared at the same grain and period, the first difference is structural rather than a data error.</p>
+        <p>Also decide whether you are comparing units, value or both. A gap in units and a gap in value can have different causes, so separate the two comparisons instead of mixing them into one variance.</p>
+
+        <h2 id="causes">Ten causes of retailer-to-ERP discrepancies</h2>
+        <h3>1. The sources record different business events</h3>
+        <p>Retailer sell-out records consumer demand. An ERP shipment records product leaving your control; an invoice records the commercial obligation. If the comparison mixes sell-out with shipments, inventory still in the retailer network and stock in transit appear as a difference. Confirm that both files describe the same event or accept the event difference as a known bridge.</p>
+        <h3>2. Product identifiers are not mapped</h3>
+        <p>The retailer may report an EAN or its own product code, while the ERP stores an internal SKU. A missing, retired or duplicated mapping leaves valid sales unmatched. Count the unmatched rows and inspect them by product: a handful of unmapped codes can concentrate the entire gap.</p>
+        <h3>3. The location grain does not match</h3>
+        <p>ERP documents may go to a customer account or distribution centre, while sell-out is reported by individual store. A customer can map to many stores. Comparing at the wrong grain turns a legitimate one-to-many relationship into a false discrepancy.</p>
+        <h3>4. Reporting periods and cutoffs differ</h3>
+        <p>A retail week can run Monday to Sunday, while the ERP month closes on the last calendar day and invoices post days after delivery. A transaction near the boundary can appear in a different period in each system without either system being wrong. These differences should clear in a later period when the calendar is bridged correctly.</p>
+        <h3>5. Returns and credits move between periods</h3>
+        <p>Retailer data may be net of consumer returns. The ERP may issue a credit note only when stock is physically returned, sometimes weeks later. Some partners restate earlier sell-out periods; others include adjustments in the current file. Treating every negative quantity as a return can move the discrepancy instead of resolving it.</p>
+        <h3>6. Pack sizes and units of measure differ</h3>
+        <p>One source may report six-packs, another individual units, and a third cases. A case of four six-packs can appear as 4, 24 or 1 depending on the source. Conversion rules must be effective-dated because pack configurations change over time.</p>
+        <h3>7. Corrected files create duplicates or omissions</h3>
+        <p>A retailer that resends a corrected file without versioning can duplicate rows or leave old versions active. An ERP extract that includes cancelled or reversed documents can add phantom quantities. Key uniqueness checks and file versioning catch these before the comparison.</p>
+        <h3>8. Stores or periods are missing or late</h3>
+        <p>A store that has not reported, a period that has not closed or a file received after the comparison cutoff reduces one side of the equation. The gap then looks like a variance when it is actually a coverage problem. Measure coverage by store, product and period before trusting any total.</p>
+        <h3>9. Value, price and currency rules differ</h3>
+        <p>If you compare value, the price basis may differ: retail price, net price, cost, VAT included or excluded. Currency, exchange dates and rounding rules can also diverge. State the value definition for each source and convert both to the same basis before comparing.</p>
+        <h3>10. System exports filter or omit records</h3>
+        <p>An ERP report may exclude certain document statuses, cancelled orders or intercompany movements. A retailer file may exclude self-scan categories or specific banners. Document the filter of every export so the comparison covers the same population.</p>
+
+        <h2 id="isolate">How to isolate each cause</h2>
+        <p>Run the diagnostic steps in order. Each step removes one family of causes or gives evidence to test it. Stop at the first step that explains the gap, then confirm with the next cycle.</p>
+        <ol class="action-list">
+          <li><strong>Confirm the event.</strong> Check the file header and definitions. If sell-out is being compared with shipments, build the stock bridge instead of expecting a direct match.</li>
+          <li><strong>Map product identifiers.</strong> Join both files to the product mapping and count unmatched retailer codes and EANs. Review unmatched values for new listings, retired codes and mapping errors.</li>
+          <li><strong>Align the location grain.</strong> Aggregate to the level both sources support, such as store, banner or customer. Document any one-to-many location logic.</li>
+          <li><strong>Build a calendar bridge.</strong> Map retailer weeks to financial periods and list documents near the cutoff. Timing differences should carry forward and clear.</li>
+          <li><strong>Separate returns and credits.</strong> List negative quantities and credit notes by type and period. Apply the agreed returns rule instead of treating all negatives alike.</li>
+          <li><strong>Apply unit conversions.</strong> Convert both sources to one unit of measure with effective-dated pack rules, and recompute the comparison.</li>
+          <li><strong>Check for duplicates.</strong> Test key uniqueness on the product-location-period grain in both files, and identify corrected resends.</li>
+          <li><strong>Measure coverage.</strong> Compare expected versus received stores, products and periods. Quantify missing and late data before interpreting the gap.</li>
+          <li><strong>Compare value rules.</strong> If the gap is in value, verify price basis, currency and rounding on both sides.</li>
+          <li><strong>Review export filters.</strong> Confirm that both extracts include the same document statuses, banners and channels.</li>
+        </ol>
+
+        <h2 id="diagnostic">Diagnostic table</h2>
+        <div class="table-scroll" role="region" aria-label="Retailer-to-ERP diagnostic table" tabindex="0"><table class="article-data-table"><thead><tr><th>Symptom</th><th>Likely causes</th><th>Quick test</th><th>Where it usually leads</th></tr></thead><tbody><tr><td>Gap spreads across many products</td><td>Timing, units, late data</td><td>Re-run at one grain; check the cutoff bridge</td><td>Calendar rule or intake control</td></tr><tr><td>Gap concentrated in a few products</td><td>Product mapping, pack size</td><td>Join to mapping; count unmatched rows</td><td>SKU/EAN mapping or unit conversion</td></tr><tr><td>Gap concentrated in a few stores</td><td>Location grain, missing store data</td><td>Coverage check by store</td><td>Store-to-customer mapping</td></tr><tr><td>Gap appears at month end, then clears</td><td>Reporting cutoff, invoice timing</td><td>List documents near the boundary</td><td>Cutoff and carry-forward rule</td></tr><tr><td>Negative quantities appear</td><td>Returns, credits, restatements</td><td>Separate negative rows by type</td><td>Returns and adjustments policy</td></tr><tr><td>Whole period shifts by a similar amount</td><td>Late or corrected files</td><td>Compare received dates and versions</td><td>Intake controls and versioning</td></tr></tbody></table></div>
+
+        <h2 id="dont-adjust">What not to adjust</h2>
+        <ul class="risk-list"><li><strong>Changing the retailer's number to make it match the ERP without evidence.</strong> This hides the cause and makes the next cycle harder to explain.</li><li><strong>Silently dropping unmapped rows.</strong> The matched dataset looks accurate while the hardest records disappear.</li><li><strong>Posting manual adjustments for timing differences that should clear.</strong> If the quantity is correct on both sides, a manual entry creates a double count.</li><li><strong>Overriding a mapping to fix one line.</strong> A mapping change affects the entire history for that product.</li><li><strong>Closing an exception as &ldquo;adjusted manually&rdquo;.</strong> That describes the action, not the cause, and the variance will return.</li><li><strong>Trusting a clean total without checking coverage.</strong> Missing stores and offsetting products can hide behind a tidy headline.</li></ul>
+
+        <h2 id="escalation">Escalation path</h2>
+        <p>When the diagnostic steps do not isolate the cause, escalate with evidence rather than with a number. Start with the data team, which owns mappings, source quality, duplicates and coverage. Then involve finance or the control owner for returns, credit notes, cutoffs and materiality. If the evidence points at the source, take the findings to the retailer or distributor relationship owner with a specific request for a corrected file or clarification.</p>
+        <div class="visual-note"><strong>Escalate when</strong><ul><li>The same gap repeats for three cycles without clearing evidence.</li><li>A mapping or rule change would affect historical reporting.</li><li>The variance exceeds the agreed materiality threshold.</li><li>The partner file contradicts the contract, the agreed calendar or the file template.</li><li>A proposed manual adjustment would change a reported or audited figure.</li></ul></div>
+        <p>Document every decision, including the evidence, the owner, the status and the follow-up cycle. If the cause is confirmed and cleared, keep the record so the team does not investigate the same issue again.</p>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>To diagnose why retailer sales data does not match the ERP, start by defining the event, grain, period and value rule for each source. Then work through the ten causes in order, isolating each family with the evidence it needs. Do not adjust a number until the cause is confirmed and documented. Escalate with evidence, and carry unresolved items into the next cycle with an owner and a status.</p>
+        <p>If your team explains the same retailer-to-ERP differences differently every month, Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can review the comparison, the causes and the evidence trail. Related work may include <a href="../../services/data-mapping-integration/">mapping product, customer and store identifiers</a> or <a href="../../services/data-standardization/">standardizing partner files and data-quality rules</a>.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../sku-ean-gtin-mapping-fmcg/">SKU-to-EAN and GTIN mapping for FMCG teams</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>Why does retailer sales data not match ERP data?</summary><p>The sources usually describe different events. Retailer data records consumer purchases, while the ERP holds orders, shipments, invoices and returns. Product identifiers, locations, calendars, pack sizes and data-quality issues add further differences.</p></details><details><summary>What are the most common causes of retailer-to-ERP discrepancies?</summary><p>The most common causes are different business events, missing or outdated product mappings, mismatched location grains, reporting cutoffs, returns in different periods, pack and unit differences, duplicate or corrected files, missing store data and filtered system exports.</p></details><details><summary>Should I adjust retailer sales data to match the ERP?</summary><p>No. Adjust a number only after the cause is isolated and documented. Adjusting without evidence hides the issue, breaks the audit trail and tends to repeat every cycle.</p></details><details><summary>How do I isolate the cause of a retailer-to-ERP variance?</summary><p>Confirm the business event, map product and location identifiers, build a calendar bridge, separate returns and credits, apply unit conversions, check for duplicates and coverage, and compare value rules before changing anything.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Diagnose before you adjust</p><h2 id="article-cta-title">Find the real cause of the retailer-to-ERP gap</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your variances</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

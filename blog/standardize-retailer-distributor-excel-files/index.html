@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>How to standardize retailer and distributor Excel files | Marksyte</title>
+  <meta name="description" content="Build a canonical input structure for partner files without losing source lineage, corrections or local detail." />
+  <meta name="keywords" content="standardize retailer Excel files, distributor templates, data harmonization, canonical schema, partner file standardization" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/standardize-retailer-distributor-excel-files/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/standardize-retailer-distributor-excel-files/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/estandarizar-archivos-excel-retailers-distribuidores/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/standardize-retailer-distributor-excel-files/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="How to standardize retailer and distributor Excel files" />
+  <meta property="og:description" content="A canonical input structure for partner files that keeps source lineage, corrections and local detail." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/standardize-retailer-distributor-excel-files/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="How to standardize retailer and distributor Excel files" />
+  <meta name="twitter:description" content="Partner files arrive in different templates, codes, units and calendars. Standardize them at intake so comparisons stay comparable and every number keeps its source." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to standardize retailer and distributor Excel files","description":"Build a canonical input structure for partner files without losing source lineage, corrections or local detail.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/standardize-retailer-distributor-excel-files/"},"articleSection":["Data standardization","Retailer and distributor files","Canonical schema","Partner file harmonization","Commercial data"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you standardize retailer and distributor Excel files?","acceptedAnswer":{"@type":"Answer","text":"Inventory the sources, define one canonical schema, map each field and unit with source lineage, validate at intake, and treat template changes as versioned events instead of one-off fixes."}},{"@type":"Question","name":"What is a canonical schema for partner files?","acceptedAnswer":{"@type":"Answer","text":"A single structure every partner file is converted into, with fixed field names, data types, units and grain, while the original file is retained for lineage."}},{"@type":"Question","name":"Can you preserve the source file when standardizing?","acceptedAnswer":{"@type":"Answer","text":"Yes. Keep the raw file, the mapping version and the transformation log; standardization should never destroy the evidence behind a number."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/estandarizar-archivos-excel-retailers-distribuidores/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Retailer and distributor data &middot; File standardization &middot; Canonical schema</p><h1>How to standardize retailer and distributor Excel files</h1><p class="article-dek">Partner files arrive in different templates, codes, units and calendars. Standardize them at intake so comparisons stay comparable and every number keeps its source.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">An analyst spends two days every month renaming columns, fixing dates and copying tabs from five retailer and distributor files. The numbers land in the same workbook, but nobody can explain how one cell travelled there. Standardization is the difference between that and a single canonical structure every partner file is converted into at intake, with the original kept for lineage.</p>
+        <p>This guide shows how to build that structure: profile the files, define one canonical schema, map every field and unit with an explicit rule, validate before data lands, and keep the raw files so any number can be traced back to its source.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> Standardization is not renaming columns. It is one canonical schema, explicit field and unit mappings, intake validation and a raw-file lineage trail for every load.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#profile">Profile the files</a></li><li><a href="#schema">Canonical schema</a></li><li><a href="#mapping">Field mapping</a></li><li><a href="#types">Data types and units</a></li><li><a href="#validation">Validation</a></li><li><a href="#lineage">Source lineage</a></li><li><a href="#changes">Template changes</a></li><li><a href="#example">Worked example</a></li></ol></nav>
+
+        <h2 id="profile">Profile the files before designing anything</h2>
+        <p>Start with the files you actually receive, not the ones you wish you received. For each partner file record the template, the column names and their meaning, the product and location identifiers, the units, the calendar and the volume of rows. Do this across several periods because templates change: a column that appears in March and disappears in May is a design constraint, not an anomaly.</p>
+        <p>Keep the profile as a written inventory, one row per source file per period. It becomes the input to the schema design and the checklist for intake later. A source that cannot be described on a single line is not ready to be standardized.</p>
+
+        <h2 id="schema">Define one canonical schema</h2>
+        <p>The canonical schema is the single structure every partner file is converted into. It fixes the field names, the data types, the grain and the units so downstream joins and reports never have to interpret a column again. A practical sell-out schema holds the partner or banner, store, product identifier, period, units and value, plus the source file and row reference for lineage.</p>
+        <p>Decide the grain explicitly: one row per product, store and period. If a retailer sends subtotals, decide whether they map to the grain or stay in an exceptions view. The schema should be stable and versioned; changing it is a deliberate act with a migration, not a habit.</p>
+
+        <h2 id="mapping">Map every field from source to canonical</h2>
+        <p>For each source column, write the mapping to the canonical field: the source name, the target field, the transformation and the confidence. Store the mapping as a table, not in analyst memory, because it is what makes the process repeatable by anyone. Distinguish fields that map directly, fields that need a lookup or conversion, and fields that are informational and carried along without a target.</p>
+        <p>Product and location identifiers deserve their own mapping path. A retailer product code, an EAN and an internal SKU usually need a master-data lookup, as covered in <a href="../sku-ean-gtin-mapping-fmcg/">SKU-to-EAN and GTIN mapping for FMCG teams</a>. The mapping layer keeps those references versioned so a changed code does not silently rejoin differently.</p>
+
+        <h2 id="types">Fix data types and units before they become your problem</h2>
+        <p>Dates are the most common source of silent variance. One partner writes <code>DD/MM/YYYY</code>, another <code>MM/DD/YYYY</code>, a third sends month-end serial numbers, and the ERP exports ISO dates. The canonical schema states one date format and an explicit calendar, and the intake converts everything to it. The same applies to numbers: thousands and decimal separators, currency and whether value includes tax.</p>
+        <p>Units need the same discipline. A file in cases, another in eaches and a third in packs means the comparison is wrong before any join. Record the conversion factor and its effective date in the mapping, because pack sizes change. Convert at the edge, once, rather than carrying raw units into every report.</p>
+
+        <h2 id="validation">Validate at intake, not after the joins</h2>
+        <p>Validation is part of standardization. Check required fields, unique keys, reference validity against masters, dates in range, units present and totals that reconcile to the file's own subtotals. A file that fails structural checks should be rejected with a clear reason, not partially loaded and fixed later. Quarantine it and notify the partner so the same defect does not recur.</p>
+        <p>Intake validation turns the process from "we discovered it in the report" to "we prevented it at the door". The checks are cheap compared with a wrong market total that reaches management.</p>
+
+        <h2 id="lineage">Keep source lineage and corrections</h2>
+        <p>Every converted row should be able to answer the question: which source file, which row, which mapping version, loaded when? Store the raw file, the load identifier and the mapping version alongside the canonical output. Standardization never means discarding the evidence; it means making the evidence structured.</p>
+        <p>Corrections need the same discipline. A retailer resends a corrected file. Decide whether it replaces the original, appends an adjustment or creates a new version, and record which one was used. Without lineage, a corrected file becomes an unexplained overwrite that later reconciliations cannot audit.</p>
+
+        <h2 id="changes">Treat template changes as events</h2>
+        <p>A partner changes a column name, adds a field or switches units. The instinct is to fix it in place; the standard approach is to treat it as a controlled event. Compare the new template against the profiled one, identify what changed, update the mapping with the new effective version, validate against the previous periods and record the change in the lineage.</p>
+        <p>This is what keeps standardization alive. Templates will keep changing; the mapping table and the version trail are what absorb those changes without breaking history or the next cycle.</p>
+
+        <h2 id="example">A worked standardization example</h2>
+        <p>Suppose a brand receives sell-out from one retailer and one distributor plus its own ERP extract. The three files describe the same product in different ways.</p>
+        <div class="table-scroll" role="region" aria-label="Standardization example across three source files" tabindex="0"><table class="article-data-table"><thead><tr><th>Source file</th><th>Product identifier</th><th>Period</th><th>Units</th><th>Canonical output</th></tr></thead><tbody><tr><td>Retailer sell-out W32</td><td>Retailer code <code>00076291</code></td><td>Retail week 32</td><td>Eaches</td><td>Store ES-042 &middot; Product P-1042 &middot; Week 2026-W32 &middot; 120 units</td></tr><tr><td>Distributor monthly file</td><td>EAN <code>8412345678901</code></td><td>July 2026</td><td>Cases</td><td>Store MX-113 &middot; Product P-1042 &middot; Month 2026-07 &middot; 4 cases &times; 24 = 96 units</td></tr><tr><td>ERP extract</td><td>Internal SKU <code>ES-4582</code></td><td>Invoice dates 1-31 Jul</td><td>Eaches</td><td>Store MX-113 &middot; Product P-1042 &middot; Month 2026-07 &middot; 96 units</td></tr></tbody></table></div>
+        <p>Each source reaches the same canonical row through a documented mapping: the retailer code joins through the product cross-reference, the case count converts with the pack factor, and the calendar maps retail weeks to the month. The analysis reads one structure, and each row carries the source file and row reference behind it.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../consolidate-sell-out-data-multiple-distributors/">How to consolidate sell-out data from multiple distributors</a></li><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../sku-ean-gtin-mapping-fmcg/">SKU-to-EAN and GTIN mapping for FMCG teams</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-standardization/">Explore data standardization support</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>How do you standardize retailer and distributor Excel files?</summary><p>Inventory the sources, define one canonical schema, map each field and unit with source lineage, validate at intake, and treat template changes as versioned events instead of one-off fixes.</p></details><details><summary>What is a canonical schema for partner files?</summary><p>A single structure every partner file is converted into, with fixed field names, data types, units and grain, while the original file is retained for lineage.</p></details><details><summary>Can you preserve the source file when standardizing?</summary><p>Yes. Keep the raw file, the mapping version and the transformation log; standardization should never destroy the evidence behind a number.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Stop renaming columns every month</p><h2 id="article-cta-title">Turn partner files into one canonical structure with lineage</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your standardization</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

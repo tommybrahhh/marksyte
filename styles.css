@@ -6499,3 +6499,21 @@ h1, h2, h3, h4 { font-family: var(--font-display); }
   :where(.owner-page, .blog-page, .article-page) .site-header { width: calc(100% - 36px); min-height: 62px; }
   .owner-page .owner-hero h1, .blog-page .blog-hero h1, .article-page .article-hero h1 { font-size: clamp(2.6rem, 10vw, 4rem); }
 }
+
+img.brand-mark.brand-logo,
+img.brand-dot.brand-logo {
+  width: auto !important;
+  height: 34px !important;
+  max-height: 34px;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+img.brand-logo {
+  display: inline-block !important;
+  width: auto !important;
+  height: 34px !important;
+  max-height: 34px;
+  border-radius: 0 !important;
+  background: transparent !important;
+  vertical-align: middle;
+}

@@ -405,3 +405,21 @@ h1, h2, h3, p { text-wrap: pretty; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .header-cta, .button { transition: none; }
 }
+
+img.brand-mark.brand-logo,
+img.brand-dot.brand-logo {
+  width: auto !important;
+  height: 34px !important;
+  max-height: 34px;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+img.brand-logo {
+  display: inline-block !important;
+  width: auto !important;
+  height: 34px !important;
+  max-height: 34px;
+  border-radius: 0 !important;
+  background: transparent !important;
+  vertical-align: middle;
+}

@@ -1103,3 +1103,21 @@ h1 {
     width: 100%;
   }
 }
+
+img.brand-mark.brand-logo,
+img.brand-dot.brand-logo {
+  width: auto !important;
+  height: 34px !important;
+  max-height: 34px;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+img.brand-logo {
+  display: inline-block !important;
+  width: auto !important;
+  height: 34px !important;
+  max-height: 34px;
+  border-radius: 0 !important;
+  background: transparent !important;
+  vertical-align: middle;
+}
