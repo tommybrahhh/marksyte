@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>How to design reusable data reconciliation rules | Marksyte</title>
+  <meta name="description" content="Turn one-off spreadsheet fixes into documented matching, tolerance, timing and exception rules that can be tested and rerun." />
+  <meta name="keywords" content="data reconciliation rules, matching logic, tolerance rules, rule versioning, reconciliation rule design" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/disenar-reglas-reutilizables-conciliacion-datos/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="How to design reusable data reconciliation rules" />
+  <meta property="og:description" content="A reconciliation rule is a documented decision with inputs, logic, output, effective dates and an owner. Written once and tested, it can be rerun every month instead of re-derived." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="How to design reusable data reconciliation rules" />
+  <meta name="twitter:description" content="A reconciliation rule is a documented decision with inputs, logic, output, effective dates and an owner. Written once and tested, it can be rerun every month instead of re-derived." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to design reusable data reconciliation rules","description":"Turn one-off spreadsheet fixes into documented matching, tolerance, timing and exception rules that can be tested and rerun.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/"},"articleSection":["Data reconciliation rules","Matching logic","Tolerance rules","Rule versioning","Reconciliation rule design"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a data reconciliation rule?","acceptedAnswer":{"@type":"Answer","text":"A documented decision that states its inputs, logic and output: how products or locations map, which calendar and tolerance apply, and what becomes an exception. It has an owner and an effective date and can be tested and rerun."}},{"@type":"Question","name":"How do you make reconciliation rules reusable?","acceptedAnswer":{"@type":"Answer","text":"Write each rule once with a stable name, explicit inputs and outputs, a clear order, an owner and effective dates, then version and test it. Reused rules replace formulas and analyst knowledge that are re-derived every month."}},{"@type":"Question","name":"What is the difference between a matching rule and a tolerance rule?","acceptedAnswer":{"@type":"Answer","text":"A matching rule decides how records are joined, such as by product code, store and period. A tolerance rule decides whether a matched difference passes or becomes an exception, for example within two per cent or five units."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/disenar-reglas-reutilizables-conciliacion-datos/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Rule design &middot; Matching logic &middot; Tolerance rules</p><h1>How to design reusable data reconciliation rules</h1><p class="article-dek">A reconciliation rule is a documented decision with inputs, logic, output, effective dates and an owner. Written once and tested, it can be rerun every month instead of re-derived.</p><div class="article-meta"><span>Marksyte</span><span>9 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">Most reconciliation logic is hidden in Excel formulas and the analyst's memory. The same mapping, the same cutoff and the same tolerance are recreated every month, and the process changes whenever the analyst changes. A reusable reconciliation rule documents one decision, names its inputs and output, and can be tested, versioned and rerun. This guide shows how to design those rules.</p>
+        <p>Work through the anatomy of a rule, then apply it to matching, tolerance, timing and exception decisions. The result is a small library of stable rules that make each month's run reproducible and each change deliberate.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> A reusable rule is a documented decision, not a formula. Named inputs, explicit logic, a stated output, an owner and effective dates make it testable and rerunnable.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#anatomy">Anatomy of a rule</a></li><li><a href="#io">Inputs and outputs</a></li><li><a href="#order">Rule order</a></li><li><a href="#tolerances">Tolerances</a></li><li><a href="#dates">Effective dates</a></li><li><a href="#tests">Tests</a></li><li><a href="#versioning">Versioning</a></li><li><a href="#exceptions">Exceptions the rules produce</a></li><li><a href="#documentation">Documentation</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="anatomy">Anatomy of a rule</h2>
+        <p>Every rule has the same parts. A name that is stable and unique, such as <code>R_01_Map_Product_Store_Period</code>. An owner who answers for its logic. A set of named inputs, such as the sell-out file, the product master and the store mapping. A body that states the decision in words and, where useful, in a formula. An output that names what the rule produces, such as a mapped dataset or a pass or exception verdict. And effective dates that say when the rule started and when it stops applying.</p>
+        <p>If a rule cannot be described in a sentence, split it. A rule that maps product codes, applies a tolerance and assigns an owner is three rules, not one.</p>
+
+        <h2 id="io">Inputs and outputs</h2>
+        <p>Write down the exact inputs a rule expects: file, column, key and reference table. A rule that depends on an unnamed file or an assumed column cannot be rerun reliably, because the next person cannot reconstruct what it consumed. Name the version of each reference table too, so a product master change does not silently change rule behaviour.</p>
+        <p>State the output at the same grain as the decision. A matching rule outputs a joined dataset; a tolerance rule outputs a pass or exception for each matched row; a timing rule outputs a period label. When the output is clear, the next rule can use it as an input.</p>
+
+        <h2 id="order">Rule order matters</h2>
+        <p>Rules run in a defined sequence, and later rules rely on the outputs of earlier ones. Standardize before you map, map before you compare, compare before you apply tolerance, and apply tolerance before you classify exceptions. If the order changes, the same rules can produce different results, so document the sequence alongside the rules.</p>
+        <p>Record the order explicitly. When a new rule is added, place it in the sequence and state which existing rules consume its output and which it consumes.</p>
+
+        <h2 id="tolerances">Tolerances are decisions, not defaults</h2>
+        <p>A tolerance states how large a matched difference must be before it becomes an exception. It can be absolute, such as five units, relative, such as two per cent of the higher total, or a combination. Name the reference the tolerance applies to, or the rule will be ambiguous when the two sides differ.</p>
+        <p>Set tolerances from evidence, not habit. A tolerance that is too loose hides real problems; one that is too tight floods the exception queue with noise. Document why the level was chosen and review it when recurring exceptions show it is either too wide or too narrow.</p>
+
+        <h2 id="dates">Effective dates make changes deliberate</h2>
+        <p>Every rule carries an effective-from date and an optional effective-to date. When a retailer changes its product code or a market changes its calendar, the rule changes at a defined date rather than in an edited formula with no record. Rules with effective dates also explain historical runs: the version that applied in January may differ from the one that applies now.</p>
+        <p>Treat an edited formula as a new version with a new effective date. The old version stays available so past results remain reproducible and future changes remain traceable.</p>
+
+        <h2 id="tests">Test each rule before it runs</h2>
+        <p>Give each rule a small set of fixed test cases that cover normal and edge behaviour. For a matching rule, test a matched row, an unmapped product and a duplicate key. For a tolerance rule, test a pass, a marginal difference and a clear exception. For a timing rule, test a date on the boundary of the period and a date outside it.</p>
+        <p>Run the tests whenever the rule changes and before each cycle if the inputs changed. A rule that passes its tests is repeatable by design, not by memory.</p>
+
+        <h2 id="versioning">Versioning keeps the trail</h2>
+        <p>Store each rule version with its name, version number, change date, author and the reason for the change. Keep every version instead of overwriting it. The version history answers two questions that recur in every reconciliation: which logic produced last month's numbers, and what changed since then.</p>
+        <p>Keep the version history in the same place as the rule itself, so the documentation and the executable logic cannot drift apart.</p>
+
+        <h2 id="exceptions">Exceptions the rules produce</h2>
+        <p>Rules should produce a predictable exception queue. A well-designed rule set separates three types of output: records that pass, records that become exceptions, and records that need a human decision because the rule cannot classify them. Design each rule to say which type it produces and why.</p>
+        <ol class="action-list">
+          <li><strong>Pass</strong> within tolerance. The rule states the tolerance and the reference used.</li>
+          <li><strong>Exception</strong> with a cause-based category, such as timing, mapping, movement or source quality.</li>
+          <li><strong>Refer</strong> when the rule lacks the evidence to decide, such as an unmapped identifier awaiting the master-data queue.</li>
+        </ol>
+        <p>Do not let a rule silently drop a row that it cannot classify. A refer output keeps the decision visible and the queue complete.</p>
+
+        <h2 id="documentation">Documentation that travels with the rule</h2>
+        <p>Document each rule in plain language next to its logic: what it does, why it exists, what it depends on and who owns it. The documentation should let someone who has never seen the process apply the rule correctly and explain it in a review. Write it for the next person, because that person is likely to be the reason the rule needs to be explained.</p>
+        <p>A library of documented rules is the natural precursor to automation. When the rules are stable and tested, automating them is a mechanical step; when they are not, automation only makes the hidden logic faster.</p>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Design reconciliation rules as documented, named decisions with explicit inputs, outputs, order, tolerances, effective dates, tests and an owner. Keep every version and write the documentation for the next person. A small library of reusable rules makes each month's run reproducible, each change deliberate and the step toward automation straightforward.</p>
+        <p>Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can design the rule library, and its <a href="../../services/data-mapping-integration/">data mapping and integration service</a> can implement it across source systems.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../fmcg-data-reconciliation-operating-model/">FMCG data reconciliation: a practical operating model</a></li><li><a href="../manage-monthly-reconciliation-exceptions/">How to manage reconciliation exceptions month after month</a></li><li><a href="../when-to-automate-retailer-data-reconciliation/">When to automate retailer data reconciliation</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li><li><a href="../../services/data-mapping-integration/">Explore data mapping and integration</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>What is a data reconciliation rule?</summary><p>A documented decision that states its inputs, logic and output: how products or locations map, which calendar and tolerance apply, and what becomes an exception. It has an owner and an effective date and can be tested and rerun.</p></details><details><summary>How do you make reconciliation rules reusable?</summary><p>Write each rule once with a stable name, explicit inputs and outputs, a clear order, an owner and effective dates, then version and test it. Reused rules replace formulas and analyst knowledge that are re-derived every month.</p></details><details><summary>What is the difference between a matching rule and a tolerance rule?</summary><p>A matching rule decides how records are joined, such as by product code, store and period. A tolerance rule decides whether a matched difference passes or becomes an exception, for example within two per cent or five units.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">From formulas to rules</p><h2 id="article-cta-title">Build a rule library your team can test and rerun</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Design your reconciliation rules</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

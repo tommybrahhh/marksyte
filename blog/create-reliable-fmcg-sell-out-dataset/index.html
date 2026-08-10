@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>How to create a reliable FMCG sell-out dataset | Marksyte</title>
+  <meta name="description" content="Design a traceable sell-out dataset across retailers, distributors, markets, products, calendars and corrected submissions." />
+  <meta name="keywords" content="reliable FMCG sell-out dataset, commercial data harmonization, CPG reporting data, sell-out data quality, sell-out dataset design" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/crear-conjunto-datos-sell-out-fmcg-fiable/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="How to create a reliable FMCG sell-out dataset" />
+  <meta property="og:description" content="One sell-out dataset that hides nothing: a source contract, a canonical model, mappings, calendars, quality flags, versioning and an exception queue at every output layer." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="How to create a reliable FMCG sell-out dataset" />
+  <meta name="twitter:description" content="One sell-out dataset that hides nothing: a source contract, a canonical model, mappings, calendars, quality flags, versioning and an exception queue at every output layer." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to create a reliable FMCG sell-out dataset","description":"Design a traceable sell-out dataset across retailers, distributors, markets, products, calendars and corrected submissions.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/"},"articleSection":["Reliable FMCG sell-out dataset","Commercial data harmonization","CPG reporting data","Sell-out data quality","Sell-out dataset design"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What makes a FMCG sell-out dataset reliable?","acceptedAnswer":{"@type":"Answer","text":"It has one canonical model, a documented source contract, explicit mappings, calendar and measure rules, quality flags, versioning for corrected files and an exception queue. It preserves source differences instead of hiding them."}},{"@type":"Question","name":"How do you combine sell-out data from retailers and distributors?","acceptedAnswer":{"@type":"Answer","text":"Standardize every source into one canonical schema at intake, map products, stores and periods to shared references, apply calendar and measure rules, then keep source lineage and quality flags on every row."}},{"@type":"Question","name":"How do you handle corrected sell-out files?","acceptedAnswer":{"@type":"Answer","text":"Version each submission, keep the earlier versions, rerun only the affected periods and flag which version produced each output. The dataset keeps a full audit trail instead of silently overwriting history."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/crear-conjunto-datos-sell-out-fmcg-fiable/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Sell-out dataset design &middot; Commercial data harmonization &middot; Data quality</p><h1>How to create a reliable FMCG sell-out dataset</h1><p class="article-dek">A reliable sell-out dataset is not the cleanest possible table. It is one traceable version that preserves source differences, corrections and coverage instead of hiding them.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">Every market, retailer and distributor submits sell-out differently: different files, product codes, calendars, units and levels of detail. Combining them into one spreadsheet produces totals that look clean but cannot be explained. A reliable dataset is the opposite: every row traces to a source, every correction keeps its history, and every gap is visible as a flag or an exception rather than a silently blank cell.</p>
+        <p>This guide defines the eight layers of that dataset: the source contract, the canonical model, mappings, calendars and measures, quality flags, versioning, exceptions and output layers.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> Reliability means traceability. One canonical model, explicit mappings, quality flags, versioned corrections and a visible exception queue let every total be explained back to a source.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#contract">The source contract</a></li><li><a href="#model">The canonical model</a></li><li><a href="#mappings">Mappings</a></li><li><a href="#calendars">Calendars and measures</a></li><li><a href="#quality">Quality flags</a></li><li><a href="#versioning">Versioning</a></li><li><a href="#exceptions">Exceptions</a></li><li><a href="#outputs">Output layers</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="contract">The source contract</h2>
+        <p>Start with a written contract for each source: which file or feed arrives, how often, in what format, at what level of detail, with which columns and units, and who owns it. The contract states the expected coverage, such as the stores or channels the file claims to represent. A source that delivers outside its contract is a data-quality event, not an unexpected surprise.</p>
+        <p>The contract makes the dataset possible to audit. When a total changes between cycles, the source contract identifies whether the change is a real movement, a new file version or a coverage shift.</p>
+
+        <h2 id="model">The canonical model</h2>
+        <p>Define one canonical structure that every source converts into at intake. A sell-out record should carry the source, the retailer or distributor, the product identifier, the location, the period, the units and value, and the metadata that makes it traceable. Every source lands in the same shape, so comparisons and aggregation run on one consistent model instead of reworked copies.</p>
+        <p>The canonical model is the contract between the sources and every report. When a new partner joins, the model does not change; the partner's file is mapped into it.</p>
+
+        <h2 id="mappings">Mappings</h2>
+        <p>Map every source identifier to the shared references: product code to SKU and EAN or GTIN, store or outlet to a location master, and market to a geography. Keep the mappings as versioned tables with effective dates and owners, and make every unmapped record visible instead of dropping it. An unmapped product is not an absence of sales; it is an exception waiting for a decision.</p>
+        <p>The same discipline applies to store and market mapping. If two sources call the same store different things, the mapping table is the single place where that relationship is recorded.</p>
+
+        <h2 id="calendars">Calendars and measures</h2>
+        <p>State the reporting calendar and the measure definitions before aggregation. A retailer may report by retail week while a distributor reports by calendar month; the dataset needs a calendar bridge that assigns every source period to the shared reporting period without double counting. State the units each source reports in and convert them explicitly, including pack, case and each conversions.</p>
+        <p>Document which measure each column represents, such as sell-out units, sell-out value net of returns, or gross. Two sources calling a column value may mean different things; the measure rule decides the shared meaning and the conversion.</p>
+
+        <h2 id="quality">Quality flags</h2>
+        <p>Carry a quality assessment on every record or block of records instead of only keeping rows that look correct. Flag coverage, such as which stores or channels a file represents; completeness, such as missing products or periods; and validity, such as implausible prices or duplicate keys. The flags travel with the data so a report can show totals and the caveats that qualify them.</p>
+        <p>A total without its flags is misleading. Reports can then choose to show the full total, the fully verified total, or both, and say which one they are using.</p>
+
+        <h2 id="versioning">Versioning</h2>
+        <p>Version every submission and keep every version. When a corrected file arrives, record the new version, what changed and why, and rerun only the affected periods. The dataset keeps the audit trail of what the source originally reported and what it was corrected to. Reports state which version produced their numbers.</p>
+        <p>Do not overwrite history. The difference between the original and the corrected version is often the most useful diagnostic the dataset can provide.</p>
+
+        <h2 id="exceptions">Exceptions</h2>
+        <p>Send anything the dataset cannot classify into a visible exception queue: unmapped products, missing periods, implausible records, late files and coverage gaps. Each exception carries a category, an owner, a status and an aging rule. The queue makes the dataset honest, because every known gap is named and owned instead of absorbed into a blank cell.</p>
+        <p>Recurring exceptions become improvement work: a new mapping, a corrected source, a contract change or a new validation rule.</p>
+
+        <h2 id="outputs">Output layers</h2>
+        <p>Separate the dataset into layers so each consumer reads the right one. The raw layer keeps source files as received. The standard layer holds the canonical model with quality flags and mappings applied. The reconciled layer contains the version that has passed checks and cleared its exceptions. And the reporting layer presents the totals with their flags. Consumers who need audited figures use the reconciled layer; analysts who need to see raw detail use the standard layer.</p>
+        <p>Keeping the layers separate prevents reports from silently mixing sources, versions and levels of quality.</p>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Build the sell-out dataset around traceability, not cleanliness. Enforce a source contract, land every source in one canonical model, map identifiers with versioned tables, define calendars and measures explicitly, carry quality flags, version corrections, run a visible exception queue and separate output layers. The dataset then gives your team one version of sell-out that can be defended, audited and improved.</p>
+        <p>Marksyte's <a href="../../services/managed-data-analysis/">managed data operations</a> can build and run this dataset across retailers and distributors, and its <a href="../../services/data-standardization/">data standardization service</a> can design the intake and validation layer.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../consolidate-sell-out-data-multiple-distributors/">How to consolidate sell-out data from multiple distributors</a></li><li><a href="../fmcg-data-reconciliation-operating-model/">FMCG data reconciliation: a practical operating model</a></li><li><a href="../manage-monthly-reconciliation-exceptions/">How to manage reconciliation exceptions month after month</a></li><li><a href="../standardize-retailer-distributor-excel-files/">How to standardize retailer and distributor Excel files</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/managed-data-analysis/">Explore managed data operations and analysis</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>What makes a FMCG sell-out dataset reliable?</summary><p>It has one canonical model, a documented source contract, explicit mappings, calendar and measure rules, quality flags, versioning for corrected files and an exception queue. It preserves source differences instead of hiding them.</p></details><details><summary>How do you combine sell-out data from retailers and distributors?</summary><p>Standardize every source into one canonical schema at intake, map products, stores and periods to shared references, apply calendar and measure rules, then keep source lineage and quality flags on every row.</p></details><details><summary>How do you handle corrected sell-out files?</summary><p>Version each submission, keep the earlier versions, rerun only the affected periods and flag which version produced each output. The dataset keeps a full audit trail instead of silently overwriting history.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">One version, fully explained</p><h2 id="article-cta-title">Build a sell-out dataset your team can defend and audit</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your sell-out dataset</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

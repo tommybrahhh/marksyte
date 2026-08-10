@@ -880,4 +880,46 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/why-retailer-sales-data-does-not-match-erp/" />
     <lastmod>2026-08-10</lastmod>
   </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/modelo-operativo-conciliacion-datos-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/modelo-operativo-conciliacion-datos-fmcg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/modelo-operativo-conciliacion-datos-fmcg/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/disenar-reglas-reutilizables-conciliacion-datos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/disenar-reglas-reutilizables-conciliacion-datos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/disenar-reglas-reutilizables-conciliacion-datos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/design-reusable-data-reconciliation-rules/" />
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/crear-conjunto-datos-sell-out-fmcg-fiable/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/crear-conjunto-datos-sell-out-fmcg-fiable/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/crear-conjunto-datos-sell-out-fmcg-fiable/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/create-reliable-fmcg-sell-out-dataset/" />
+    <lastmod>2026-08-10</lastmod>
+  </url>
 </urlset>

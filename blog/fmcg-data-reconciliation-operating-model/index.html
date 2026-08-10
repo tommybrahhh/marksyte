@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>FMCG data reconciliation: a practical operating model | Marksyte</title>
+  <meta name="description" content="Design roles, rules, controls, exception queues and audit trails for repeatable retailer and distributor reconciliation." />
+  <meta name="keywords" content="FMCG data reconciliation, CPG reconciliation process, commercial data controls, reconciliation operating model, exception queue" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/modelo-operativo-conciliacion-datos-fmcg/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="FMCG data reconciliation: a practical operating model" />
+  <meta property="og:description" content="A monthly reconciliation run is not a single comparison. It is a repeatable process with scope, roles, intake, rules, control stages, an exception lifecycle and sign-off." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="FMCG data reconciliation: a practical operating model" />
+  <meta name="twitter:description" content="A monthly reconciliation run is not a single comparison. It is a repeatable process with scope, roles, intake, rules, control stages, an exception lifecycle and sign-off." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"FMCG data reconciliation: a practical operating model","description":"Design roles, rules, controls, exception queues and audit trails for repeatable retailer and distributor reconciliation.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/fmcg-data-reconciliation-operating-model/"},"articleSection":["FMCG data reconciliation","CPG reconciliation process","Commercial data controls","Reconciliation operating model","Exception queue"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a data reconciliation operating model?","acceptedAnswer":{"@type":"Answer","text":"It is a documented monthly process that defines scope and grain, roles, source intake, rules, control stages, an exception lifecycle and sign-off, so reconciliation is repeatable instead of depending on the analyst who built the workbook."}},{"@type":"Question","name":"What are the core stages of FMCG reconciliation?","acceptedAnswer":{"@type":"Answer","text":"Intake and validation, mapping, comparison at a defined grain, exception classification and assignment, resolution, and sign-off. Each stage has a named owner and a recorded output so the run can be audited and rerun."}},{"@type":"Question","name":"How do you stop the same reconciliation exceptions recurring?","acceptedAnswer":{"@type":"Answer","text":"Track exceptions with a cause-based category and aging rule, then feed recurring causes into an improvement backlog: fix the source, add or change a rule, or automate a stable step, instead of resolving the same difference by email every month."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/modelo-operativo-conciliacion-datos-fmcg/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Reconciliation operating model &middot; Commercial data controls &middot; Exception lifecycle</p><h1>FMCG data reconciliation: a practical operating model</h1><p class="article-dek">A monthly reconciliation run is not a single comparison. It is a repeatable process with scope, roles, intake, rules, control stages, an exception lifecycle and sign-off.</p><div class="article-meta"><span>Marksyte</span><span>9 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">Every month the same files arrive, the same numbers differ and the same email thread tries to explain them. When reconciliation depends on the analyst who built the workbook, the process is not controlled: it is inherited. A reconciliation operating model makes the monthly run repeatable, auditable and improvable without making the people involved interchangeable.</p>
+        <p>This guide defines the model in eight parts: scope and grain, roles, source intake, rules, control stages, the exception lifecycle, sign-off and the improvement backlog. Together they turn a monthly comparison into a process with named owners, recorded outputs and a path for every remaining difference.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> Reconciliation is a process, not a spreadsheet. Scope, roles, rules, control stages and an exception lifecycle make the monthly run repeatable, while the improvement backlog makes it better each cycle.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#scope">Scope and grain</a></li><li><a href="#roles">Roles</a></li><li><a href="#intake">Source intake</a></li><li><a href="#rules">Rules</a></li><li><a href="#controls">Control stages</a></li><li><a href="#lifecycle">Exception lifecycle</a></li><li><a href="#signoff">Sign-off</a></li><li><a href="#backlog">Improvement backlog</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="scope">Scope and grain first</h2>
+        <p>State what the process covers and at what level it must balance before anyone prepares numbers. Write down the sources in scope, such as retailer sell-out files, distributor sell-out files, shipment records, stock counts and ERP sales. Write down the measures, such as units, value or margin, and the grain: product-store-month, product-banner-week or product-market-month. Then write down what is explicitly out of scope, so a variance outside the definition is not silently absorbed.</p>
+        <p>The scope document is the contract for the run. When a new source appears or a market changes its reporting, the scope changes deliberately with an owner and a date, not by default.</p>
+
+        <h2 id="roles">Roles, not job titles</h2>
+        <p>Assign process roles that can exist independently of the people who fill them. One person can hold several roles in a small team, but each role has a responsibility and a decision right. At minimum define: a process owner who answers for the run and its sign-off; a source analyst for each input who answers for that file's quality; a mapping owner who answers for product, store and calendar mappings; an exception coordinator who assigns and ages open items; and reviewers who validate outputs without having prepared them.</p>
+        <p>Separating preparation from review is the control. The person who built the comparison should not be the only person who declares it complete.</p>
+
+        <h2 id="intake">Source intake is a control stage</h2>
+        <p>Treat every incoming file as a controlled input. Record when it arrived, which version it is, who sent it and what it claims to cover. Validate the structure before the comparison runs: required columns present, keys unique, dates parseable, units consistent and totals plausible. A file that fails intake is quarantined and returned for correction, not merged and fixed quietly.</p>
+        <p>When a corrected file replaces an earlier one, keep the earlier version. Retain a versioned trail so the numbers in the sign-off can be reconstructed from the files that produced them.</p>
+
+        <h2 id="rules">Rules make the logic reusable</h2>
+        <p>Write each comparison rule once and reuse it every cycle. A rule states its inputs, its logic and its output: how a product or store is mapped, which calendar or cutoff applies, what tolerance is acceptable, and how a specific movement is treated. When the logic lives in a named, documented rule, it can be tested, versioned and explained. When it lives only in a formula or in the analyst's head, it is re-derived every month.</p>
+        <p>Distinguish between rules that transform data and rules that decide. Transformation rules standardize inputs, while decision rules classify what passes and what becomes an exception. Both need an owner and an effective date so a change is deliberate.</p>
+
+        <h2 id="controls">Control stages</h2>
+        <p>Structure the run so each stage has a check and a recorded output before the next begins.</p>
+        <div class="table-scroll" role="region" aria-label="Reconciliation control stages" tabindex="0"><table class="article-data-table"><thead><tr><th>Stage</th><th>What happens</th><th>Check</th><th>Output</th></tr></thead><tbody><tr><td>Intake</td><td>Files are received, versioned and structurally validated</td><td>Schema, uniqueness, dates, units, totals</td><td>Quarantined or accepted inputs</td></tr><tr><td>Mapping</td><td>Products, stores and periods are aligned to the canonical references</td><td>Unmapped rows visible, no silent drops</td><td>Mapping completion report</td></tr><tr><td>Comparison</td><td>Sources are compared at the defined grain with the documented rules</td><td>Row counts and totals balance before variance is read</td><td>Comparison output</td></tr><tr><td>Classification</td><td>Every difference is assigned a cause-based category and an owner</td><td>No difference left uncategorized</td><td>Exception queue</td></tr><tr><td>Resolution</td><td>Owners investigate with evidence and update status</td><td>Changes are traceable to a file or document</td><td>Resolved or documented exceptions</td></tr><tr><td>Sign-off</td><td>Reviewers confirm the run within tolerance or approve the documented residual</td><td>Evidence is complete and retained</td><td>Signed-off monthly result</td></tr></tbody></table></div>
+        <p>Each stage ends with a named output, so the run can be audited later and rerun from the same inputs. If a stage produces no output, it did not happen.</p>
+
+        <h2 id="lifecycle">The exception lifecycle</h2>
+        <p>Give every exception a record with a cause-based category, one owner, a status and an aging rule. The categories should come from the causes that actually appear: timing, missing movements, identifier gaps, genuine variance and source-quality issues. A difference without a category is not an exception; it is a loose end.</p>
+        <p>Exceptions move through states: open, assigned, investigating, awaiting evidence, resolved and closed. Aging shows how long each item has been open and flags items that reappear. When the same cause returns in the following month, that is the signal for the improvement backlog, not for another email.</p>
+
+        <h2 id="signoff">Sign-off closes the period</h2>
+        <p>Define what completing a period means: the comparison balances within tolerance, every exception has a status and an owner, evidence is retained, and the result is approved by the reviewer. If the run cannot balance, the documented residual is the decision, not the raw number. Sign-off is recorded with the date, the approving role and the version of inputs used.</p>
+        <p>Without a defined sign-off, the period is never formally closed, and every monthly difference is reopened next month as if it were new.</p>
+
+        <h2 id="backlog">The improvement backlog</h2>
+        <p>Keep a short list of structural improvements fed by recurring exceptions and repeated manual steps. Each item names the cause, the fix and the expected effect, such as adding a missing movement to the equation, changing a mapping, fixing a source file or automating a stable stage. The backlog gives recurring problems a path from exception queue to resolved system change.</p>
+        <p>Automation belongs at the end of this sequence, not at the start. Automate only the steps that are stable and documented, and keep the exception lifecycle and sign-off as the human controls on top.</p>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Formalize the monthly reconciliation run as a process: define scope and grain, assign roles, control the intake, document the rules, run the control stages, track exceptions through a lifecycle, sign off the period and feed recurring causes into an improvement backlog. The model makes the result defensible and each month's run cheaper than the last.</p>
+        <p>Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can design the operating model, and its <a href="../../services/managed-data-analysis/">managed data operations</a> can run it month after month.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../manage-monthly-reconciliation-exceptions/">How to manage reconciliation exceptions month after month</a></li><li><a href="../when-to-automate-retailer-data-reconciliation/">When to automate retailer data reconciliation</a></li><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li><li><a href="../../services/managed-data-analysis/">Explore managed data operations and analysis</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>What is a data reconciliation operating model?</summary><p>It is a documented monthly process that defines scope and grain, roles, source intake, rules, control stages, an exception lifecycle and sign-off, so reconciliation is repeatable instead of depending on the analyst who built the workbook.</p></details><details><summary>What are the core stages of FMCG reconciliation?</summary><p>Intake and validation, mapping, comparison at a defined grain, exception classification and assignment, resolution, and sign-off. Each stage has a named owner and a recorded output so the run can be audited and rerun.</p></details><details><summary>How do you stop the same reconciliation exceptions recurring?</summary><p>Track exceptions with a cause-based category and aging rule, then feed recurring causes into an improvement backlog: fix the source, add or change a rule, or automate a stable step, instead of resolving the same difference by email every month.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">From spreadsheet to process</p><h2 id="article-cta-title">Turn your monthly reconciliation into a controlled operating model</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Design your operating model</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>
