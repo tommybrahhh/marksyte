@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>How to reconcile POS, shipments and inventory data | Marksyte</title>
+  <meta name="description" content="Connect consumer sales, supplier shipments and stock movements to explain commercial differences without forcing one-to-one matches." />
+  <meta name="keywords" content="POS shipments inventory reconciliation, stock flow, retail POS data, sell-out reconciliation, stock bridge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/reconcile-pos-shipments-inventory-data/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/reconcile-pos-shipments-inventory-data/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/conciliar-datos-pos-envios-inventario/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/reconcile-pos-shipments-inventory-data/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="How to reconcile POS, shipments and inventory data" />
+  <meta property="og:description" content="POS records consumer sales, shipments record product entering the network and inventory records what remains. Reconcile the three through one stock equation." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/reconcile-pos-shipments-inventory-data/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="How to reconcile POS, shipments and inventory data" />
+  <meta name="twitter:description" content="POS records consumer sales, shipments record product entering the network and inventory records what remains. Reconcile the three through one stock equation." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to reconcile POS, shipments and inventory data","description":"Connect consumer sales, supplier shipments and stock movements to explain commercial differences without forcing one-to-one matches.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/reconcile-pos-shipments-inventory-data/"},"articleSection":["POS shipments inventory reconciliation","Stock flow","Retail POS data","Sell-out reconciliation","Stock bridge"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you reconcile POS, shipments and inventory data?","acceptedAnswer":{"@type":"Answer","text":"Through one stock equation at a stated grain: opening stock plus shipments received minus POS sell-out minus returns, damages and shrinkage equals closing stock. Every term needs a source, and the remaining difference becomes a classified exception."}},{"@type":"Question","name":"Why do POS, shipment and inventory numbers never match?","acceptedAnswer":{"@type":"Answer","text":"Because they record different events: consumer sales, product deliveries and stock on hand. They are not copies of the same number, so they only reconcile through a stock equation and calendar and movement rules."}},{"@type":"Question","name":"What causes the implied stock to differ from the counted stock?","acceptedAnswer":{"@type":"Answer","text":"Usually a movement category missing from the equation: returns to the supplier, damages, write-offs, transfers or shrinkage. Adding it as its own term with a source makes the bridge explain the gap."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/conciliar-datos-pos-envios-inventario/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Multi-source reconciliation &middot; Stock equation &middot; Retail POS data</p><h1>How to reconcile POS, shipments and inventory data</h1><p class="article-dek">POS records consumer sales, shipments record product entering the network and inventory records what remains. Reconcile the three through one stock equation at a stated grain.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">A retailer file shows 300 units sold, the ERP shows 400 units shipped and the stock count says 150 on hand. All three numbers are correct; they describe different moments of the same product flow. Comparing the totals directly produces a variance that no single number explains. The reconciliation connects consumer sales, supplier shipments and inventory movements through one stock equation.</p>
+        <p>This guide shows how to build that bridge: define the event model, choose one grain, lay out the stock equation, and then explain every remaining difference as timing, a missing movement or a classified exception.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> POS, shipments and inventory are not three versions of the same number. They are three events in one flow that only reconcile through a stock equation at a shared grain.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#model">Event model</a></li><li><a href="#equation">The stock equation</a></li><li><a href="#grain">One grain for the comparison</a></li><li><a href="#bridge">A worked bridge</a></li><li><a href="#timing">Timing explains the boundary</a></li><li><a href="#missing">Missing movements</a></li><li><a href="#exceptions">Classify the exceptions</a></li><li><a href="#controls">Controls that keep the bridge honest</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="model">Define the event model first</h2>
+        <p>Write down what each source actually records. POS registers consumer sales at the till, by store, day and SKU. Shipments, or sell-in, record product leaving the supplier's control, by delivery, date and customer. Inventory records what is physically in the network at a point in time. The same product travels through all three, but each source captures a different event.</p>
+        <p>State the events before comparing numbers. If the comparison treats a shipment as a sale or a count as a flow, the bridge will produce a variance that the equation cannot explain.</p>
+
+        <h2 id="equation">The stock equation is the bridge</h2>
+        <p>Opening stock + shipments received &minus; POS sell-out &minus; returns, damages and shrinkage = closing stock. If you have any four terms, the fifth is implied. The equation is the reconciliation: compute the implied closing stock from shipments and sales, then compare it with the counted stock. The difference is a movement the equation cannot see, not a rounding error.</p>
+        <p>Give every term a named source. Opening stock comes from the stock count, shipments from delivery notes, sell-out from the POS file, returns from credit notes and the closing stock from the next count. A term without a source becomes a hidden residual.</p>
+
+        <h2 id="grain">Choose one grain for the comparison</h2>
+        <p>Decide the level at which the equation must balance: product-store-month, product-banner-week or product-market-month. The grain must be supported by all three sources. A shipment to a distribution centre can map to many stores, so the equation may balance at banner level but not at store level. State the grain and the location mapping before comparing.</p>
+        <p>If the sources cannot support the same grain, standardize them first through a canonical schema rather than forcing a comparison at a level the data does not reach.</p>
+
+        <h2 id="bridge">A worked bridge</h2>
+        <p>The table shows one product and one store for a month. Each term has a source, and the implied closing stock is compared with the physical count.</p>
+        <div class="table-scroll" role="region" aria-label="Worked POS, shipments and inventory bridge" tabindex="0"><table class="article-data-table"><thead><tr><th>Term</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Opening stock</td><td>100</td><td>Stock count at the start of the month</td></tr><tr><td>Shipments received</td><td>250</td><td>Delivery notes in the month</td></tr><tr><td>POS sell-out</td><td>210</td><td>Retailer POS file</td></tr><tr><td>Returns and damages</td><td>20</td><td>Credit notes and damage report</td></tr><tr><td>Implied closing stock</td><td>120</td><td>100 + 250 &minus; 210 &minus; 20</td></tr><tr><td>Counted closing stock</td><td>115</td><td>Physical count at the end of the month</td></tr><tr><td>Unexplained difference</td><td>5</td><td>Open exception</td></tr></tbody></table></div>
+        <p>The equation balances to an implied closing stock of 120, but the count says 115. The five units become an open exception with a movement hypothesis: shrinkage, a missing delivery or a sale not yet filed. The bridge turned a vague variance into one specific, visible term.</p>
+
+        <h2 id="timing">Timing explains the boundary</h2>
+        <p>Shipments can be booked on the invoice date while sell-out is reported by retail week. A delivery at month end may appear in the next month's sell-out. As with reporting cutoffs, these are calendar effects: carry them forward and expect them to clear in the following period. Only investigate a timing difference when it does not clear, because then it has stopped being a calendar issue.</p>
+
+        <h2 id="missing">Missing movements hide in the difference</h2>
+        <p>Returns to the supplier, damages, write-offs, inter-store transfers, samples and giveaways are all movements that appear in no POS file. If the implied closing stock is consistently above the count, the likely cause is a movement category missing from the equation. Add it as its own term with its own source rather than absorbing it into an unexplained residual.</p>
+        <p>A clean bridge depends on an exhaustive list of movements. Keep that list explicit and versioned, and add a category when the evidence points to it instead of widening the residual.</p>
+
+        <h2 id="exceptions">Classify the exceptions</h2>
+        <ol class="action-list">
+          <li><strong>Timing differences</strong> that should clear next period. Carry them forward with evidence.</li>
+          <li><strong>Missing movements</strong> with a known source to add, such as returns, transfers or damages. Add the term.</li>
+          <li><strong>Identifier gaps</strong> where a product or store does not map. Route them to the master-data queue.</li>
+          <li><strong>Genuine stock variance</strong> without a document, such as shrinkage. Record it as a count-based exception and investigate.</li>
+          <li><strong>Source-quality issues</strong> such as duplicate deliveries or late files. Quarantine, correct and requeue.</li>
+        </ol>
+
+        <h2 id="controls">Controls that keep the bridge honest</h2>
+        <ul class="risk-list"><li><strong>A fixed list of movements and their sources.</strong> Nothing should be absorbed silently into a residual.</li><li><strong>Total controls at the grain.</strong> Compare row counts and totals before the equation runs.</li><li><strong>A versioned bridge and mapping table.</strong> The same grain, calendar and location logic every cycle.</li><li><strong>An exception queue with owner and status.</strong> Every open item is visible and assigned.</li><li><strong>Sign-off when the equation balances within tolerance.</strong> If it does not, the documented residual is the decision, not the number.</li></ul>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Reconcile POS, shipments and inventory through one stock equation at a stated grain. Explain every difference as timing, a missing movement or a classified exception. Controls and a traceable exception queue turn the bridge from a monthly argument into a decision the team can defend.</p>
+        <p>Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can design the event model, the stock equation and the exception controls across POS, shipment and inventory sources.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../sell-in-vs-sell-out-fmcg-reconciliation/">Sell-in vs sell-out in FMCG: how to reconcile the numbers</a></li><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../retailer-erp-reporting-cutoff-differences/">Why retailer and ERP sales land in different periods</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>How do you reconcile POS, shipments and inventory data?</summary><p>Through one stock equation at a stated grain: opening stock plus shipments received minus POS sell-out minus returns, damages and shrinkage equals closing stock. Every term needs a source, and the remaining difference becomes a classified exception.</p></details><details><summary>Why do POS, shipment and inventory numbers never match?</summary><p>Because they record different events: consumer sales, product deliveries and stock on hand. They are not copies of the same number, so they only reconcile through a stock equation and calendar and movement rules.</p></details><details><summary>What causes the implied stock to differ from the counted stock?</summary><p>Usually a movement category missing from the equation: returns to the supplier, damages, write-offs, transfers or shrinkage. Adding it as its own term with a source makes the bridge explain the gap.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">One flow, three sources</p><h2 id="article-cta-title">Bridge POS, shipments and inventory with one stock equation</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your stock bridge</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

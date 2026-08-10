@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>How to reconcile retailer returns with ERP data | Marksyte</title>
+  <meta name="description" content="A practical guide to consumer returns, stock returns, credit notes, restatements and negative quantities in reconciliation." />
+  <meta name="keywords" content="retailer returns reconciliation, ERP credit notes, sell-out adjustments, negative sales, return events" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/reconcile-retailer-returns-with-erp/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/reconcile-retailer-returns-with-erp/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/conciliar-devoluciones-retailer-con-erp/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/reconcile-retailer-returns-with-erp/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="How to reconcile retailer returns with ERP data" />
+  <meta property="og:description" content="Consumer returns, stock returns, credit notes and restatements are different events. Reconcile each by type, event and sign instead of treating them as one thing." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/reconcile-retailer-returns-with-erp/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="How to reconcile retailer returns with ERP data" />
+  <meta name="twitter:description" content="Consumer returns, stock returns, credit notes and restatements are different events. Reconcile each by type, event and sign instead of treating them as one thing." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to reconcile retailer returns with ERP data","description":"A practical guide to consumer returns, stock returns, credit notes, restatements and negative quantities in reconciliation.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/reconcile-retailer-returns-with-erp/"},"articleSection":["Retailer returns reconciliation","ERP credit notes","Sell-out adjustments","Negative sales","Return events"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you reconcile retailer returns with ERP data?","acceptedAnswer":{"@type":"Answer","text":"By type, event and sign: consumer returns match to negative POS sell-out, stock returns to return shipments and credit notes, and restatements at the file level with the original kept versioned. Timing differences are carried forward with evidence."}},{"@type":"Question","name":"Why do consumer returns and ERP credit notes never match?","acceptedAnswer":{"@type":"Answer","text":"Because they are different events. A credit note records a stock return or a trade credit; negative sell-out records a shopper's return at the till. They happen at different times and at different grains, so they never reconcile one to one."}},{"@type":"Question","name":"What is a restated sell-out file and how do you reconcile it?","acceptedAnswer":{"@type":"Answer","text":"A restated file is a new version of the original that replaces it for the whole period. Reconcile it by applying the replacement at the file level, keeping the original versioned, recomputing the affected periods and signing off the delta."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/conciliar-devoluciones-retailer-con-erp/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Returns reconciliation &middot; ERP credit notes &middot; Sell-out adjustments</p><h1>How to reconcile retailer returns with ERP data</h1><p class="article-dek">A retailer files 40 units returned to the supplier, the ERP shows a credit note for 55 and the sell-out file carries a negative line for 12. All three are returns of a kind, and each reconciles differently.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">A retailer files 40 units returned to the supplier, the ERP shows a credit note for 55 and the sell-out file carries a negative line for 12. All three are returns of a kind, and each reconciles differently. Returns become a recurring source of false variances when consumer returns, stock returns, credit notes and restatements are treated as one thing.</p>
+        <p>This guide separates the types of return, maps the event timeline behind each one, defines the matching logic, handles restated files and closes with exception categories and controls.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> A return only reconciles when its type, event and sign are explicit. Consumer returns, stock returns and credits are different events; mixing them creates a variance that no matching logic can explain.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#types">The types of return</a></li><li><a href="#timeline">The event timeline</a></li><li><a href="#matching">Matching logic</a></li><li><a href="#restatements">Restated files</a></li><li><a href="#example">A worked example</a></li><li><a href="#exceptions">Exception categories</a></li><li><a href="#controls">Controls</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="types">The types of return</h2>
+        <p>Four different events carry the label "returns". Consumer returns are product a shopper brings back to the store and appear as negative sell-out in the POS. Stock returns to the supplier appear in return shipments and credit notes in the ERP. Trade returns are unsold stock returned under an agreement. Credits and restatements adjust a file or an account and may move no product at all.</p>
+        <p>Each type has its own event, its own sign and its own source. Write down the type before comparing numbers. If the comparison treats a credit note as a consumer return, the bridge will produce a variance that no matching logic can explain.</p>
+
+        <h2 id="timeline">The event timeline</h2>
+        <p>A return has several dates: the shopper's return date, the store's stock-in date, the return-to-supplier date and the credit note date. Each system records a different one. POS records the shopper's return; the ERP records the credit note. Compare event dates, not invoice dates, and state which date each source carries.</p>
+        <p>The event timeline is what turns a return into a reconcileable position. If the return is booked in the retailer's week and the credit note in the supplier's month, carry the difference forward and expect it to clear in the following period.</p>
+
+        <h2 id="matching">Matching logic</h2>
+        <p>Match by type and by grain. Consumer returns match to negative POS sell-out at product-store-period. Stock returns match to return shipments and the corresponding credit note at product-retailer-period. Restatements match at the file level, original version against corrected version.</p>
+        <p>Never match a credit note to a negative sell-out line: they are different events at different grains. Define a key per type, such as retailer code, product and event date, and keep the keys explicit in the mapping table.</p>
+
+        <h2 id="restatements">Restated files</h2>
+        <p>Retailers restate files, and a corrected file replaces the original for the whole period. Apply the replacement at the file level, keep the original versioned and recompute the affected periods. A restatement is not an adjustment; it is a new version of the same file.</p>
+        <p>Track the delta between versions and flag which periods changed. Without versioning, a restatement looks like a variance in the period it lands in and silently changes history everywhere else.</p>
+
+        <h2 id="example">A worked example</h2>
+        <p>The table shows one product and one retailer for a month. Each return event reconciles by type, with its own source and matching rule.</p>
+        <div class="table-scroll" role="region" aria-label="Worked retailer returns example" tabindex="0"><table class="article-data-table"><thead><tr><th>Return event</th><th>Source</th><th>Amount</th><th>Matching rule</th></tr></thead><tbody><tr><td>Consumer return at the till</td><td>POS sell-out, negative line</td><td>12</td><td>Match to negative sell-out, same period and store</td></tr><tr><td>Stock return to supplier</td><td>ERP return shipment</td><td>40</td><td>Match to credit note of 40</td></tr><tr><td>Credit note received</td><td>ERP credit note</td><td>55</td><td>Split: 40 stock return + 15 trade return</td></tr><tr><td>Restated sell-out file</td><td>Corrected file vs original</td><td>10</td><td>Delta signed off as a new file version</td></tr></tbody></table></div>
+        <p>The negative POS line reconciles to the consumer return, the credit note splits into a stock return and a trade return, and the restatement is carried as a version delta. The variance is explained by naming the event behind each number instead of comparing all of them as one total.</p>
+
+        <h2 id="exceptions">Exception categories</h2>
+        <p>Classify what remains. Timing differences should clear in the next period. Type mismatches appear when a credit note is compared to negative sell-out. Identifier gaps appear when a product or store does not map. Missing documents appear when a stock return has no credit note. Restatement deltas are explained but need sign-off.</p>
+
+        <h2 id="controls">Controls</h2>
+        <ul class="risk-list"><li><strong>A fixed taxonomy of return events</strong> with their signs and sources.</li><li><strong>Validation that every negative quantity carries a type.</strong></li><li><strong>Total controls per event type</strong> before the comparison runs.</li><li><strong>Versioned restated files</strong> with changed periods flagged.</li><li><strong>An exception queue</strong> with owner, status and evidence on every open difference.</li></ul>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Reconcile retailer returns by type, event and sign. Match credit notes to stock returns, negative POS to consumer returns and restatements at the file level. Keep timing explicit and run the difference through the exception queue, and returns stop producing the same false variance every month.</p>
+        <p>Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can design the return-event taxonomy, the matching rules and the controls for retailer and ERP return data.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../retailer-erp-reporting-cutoff-differences/">Why retailer and ERP sales land in different periods</a></li><li><a href="../reconcile-pos-shipments-inventory-data/">How to reconcile POS, shipments and inventory data</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li><li><a href="../../services/managed-data-analysis/">Explore managed data operations and analysis</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>How do you reconcile retailer returns with ERP data?</summary><p>By type, event and sign: consumer returns match to negative POS sell-out, stock returns to return shipments and credit notes, and restatements at the file level with the original kept versioned. Timing differences are carried forward with evidence.</p></details><details><summary>Why do consumer returns and ERP credit notes never match?</summary><p>Because they are different events. A credit note records a stock return or a trade credit; negative sell-out records a shopper's return at the till. They happen at different times and at different grains, so they never reconcile one to one.</p></details><details><summary>What is a restated sell-out file and how do you reconcile it?</summary><p>A restated file is a new version of the original that replaces it for the whole period. Reconcile it by applying the replacement at the file level, keeping the original versioned, recomputing the affected periods and signing off the delta.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Returns reconciliation</p><h2 id="article-cta-title">Make returns reconcile by event, not by label</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your returns bridge</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>Reporting cutoffs in retailer and ERP reconciliation | Marksyte</title>
+  <meta name="description" content="Learn how retail weeks, invoice dates, delivery dates and close calendars create timing differences and how to reconcile them." />
+  <meta name="keywords" content="reporting cutoff differences, retail calendar, financial calendar, timing reconciliation, retailer data reconciliation" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/retailer-erp-reporting-cutoff-differences/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/retailer-erp-reporting-cutoff-differences/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/por-que-las-ventas-del-retailer-y-del-erp-caen-en-periodos-distintos/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retailer-erp-reporting-cutoff-differences/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="Why retailer and ERP sales land in different periods" />
+  <meta property="og:description" content="Retail weeks, invoice dates and close calendars create timing differences. Bridge the calendars and carry exceptions forward so period-end variance becomes explained movement." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/retailer-erp-reporting-cutoff-differences/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Why retailer and ERP sales land in different periods" />
+  <meta name="twitter:description" content="Retail weeks, invoice dates and close calendars create timing differences. Bridge the calendars and carry exceptions forward." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Why retailer and ERP sales land in different periods","description":"Learn how retail weeks, invoice dates, delivery dates and close calendars create timing differences and how to reconcile them.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/retailer-erp-reporting-cutoff-differences/"},"articleSection":["Reporting cutoff","Retailer data reconciliation","ERP reconciliation","Timing reconciliation","Retail calendar"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do retailer and ERP sales land in different periods?","acceptedAnswer":{"@type":"Answer","text":"Retailer sell-out follows a retail week that closes and is delivered after the period ends, while the ERP records documents by posting date. A document near the boundary can therefore appear in different periods in each system without either being wrong."}},{"@type":"Question","name":"What is a calendar bridge?","acceptedAnswer":{"@type":"Answer","text":"A lookup that maps every date to the retail week and the financial period it belongs to, used by every source so a date resolves to exactly one period in each calendar."}},{"@type":"Question","name":"How should a timing difference be handled?","acceptedAnswer":{"@type":"Answer","text":"Carry it forward with the amount, source, document reference and expected clearing period, and close it only when the next cycle confirms the reversal."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/por-que-las-ventas-del-retailer-y-del-erp-caen-en-periodos-distintos/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Reporting cutoff &middot; Retail calendar &middot; ERP reconciliation</p><h1>Why retailer and ERP sales land in different periods</h1><p class="article-dek">Retail weeks, invoice dates and close calendars create timing differences. Bridge the calendars and carry exceptions forward so period-end variance becomes explained movement.</p><div class="article-meta"><span>Marksyte</span><span>9 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">A retailer reports the last week of the month on Sunday evening. The ERP posts invoices on the last calendar day, and some deliveries are invoiced days after the goods arrive. One transaction near the boundary appears in the retailer's July file and the ERP's August extract. Both systems are correct; the periods are simply not aligned.</p>
+        <p>Timing differences are the most common and least understood cause of retailer-to-ERP variance. They reverse in a later period, so they never appear in annual totals, but they create month-end noise that distracts from real issues. This guide explains the dates each system uses, shows a boundary example and builds the calendar bridge and carry-forward rules that turn timing variance into explained movement.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> A timing difference is not an error. It is a movement between periods that clears when the calendar is bridged and the exception is carried forward with evidence.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#dates">Dates in each system</a></li><li><a href="#example">A boundary example</a></li><li><a href="#bridge">The calendar bridge</a></li><li><a href="#carry">Carry-forward rules</a></li><li><a href="#evidence">Evidence</a></li><li><a href="#mistakes">Common mistakes</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="dates">The dates each system uses</h2>
+        <p>Retailer sell-out is reported on a retail calendar: typically a Monday-to-Sunday week that closes and is delivered shortly after the period ends. The ERP records commercial documents with several dates, including the order date, the delivery date, the invoice date and the posting date. Each date describes a different moment, and the posting date usually determines the period in which a document appears in the ERP extract.</p>
+        <p>Write down for each source which date defines the period. Without that, a document near the boundary looks like a genuine variance instead of a calendar effect.</p>
+
+        <h2 id="example">A boundary example</h2>
+        <p>Suppose a delivery is invoiced on the last day of August but received by the retailer in the first week of September. The retailer's sell-out week W35 closes on 2 September, while the ERP August extract includes the invoice because its posting date is 31 August. Same goods, two periods, both correct.</p>
+        <div class="table-scroll" role="region" aria-label="Boundary transaction between retailer and ERP" tabindex="0"><table class="article-data-table"><thead><tr><th>Event</th><th>Retailer sell-out</th><th>ERP extract</th></tr></thead><tbody><tr><td>Product identifier</td><td>Retailer code <code>00076291</code></td><td>SKU <code>ES-4582</code></td></tr><tr><td>Period</td><td>Week 35 (closes 2 Sep)</td><td>August</td></tr><tr><td>Invoice date</td><td>Not applicable</td><td>31 Aug</td></tr><tr><td>Units recorded</td><td>0</td><td>120</td></tr></tbody></table></div>
+        <p>The 120 units appear in different periods in each system. The exception is carried forward, and the next retail week should show the sell-out of those units so the variance clears. If it does not clear, the cause is not the cutoff and the exception stays open for investigation.</p>
+
+        <h2 id="bridge">Build a calendar bridge</h2>
+        <p>A calendar bridge is a lookup that maps every date to the retail week and the financial period it belongs to. It handles week starts, 4-4-5 calendars, 53-week years and partial periods. Both sources use the same bridge, so a date resolves to exactly one period in each calendar.</p>
+        <p>Build the bridge as a table with an effective date and an owner, not as a formula hidden in a workbook. The same rule must apply to every retailer, every month, or the bridge itself becomes a new source of variance.</p>
+
+        <h2 id="carry">Carry-forward rules</h2>
+        <p>When a timing difference is confirmed, the exception should not be adjusted in place. It is carried forward: the amount, the source, the document reference and the expected clearing period are recorded, and the next cycle checks that the quantity reversed. A timing exception is closed only when the carry-forward clears, not when it is posted away.</p>
+        <div class="visual-note"><strong>Carry forward when</strong><ul><li>The same amount appears on both sides across consecutive periods.</li><li>The document reference matches between the two extracts.</li><li>The next period's file shows the reversal.</li></ul><p>If a carried exception does not clear, it stops being a timing issue and becomes an unexplained variance that needs a different investigation.</p></div>
+
+        <h2 id="evidence">Evidence for a timing difference</h2>
+        <p>The evidence for a timing difference is the document that crosses the boundary: the invoice, the delivery note or the shipment record with its date. Keep the reference on the exception so the next cycle can match it. Without a document reference, "timing" becomes a label that covers any unexplained difference.</p>
+
+        <h2 id="mistakes">Common mistakes</h2>
+        <ul class="risk-list"><li><strong>Adjusting the number in place instead of carrying the exception forward.</strong> This hides the reversal and doubles the variance when the quantity later clears.</li><li><strong>Using different week or month definitions for the same retailer in different months.</strong> The bridge must be one versioned table.</li><li><strong>Treating a carry-forward exception as closed without checking the next period.</strong> A timing difference is closed only when it clears.</li><li><strong>Blaming the retailer for a difference the calendar explains.</strong> Check the boundary documents before escalating.</li><li><strong>Building a new bridge rule every month.</strong> That converts a controlled lookup into a maintenance habit.</li><li><strong>Forgetting the 53rd week in annual reconciliations.</strong> Some retail calendars add a week, and the totals never align without it.</li></ul>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>To reconcile retailer and ERP periods, write down the date each system uses, test the transactions near the boundary, build one calendar bridge used by every source, carry timing exceptions forward with evidence, and close them only when the next period clears them. Timing differences then become explained movement instead of monthly noise.</p>
+        <p>If period-end variances keep reversing every month, Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can design the calendar bridge, the carry-forward rules and the exception controls that turn them into traceable, explained movement.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../how-to-reconcile-retailer-sell-out-data-with-erp/">How to reconcile retailer sell-out data with ERP data</a></li><li><a href="../why-retailer-sales-data-does-not-match-erp/">Why retailer sales data does not match your ERP</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>Why do retailer and ERP sales land in different periods?</summary><p>Retailer sell-out follows a retail week that closes and is delivered after the period ends, while the ERP records documents by posting date. A document near the boundary can therefore appear in different periods in each system without either being wrong.</p></details><details><summary>What is a calendar bridge?</summary><p>A lookup that maps every date to the retail week and the financial period it belongs to, used by every source so a date resolves to exactly one period in each calendar.</p></details><details><summary>How should a timing difference be handled?</summary><p>Carry it forward with the amount, source, document reference and expected clearing period, and close it only when the next cycle confirms the reversal.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Timing is not an error</p><h2 id="article-cta-title">Turn period-end variance into explained movement</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your cutoff rules</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>

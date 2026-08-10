@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <title>Distributor inventory and sales reconciliation: what should balance? | Marksyte</title>
+  <meta name="description" content="Reconcile opening stock, receipts, sales, returns and closing stock while keeping timing and adjustment differences visible." />
+  <meta name="keywords" content="distributor inventory reconciliation, distributor inventory and sales reconciliation, stock bridge, sell-out reconciliation, inventory movements" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.marksyte.com/blog/distributor-inventory-sales-reconciliation/" />
+  <link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/distributor-inventory-sales-reconciliation/" />
+  <link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/conciliacion-inventario-ventas-distribuidor/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/distributor-inventory-sales-reconciliation/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Marksyte" />
+  <meta property="og:title" content="Distributor inventory and sales reconciliation: what should balance?" />
+  <meta property="og:description" content="Opening stock, receipts, sales, returns and closing stock balance through one equation. Every term needs a source event, and every remaining difference is a named exception." />
+  <meta property="og:url" content="https://www.marksyte.com/blog/distributor-inventory-sales-reconciliation/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="article:author" content="Marksyte" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Distributor inventory and sales reconciliation: what should balance?" />
+  <meta name="twitter:description" content="Opening stock, receipts, sales, returns and closing stock balance through one equation. Every term needs a source event, and every remaining difference is a named exception." />
+  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Distributor inventory and sales reconciliation: what should balance?","description":"Reconcile opening stock, receipts, sales, returns and closing stock while keeping timing and adjustment differences visible.","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/distributor-inventory-sales-reconciliation/"},"articleSection":["Distributor inventory reconciliation","Stock bridge","Sell-out reconciliation","Inventory movements","Distributor data"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you reconcile distributor inventory and sales data?","acceptedAnswer":{"@type":"Answer","text":"Through one stock equation at a stated grain: opening stock plus receipts minus sell-out, returns, damages and shrinkage equals closing stock. Every term needs a source event, and the remaining difference becomes a classified exception."}},{"@type":"Question","name":"What should balance in distributor inventory reconciliation?","acceptedAnswer":{"@type":"Answer","text":"Opening stock, receipts, sales, returns and closing stock. If you have any five terms, the sixth is implied; the implied closing stock should match the reported one within a stated tolerance."}},{"@type":"Question","name":"What causes distributor stock and sales to disagree?","acceptedAnswer":{"@type":"Answer","text":"Usually a movement category missing from the equation, such as returns, damages or shrinkage, or a timing difference across calendars. Adding the term or carrying the timing difference forward explains the gap."}}]}</script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body class="blog-page article-page">
+  <header class="site-header"><a class="brand" href="../../" aria-label="Marksyte home"><img class="brand-mark brand-logo" src="../../assets/brand-logo.png" alt="" aria-hidden="true" /><span>Marksyte</span></a><div class="header-actions"><nav aria-label="Main navigation"><a href="../../#services">Services</a><a href="../../study-cases/">Case studies</a><a href="../" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../#contact">Contact</a></nav><div class="language-switch" aria-label="Language"><a href="./" lang="en" hreflang="en" aria-current="page">EN</a><a href="../../es/blog/conciliacion-inventario-ventas-distribuidor/" lang="es" hreflang="es">ES</a></div></div></header>
+  <main>
+    <article>
+      <header class="article-hero"><div class="blog-shell article-hero-grid"><div class="article-hero-copy"><p class="eyebrow">Distributor reconciliation &middot; Stock bridge &middot; Inventory movements</p><h1>Distributor inventory and sales reconciliation: what should balance?</h1><p class="article-dek">A distributor reports 4,000 units sold and 1,200 in stock, the shipments into the market say 3,000 and the last known stock was 900. Reconcile all four through one stock equation with every term tied to a source event.</p><div class="article-meta"><span>Marksyte</span><span>10 min read</span></div></div></div></header>
+      <div class="article-body" id="article-body">
+        <p class="lead">A distributor reports 4,000 units sold and 1,200 in stock, but the supplier's shipments into the market say 3,000 and the last known stock was 900. Each number is plausible; together they do not add up. Distributor reconciliation works when opening stock, receipts, sales, returns and closing stock balance through one equation, with timing and adjustment differences kept visible instead of absorbed.</p>
+        <p>This guide defines the stock equation for distributor data, names the source event behind every term, walks a worked bridge and sets the timing, returns, tolerance and exception rules that keep the reconciliation defensible.</p>
+
+        <div class="key-takeaway"><strong>The key point</strong> A distributor bridge balances when every term has a source event and every remaining difference is a named exception. The equation is the reconciliation; the tolerance is a decision, not a rounding convenience.</div>
+
+        <nav class="reading-nav" aria-label="Article contents"><strong>In this article</strong><ol><li><a href="#equation">The stock equation</a></li><li><a href="#events">The source event behind each term</a></li><li><a href="#bridge">A worked bridge</a></li><li><a href="#timing">Timing and the boundary</a></li><li><a href="#returns">Returns and damages as their own terms</a></li><li><a href="#tolerance">Tolerance as a decision</a></li><li><a href="#exceptions">The exception workflow</a></li><li><a href="#takeaway">Practical takeaway</a></li></ol></nav>
+
+        <h2 id="equation">The stock equation</h2>
+        <p>Opening stock + receipts &minus; sell-out &minus; returns &minus; damages &minus; shrinkage = closing stock. Give every term a source: opening and closing stock from distributor reports or counts, receipts from delivery notes or purchase orders, sell-out from the distributor sell-out file, returns from credit notes and damages and shrinkage from adjustment documents. If you have any five terms, the sixth is implied.</p>
+        <p>The equation is the reconciliation. Compute the implied closing stock from the flows and compare it with the reported closing stock. The difference is a movement the equation cannot see, not a rounding error. A term without a source becomes a hidden residual.</p>
+
+        <h2 id="events">The source event behind each term</h2>
+        <p>Each term records a different event, so the same difference can have different causes. Sell-out records sell-through to the customer; receipts record product entering the distributor's warehouse; stock records what remains. Compare at a grain all three sources support, product-distributor-month at a minimum, and state the grain and the calendar before comparing.</p>
+        <p>If a source reports at a different grain, standardize it through a canonical schema first rather than forcing the comparison at a level the data does not reach.</p>
+
+        <h2 id="bridge">A worked bridge</h2>
+        <p>The table shows one product and one distributor for a month. Each term has a source and the implied closing stock is compared with the reported stock.</p>
+        <div class="table-scroll" role="region" aria-label="Worked distributor inventory and sales bridge" tabindex="0"><table class="article-data-table"><thead><tr><th>Term</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Opening stock</td><td>900</td><td>Distributor stock report at the start of the month</td></tr><tr><td>Receipts</td><td>3,000</td><td>Delivery notes in the month</td></tr><tr><td>Sell-out</td><td>2,400</td><td>Distributor sell-out file</td></tr><tr><td>Returns</td><td>100</td><td>Credit notes</td></tr><tr><td>Damages and shrinkage</td><td>40</td><td>Adjustment report</td></tr><tr><td>Implied closing stock</td><td>1,360</td><td>900 + 3,000 &minus; 2,400 &minus; 100 &minus; 40</td></tr><tr><td>Reported closing stock</td><td>1,320</td><td>Distributor stock report at the end of the month</td></tr><tr><td>Difference</td><td>40</td><td>Open exception</td></tr></tbody></table></div>
+        <p>The equation implies 1,360, but the report says 1,320. Forty units become an open exception with a movement hypothesis. The bridge turned a vague mismatch into a single visible term with a source for every other part of the flow.</p>
+
+        <h2 id="timing">Timing and the boundary</h2>
+        <p>Distributor reporting weeks can differ from the supplier's calendar, and a delivery booked near the cutoff can appear in the sell-out of the next month. As with reporting cutoffs, these are calendar effects: carry them forward with evidence and expect them to clear in the following period.</p>
+        <p>A timing difference that does not clear has stopped being a timing issue. Investigate it only then, because at that point it is a movement or a data-quality problem wearing a calendar costume.</p>
+
+        <h2 id="returns">Returns and damages as their own terms</h2>
+        <p>Returns to the supplier and damages in the warehouse move stock without any sell-out record. Give each its own term with its own source, so they are not absorbed into the residual. If the implied closing stock sits systematically above the report, the likely cause is a movement category missing from the equation.</p>
+        <p>A clean bridge depends on the movement list being explicit and versioned. Add a category when the evidence points to it instead of widening the residual.</p>
+
+        <h2 id="tolerance">Tolerance as a decision</h2>
+        <p>Tolerance is a stated, documented decision: when the difference at a grain is within tolerance, it is signed off with the reason recorded. Set tolerance by materiality and history, not by habit. An unexplained difference above tolerance is an exception; one below tolerance is still recorded and reviewed.</p>
+        <p>Sign-off when the equation balances within tolerance is the control. If it does not balance, the documented residual is the decision, not the number.</p>
+
+        <h2 id="exceptions">The exception workflow</h2>
+        <p>Give every open difference a record: category, owner, status, evidence and the first and last month seen. Use a cause-based taxonomy, not a symptom-based one: timing or carry-forward, missing movement, identifier gap, genuine variance and source quality are categories; unmatched and unclear are symptoms.</p>
+        <p>Aging and recurrence tell you when a correction becomes a process fix. Publish a short monthly exception report with count and value by category, owner and status, so the same differences are resolved rather than rediscovered.</p>
+
+        <h2 id="takeaway">Practical takeaway</h2>
+        <p>Reconcile distributor inventory and sales through one stock equation at a stated grain. Name the source event for every term, keep timing, returns, damages and tolerances explicit, and run the difference through a visible exception workflow. The result is a bridge the supplier, the finance team and the distributor can read the same way.</p>
+        <p>Marksyte's <a href="../../services/data-reconciliation/">data reconciliation and controls service</a> can design the stock equation, the source mapping, the tolerances and the exception workflow across distributor, sell-out and stock sources.</p>
+
+        <div class="internal-links"><strong>Related Marksyte resources</strong><ul><li><a href="../consolidate-sell-out-data-multiple-distributors/">How to consolidate sell-out data from multiple distributors</a></li><li><a href="../reconcile-pos-shipments-inventory-data/">How to reconcile POS, shipments and inventory data</a></li><li><a href="../standardize-retailer-distributor-excel-files/">How to standardize retailer and distributor Excel files</a></li><li><a href="../../study-cases/data-reconciliation-fmcg/">See an illustrative FMCG data reconciliation case</a></li><li><a href="../../services/data-reconciliation/">Explore data reconciliation and exception controls</a></li><li><a href="../../services/managed-data-analysis/">Explore managed data operations and analysis</a></li></ul></div>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq"><details><summary>How do you reconcile distributor inventory and sales data?</summary><p>Through one stock equation at a stated grain: opening stock plus receipts minus sell-out, returns, damages and shrinkage equals closing stock. Every term needs a source event, and the remaining difference becomes a classified exception.</p></details><details><summary>What should balance in distributor inventory reconciliation?</summary><p>Opening stock, receipts, sales, returns and closing stock. If you have any five terms, the sixth is implied; the implied closing stock should match the reported one within a stated tolerance.</p></details><details><summary>What causes distributor stock and sales to disagree?</summary><p>Usually a movement category missing from the equation, such as returns, damages or shrinkage, or a timing difference across calendars. Adding the term or carrying the timing difference forward explains the gap.</p></details></div>
+      </div>
+    </article>
+    <section class="article-cta" aria-labelledby="article-cta-title"><div class="blog-shell article-cta-box"><div><p class="eyebrow">Distributor stock bridge</p><h2 id="article-cta-title">Make distributor inventory and sales balance with one equation</h2></div><a class="button primary" href="mailto:contact@marksyte.com" target="_blank" rel="noopener">Review your distributor bridge</a></div></section>
+  </main>
+  <footer class="site-footer"><span>&copy; 2026 Marksyte</span><nav aria-label="Legal links"><a href="../../legal/">Legal notice</a><a href="../../privacy/">Privacy</a><a href="../../cookies/">Cookies</a></nav></footer>
+</body>
+</html>
