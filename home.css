@@ -33,7 +33,7 @@ th, td { text-align: left; }
 .site-header { width: min(100% - 72px, var(--max)); min-height: 78px; margin: 0 auto; display: flex; align-items: center; gap: 32px; border-bottom: 1px solid var(--line); }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 800; letter-spacing: -.04em; }
 .brand-dot { width: 10px; height: 10px; display: inline-block; background: var(--blue); border-radius: 50%; }
-.main-nav { display: flex; flex-wrap: wrap; gap: 28px; margin-left: auto; font-size: 13px; font-weight: 700; }
+.main-nav { display: flex; gap: 28px; margin-left: auto; font-size: 13px; font-weight: 700; }
 .main-nav a { flex-shrink: 0; white-space: nowrap; }
 .main-nav a, .language-switch a, .text-link, .light-link { transition: color 180ms ease; }
 .main-nav a:hover, .language-switch a:hover, .text-link:hover, .light-link:hover { color: var(--blue); }
@@ -177,6 +177,7 @@ body { line-height: 1.6; }
 .review-totals strong { letter-spacing: -.04em; }
 
 @media (max-width: 1100px) {
+  .site-header { gap: 20px; }.main-nav { gap: 20px; }
   .hero { grid-template-columns: 1fr; padding-top: 80px; }.hero-copy { max-width: 760px; }.review-sheet { max-width: 780px; justify-self: center; }.annotation-a, .annotation-c { left: 8px; transform: translateX(0); }.annotation-a::after, .annotation-c::after { display: none; }.annotation-b { right: 8px; transform: translateX(0); }.annotation-b::after { display: none; }
   .walkthrough { grid-template-columns: 1fr; }.walkthrough-intro { position: static; }.illustrative-note { grid-column: 1; }.pack, .ways { grid-template-columns: 1fr; }.pack .section-heading { max-width: 640px; }.ways-note { grid-column: 1; }.document-spread { max-width: 760px; }
 }
