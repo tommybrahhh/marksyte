@@ -992,4 +992,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/data-validation-retailer-distributor-files/" />
     <lastmod>2026-08-11</lastmod>
   </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/retail-calendar-vs-financial-calendar-reconciliation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/retail-calendar-vs-financial-calendar-reconciliation/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/calendario-retail-vs-calendario-financiero-conciliacion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retail-calendar-vs-financial-calendar-reconciliation/" />
+    <lastmod>2026-08-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/calendario-retail-vs-calendario-financiero-conciliacion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/retail-calendar-vs-financial-calendar-reconciliation/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/calendario-retail-vs-calendario-financiero-conciliacion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retail-calendar-vs-financial-calendar-reconciliation/" />
+    <lastmod>2026-08-11</lastmod>
+  </url>
 </urlset>

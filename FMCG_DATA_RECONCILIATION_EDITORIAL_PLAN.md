@@ -2,7 +2,7 @@
 
 Created: 2026-08-07  
 Scope: English-first SEO library.  
-Published: 1, 2, 13, 7, 31, 5, 26 and 28 (EN + ES). In progress per the recommended publishing order.
+Published: 1, 2, 13, 7, 31, 5, 26, 28 and 20 (EN + ES). In progress per the recommended publishing order.
 
 ## Website and blog findings
 
@@ -244,6 +244,8 @@ Each supporting article should link to its cluster pillar, the most relevant ser
 - **Commercial / link:** High; explicit transformation rule. Link to data reconciliation/standardization.
 - **H2s:** Calendar types; Date bridge; Partial weeks; 53rd week; Cutoffs; Restatements; Example; Controls.
 - **Related:** 3, 19, 24.
+- **Published:** 2026-08-11, EN and ES. Sources: NRF (4-5-4 calendar structure, 53rd-week rule), IRS Publication 538 (52-53-week year accounting treatment).
+- **Spanish slug:** `/es/blog/calendario-retail-vs-calendario-financiero-conciliacion/`.
 
 #### 21. How to reconcile POS, shipments and inventory data — High
 
