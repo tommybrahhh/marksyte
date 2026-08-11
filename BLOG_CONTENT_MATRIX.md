@@ -51,6 +51,7 @@ Scope: 36 English/Spanish individual article pairs. The English and Spanish blog
 | `sydney-airport-mecca-local-brands-duty-free` | `es/blog/sydney-airport-mecca-marcas-locales-duty-free` | Local relevance, assortment and brand curation | Low | Preserve as sector editorial; no forced service connection | — |
 | `visitor-dispersal-destinations-travel-retail` | `es/blog/distribucion-visitantes-destinos-travel-retail` | Visitor flows, demand nodes and destination planning | Medium | Retain; possible later location/data-planning reframe | Managed data operations and analysis |
 | `zurich-passenger-growth-commercial-sales-gap` | `es/blog/zurich-pasajeros-ventas-retail-aeroportuario` | Passenger growth versus sales performance | High | Phase 6 priority reframe; strong reconciliation and analytical fit | Data reconciliation and controls |
+| `european-duty-free-record-conversion-gap-travel-retail` | `es/blog/record-duty-free-europeo-brecha-conversion-travel-retail` | Conversion, traffic and the commercial funnel | High | New editorial analysis (2026-08-11); market-level conversion-vs-traffic view built on ETRC and DFWC monitors | Managed data operations and analysis |
 
 ## Phase 6 completion
 

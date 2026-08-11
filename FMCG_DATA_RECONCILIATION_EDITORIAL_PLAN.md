@@ -2,7 +2,7 @@
 
 Created: 2026-08-07  
 Scope: English-first SEO library.  
-Published: 1, 2, 13 and 7 (EN + ES). In progress per the recommended publishing order.
+Published: 1, 2, 13, 7, 31, 5, 26 and 28 (EN + ES). In progress per the recommended publishing order.
 
 ## Website and blog findings
 
@@ -86,6 +86,8 @@ Each supporting article should link to its cluster pillar, the most relevant ser
 - **Commercial / link:** High; clear mapping and exception-management need. Link to data mapping and integration.
 - **H2s:** Missing vs unmapped; Detection controls; Mapping waterfall; New listings; Discontinued items; Queue design; Prevention.
 - **Related:** 1, 13, 14, 16.
+- **Published:** 2026-08-11, EN and ES. Sources: GS1 (GTIN identification), SPS Commerce (item data failures), MDPI (product master data quality study).
+- **Spanish slug:** `/es/blog/skus-faltantes-archivos-sell-out-retailer/`.
 
 #### 6. Retailer data reconciliation checklist for monthly close — Medium
 
@@ -304,6 +306,8 @@ Each supporting article should link to its cluster pillar, the most relevant ser
 - **Commercial / link:** High; captures users at the manual-to-controlled transition. Link to data reconciliation.
 - **H2s:** Workbook structure; Raw-data rules; Mapping joins; Comparison table; Exceptions; Versioning; Failure points; Next step.
 - **Related:** 6, 9, 25, 27, 30.
+- **Published:** 2026-08-11, EN and ES. Sources: Microsoft Learn (Power Query combine files), Panko (spreadsheet development error research).
+- **Spanish slug:** `/es/blog/workflow-excel-conciliacion-datos-retailer/`.
 
 #### 27. When to automate retailer data reconciliation — High
 
@@ -324,6 +328,8 @@ Each supporting article should link to its cluster pillar, the most relevant ser
 - **Commercial / link:** High; standardization and control design. Link to data standardization.
 - **H2s:** Structural vs business checks; Required fields; Key uniqueness; Reference validity; Coverage; Total controls; Severity; Quarantine.
 - **Related:** 9, 23, 25, 29.
+- **Published:** 2026-08-11, EN and ES. Sources: Gartner (cost of poor data quality), TechTarget (1-10-100 rule of data verification). The planned link to article 23 is replaced by a link to article 7 (sell-out consolidation) because 23 is not yet published.
+- **Spanish slug:** `/es/blog/validacion-datos-archivos-retailers-distribuidores/`.
 
 #### 29. How to manage reconciliation exceptions month after month — High
 
@@ -344,6 +350,20 @@ Each supporting article should link to its cluster pillar, the most relevant ser
 - **Commercial / link:** Very high; bridges consulting and automation. Link to data reconciliation and mapping/integration.
 - **H2s:** Anatomy of a rule; Inputs/outputs; Rule order; Tolerances; Effective dates; Tests; Versioning; Exceptions; Documentation.
 - **Related:** 25, 26, 27, 29.
+
+### Cluster 6 — Trade spend and promotional deductions
+
+#### 31. How to reconcile promotional deductions and trade spend in FMCG — High, pillar
+
+- **SEO title / slug / H1:** How to reconcile promotional deductions and trade spend in FMCG | `/blog/reconcile-promotional-deductions-trade-spend-fmcg/` | same.
+- **Meta:** Reconcile promotional claims, retailer deductions and trade spend by encoding terms as rules and checking every claim against what was earned.
+- **Intent / keyword / related:** Money-side reconciliation; promotional deduction reconciliation; trade spend reconciliation, retailer deductions, deduction management FMCG, CPG trade promotion reconciliation.
+- **Reader / problem:** Finance, sales operations and commercial finance teams whose retailer deductions are argued invoice by invoice and never decomposed by cause.
+- **Commercial / link:** Very high; extends the volume reconciliation proposition into the money side of the same trade terms. Link to data reconciliation and managed data operations.
+- **H2s:** Why the money side runs late; Write trade terms as rules first; What a deduction actually contains; The three-pass reconciliation; The numbers that matter; What this guide does not claim.
+- **Related:** 1, 13, 19, 25, 29, 30.
+- **Published:** 2026-08-11, EN and ES. Sources: BlackLine (deduction management), BlackLine (handling retailer deductions), HighRadius (deduction margin risk), McKinsey (TPM/TPO), ESM Magazine (missing-data profit leakage).
+- **Spanish slug:** `/es/blog/conciliar-deducciones-gasto-comercial-fmcg/`.
 
 ## Recommended first 10 and publishing order
 

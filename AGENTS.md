@@ -19,3 +19,16 @@
 | Five rules for border duty free growth. | Five rules for border duty free growth |
 
 Keep the internal period when a heading legitimately contains two sentences; only the trailing period is removed.
+
+## Blog writing standards
+
+Before writing any blog post, read and follow `BLOG_WRITING_RULES.md` (Spanish and English). Core rules:
+
+- Establish a concrete thesis first; never write without one
+- Use sources as raw material for reasoning, not a summary chain
+- Distinguish facts from inferences from opinions; never pass an inference off as a fact
+- Prefer concrete details over generic business-speak; cut any sentence that could apply to any industry
+- Avoid synthetic content: no invented frameworks, no filler "opportunities/risks" sections, no rhetorical executive questions, no moral endings
+- Structure follows the argument, not a fixed template
+- Run a second editing pass before delivering
+- Priority: criterion > evidence > clarity > structure > style > length
