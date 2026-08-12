@@ -1048,4 +1048,32 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/sell-through-rate-retail-data/" />
     <lastmod>2026-08-12</lastmod>
   </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/retail-pos-sales-audit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/retail-pos-sales-audit/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/auditoria-ventas-retail-pos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retail-pos-sales-audit/" />
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/auditoria-ventas-retail-pos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/retail-pos-sales-audit/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/auditoria-ventas-retail-pos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retail-pos-sales-audit/" />
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/retail-data-integration-pos-erp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/retail-data-integration-pos-erp/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/integracion-datos-retail-pos-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retail-data-integration-pos-erp/" />
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/integracion-datos-retail-pos-erp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/retail-data-integration-pos-erp/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/integracion-datos-retail-pos-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retail-data-integration-pos-erp/" />
+    <lastmod>2026-08-12</lastmod>
+  </url>
 </urlset>
