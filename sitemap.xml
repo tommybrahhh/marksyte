@@ -1076,4 +1076,74 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/retail-data-integration-pos-erp/" />
     <lastmod>2026-08-12</lastmod>
   </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/inventory-data-not-match-physical-stock/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/inventory-data-not-match-physical-stock/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/datos-inventario-no-coinciden-stock-fisico/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/inventory-data-not-match-physical-stock/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/datos-inventario-no-coinciden-stock-fisico/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/inventory-data-not-match-physical-stock/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/datos-inventario-no-coinciden-stock-fisico/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/inventory-data-not-match-physical-stock/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/why-sku-mapping-fails-international/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/why-sku-mapping-fails-international/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/por-que-falla-mapeo-sku-internacional/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/why-sku-mapping-fails-international/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/por-que-falla-mapeo-sku-internacional/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/why-sku-mapping-fails-international/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/por-que-falla-mapeo-sku-internacional/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/why-sku-mapping-fails-international/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/compare-retail-sales-across-countries/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/compare-retail-sales-across-countries/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/comparar-ventas-retail-entre-paises/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/compare-retail-sales-across-countries/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/comparar-ventas-retail-entre-paises/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/compare-retail-sales-across-countries/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/comparar-ventas-retail-entre-paises/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/compare-retail-sales-across-countries/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/how-to-calculate-retail-market-share-sell-out/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/how-to-calculate-retail-market-share-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/como-calcular-cuota-mercado-retail-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/how-to-calculate-retail-market-share-sell-out/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/como-calcular-cuota-mercado-retail-sell-out/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/how-to-calculate-retail-market-share-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/como-calcular-cuota-mercado-retail-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/how-to-calculate-retail-market-share-sell-out/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/blog/distributor-sales-not-match-retailer-sell-out/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/distributor-sales-not-match-retailer-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/ventas-distribuidor-no-coinciden-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/distributor-sales-not-match-retailer-sell-out/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.marksyte.com/es/blog/ventas-distribuidor-no-coinciden-sell-out/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marksyte.com/blog/distributor-sales-not-match-retailer-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.marksyte.com/es/blog/ventas-distribuidor-no-coinciden-sell-out/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.marksyte.com/blog/distributor-sales-not-match-retailer-sell-out/" />
+    <lastmod>2026-08-13</lastmod>
+  </url>
 </urlset>
