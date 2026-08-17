@@ -7,3 +7,8 @@ work/
 
 # Historical pivot archive; retained in Git for recovery, never deployed.
 .archive/
+
+# Internal project documentation and unpublished working material
+*.md
+docs/
+study-cases/travel-retail-distribution-strategy/draft.md
