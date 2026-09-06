@@ -2572,3 +2572,211 @@ img.brand-logo {
   background: transparent !important;
   vertical-align: middle;
 }
+
+/* Semantic chart fallbacks remain in the document for no-JS and assistive use. */
+.js-enhanced-content {
+  display: contents;
+}
+
+.has-js-enhancement > .initial-content {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.initial-content {
+  min-width: 0;
+}
+
+.semantic-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--charcoal);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.semantic-table caption {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 760;
+  text-align: left;
+}
+
+.semantic-table th,
+.semantic-table td {
+  padding: 9px 10px;
+  border: 1px solid rgba(24, 33, 47, 0.12);
+  text-align: left;
+  vertical-align: top;
+}
+
+.semantic-table thead th {
+  background: rgba(24, 33, 47, 0.055);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.semantic-table tbody th {
+  font-weight: 800;
+}
+
+.semantic-table tbody td:last-child {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.data-summary-text,
+.table-note {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.data-summary-list {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.data-summary-list strong {
+  color: var(--charcoal);
+}
+
+.youth-card .initial-content .data-summary-text,
+.youth-card .initial-content .data-summary-list {
+  color: rgba(248, 245, 239, 0.78);
+}
+
+.youth-card .initial-content .semantic-table {
+  color: #f8f5ef;
+}
+
+.youth-card .initial-content .semantic-table caption,
+.youth-card .initial-content .semantic-table thead th {
+  color: rgba(248, 245, 239, 0.68);
+}
+
+.youth-card .initial-content .semantic-table th,
+.youth-card .initial-content .semantic-table td {
+  border-color: rgba(248, 245, 239, 0.16);
+}
+
+.youth-card .initial-content .semantic-table thead th {
+  background: rgba(248, 245, 239, 0.08);
+}
+
+.youth-card .initial-content .data-summary-list strong {
+  color: #f8f5ef;
+}
+
+.initial-content > h4 {
+  margin: 16px 0 8px;
+  color: var(--charcoal);
+  font-size: 1rem;
+}
+
+.initial-content > h4:first-child {
+  margin-top: 0;
+}
+
+.semantic-territory-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 24px;
+  color: rgba(248, 245, 239, 0.78);
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.semantic-territory-list h4 {
+  margin: 0;
+  color: #f8f5ef;
+  font-size: 1.06rem;
+}
+
+.semantic-territory-list p {
+  margin: 6px 0 0;
+}
+
+.semantic-territory-list .territory-data {
+  color: #9ed7cf;
+  font-weight: 800;
+}
+
+.semantic-territory-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.semantic-territory-list ul li {
+  padding: 5px 7px;
+  border: 1px solid rgba(248, 245, 239, 0.14);
+  border-radius: 999px;
+  color: rgba(248, 245, 239, 0.78);
+  font-size: 0.72rem;
+}
+
+.segment-matrix > .initial-content {
+  padding: 20px;
+}
+
+.segment-matrix > .initial-content .data-summary-text,
+.segment-matrix > .initial-content .data-summary-list {
+  color: rgba(248, 245, 239, 0.78);
+}
+
+.segment-matrix > .initial-content .data-summary-list strong {
+  color: #f8f5ef;
+}
+
+.territory-cards > .initial-content,
+.strategic-playbook > .initial-content {
+  display: grid;
+  gap: 14px;
+}
+
+@media (max-width: 760px) {
+  .semantic-table {
+    font-size: 0.76rem;
+  }
+
+  .semantic-table th,
+  .semantic-table td {
+    padding: 8px;
+  }
+
+  .semantic-table caption {
+    font-size: 0.74rem;
+  }
+
+  .slope-chart > .initial-content,
+  .age-multiples > .initial-content {
+    overflow-x: auto;
+  }
+
+  .slope-chart > .initial-content .semantic-table,
+  .age-multiples > .initial-content .semantic-table {
+    min-width: 540px;
+  }
+}

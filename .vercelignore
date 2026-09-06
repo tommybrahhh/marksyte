@@ -1,6 +1,7 @@
 preview-*.png
 .vercel
 .env*
+edge-profile-proof-check/
 outputs/
 tmp/
 work/
