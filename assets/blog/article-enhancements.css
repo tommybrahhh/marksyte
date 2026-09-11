@@ -734,7 +734,6 @@ body.article-page .article-hero {
 
 body.article-page .article-hero h1 {
   max-width: 920px;
-  letter-spacing: -0.045em;
 }
 
 body.article-page .article-dek,
@@ -745,7 +744,7 @@ body.article-page .article-dek,
 
 body.article-page .article-body {
   padding-block: clamp(62px, 8vw, 104px);
-  background: var(--surface);
+  background: transparent;
 }
 
 :where(body.article-page .article-body) h2,
