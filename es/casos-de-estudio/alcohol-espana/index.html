@@ -114,7 +114,28 @@
               <p class="chart-label">KPI strip · 2022 vs 2025</p>
               <h3 id="kpi-title">La caída también afecta a ocasiones sociales</h3>
             </div>
-            <div id="kpi-strip" class="kpi-strip"></div>
+            <div id="kpi-strip" class="kpi-strip">
+              <div class="initial-content">
+                <table class="semantic-table">
+                  <caption>Porcentaje de personas por patrón de consumo, 2022 y 2025</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Indicador</th>
+                      <th scope="col">2022</th>
+                      <th scope="col">2025</th>
+                      <th scope="col">Cambio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Nunca alcohol</th><td>31,3%</td><td>33,9%</td><td>+2,6 pp</td></tr>
+                    <tr><th scope="row">Consumo social</th><td>47,0%</td><td>43,9%</td><td>-3,1 pp</td></tr>
+                    <tr><th scope="row">Consumo habitual</th><td>34,7%</td><td>29,7%</td><td>-5,0 pp</td></tr>
+                  </tbody>
+                </table>
+                <p class="data-summary-text">Crece la abstención declarada y retroceden el consumo social y el consumo más frecuente.</p>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
           </section>
 
           <section class="chart-card" aria-labelledby="slope-title">
@@ -128,7 +149,29 @@
                 <span class="legend-dot year-end"></span>2025
               </div>
             </div>
-            <div id="slope-chart" class="slope-chart" role="img" aria-label="Slope chart de nunca alcohol por edad entre 2022 y 2025"></div>
+            <div id="slope-chart" class="slope-chart" role="group" aria-labelledby="slope-title">
+              <div class="initial-content">
+                <p class="data-summary-text">La abstención aumenta con más intensidad entre 16-29; el grupo 65+ parte de un nivel alto y desciende ligeramente.</p>
+                <table class="semantic-table">
+                  <caption>Personas que nunca consumen alcohol por edad, 2022 y 2025</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Grupo de edad</th>
+                      <th scope="col">2022</th>
+                      <th scope="col">2025</th>
+                      <th scope="col">Cambio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">16-29</th><td>33,2%</td><td>39,9%</td><td>+6,7 pp</td></tr>
+                    <tr><th scope="row">30-44</th><td>26,6%</td><td>28,8%</td><td>+2,2 pp</td></tr>
+                    <tr><th scope="row">45-64</th><td>25,3%</td><td>28,6%</td><td>+3,3 pp</td></tr>
+                    <tr><th scope="row">65+</th><td>44,0%</td><td>42,4%</td><td>-1,6 pp</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
           </section>
         </div>
       </section>
@@ -162,9 +205,24 @@
             <div
               id="youth-change-chart"
               class="diverging-chart"
-              role="img"
-              aria-label="Cambio 2022 a 2025 en jóvenes para alcohol, tabaco y actividad física"
-            ></div>
+              role="group"
+              aria-labelledby="youth-change-title"
+            >
+              <div class="initial-content">
+                <p class="data-summary-text">Entre jóvenes, aumenta la abstención y la actividad física mientras disminuyen el consumo social de alcohol y el tabaco diario.</p>
+                <table class="semantic-table">
+                  <caption>Cambio 2022 a 2025 entre jóvenes, en puntos porcentuales</caption>
+                  <thead><tr><th scope="col">Indicador</th><th scope="col">Cambio</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Nunca alcohol</th><td>+6,7 pp</td></tr>
+                    <tr><th scope="row">Consumo social alcohol</th><td>-7,6 pp</td></tr>
+                    <tr><th scope="row">Tabaco diario</th><td>-2,9 pp</td></tr>
+                    <tr><th scope="row">Actividad física semanal o más</th><td>+3,2 pp</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
           </section>
 
           <section class="chart-card multiples-card" aria-labelledby="multiples-title">
@@ -180,14 +238,59 @@
             <div
               id="age-multiples"
               class="age-multiples"
-              role="img"
-              aria-label="Small multiples por edad para indicadores de bienestar en 2025"
-            ></div>
+              role="group"
+              aria-labelledby="multiples-title"
+            >
+              <div class="initial-content">
+                <p class="data-summary-text">En 2025, los jóvenes presentan más abstención, menos tabaco diario y más actividad física que la media o que los grupos adultos de 30-64. El contacto sanitario aumenta con la edad.</p>
+                <table class="semantic-table">
+                  <caption>Indicadores por grupo de edad en 2025, porcentaje</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Grupo</th>
+                      <th scope="col">Abstención alcohol</th>
+                      <th scope="col">Tabaco diario</th>
+                      <th scope="col">Actividad física</th>
+                      <th scope="col">Contacto sanitario</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Total</th><td>33,9%</td><td>15,0%</td><td>67,6%</td><td>81,3%</td></tr>
+                    <tr><th scope="row">16-29</th><td>39,9%</td><td>11,0%</td><td>77,8%</td><td>71,3%</td></tr>
+                    <tr><th scope="row">30-44</th><td>28,8%</td><td>18,8%</td><td>68,2%</td><td>76,5%</td></tr>
+                    <tr><th scope="row">45-64</th><td>28,6%</td><td>19,5%</td><td>66,0%</td><td>82,1%</td></tr>
+                    <tr><th scope="row">65+</th><td>42,4%</td><td>7,7%</td><td>62,1%</td><td>91,9%</td></tr>
+                  </tbody>
+                </table>
+                <ul class="data-summary-list">
+                  <li><strong>Abstención alcohol:</strong> los jóvenes ya superan la media nacional de abstención.</li>
+                  <li><strong>Tabaco diario:</strong> es menor entre jóvenes que entre adultos de 30-64.</li>
+                  <li><strong>Actividad física:</strong> los jóvenes son el grupo más activo físicamente.</li>
+                  <li><strong>Contacto sanitario:</strong> crece con la edad; no se lee igual que actividad o tabaco.</li>
+                </ul>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
             <p class="chart-note">
               Los indicadores no cuentan una sola historia: separan bienestar, riesgo y ciclo
               vital
             </p>
-            <div id="integrated-reading" class="integrated-reading" aria-label="Lectura integrada por grupo de edad"></div>
+            <div id="integrated-reading" class="integrated-reading" aria-label="Lectura integrada por grupo de edad">
+              <div class="initial-content">
+                <h4>Los indicadores dibujan perfiles distintos por edad</h4>
+                <table class="semantic-table">
+                  <caption>Lectura integrada por grupo de edad</caption>
+                  <thead><tr><th scope="col">Grupo</th><th scope="col">Lectura</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">16-29</th><td>Más abstención, menos tabaco diario y más actividad física. Señal generacional.</td></tr>
+                    <tr><th scope="row">30-44</th><td>Más consumo social y más tabaco diario que jóvenes. Perfil adulto más expuesto.</td></tr>
+                    <tr><th scope="row">45-64</th><td>Similar a 30-44 en consumo social, con más contacto sanitario.</td></tr>
+                    <tr><th scope="row">65+</th><td>Alta abstención y muy bajo tabaco diario, con mayor contacto sanitario. Patrón edad/salud.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
           </section>
         </div>
       </section>
@@ -221,9 +324,24 @@
             <div
               id="social-age-bars"
               class="horizontal-bars"
-              role="img"
-              aria-label="Barras por edad de consumo social de alcohol en 2025"
-            ></div>
+              role="group"
+              aria-labelledby="social-age-title"
+            >
+              <div class="initial-content">
+                <p class="data-summary-text">El consumo social mantiene más fuerza en adultos de 30-64 que entre jóvenes.</p>
+                <table class="semantic-table">
+                  <caption>Consumo social de alcohol por edad en 2025</caption>
+                  <thead><tr><th scope="col">Grupo de edad</th><th scope="col">Consumo social</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">16-29</th><td>41,4%</td></tr>
+                    <tr><th scope="row">30-44</th><td>49,5%</td></tr>
+                    <tr><th scope="row">45-64</th><td>49,5%</td></tr>
+                    <tr><th scope="row">65+</th><td>32,0%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
           </section>
 
           <section class="chart-card ranking-card" aria-labelledby="ranking-title">
@@ -239,9 +357,39 @@
             <div
               id="opportunity-ranking"
               class="ranking-list"
-              role="img"
-              aria-label="Consumo social por renta y educación comparado con la media de España"
-            ></div>
+              role="group"
+              aria-labelledby="ranking-title"
+            >
+              <div class="initial-content">
+                <p class="data-summary-text">La media de España es 43,9%. Renta alta y educación superior se sitúan un 26% por encima de esa media.</p>
+                <h4>Por renta</h4>
+                <p class="table-note">Quintiles: cinco grupos iguales por renta. Q1 = menor renta; Q5 = mayor renta.</p>
+                <table class="semantic-table">
+                  <caption>Consumo social de alcohol por renta en 2025</caption>
+                  <thead><tr><th scope="col">Segmento</th><th scope="col">Consumo social</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Renta alta</th><td>55,5%</td></tr>
+                    <tr><th scope="row">Renta media-alta</th><td>49,8%</td></tr>
+                    <tr><th scope="row">Renta media</th><td>44,5%</td></tr>
+                    <tr><th scope="row">Renta media-baja</th><td>37,7%</td></tr>
+                    <tr><th scope="row">Renta baja</th><td>29,9%</td></tr>
+                  </tbody>
+                </table>
+                <h4>Por educación</h4>
+                <p class="table-note">Renta y educación son cortes separados; esta tabla no cruza ambas variables.</p>
+                <table class="semantic-table">
+                  <caption>Consumo social de alcohol por educación en 2025</caption>
+                  <thead><tr><th scope="col">Segmento</th><th scope="col">Consumo social</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Educación superior</th><td>55,4%</td></tr>
+                    <tr><th scope="row">Secundaria segunda etapa</th><td>46,7%</td></tr>
+                    <tr><th scope="row">Secundaria primera etapa</th><td>39,2%</td></tr>
+                    <tr><th scope="row">Primaria o inferior</th><td>22,5%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
           </section>
         </div>
       </section>
@@ -274,7 +422,18 @@
                 Afinidad social × atractivo comercial
               </h3>
             </div>
-            <div id="segment-matrix" class="segment-matrix" role="img" aria-label="Matriz de afinidad al consumo social y atractivo comercial"></div>
+            <div id="segment-matrix" class="segment-matrix" role="group" aria-labelledby="segment-matrix-title">
+              <div class="initial-content">
+                <p class="data-summary-text">Mapa interpretativo de cuatro territorios, no un cruce exacto de microdatos.</p>
+                <ol class="data-summary-list">
+                  <li><strong>Core Opportunity:</strong> renta alta, educación superior y adultos de 30-64</li>
+                  <li><strong>Volumen Social:</strong> adultos de 30-64 en general y renta media</li>
+                  <li><strong>Nicho de Transformación:</strong> jóvenes de 16-29</li>
+                  <li><strong>Baja Prioridad Alcohol Tradicional:</strong> renta baja, educación primaria o inferior y 65+</li>
+                </ol>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
             <p class="matrix-method-note">
               X: consumo social semanal + mensual. Y: proxy interpretativo de renta, capacidad
               de gasto y educación como adopción cultural
@@ -286,7 +445,37 @@
               <p class="chart-label">Dónde jugar y cómo jugar</p>
               <h3>Respuesta empresarial por cuadrante</h3>
             </div>
-            <div id="territory-cards" class="territory-cards"></div>
+            <div id="territory-cards" class="territory-cards">
+              <div class="initial-content">
+                <ol class="semantic-territory-list">
+                  <li>
+                    <h4>Core Opportunity</h4>
+                    <p class="territory-data">Renta alta / educación superior / 30-64 · 55% consumo social · +26% vs media</p>
+                    <p>Alta afinidad social y mayor capacidad de gasto.</p>
+                    <ul><li>Premium</li><li>Comida y afterwork</li><li>Hosting en casa</li><li>Calidad sobre volumen</li></ul>
+                  </li>
+                  <li>
+                    <h4>Volumen Social</h4>
+                    <p class="territory-data">30-64 general / renta media · Renta media 44,5% · 30-64 en 49,5%</p>
+                    <p>El alcohol sigue operando como código social cotidiano.</p>
+                    <ul><li>Formatos accesibles</li><li>Promos por ocasión</li><li>Packs para hogar</li><li>Conveniencia</li></ul>
+                  </li>
+                  <li>
+                    <h4>Nicho de Transformación</h4>
+                    <p class="territory-data">Jóvenes 16-29 · Nunca alcohol +6,7 pp · actividad física 77,8%</p>
+                    <p>No son el core actual; son el laboratorio de nuevos códigos.</p>
+                    <ul><li>Baja graduación</li><li>Sin alcohol</li><li>Sabor</li><li>Social sin exceso</li><li>Bienestar</li></ul>
+                  </li>
+                  <li>
+                    <h4>Baja Prioridad Alcohol Tradicional</h4>
+                    <p class="territory-data">Renta baja / primaria o inferior / 65+ · Renta baja 29,9% · primaria 22,5% · 65+ 32,0%</p>
+                    <p>Menor afinidad social; no son la oportunidad principal.</p>
+                    <ul><li>No forzar alcohol</li><li>Opciones sin alcohol</li><li>Accesibilidad</li><li>Moderación</li></ul>
+                  </li>
+                </ol>
+              </div>
+              <div class="js-enhanced-content" aria-hidden="true"></div>
+            </div>
           </section>
         </div>
       </section>
@@ -309,7 +498,53 @@
           </div>
         </div>
 
-        <div id="strategic-playbook" class="strategic-playbook" aria-label="Playbook estratégico para empresas"></div>
+        <div id="strategic-playbook" class="strategic-playbook" aria-label="Playbook estratégico para empresas">
+          <div class="initial-content">
+            <article class="playbook-card">
+              <div class="playbook-index">01</div>
+              <div class="playbook-main"><h3>Redefinir la ocasión, no el producto</h3><p class="playbook-message">El reto no es estar en más momentos, sino ser más relevante en ocasiones mejor definidas.</p></div>
+              <div class="playbook-evidence"><p>Evidencia</p><span>Consumo social total: 47,0% → 43,9%</span><span>Jóvenes: 49,0% → 41,4%</span></div>
+              <div class="playbook-actions"><p>Qué hacer</p><ul><li>Diseñar por ocasión: comida, aperitivo, tardeo, afterwork y casa</li><li>Hablar de acompañar momentos</li><li>Vender ritual, sabor y formato</li></ul></div>
+            </article>
+            <article class="playbook-card">
+              <div class="playbook-index">02</div>
+              <div class="playbook-main"><h3>Crear un portafolio de moderación</h3><p class="playbook-message">La moderación deja de ser un nicho defensivo y pasa a ser una expectativa cultural.</p></div>
+              <div class="playbook-evidence"><p>Evidencia</p><span>Nunca alcohol: 31,3% → 33,9%</span><span>16-29: 33,2% → 39,9%</span><span>Tabaco diario: 17,1% → 15,0%</span></div>
+              <div class="playbook-actions"><p>Qué hacer</p><ul><li>Low alcohol, zero alcohol y porciones controladas</li><li>Packs mixtos: con y sin alcohol</li><li>Menos graduación, buen sabor</li><li>Control, elección y flexibilidad</li></ul></div>
+            </article>
+            <article class="playbook-card">
+              <div class="playbook-index">03</div>
+              <div class="playbook-main"><h3>Construir credenciales de bienestar</h3><p class="playbook-message">El alcohol compite con una identidad de autocuidado. Ignorarlo suena fuera de época.</p></div>
+              <div class="playbook-evidence"><p>Evidencia</p><span>Actividad física semanal o más: 63,6% → 67,6%</span><span>Jóvenes: 77,8%</span></div>
+              <div class="playbook-actions"><p>Qué hacer</p><ul><li>Transparencia nutricional y de graduación</li><li>Menos azúcar cuando sea creíble</li><li>Evitar códigos de exceso</li><li>Ocio diurno, cultura y gastronomía</li></ul></div>
+            </article>
+            <article class="playbook-card">
+              <div class="playbook-index">04</div>
+              <div class="playbook-main"><h3>Priorizar adultos sociales, no solo jóvenes</h3><p class="playbook-message">Los jóvenes marcan el cambio cultural, pero los adultos siguen sosteniendo buena parte de la ocasión social.</p></div>
+              <div class="playbook-evidence"><p>Evidencia</p><span>30-44 y 45-64: 49,5% consumo social</span><span>16-29: 41,4%</span></div>
+              <div class="playbook-actions"><p>Qué hacer</p><ul><li>Premium accesible para 30-64</li><li>Comida, hogar, terraza y afterwork</li><li>Segmentar por ocasión y gasto</li><li>No sobredimensionar campañas juveniles</li></ul></div>
+            </article>
+            <article class="playbook-card">
+              <div class="playbook-index">05</div>
+              <div class="playbook-main"><h3>Capturar valor, no volumen</h3><p class="playbook-message">Si el consumo se vuelve más selectivo, la oportunidad está en valor añadido.</p></div>
+              <div class="playbook-evidence"><p>Evidencia</p><span>Renta alta: 55,5%, +26% vs media</span><span>Educación superior: 55,4%, +26% vs media</span></div>
+              <div class="playbook-actions"><p>Qué hacer</p><ul><li>Premiumización y ediciones especiales</li><li>Origen, calidad o gastronomía</li><li>Menos promo de volumen</li><li>Packs para hosting o regalo</li></ul></div>
+            </article>
+            <article class="playbook-card">
+              <div class="playbook-index">06</div>
+              <div class="playbook-main"><h3>Innovar en socialización sin exceso</h3><p class="playbook-message">La socialización joven no desaparece; cambia sus códigos.</p></div>
+              <div class="playbook-evidence"><p>Evidencia</p><span>16-29: nunca alcohol 39,9%</span><span>Actividad física: 77,8%</span><span>Tabaco diario: 11,0%</span></div>
+              <div class="playbook-actions"><p>Qué hacer</p><ul><li>Bebidas para estar en el plan</li><li>Alternativas adultas sin alcohol</li><li>Producto sin exceso como centro</li><li>Cultura, gastronomía, música y tardeo</li></ul></div>
+            </article>
+            <article class="playbook-card">
+              <div class="playbook-index">07</div>
+              <div class="playbook-main"><h3>Medir ocasiones, no solo consumo</h3><p class="playbook-message">Para decidir bien, hay que bajar de frecuencia agregada a momentos concretos.</p></div>
+              <div class="playbook-evidence"><p>Evidencia</p><span>Las tablas muestran frecuencia, pero no tipo de bebida, gasto, canal ni ocasión concreta.</span></div>
+              <div class="playbook-actions"><p>Qué hacer</p><ul><li>Estudiar dónde, con quién, por qué y contra qué compite</li><li>Separar casa, fuera, comida, noche, celebración y afterwork</li><li>Medir barreras: salud, precio, sabor y control</li><li>Detectar switching hacia sin alcohol, café, funcionales o agua premium</li></ul></div>
+            </article>
+          </div>
+          <div class="js-enhanced-content" aria-hidden="true"></div>
+        </div>
       </section>
 
       <section class="final-section" aria-labelledby="final-title">

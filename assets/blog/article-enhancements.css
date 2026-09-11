@@ -1,23 +1,23 @@
 
 :root {
-  --article-ink: #101114;
-  --article-muted: #62666d;
-  --article-soft: #ffffff;
-  --article-accent: #105fc0;
-  --article-accent-2: #eaf3fd;
-  --article-line: #d9dde3;
-  --article-warm: #eaf3fd;
+  --article-ink: var(--ink);
+  --article-muted: var(--muted);
+  --article-soft: var(--surface);
+  --article-accent: var(--blue-dark);
+  --article-accent-2: var(--blue-soft);
+  --article-line: var(--line);
+  --article-warm: var(--surface-subtle);
 }
 * { box-sizing: border-box; }
-body.article-page { color: var(--article-ink); background: var(--article-soft); }
-.article-hero { padding: clamp(3rem, 7vw, 6rem) 1.25rem 2.25rem; background: linear-gradient(180deg,#f7faf9 0%,#fff 100%); }
+body.article-page { color: var(--article-ink); background: var(--page); }
+.article-hero { padding: clamp(3rem, 7vw, 6rem) 1.25rem 2.25rem; background: var(--surface-subtle); }
 .blog-shell, .article-body, .article-footer-inner { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
 .article-hero-grid { display: block; }
 .article-hero-copy { max-width: 800px; }
-.eyebrow { margin: 0 0 .75rem; text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 800; color: var(--article-accent); }
-.article-hero h1 { max-width: 20ch; margin: 0; font-size: clamp(2.2rem,5.2vw,4.8rem); line-height: .98; letter-spacing: 0; }
+.eyebrow { margin: 0 0 .75rem; font-family: var(--font-body); text-transform: uppercase; letter-spacing: .13em; font-size: 11px; font-weight: 600; color: var(--article-accent); }
+.article-hero h1 { max-width: 20ch; margin: 0; font-family: "Newsreader", Georgia, serif; font-size: clamp(2.2rem,5.2vw,4.8rem); font-weight: 500; line-height: .98; letter-spacing: -.04em; }
 .article-dek { max-width: 62ch; margin: 1.25rem 0; font-size: clamp(1.05rem,2vw,1.35rem); line-height: 1.55; color: var(--article-muted); }
-.article-meta { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; font-size: .92rem; color: var(--article-muted); }
+.article-meta { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; font-family: var(--font-body); font-size: .92rem; font-weight: 600; color: var(--article-muted); }
 .metric-strip { margin-top: 2rem; display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; border: 1px solid var(--article-line); background: var(--article-line); border-radius: 8px; overflow: hidden; }
 .metric { padding: 1.15rem; background: #fff; }
 .metric strong { display: block; font-size: 1.8rem; line-height: 1; color: var(--article-accent); }
@@ -25,8 +25,8 @@ body.article-page { color: var(--article-ink); background: var(--article-soft); 
 .metric a { color: inherit; text-decoration-thickness: 1px; }
 .article-body { padding: 2.5rem 0 5rem; max-width: 860px; }
 .article-body p, .article-body li { font-size: 1.05rem; line-height: 1.72; }
-.article-body h2 { margin: 3.25rem 0 1rem; font-size: clamp(2rem,3.5vw,3rem); line-height: 1.12; letter-spacing: 0; scroll-margin-top: 6rem; }
-.article-body h3 { margin: 0 0 .5rem; font-size: clamp(1.3rem,1.8vw,1.5rem); }
+.article-body h2 { margin: 3.25rem 0 1rem; font-family: "Newsreader", Georgia, serif; font-size: clamp(2rem,3.5vw,3rem); font-weight: 500; line-height: 1.1; letter-spacing: -.04em; scroll-margin-top: 6rem; }
+.article-body h3 { margin: 0 0 .5rem; font-family: "Newsreader", Georgia, serif; font-size: clamp(1.3rem,1.8vw,1.5rem); font-weight: 500; line-height: 1.16; letter-spacing: -.03em; }
 .article-body a:not(.button) { color: var(--article-accent); text-underline-offset: 3px; }
 .reading-nav { padding: 1rem 1.1rem; border: 1px solid var(--article-line); border-radius: 8px; background: #fff; }
 .reading-nav strong { display: block; margin-bottom: .5rem; }
@@ -701,20 +701,20 @@ body.article-page { color: var(--article-ink); background: var(--article-soft); 
 
 /* Marksyte editorial route layer: bring every article into the archive system. */
 body.article-page {
-  --article-ink: #101114;
-  --article-muted: #62666d;
-  --article-soft: #ffffff;
-  --article-accent: #105fc0;
-  --article-accent-2: #eaf3fd;
-  --article-line: #d9dde3;
-  --article-warm: #eaf3fd;
+  --article-ink: var(--ink);
+  --article-muted: var(--muted);
+  --article-soft: var(--surface);
+  --article-accent: var(--blue-dark);
+  --article-accent-2: var(--blue-soft);
+  --article-line: var(--line);
+  --article-warm: var(--surface-subtle);
   color: var(--article-ink);
-  background: var(--article-soft);
+  background: var(--page);
 }
 
 body.article-page .site-header {
   border-bottom-color: var(--article-line);
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--surface);
 }
 
 body.article-page .brand-mark {
@@ -729,10 +729,7 @@ body.article-page .brand-mark {
 body.article-page .article-hero {
   padding-block: clamp(68px, 9vw, 118px) clamp(56px, 7vw, 88px);
   border-bottom: 1px solid var(--article-line);
-  background:
-    linear-gradient(135deg, rgba(16, 95, 192, 0.1), transparent 44%),
-    linear-gradient(315deg, rgba(16, 95, 192, 0.07), transparent 36%),
-    var(--article-accent-2);
+  background: var(--surface-subtle);
 }
 
 body.article-page .article-hero h1 {
@@ -748,7 +745,7 @@ body.article-page .article-dek,
 
 body.article-page .article-body {
   padding-block: clamp(62px, 8vw, 104px);
-  background: #ffffff;
+  background: var(--surface);
 }
 
 :where(body.article-page .article-body) h2,
@@ -834,7 +831,7 @@ body.article-page .mix-bar.is-negative {
 
 body.article-page .article-cta {
   border-top: 1px solid var(--article-line);
-  background: var(--article-soft);
+  background: var(--page);
 }
 
 body.article-page .article-cta-box {
@@ -1510,4 +1507,88 @@ img.brand-logo {
   border-radius: 0 !important;
   background: transparent !important;
   vertical-align: middle;
+}
+
+/* Final article-family refinement. Keep inline reading links distinct from standalone controls. */
+body.blog-page.article-page .header-actions nav a:hover,
+body.blog-page.article-page .language-switch a:hover {
+  color: var(--blue-dark);
+}
+
+body.blog-page.article-page .article-meta a,
+body.blog-page.article-page .metric a,
+body.blog-page.article-page .article-body a:not(.button) {
+  color: var(--blue-dark);
+  text-underline-offset: 3px;
+}
+
+body.blog-page.article-page .table-scroll {
+  min-width: 0;
+  max-width: 100%;
+  border-color: var(--line-strong);
+}
+
+body.blog-page.article-page .article-data-table th {
+  border-bottom-color: var(--line-strong);
+}
+
+body.blog-page.article-page .button.primary {
+  max-width: 100%;
+  min-height: 48px;
+  border-color: var(--blue-action);
+  border-radius: var(--radius-control);
+  background: var(--blue-action);
+  color: var(--on-blue);
+  text-align: center;
+  white-space: normal;
+}
+
+body.blog-page.article-page .button.primary:hover {
+  border-color: var(--blue-dark);
+  background: var(--blue-dark);
+}
+
+body.blog-page.article-page .button.primary::after {
+  color: var(--on-blue);
+}
+
+body.blog-page.article-page .article-body h2[id],
+body.blog-page.article-page .article-body h3[id] {
+  scroll-margin-top: 88px;
+}
+
+body.blog-page.article-page .article-body a:not(.button):focus-visible,
+body.blog-page.article-page .article-meta a:focus-visible,
+body.blog-page.article-page .faq summary:focus-visible,
+body.blog-page.article-page .table-scroll:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+body.blog-page.article-page .article-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  body.blog-page.article-page .article-body h2[id],
+  body.blog-page.article-page .article-body h3[id] {
+    scroll-margin-top: 76px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(body.blog-page.article-page) {
+    scroll-behavior: auto;
+  }
+
+  body.blog-page.article-page .button {
+    transition: none;
+    animation: none;
+  }
+
+  body.blog-page.article-page .button:hover,
+  body.blog-page.article-page .button:focus-visible {
+    transform: none;
+  }
 }

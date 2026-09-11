@@ -283,8 +283,20 @@ const strategicPlaybook = [
 const formatPercent = (value) => `${value.toFixed(1).replace(".", ",")}%`;
 const formatDelta = (value) => `${value > 0 ? "+" : ""}${value.toFixed(1).replace(".", ",")} pp`;
 
+function getEnhancedContainer(selector) {
+  const host = document.querySelector(selector);
+  if (!host) return null;
+
+  return [...host.children].find((child) => child.classList.contains("js-enhanced-content")) || null;
+}
+
+function markEnhanced(container) {
+  container.parentElement.classList.add("has-js-enhancement");
+}
+
 function renderKpis() {
-  const container = document.querySelector("#kpi-strip");
+  const container = getEnhancedContainer("#kpi-strip");
+  if (!container) return;
 
   container.innerHTML = kpis
     .map((item) => {
@@ -306,10 +318,12 @@ function renderKpis() {
       `;
     })
     .join("");
+  markEnhanced(container);
 }
 
 function renderSlopeChart() {
-  const container = document.querySelector("#slope-chart");
+  const container = getEnhancedContainer("#slope-chart");
+  if (!container) return;
   const width = 760;
   const height = 390;
   const margin = { top: 60, right: 172, bottom: 54, left: 92 };
@@ -381,10 +395,12 @@ function renderSlopeChart() {
     </svg>
     <p class="chart-note">Lectura: la abstención crece con más intensidad entre 16-29, mientras el segmento 65+ se mantiene alto pero desciende ligeramente.</p>
   `;
+  markEnhanced(container);
 }
 
 function renderYouthChangeChart() {
-  const container = document.querySelector("#youth-change-chart");
+  const container = getEnhancedContainer("#youth-change-chart");
+  if (!container) return;
   const maxAbs = 8;
 
   const rows = youthChanges
@@ -415,10 +431,12 @@ function renderYouthChangeChart() {
       <span>Mayor presencia</span>
     </div>
   `;
+  markEnhanced(container);
 }
 
 function renderAgeMultiples() {
-  const container = document.querySelector("#age-multiples");
+  const container = getEnhancedContainer("#age-multiples");
+  if (!container) return;
 
   container.innerHTML = ageMultiples
     .map((item) => {
@@ -446,10 +464,12 @@ function renderAgeMultiples() {
       `;
     })
     .join("");
+  markEnhanced(container);
 }
 
 function renderIntegratedReading() {
-  const container = document.querySelector("#integrated-reading");
+  const container = getEnhancedContainer("#integrated-reading");
+  if (!container) return;
 
   container.innerHTML = `
     <div class="integrated-heading">
@@ -467,10 +487,12 @@ function renderIntegratedReading() {
         .join("")}
     </div>
   `;
+  markEnhanced(container);
 }
 
 function renderSocialAgeBars() {
-  const container = document.querySelector("#social-age-bars");
+  const container = getEnhancedContainer("#social-age-bars");
+  if (!container) return;
   const max = 55;
 
   const rows = socialAlcoholByAge2025
@@ -496,10 +518,12 @@ function renderSocialAgeBars() {
       Lectura: el consumo social mantiene más fuerza en adultos de 30-64 que entre jóvenes.
     </p>
   `;
+  markEnhanced(container);
 }
 
 function renderOpportunityRanking() {
-  const container = document.querySelector("#opportunity-ranking");
+  const container = getEnhancedContainer("#opportunity-ranking");
+  if (!container) return;
   const max = 60;
   const averagePosition = `${socialAverageSpain / max * 100}%`;
 
@@ -540,10 +564,11 @@ function renderOpportunityRanking() {
       `;
     })
     .join("");
+  markEnhanced(container);
 }
 
 function renderOpportunityMatrix() {
-  const container = document.querySelector("#opportunity-matrix");
+  const container = getEnhancedContainer("#opportunity-matrix");
   if (!container) return;
 
   const points = opportunityMatrix
@@ -566,10 +591,11 @@ function renderOpportunityMatrix() {
     <span class="matrix-quadrant q4">Moderación / experiencia</span>
     ${points}
   `;
+  markEnhanced(container);
 }
 
 function renderOccasionMap() {
-  const container = document.querySelector("#occasion-map");
+  const container = getEnhancedContainer("#occasion-map");
   if (!container) return;
 
   container.innerHTML = occasionMap
@@ -583,11 +609,13 @@ function renderOccasionMap() {
       </article>
     `)
     .join("");
+  markEnhanced(container);
 }
 
 function renderSegmentStrategy() {
-  const matrix = document.querySelector("#segment-matrix");
-  const cards = document.querySelector("#territory-cards");
+  const matrix = getEnhancedContainer("#segment-matrix");
+  const cards = getEnhancedContainer("#territory-cards");
+  if (!matrix || !cards) return;
 
   matrix.innerHTML = `
     <span class="segment-axis x-low">Baja afinidad social</span>
@@ -608,6 +636,7 @@ function renderSegmentStrategy() {
       `)
       .join("")}
   `;
+  markEnhanced(matrix);
 
   cards.innerHTML = segmentTerritories
     .map((item, index) => `
@@ -625,10 +654,11 @@ function renderSegmentStrategy() {
       </article>
     `)
     .join("");
+  markEnhanced(cards);
 }
 
 function renderStrategicPlaybook() {
-  const container = document.querySelector("#strategic-playbook");
+  const container = getEnhancedContainer("#strategic-playbook");
   if (!container) return;
 
   container.innerHTML = strategicPlaybook
@@ -652,6 +682,7 @@ function renderStrategicPlaybook() {
       </article>
     `)
     .join("");
+  markEnhanced(container);
 }
 
 function initScrollReveals() {

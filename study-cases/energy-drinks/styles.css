@@ -4,7 +4,7 @@
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
   --font-serif: "Instrument Serif", Georgia, serif;
   --ink: #141719;
-  --muted: #68717a;
+  --muted: #5d6965;
   --surface: #fffdf7;
   --wash: #f2f0e7;
   --line: #d9ded8;
@@ -12,8 +12,10 @@
   --dark: var(--charcoal);
   --lime: #c8ff52;
   --green: var(--lime);
-  --teal: #008c7b;
+  --teal: #007568;
   --teal-soft: #e0f4ee;
+  --focus-ring: #105fc0;
+  --focus-ring-on-dark: #c8ff52;
   --shadow: 0 28px 90px rgba(20, 23, 25, 0.16);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -6423,4 +6425,60 @@ img.brand-logo {
   border-radius: 0 !important;
   background: transparent !important;
   vertical-align: middle;
+}
+
+/* Local case compatibility: keep navigation, anchors, and focus usable without changing the case geometry. */
+.site-header a,
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.case-language-switch a {
+  width: auto;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.site-header a:focus-visible,
+.site-footer a:focus-visible,
+.header-cta:focus-visible,
+.primary-button:focus-visible,
+.secondary-button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.hero .primary-button:focus-visible,
+.hero .secondary-button:focus-visible,
+.final-case-cta .primary-button:focus-visible,
+.final-case-cta .secondary-button:focus-visible {
+  outline-color: var(--focus-ring-on-dark);
+}
+
+main [id]:not(#top) {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 570px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-header .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .site-header .header-actions > a {
+    flex: 1 1 auto;
+  }
+
+  main [id]:not(#top) {
+    scroll-margin-top: 76px;
+  }
 }

@@ -10,11 +10,14 @@
   --wash: #f3f0e7;
   --line: #d7dcd4;
   --lime: #c8ff52;
-  --teal: #008c7b;
+  --teal: #007568;
   --teal-soft: #dff3ec;
   --amber: #ffbd3d;
   --rose: #ff6f61;
+  --rose-text: #a33d32;
   --blue: #4a70e8;
+  --focus-ring: #105fc0;
+  --focus-ring-on-dark: #c8ff52;
   --shadow: 0 26px 80px rgba(18, 23, 25, 0.13);
 }
 
@@ -166,7 +169,7 @@ h1, h2, h3, p { text-wrap: pretty; }
 .score-track i { display: block; width: var(--score); height: 100%; border-radius: inherit; background: var(--teal); }
 .dashboard-score:nth-child(4) .score-track i { background: var(--rose); }
 .dashboard-alert { display: flex; gap: 12px; align-items: center; margin: 24px 0; padding: 14px; border-radius: 8px; background: #fff0eb; }
-.dashboard-alert span { flex: 0 0 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--rose); color: #fff; font: 800 1rem var(--mono); }
+.dashboard-alert span { flex: 0 0 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--rose); color: var(--ink); font: 800 1rem var(--mono); }
 .dashboard-alert p { margin: 0; font-size: .8rem; line-height: 1.35; }
 .dashboard-alert strong { display: block; }
 .dashboard-question { margin: 0; font-size: 1.1rem; font-weight: 760; line-height: 1.35; }
@@ -217,7 +220,7 @@ h1, h2, h3, p { text-wrap: pretty; }
 .problem-icon { align-self: flex-start; min-width: 64px; height: 64px; display: grid; place-items: center; margin: 26px 0; padding: 0 10px; border-radius: 10px; background: var(--teal-soft); color: var(--teal); font: 800 1rem var(--mono); }
 .problem-card h3 { margin: 0 0 12px; font-size: 1.5rem; line-height: 1.05; }
 .problem-card p { margin: 0; color: var(--muted); line-height: 1.5; }
-.problem-card > strong { margin-top: auto; padding-top: 22px; color: var(--rose); font: 700 .7rem var(--mono); text-transform: uppercase; }
+.problem-card > strong { margin-top: auto; padding-top: 22px; color: var(--rose-text); font: 700 .7rem var(--mono); text-transform: uppercase; }
 .problem-card.wide { grid-column: span 4; min-height: 180px; display: grid; grid-template-columns: 40px 80px 1fr auto; gap: 18px; align-items: center; }
 .problem-card.wide .problem-icon { margin: 0; }
 .problem-card.wide > strong { margin: 0; padding: 0; }
@@ -422,4 +425,42 @@ img.brand-logo {
   border-radius: 0 !important;
   background: transparent !important;
   vertical-align: middle;
+}
+
+/* Local case compatibility: keep navigation, anchors, and focus usable without changing the case geometry. */
+.site-header a,
+.site-footer a,
+.case-route a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.case-language-switch a {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.site-header a:focus-visible,
+.site-footer a:focus-visible,
+.case-route a:focus-visible,
+.header-cta:focus-visible,
+.button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.hero .button:focus-visible,
+.cta .button:focus-visible {
+  outline-color: var(--focus-ring-on-dark);
+}
+
+main [id]:not(#top) {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 700px) {
+  main [id]:not(#top) {
+    scroll-margin-top: 76px;
+  }
 }
