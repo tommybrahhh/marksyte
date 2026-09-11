@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should be mapped before retailer sell-out data is compared?","acceptedAnswer":{"@type":"Answer","text":"At minimum, map SKU or product code, retailer or outlet, reporting period and measure or unit. The exact dimensions depend on the grain and the question the comparison is intended to answer."}},{"@type":"Question","name":"How do you reconcile retailer sell-out data with ERP data?","acceptedAnswer":{"@type":"Answer","text":"First align product, location, period and measure definitions. Then aggregate both sources at the same grain, preserve source lineage and investigate the exceptions that remain, such as returns, cut-off, unit conversion or coverage gaps."}},{"@type":"Question","name":"Should an unmapped product be treated as zero?","acceptedAnswer":{"@type":"Answer","text":"No. An unmapped product is an identity exception. Treating it as zero hides coverage loss and can create a false variance."}},{"@type":"Question","name":"Why keep source and canonical periods?","acceptedAnswer":{"@type":"Answer","text":"The source period preserves the partner’s submission, while the canonical period enables comparison. Keeping both makes calendar rules, late files and corrections traceable."}}]}</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Retailer sell-out data mapping: align SKU, store and period data | Marksyte</title>
@@ -18,7 +19,7 @@
 <meta property="article:author" content="Marksyte">
 <meta property="article:modified_time" content="2026-08-17">
   <meta name="twitter:card" content="summary" /><meta name="twitter:title" content="Retailer sell-out data mapping: align SKU, store and period data" /><meta name="twitter:description" content="Align SKU, retailer, store and reporting-period codes before comparing POS, distributor and ERP data." />
-  <link rel="stylesheet" href="../../styles.css?v=20260809-3" /><link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <link rel="stylesheet" href="../../styles.css?v=20260910-1" /><link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260910-1" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Retailer sell-out data mapping: align SKU, store and period data","description":"Retailer sell-out data mapping for FMCG: align SKU, retailer, store and reporting-period codes before comparing POS, distributor and ERP data.","dateModified":"2026-08-17","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/about/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/sell-out-mapping-product-location-period/"},"articleSection":["Retailer sell-out data mapping","SKU mapping","Store mapping","Data reconciliation"]}</script>
   <script src="/analytics.js" defer></script>
 </head>

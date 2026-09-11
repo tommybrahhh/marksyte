@@ -1,49 +1,75 @@
 ---
 name: Marksyte
-description: A controlled European evidence archive for retail data reconciliation
+description: A controlled evidence archive for retail data reconciliation
 colors:
-  paper: "#FFFFFF"
-  evidence-ink: "#09111F"
-  archive-navy: "#0B1F38"
-  archive-navy-secondary: "#132B48"
-  action-blue: "#2588F5"
-  action-blue-hover: "#1476DF"
-  field-blue: "#0875E1"
-  working-paper-blue: "#EAF4FF"
-  archive-line: "#CFDAE8"
-  metadata-muted: "#536176"
-  pass-wash: "#DFF5EB"
-  pass-ink: "#096344"
-  open-wash: "#E6F1FF"
-  open-ink: "#075CAE"
+  shared-page: "#F4F6FA"
+  shared-surface: "#FFFFFF"
+  shared-ink: "#0B0D12"
+  shared-muted: "#667085"
+  shared-blue: "#2588F5"
+  shared-blue-hover: "#1476DF"
+  shared-blue-soft: "#EAF4FF"
+  shared-line: "#E6EBF2"
+  shared-on-blue: "#FFFFFF"
+  page: "#F7F7F5"
+  surface: "#FFFFFF"
+  surface-subtle: "#FCFCFB"
+  ink: "#101114"
+  muted: "#62666D"
+  blue: "#1769C2"
+  blue-dark: "#105FC0"
+  blue-soft: "#EAF3FD"
+  line: "#D9DDE3"
+  line-strong: "#7B8795"
+  dark: "#111820"
+  on-blue: "#EEF6FF"
+  warning: "#9B4F16"
+  warning-on-dark: "#F0A15A"
+  success: "#146B4A"
+  success-on-dark: "#80D3A5"
+  focus-ring: "#1769C2"
 typography:
-  display:
-    fontFamily: "Sora, sans-serif"
-    fontSize: "clamp(3.6rem, 5.7vw, 5.8rem)"
-    fontWeight: 700
-    lineHeight: 0.95
-    letterSpacing: "-0.04em"
-  headline:
-    fontFamily: "Sora, sans-serif"
-    fontSize: "clamp(2.5rem, 4.5vw, 4.5rem)"
-    fontWeight: 700
-    lineHeight: 1
+  homepage-heading:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(48px, 3.5vw, 52px)"
+    fontWeight: 600
+    lineHeight: 1.03
     letterSpacing: "-0.035em"
+  shared-display:
+    fontFamily: "Sora, sans-serif"
+    fontWeight: 700
   body:
     fontFamily: "Manrope, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.7
+    lineHeight: 1.6
   metadata:
     fontFamily: "Manrope, sans-serif"
     fontSize: "0.68rem"
-    fontWeight: 800
+    fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "0.06em"
+  editorial:
+    fontFamily: "Newsreader, Georgia, serif"
+    fontWeight: 400
+  local-editorial:
+    fontFamily: "Instrument Serif, Georgia, serif"
+    fontWeight: 400
+  service-case-title:
+    fontFamily: "Sora, sans-serif"
+    fontWeight: 700
+  article-title:
+    fontFamily: "Newsreader, Georgia, serif"
+    fontWeight: 500
 rounded:
-  document: "12px"
-  field: "14px"
-  dossier: "16px"
+  homepage-sm: "8px"
+  homepage-md: "12px"
+  homepage-lg: "16px"
+  homepage-xl: "20px"
+  control: "10px"
+  evidence: "12px"
+  card: "14px"
+  section: "20px"
   pill: "999px"
 spacing:
   xs: "8px"
@@ -53,38 +79,44 @@ spacing:
   xl: "32px"
 components:
   button-primary:
-    backgroundColor: "{colors.action-blue}"
-    textColor: "{colors.paper}"
+    backgroundColor: "{colors.blue}"
+    textColor: "{colors.on-blue}"
     typography: "{typography.body}"
-    rounded: "{rounded.pill}"
-    padding: "0 19px"
-    height: "48px"
+    rounded: "{rounded.control}"
+    padding: "0 18px"
+    minHeight: "48px"
   button-primary-hover:
-    backgroundColor: "{colors.action-blue-hover}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.pill}"
-  reconciliation-dossier:
-    backgroundColor: "{colors.working-paper-blue}"
-    textColor: "{colors.evidence-ink}"
-    rounded: "{rounded.dossier}"
-    padding: "24px"
+    backgroundColor: "{colors.blue-dark}"
+    textColor: "{colors.on-blue}"
+    rounded: "{rounded.control}"
+  review-sheet:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.ink}"
+    rounded: "18px"
+    border: "1px solid {colors.line}"
+  source-fragment:
+    backgroundColor: "{colors.surface-subtle}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.evidence}"
+    border: "1px solid {colors.line}"
   working-paper:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.evidence-ink}"
-    rounded: "{rounded.document}"
-    padding: "24px"
-  status-chip-open:
-    backgroundColor: "{colors.open-wash}"
-    textColor: "{colors.open-ink}"
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.evidence}"
+    border: "1px solid {colors.line}"
+  status-chip:
     typography: "{typography.metadata}"
     rounded: "{rounded.pill}"
-    padding: "5px 8px"
   input-field:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.evidence-ink}"
+    backgroundColor: "{colors.surface-subtle}"
+    textColor: "{colors.ink}"
     typography: "{typography.body}"
-    rounded: "{rounded.field}"
-    padding: "13px 14px"
+    rounded: "5px"
+    padding: "11px 12px"
+  focus-ring:
+    color: "{colors.focus-ring}"
+    width: "3px"
+    offset: "4px"
 ---
 
 # Design System: Marksyte
@@ -93,163 +125,193 @@ components:
 
 **Creative North Star: "The Controlled Evidence File"**
 
-Marksyte looks like a European reconciliation archive opened for review: white and pale-blue working papers, disciplined navy rules, compact metadata, and bright-blue control states. The atmosphere is analytical and exact without becoming cold. Realistic, selectable tables, ledgers, diagrams, and document previews make the methodology visible; generic dashboard chrome does not.
+Marksyte looks like a controlled evidence file opened for review: warm-neutral page surfaces, soft outer shells, precise records, compact metadata, and blue control states. The atmosphere is analytical and exact without becoming cold. Realistic, selectable tables, ledgers, diagrams, and document previews make the methodology visible; generic dashboard chrome does not.
 
-The visual system moves between broad tonal fields and precise evidence artifacts. Large editorial propositions establish the conclusion, while smaller Manrope labels, references, statuses, and rows show how that conclusion can be audited. The resulting density is deliberate: spacious at the page level, compact inside controlled records.
+The visual system moves between broad tonal fields and precise evidence artifacts. Large propositions establish the conclusion, while smaller Manrope labels, references, statuses, and rows show how that conclusion can be audited. The resulting density is deliberate: spacious at the page level, compact inside controlled records. The homepage stays quiet so the evidence can be precise.
+
+`styles.css` is the shared foundation. It owns shared tokens, base chrome, service and case family rules, legal treatment, and shared accessibility behavior. `home.css` owns the homepage tokens, heading hierarchy, review sheet, source fragments, walkthrough, outcomes, working papers, and homepage interaction refinements. `assets/blog/article-enhancements.css` owns article-specific reading treatment. Local study-case stylesheets remain isolated from the shared foundation. The blog and article families keep their Read-mode typography, and the homepage does not set the type system for those routes.
 
 **Key Characteristics:**
 
-- Editorial Sora propositions paired with operational Manrope records.
-- White and pale-blue papers structured by navy rules and hairlines.
-- Bright blue reserved for action, active paths, and controlled outputs.
-- Flat tonal sections with depth concentrated on evidence artifacts.
-- Realistic, selectable data objects instead of generic software mockups.
-- A wide, asymmetric first-view rhythm that gives the dossier equal authority to the proposition.
+- Manrope homepage headings paired with operational records
+- Soft shells around precise inner evidence, with quiet structural separators
+- Blue reserved for actions, links, mappings, paths, and controlled states
+- Flat tonal sections with depth concentrated on inspectable evidence artifacts
+- Realistic, selectable data objects instead of generic software mockups
+- A wide, asymmetric first-view rhythm that gives the review sheet equal authority to the proposition
+- A calmer product voice that remains distinct from OpenAI and ChatGPT
+- Bilingual routes with usable wrapping, visible focus, and touch-friendly actions
 
 ## Colors
 
-The palette is a controlled archive: white paper and pale-blue working fields carry evidence, navy gives it authority, and blue marks the active reconciliation path.
+The shared palette provides a neutral foundation for every family. The homepage narrows that palette to warm-neutral surfaces, accessible semantic blue, and a neutral dark operational field.
 
-### Primary
+### Shared foundation
 
-- **Action Blue** (`action-blue`): Primary actions, active mapping bands, reconciliation paths, and current control states.
-- **Action Blue Hover** (`action-blue-hover`): Hover and pressed treatment for primary controls.
+`styles.css` owns the shared page, surface, ink, muted, blue, soft-blue, border, radius, and focus aliases. The current shared foundation resolves to `#F4F6FA`, `#FFFFFF`, `#0B0D12`, `#667085`, `#2588F5`, `#EAF4FF`, and `#E6EBF2`. The shared semantic action roles are `--blue-action: #1769C2`, `--blue-dark: #105FC0`, `--on-blue: #FFFFFF`, and `--line-strong: #7B8795`.
 
-### Secondary
+The old aliases remain in `styles.css` while page families migrate. They are compatibility names, not a second design direction. Shared changes must be checked against service, case, blog, article, owner, and legal pages before they are changed.
 
-- **Field Blue** (`field-blue`): Full-width evidence fields and high-emphasis process sections; use it for a decisive chapter, not a second CTA color.
-- **Archive Navy** (`archive-navy`): Structural rules, controlled output fields, and dark methodology sections.
-- **Secondary Archive Navy** (`archive-navy-secondary`): Supporting dark fields and the blue-black basis of ambient shadows.
+### Homepage roles
 
-### Tertiary
+`home.css` owns the homepage palette. `--page` is `#F7F7F5`, `--surface` is `#FFFFFF`, `--surface-subtle` is `#FCFCFB`, `--ink` is `#101114`, `--muted` is `#62666D`, `--line` is `#D9DDE3`, and `--line-strong` is `#7B8795`. `--blue` is `#1769C2`, `--blue-dark` is `#105FC0`, and `--blue-soft` is `#EAF3FD`.
 
-- **Working-Paper Blue** (`working-paper-blue`): Dossier grounds, explanatory fields, and low-emphasis status context.
-- **Pass Wash / Pass Ink** (`pass-wash`, `pass-ink`): A reconciled or ready state with sufficient text contrast.
-- **Open Wash / Open Ink** (`open-wash`, `open-ink`): An exception or item still in review.
+On the homepage, blue communicates actions, links, mappings, paths, selected rows, and controlled outputs. It does not act as ambient decoration. `--warning` and `--success` serve light surfaces, while `--warning-on-dark` and `--success-on-dark` preserve the same meanings on the walkthrough. `--on-blue` is `#EEF6FF`. The outcomes section uses the accessible blue action field with light text.
 
-### Neutral
+**The Quiet-Page Rule.** Keep the page calm before the evidence begins.
 
-- **Paper** (`paper`): The main canvas, document sheets, form surfaces, and diagram cards.
-- **Evidence Ink** (`evidence-ink`): Primary text and values on light surfaces.
-- **Metadata Muted** (`metadata-muted`): Explanatory copy, document metadata, and secondary values.
-- **Archive Line** (`archive-line`): Hairlines, table rules, input borders, and dossier boundaries.
+**The Soft-Shell Rule.** Let a soft outer shell frame precise inner records.
 
-**The Controlled Blue Rule.** Blue must communicate action, path, output, or state. It is never ambient decoration.
+**The Controlled Blue Rule.** Blue must communicate action, path, mapping, output, or state. It is never ambient decoration.
 
-**The Paper-and-Rule Rule.** Establish hierarchy with paper tone and a navy or cool hairline before adding another color.
+## Ownership by page family
+
+- **Homepage:** `home.css` owns the warm-neutral page, review-sheet evidence system, neutral walkthrough, outcomes field, working papers, and homepage interaction states
+- **Service and case pages:** `styles.css` owns the shared foundation and the scoped operational family rules, with Sora still active for the existing service, case, and legal title treatment
+- **Blog index and articles:** `styles.css` provides the shared shell and `assets/blog/article-enhancements.css` owns article reading treatment. These routes keep their Read-mode typography
+- **Owner and About pages:** `styles.css` keeps their editorial family treatment separate from the homepage heading system
+- **Legal pages:** `styles.css` keeps legal treatment scoped to the legal family
+- **Local study cases:** Each local stylesheet owns its artifact palette, diagrams, gradients, and geometry. Those files do not inherit homepage evidence geometry by default
+
+The shared aliases in `styles.css` remain for compatibility while families migrate. The homepage aliases in `home.css` intentionally resolve to different warm-neutral and evidence values. A shared token change must be checked against every family before it is made.
 
 ## Typography
 
-**Display Font:** Sora with a sans-serif fallback.
+**Homepage heading font:** Manrope with a sans-serif fallback. Homepage `h1`, `h2`, and `h3` use weight 600, `-0.035em` tracking, and a 1.03 line height. The hero heading uses a compact `clamp(48px, 3.5vw, 52px)` scale and keeps the authored line breaks.
 
-**Body Font:** Manrope with a sans-serif fallback.
+**Shared service, case, and legal display font:** Sora remains active through the shared family rules for those page families.
 
-**Metadata Font:** Manrope; compact, tracked, and usually uppercase.
+**Body font:** Manrope with a sans-serif fallback, at 16px and 1.6 line height in the homepage layer.
 
-**Character:** Sora makes the conclusions feel editorial and decisive. Manrope keeps dense working records readable and contemporary. The contrast between the two mirrors the service itself: a clear commercial conclusion supported by controlled operational detail.
+**Metadata font:** Manrope. Homepage metadata stays compact, tracked, and usually uppercase. Small table headers and document metadata remain intentional evidence density.
+
+**Editorial exception:** Newsreader remains for annotations and selected human or editorial notes, including outcome and expertise-file emphasis where the homepage deliberately uses it. Blog and article routes keep their Read-mode editorial typography. Locally styled study cases may use their own Instrument Sans, Instrument Serif, and IBM Plex Mono stack.
 
 ### Hierarchy
 
-- **Display** (700, `display`, 0.95): First-view propositions only; balance the lines and hold the measure near ten characters where the composition allows.
-- **Headline** (700, `headline`, 1): Major section conclusions and the titles of evidence chapters.
-- **Title** (600–700, about 1–1.45rem, 1–1.2): Working-paper titles, stage conclusions, and artifact headings.
-- **Body** (400, `body`): Explanations with generous leading and a comfortable measure around 49–58 characters.
-- **Metadata** (700–800, 0.61–0.78rem, 0.035–0.08em tracking): References, owners, column headers, stage numbers, and state labels; uppercase when it acts as a locator.
+- **Homepage heading** (600, `--sans`, 1.03): Confident section conclusions without oversized or heavily editorial display type
+- **Shared family heading** (700, `--font-display`): Service, case, and legal titles where the existing family rules still use Sora
+- **Editorial note** (400–500, Newsreader): Annotations and selected human notes that benefit from a warmer reading voice
+- **Body** (400, `--font-body`): Explanations with readable leading and a controlled measure
+- **Metadata** (600, compact, tracked): References, owners, column headers, stage numbers, and state labels. Weight 700 or 800 is reserved for genuinely high-emphasis labels
 
-**The Conclusion-and-Evidence Rule.** Use Sora to state what matters and Manrope to show how it is controlled.
+**The Conclusion-and-Evidence Rule.** Use the page family's heading voice to state what matters and Manrope to show how it is controlled.
 
 **The Compact Metadata Rule.** Metadata may be small because it is repeated and structured, but it must remain high-contrast, tracked, and legible.
 
 ## Layout
 
-The system uses generous page-scale spacing around compact evidence. Primary compositions sit in a wide shell of roughly 1280px, with the hero allowed to reach 1440px. The first viewport is an asymmetric two-column arrangement: a direct proposition beside a large reconciliation dossier. Later layouts alternate full-width tonal chapters with flat white sections, working-paper stacks, and line-based process rows.
+The system uses generous page-scale spacing around compact evidence. The homepage uses a wide shell capped by `--max: 1240px`, with an asymmetric first view: a direct proposition beside the reconciliation review sheet. Later layouts alternate flat page sections, precise evidence objects, a neutral dark walkthrough, working-paper stacks, and line-based process rows.
 
-The durable field rhythm is white, pale blue, white, navy, white, strong blue, white, pale blue. This alternating sequence makes long pages navigable without cardifying every section. Major section padding scales from roughly 86px to 150px; internal artifacts use the compact 8–32px spacing vocabulary.
+The homepage keeps the page background warm and neutral, then uses white and subtle white shells for evidence. The outcomes section is the controlled blue field. The walkthrough is a neutral `#181818` operational surface. Major section padding stays spacious while internal artifacts use compact evidence spacing.
 
-At 1180px, complex grids simplify and supporting layouts begin to stack. At 900px, the hero becomes a single column and four-stage flows become two columns. At 760px, navigation is reduced, artifacts stack or compress, the dossier uses a 14px corner, and nonessential connector lines disappear. Preserve readable records on mobile by reflowing metadata and columns before shrinking text.
+At 1100px, the homepage hero and supporting grids simplify. At 960px, the five-step walkthrough becomes two columns and its connector arrows disappear. At 820px, the homepage hides the main navigation and header CTA to preserve the compact header. At 560px, the walkthrough becomes one column, source tables keep a local `430px` minimum, and translated Spanish tables can scroll inside their fragment. Anchor targets keep responsive sticky-header offsets.
 
 **The Spacious-Outside, Dense-Inside Rule.** Give evidence artifacts air at the page level, then allow their internal rows and metadata to be compact.
 
 ## Elevation & Depth
 
-This is a flat-by-default system. Tonal fields, navy blocks, white papers, and one-pixel rules establish most hierarchy. Depth is concentrated on artifacts that should read as physical evidence placed on a working surface; ordinary sections, service rows, and form containers remain flat.
+This is a flat-by-default system. Neutral fields, white papers, one-pixel rules, and precise boundaries establish most hierarchy. Depth is concentrated on artifacts that should read as physical evidence placed on a working surface. Ordinary sections, service rows, and form containers remain flat.
 
 ### Shadow Vocabulary
 
-- **Dossier lift** (`0 26px 60px rgba(19, 55, 94, 0.12)`): The large reconciliation dossier in the primary evidence position.
-- **Working-paper lift** (`0 18px 38px rgba(21, 49, 83, 0.09)`): Layered document previews and other literal paper artifacts.
+- **Review-sheet lift** (`0 1px 2px rgba(0, 0, 0, .03), 0 10px 30px rgba(0, 0, 0, .04)`): The homepage reconciliation review sheet.
+- **Working-paper lift** (`0 10px 24px rgba(12, 20, 32, .06)`): Layered document previews and other literal paper artifacts.
+- Local study-case diagrams and legacy artifacts may keep their own shadows, gradients, and geometry. They remain route-scoped.
 
 **The Evidence-Only Elevation Rule.** A shadow means “this is an inspectable artifact,” not merely “this is a container.”
 
 ## Shapes
 
-The form language is disciplined and lightly softened. Document and diagram artifacts use a 12px corner. Forms and compressed mobile modules use 14px. The major dossier uses 16px. Hairlines and square-edged navy fields keep those curves from feeling playful.
+The form language is disciplined and lightly softened. Homepage controls use a 10px radius. Source fragments and working papers use 12px. Flow cards use 14px. Larger homepage modules use 16px and 20px where the existing implementation calls for them. Hairlines and square-edged dark fields keep those curves from feeling playful.
 
-Pills are reserved for buttons and compact status chips. A pill is a control or state, never a general-purpose container. Tables, mapping bands, ledgers, and large tonal chapters remain rectilinear so the page retains the character of a controlled archive.
+Pills are reserved for compact status controls and existing language or status treatments. Homepage buttons are rounded controls, not full pills. Tables, mapping bands, ledgers, and large tonal chapters remain rectilinear so the page retains the character of a controlled evidence file.
 
-**The Restricted Curve Rule.** Use the 12/14/16px radius vocabulary for artifacts and fields; reserve the full pill for actions and status.
+**The Restricted Curve Rule.** Use the explicit radius vocabulary in the owning stylesheet. Do not turn every section into a rounded card.
 
 ## Components
 
 ### Primary Button
 
 - **Character:** Direct, compact, and unmistakably actionable.
-- **Shape:** Full pill with a 48px minimum height.
-- **Color:** Action Blue on Paper; hover shifts to Action Blue Hover.
-- **States:** Move upward by only 1px on hover. Use a visible, offset focus outline; keep reduced-motion behavior intact.
+- **Shape:** Rounded control with a 10px radius and at least a 48px homepage height
+- **Color:** Accessible blue for primary blue actions, dark neutral for neutral actions, and white text that remains readable on both
+- **States:** Move upward by only 1px on hover. Use a visible, offset focus outline; keep reduced-motion behavior intact
 
 ### Navigation
 
 - **Character:** Quiet archive index rather than application chrome.
-- **Structure:** White translucent bar, Marksyte identifier, short text-link set, one primary action, and a two-option language control.
-- **Responsive behavior:** At 760px, keep the brand and language access; remove secondary navigation and the header CTA rather than crowding the line.
+- **Structure:** Quiet header with Marksyte identifier, short text-link set, one compact action, and a two-option language control.
+- **Responsive behavior:** At 820px, keep the brand and language access while removing the main navigation and header CTA rather than crowding the line. Visible navigation and footer links retain 44px interactive height
 
-### Reconciliation Dossier
+### Reconciliation Review Sheet
 
 - **Character:** The signature evidence object and visual thesis of the system.
-- **Surface:** Pale-blue gridded field with a cool border, 16px corner, and the dossier lift.
-- **Contents:** Two white source papers, one blue mapping band, a controlled ledger, status chips, and a navy output field. Records should look selectable and operational, not illustrated as a decorative screenshot.
-- **Motion:** One reconciliation path draws for 1.15s with `cubic-bezier(.16, 1, .3, 1)` after a short delay. Disable the animation when reduced motion is requested.
+- **Surface:** White evidence shell with a `#D9DDE3` border, 18px corner, hidden overflow, and a quiet evidence-only shadow
+- **Contents:** Two soft inner source fragments, a blue mapping band, a controlled ledger, status markers, and a dark output field. Records should look selectable and operational, not illustrated as a decorative screenshot
+- **Mobile behavior:** The shell stays intact while source tables scroll locally. The review stamp remains visible and retains its bilingual clearance
 
 ### Service-Stage Line Diagram
 
 - **Character:** A concise methodological diagram, not a feature icon.
-- **Shape:** White 12px paper field inside a flat navy process row.
-- **Drawing:** Thin navy lines with pale-blue fills and bright-blue status marks. Keep geometry simple enough to scan at compact sizes.
+- **Shape:** Flat family-specific process rows with precise boundaries.
+- **Drawing:** Keep lines, fills, and state marks subordinate to the evidence. Use blue only for a real path, mapping, action, or state.
 
 ### Working-Paper Preview
 
 - **Character:** A real deliverable placed on the page for inspection.
-- **Shape:** White document with a 12px corner, cool border, and working-paper lift.
-- **Structure:** Strong navy header rule, compact owner and status metadata, and a fixed-layout table. Slight rotations may distinguish a physical stack, but content must remain readable.
+- **Shape:** White document with a 12px corner, quiet border, and working-paper lift
+- **Structure:** Strong header rule, compact owner and status metadata, and a fixed-layout table. Slight rotations distinguish a physical stack, but content must remain readable
 
 ### Status Chip
 
 - **Character:** Small, factual, and state-specific.
-- **Shape:** Pill with compact 5px by 8px padding.
-- **Color:** Use the pass pair for ready/reconciled states and the open pair for items needing review. Do not use status color without text.
+- **Shape:** A compact pill only where the existing route uses a status control. Review-sheet markers and stamps use their own evidence geometry
+- **Color:** Use warning and success roles for the meaning they already carry, with separate dark-surface values in the walkthrough. Do not use status color without text or structure
 
 ### Input / Form
 
 - **Character:** A plain working field on a white evidence surface.
-- **Shape:** 14px form container and control corners, with cool one-pixel borders.
-- **Focus:** Shift the border to Action Blue and add a restrained blue outline. Preserve native labels, required semantics, and visible status messaging.
+- **Shape:** White form surface with 5px control corners and quiet one-pixel borders
+- **Focus:** Shift the border to blue and add a restrained visible outline. Preserve native labels, required semantics, and visible status messaging
 
-### FMCG Flow Artifact
+### Walkthrough Flow Artifact
 
-- **Character:** A four-stage evidence chain that shows source, mapping, comparison, and controlled output.
-- **Structure:** White 12px artifacts sit on a Strong Blue field and connect with one thin rule. Each stage leads with compact uppercase metadata and ends with an operational note.
-- **Responsive behavior:** Four columns become two at 900px and one at 760px; remove the cross-stage connector when it no longer clarifies sequence.
+- **Character:** A five-stage evidence chain that shows source, mapping, comparison, decision, and controlled output.
+- **Structure:** `#222` flow cards with `#333` boundaries sit on a neutral `#181818` field. Anomaly and fixed states use distinct text, borders, and labels. Connector arrows stay neutral and readable
+- **Responsive behavior:** Five columns become two at 960px and one at 560px. Connector arrows disappear when cards are gridded or stacked, while the ordered list remains 01 through 05
+
+## Accessibility and interaction behavior
+
+Homepage buttons, visible navigation links, footer links, language links, secondary links, and practical contact links keep at least a 44px interactive area. Main navigation is removed from the mobile tab order when it is hidden. Focus-visible outlines remain blue, at least 3px wide, and offset from the control. Dark-surface links use a light focus treatment where needed.
+
+The homepage keeps `scroll-margin-top` offsets for sticky-header anchors, including `#how-we-work`. Source tables scroll inside their fragments at mobile widths and do not widen the page. Warning, success, anomaly, and fixed states use text and structure as well as color.
+
+Reduced motion changes smooth scrolling to automatic, removes transition timing, and disables hover transforms. This behavior remains in the homepage, shared foundation, article layer, and local case styles where those rules exist.
+
+English and Spanish routes share the same section structure and interaction hooks. Spanish headings, metadata, buttons, and source tables are allowed to wrap or scroll locally when the translation needs more space. The authored English breaks remain intact.
+
+## Intentional exceptions
+
+- Compact evidence metadata, 8px table headers, and 9px document metadata preserve inspectable density where the text remains readable
+- Working papers keep their slight rotations and evidence-only shadows to read as physical documents
+- The homepage `.expertise-file` keeps its blue field, black boundary, and offset line as a deliberate artifact rather than a generic card
+- Quiet light separators and dark walkthrough row rules support grouping without pretending to be interactive indicators
+- Local case diagrams, gradients, typography, and full-bleed sections remain isolated route-specific artifacts. The brand-relevance dark blocks use the local content container width so their background reaches the viewport without scrollbar overflow
+- The Spanish alcohol study case has no genuine English counterpart and remains unpaired rather than receiving invented hreflang metadata
+- The English EES airport study case has no genuine Spanish counterpart and keeps only its English and `x-default` alternates
+
+The Phase 5B detector findings are treated as documentation and scope checks, not as reasons to redesign the page. Suggestions about heavier shared styles or broader radius use belong to the shared or family-specific layers. Compact metadata, rotated papers, local artifact geometry, and Newsreader notes are intentional exceptions. No detector suggestion overrides the current accessibility and ownership rules.
 
 ## Do's and Don'ts
 
 ### Do:
 
 - **Do** pair large editorial conclusions with realistic, selectable evidence artifacts.
-- **Do** use the white → pale blue → white → navy → white → strong blue → white → pale blue field rhythm to pace long explanatory surfaces.
-- **Do** reserve bright blue for action, active paths, outputs, and explicit status.
+- **Do** keep the page quiet before the evidence begins, then use soft shells around precise records
+- **Do** reserve blue for action, links, mappings, paths, outputs, and explicit status
 - **Do** keep metadata compact, structured, and clearly subordinate to the conclusion it supports.
-- **Do** flatten ordinary sections and spend depth only on dossiers and literal working papers.
+- **Do** flatten ordinary sections and spend depth only on review sheets and literal working papers.
 - **Do** preserve bilingual navigation, visible focus, strong contrast, touch-friendly actions, and reduced-motion behavior.
 
 ### Don't:

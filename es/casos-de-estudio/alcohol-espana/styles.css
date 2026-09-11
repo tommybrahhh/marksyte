@@ -4,12 +4,12 @@
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --font-serif: "Instrument Serif", Georgia, serif;
   --ink: #141719;
-  --muted: #68717a;
+  --muted: #5d6965;
   --soft: #f2f0e7;
   --surface: #fffdf7;
   --line: #d9ded8;
   --charcoal: #171d1c;
-  --teal: #008c7b;
+  --teal: #007568;
   --coral: #ff6547;
   --gold: #c9a227;
   --blue: #4f6df5;
@@ -20,6 +20,8 @@
   --gold-soft: #f5ead1;
   --shadow: 0 28px 90px rgba(20, 23, 25, 0.16);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --focus-ring: #105fc0;
+  --focus-ring-on-dark: #c8ff52;
 }
 
 * {
@@ -2571,6 +2573,32 @@ img.brand-logo {
   border-radius: 0 !important;
   background: transparent !important;
   vertical-align: middle;
+}
+
+/* Local case compatibility: keep navigation, anchors, and focus usable without changing the case geometry. */
+.case-site-header a,
+.site-footer a,
+.marksyte-cta a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.case-site-header a:focus-visible,
+.site-footer a:focus-visible,
+.marksyte-cta a:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+main [id]:not(#top) {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 760px) {
+  main [id]:not(#top) {
+    scroll-margin-top: 76px;
+  }
 }
 
 /* Semantic chart fallbacks remain in the document for no-JS and assistive use. */

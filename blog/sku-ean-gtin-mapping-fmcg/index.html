@@ -24,8 +24,8 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="SKU-to-EAN and GTIN mapping: a practical guide for FMCG teams" />
   <meta name="twitter:description" content="SKUs describe your catalogue; EANs and GTINs identify products for the trade. Connect them once, with effective dates and an owner." />
-  <link rel="stylesheet" href="../../styles.css?v=20260809-3" />
-  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260809-4" />
+  <link rel="stylesheet" href="../../styles.css?v=20260910-1" />
+  <link rel="stylesheet" href="../../assets/blog/article-enhancements.css?v=20260910-1" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"SKU-to-EAN and GTIN mapping: a practical guide for FMCG teams","description":"Build and maintain reliable mappings between internal SKUs, retailer codes, EANs and GTINs across packs and markets.","dateModified":"2026-08-17","inLanguage":"en","author":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/about/"},"publisher":{"@type":"Organization","name":"Marksyte","url":"https://www.marksyte.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.marksyte.com/blog/sku-ean-gtin-mapping-fmcg/"},"articleSection":["SKU to EAN mapping","GTIN mapping","Product-code mapping","FMCG master data","Data mapping and integration"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between SKU, EAN and GTIN?","acceptedAnswer":{"@type":"Answer","text":"A SKU is your internal catalogue key for one product and pack. An EAN is a barcode that identifies a consumer unit in the trade. A GTIN is the identifier family to which EAN and similar barcodes belong. They are different keys with different lifetimes, which is why a mapping is needed between them."}},{"@type":"Question","name":"Can one EAN map to more than one SKU?","acceptedAnswer":{"@type":"Answer","text":"Only when the same physical unit is genuinely split across internal pack records, and that split should be resolved. As a rule, keep one active mapping row per product and market, and record pack conversions as a separate relationship with its own effective dates."}},{"@type":"Question","name":"How do you maintain a SKU-to-EAN mapping table?","acceptedAnswer":{"@type":"Answer","text":"Keep one canonical row per product with SKU, EAN or GTIN, retailer codes, effective dates, status and an owner. Validate check digits, uniqueness and coverage before each cycle, and record every change so last period's result can be reproduced."}}]}</script>
   <script src="/analytics.js" defer></script>
@@ -50,7 +50,7 @@
           <figcaption id="roles-table-title">Identifier roles compared</figcaption>
           <table class="article-data-table">
             <thead>
-              <tr><th>Identifier</th><th>What it identifies</th><th>Scope</th><th>Lifetime</th></tr>
+              <tr><th scope="col">Identifier</th><th scope="col">What it identifies</th><th scope="col">Scope</th><th scope="col">Lifetime</th></tr>
             </thead>
             <tbody>
               <tr><td><code>SKU</code></td><td>Your catalogue item, including the pack variant</td><td>Internal to you</td><td>Until you retire it</td></tr>
@@ -69,8 +69,8 @@
           <div class="map-hub">
             <div class="map-core"><small>Canonical product</small><strong>SKU MX-2041</strong><span>Sparkling water &middot; 500 ml</span></div>
             <div class="map-spokes">
-              <div class="map-code"><small>Consumer EAN</small><strong>8412345678901</strong><span>Unit scanned at the till</span></div>
-              <div class="map-code"><small>Case GTIN</small><strong>08412345678909</strong><span>Carton used in logistics</span></div>
+              <div class="map-code"><small>Consumer EAN</small><strong>8412345678905</strong><span>Unit scanned at the till</span></div>
+              <div class="map-code"><small>Case GTIN</small><strong>08412345678905</strong><span>Carton used in logistics</span></div>
               <div class="map-code"><small>Retailer ES-042</small><strong>883221</strong><span>Key used in ordering files</span></div>
               <div class="map-code"><small>Distributor MX</small><strong>4491</strong><span>Key used in distributor files</span></div>
             </div>
@@ -83,9 +83,9 @@
         <p>One product usually has several trade codes. The consumer unit, the tray and the case are different pack levels, and each can carry its own EAN or GTIN. A sell-out file reports units, an invoice reports cases; the mapping must know how they relate.</p>
         <figure class="pack-chain" aria-labelledby="pack-chain-title">
           <figcaption id="pack-chain-title">Pack hierarchy &middot; SKU MX-2041</figcaption>
-          <div class="pack-level is-each"><small>Each</small><strong>EAN 8412345678901</strong><span>1 unit &middot; what the consumer buys</span></div>
-          <div class="pack-level is-pack"><small>Tray</small><strong>EAN 8412345678905</strong><span>12 units &middot; how the store shelves it</span></div>
-          <div class="pack-level is-case"><small>Case</small><strong>GTIN 08412345678909</strong><span>6 trays &middot; how logistics ships it</span></div>
+          <div class="pack-level is-each"><small>Each</small><strong>EAN 8412345678905</strong><span>1 unit &middot; what the consumer buys</span></div>
+          <div class="pack-level is-pack"><small>Tray</small><strong>EAN 8412345678912</strong><span>12 units &middot; how the store shelves it</span></div>
+          <div class="pack-level is-case"><small>Case</small><strong>GTIN 08412345678905</strong><span>6 trays &middot; how logistics ships it</span></div>
         </figure>
         <p>The mapping should record the pack relationship and a conversion factor, not assume one. When a POS file reports 120 units and an invoice shows 20 cases, the reconciliation only works if you know that a case holds 72 units.</p>
 
@@ -94,12 +94,12 @@
         <figure class="eff-track" aria-labelledby="eff-track-title">
           <figcaption id="eff-track-title">Versioned mapping &middot; SKU MX-2041</figcaption>
           <div class="eff-band">
-            <div class="eff-dates"><strong>2019-03-01 &rarr; 2024-06-30</strong><span>EAN 8412345678890</span></div>
+            <div class="eff-dates"><strong>2019-03-01 &rarr; 2024-06-30</strong><span>EAN 8412345678899</span></div>
             <p>Original consumer barcode, retired at the pack redesign.</p>
             <em>Closed</em>
           </div>
           <div class="eff-band is-active">
-            <div class="eff-dates"><strong>2024-07-01 &rarr; open</strong><span>EAN 8412345678901</span></div>
+            <div class="eff-dates"><strong>2024-07-01 &rarr; open</strong><span>EAN 8412345678905</span></div>
             <p>Current barcode for the redesigned pack.</p>
             <em>Active</em>
           </div>
@@ -143,21 +143,21 @@
               <article><small>Canonical product</small><b>MX-2041</b><span>Sparkling water &middot; 500 ml</span></article>
               <article><small>Market</small><b>ES</b><span>Effective from 2024-07-01</span></article>
             </div>
-            <div class="recon-dossier-map"><span>SKU MX-2041 &rarr; EAN 8412345678901</span><i></i></div>
+            <div class="recon-dossier-map"><span>SKU MX-2041 &rarr; EAN 8412345678905</span><i></i></div>
             <div class="recon-dossier-ledger">
-              <div><b>Consumer EAN</b><span>8412345678901</span><em>Active</em></div>
-              <div><b>Case GTIN</b><span>08412345678909</span><em>Active</em></div>
+              <div><b>Consumer EAN</b><span>8412345678905</span><em>Active</em></div>
+              <div><b>Case GTIN</b><span>08412345678905</span><em>Active</em></div>
               <div><b>Retailer ES-042</b><span>883221</span><em>Active</em></div>
               <div><b>Conversion</b><span>72 units per case</span><em>Active</em></div>
-              <div><b>Previous EAN</b><span>8412345678890</span><em class="recon-open">Closed &middot; 2024-06-30</em></div>
+              <div><b>Previous EAN</b><span>8412345678899</span><em class="recon-open">Closed &middot; 2024-06-30</em></div>
             </div>
             <footer><span>Status</span><strong>0 unmapped codes &middot; validation passed this cycle</strong></footer>
           </div>
         </figure>
-        <p>Every downstream file joins through this row. A POS file reports 883221, an invoice shows GTIN 08412345678909, and the ERP knows MX-2041. One row answers all three, and the check digit, uniqueness and round-trip checks passed before the row was published.</p>
+        <p>Every downstream file joins through this row. A POS file reports 883221, an invoice shows GTIN 08412345678905, and the ERP knows MX-2041. One row answers all three, and the check digit, uniqueness and round-trip checks passed before the row was published.</p>
         <h3>Copyable mapping record</h3>
         <p>This compact template exposes the fields behind the worked record. Keep source codes beside the canonical identity, and make the status and validation fields part of the row rather than comments in a separate workbook.</p>
-        <div class="table-scroll" role="region" aria-label="Illustrative SKU EAN GTIN mapping template" tabindex="0"><table class="article-data-table"><thead><tr><th>Field</th><th>Illustrative value</th><th>Control purpose</th></tr></thead><tbody><tr><td>Source system</td><td>Retailer ES-042 POS</td><td>Identifies where the external code came from</td></tr><tr><td>Source product code</td><td>883221</td><td>Preserves the partner identifier used in the file</td></tr><tr><td>Canonical SKU</td><td>MX-2041</td><td>Internal product identity used by the ERP</td></tr><tr><td>EAN or GTIN</td><td>EAN 8412345678901 / case GTIN 08412345678909</td><td>Connects consumer and logistics identifiers</td></tr><tr><td>Pack level</td><td>Each / case</td><td>Prevents units and cases being treated as the same item</td></tr><tr><td>Conversion factor</td><td>72 eaches per case</td><td>Supports measure conversion where needed</td></tr><tr><td>Market</td><td>ES</td><td>Allows legitimate market-level code differences</td></tr><tr><td>Retailer or customer</td><td>Retailer ES-042</td><td>Scopes a partner-specific code relationship</td></tr><tr><td>Valid from / valid to</td><td>2024-07-01 / open</td><td>Protects historical joins and pack changes</td></tr><tr><td>Mapping status</td><td>Active</td><td>Shows whether the row may be used</td></tr><tr><td>Owner</td><td>Master data team</td><td>Names the decision-maker for changes</td></tr><tr><td>Validation status</td><td>Check digit, uniqueness and round trip passed</td><td>Shows which controls allowed publication</td></tr><tr><td>Notes</td><td>Previous EAN closed 2024-06-30</td><td>Retains the change context without overwriting history</td></tr></tbody></table></div>
+        <div class="table-scroll" role="region" aria-label="Illustrative SKU EAN GTIN mapping template" tabindex="0"><table class="article-data-table"><thead><tr><th scope="col">Field</th><th scope="col">Illustrative value</th><th scope="col">Control purpose</th></tr></thead><tbody><tr><td>Source system</td><td>Retailer ES-042 POS</td><td>Identifies where the external code came from</td></tr><tr><td>Source product code</td><td>883221</td><td>Preserves the partner identifier used in the file</td></tr><tr><td>Canonical SKU</td><td>MX-2041</td><td>Internal product identity used by the ERP</td></tr><tr><td>EAN or GTIN</td><td>EAN 8412345678905 / case GTIN 08412345678905</td><td>Connects consumer and logistics identifiers</td></tr><tr><td>Pack level</td><td>Each / case</td><td>Prevents units and cases being treated as the same item</td></tr><tr><td>Conversion factor</td><td>72 eaches per case</td><td>Supports measure conversion where needed</td></tr><tr><td>Market</td><td>ES</td><td>Allows legitimate market-level code differences</td></tr><tr><td>Retailer or customer</td><td>Retailer ES-042</td><td>Scopes a partner-specific code relationship</td></tr><tr><td>Valid from / valid to</td><td>2024-07-01 / open</td><td>Protects historical joins and pack changes</td></tr><tr><td>Mapping status</td><td>Active</td><td>Shows whether the row may be used</td></tr><tr><td>Owner</td><td>Master data team</td><td>Names the decision-maker for changes</td></tr><tr><td>Validation status</td><td>Check digit, uniqueness and round trip passed</td><td>Shows which controls allowed publication</td></tr><tr><td>Notes</td><td>Previous EAN closed 2024-06-30</td><td>Retains the change context without overwriting history</td></tr></tbody></table></div>
 
         <h2 id="takeaway">Practical takeaway</h2>
         <p>Build one canonical mapping row per product and market, anchor it on the internal SKU, record pack conversions and effective dates, validate before each cycle and give it a single owner. That turns failed joins and ambiguous product identities into a controlled, repeatable input.</p>

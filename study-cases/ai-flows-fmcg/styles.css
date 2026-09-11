@@ -9,7 +9,7 @@
   --wash: #f4f1e8;
   --line: #d9ddd5;
   --charcoal: #171d1c;
-  --teal: #007f73;
+  --teal: #007568;
   --mint: #dff4e9;
   --lime: #c8f552;
   --amber: #d9a441;
@@ -18,6 +18,8 @@
   --shadow: 0 28px 90px rgba(20, 23, 25, 0.14);
   --radius: 8px;
   --content: 1180px;
+  --focus-ring: #105fc0;
+  --focus-ring-on-dark: #c8f552;
 }
 
 * {
@@ -1584,4 +1586,57 @@ img.brand-logo {
   border-radius: 0 !important;
   background: transparent !important;
   vertical-align: middle;
+}
+
+/* Local case compatibility: keep navigation, anchors, and focus usable without changing the case geometry. */
+.case-header a,
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.case-language-switch a {
+  width: auto;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.case-header a:focus-visible,
+.site-footer a:focus-visible,
+.primary-button:focus-visible,
+.secondary-button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.hero .primary-button:focus-visible,
+.hero .secondary-button:focus-visible,
+.bottom-cta .primary-button:focus-visible {
+  outline-color: var(--focus-ring-on-dark);
+}
+
+main [id]:not(#top) {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 760px) {
+  main [id]:not(#top) {
+    scroll-margin-top: 76px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

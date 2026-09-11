@@ -4,17 +4,19 @@
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
   --font-serif: "Instrument Serif", Georgia, serif;
   --ink: #121719;
-  --muted: #64707a;
+  --muted: #5d6965;
   --surface: #fffdf7;
   --wash: #f4f1e8;
   --line: #d9ded6;
   --charcoal: #151d1b;
   --lime: #c8ff52;
-  --teal: #008c7b;
+  --teal: #007568;
   --teal-soft: #dff3ec;
   --amber: #ffbd3d;
   --rose: #ff6f61;
   --blue: #4a70e8;
+  --focus-ring: #105fc0;
+  --focus-ring-on-dark: #c8ff52;
   --shadow: 0 28px 80px rgba(18, 23, 25, 0.14);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -30,6 +32,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  container-type: inline-size;
   overflow-x: hidden;
   background:
     linear-gradient(90deg, rgba(18, 23, 25, 0.045) 1px, transparent 1px),
@@ -687,8 +690,8 @@ p {
 }
 
 .dark-block {
-  margin-inline: calc(50% - 50vw);
-  padding-inline: max(18px, calc((100vw - 1160px) / 2));
+  margin-inline: calc(50% - 50cqw);
+  padding-inline: max(18px, calc((100cqw - 1160px) / 2));
   background: var(--charcoal);
   color: var(--surface);
 }
@@ -1626,4 +1629,41 @@ img.brand-logo {
   border-radius: 0 !important;
   background: transparent !important;
   vertical-align: middle;
+}
+
+/* Local case compatibility: keep navigation, anchors, and focus usable without changing the case geometry. */
+.site-header a,
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.case-language-switch a {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.site-header a:focus-visible,
+.site-footer a:focus-visible,
+.primary-button:focus-visible,
+.secondary-button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.hero .primary-button:focus-visible,
+.hero .secondary-button:focus-visible,
+.bottom-cta .primary-button:focus-visible {
+  outline-color: var(--focus-ring-on-dark);
+}
+
+main [id]:not(#top) {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 680px) {
+  main [id]:not(#top) {
+    scroll-margin-top: 76px;
+  }
 }

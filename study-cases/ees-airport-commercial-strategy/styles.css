@@ -1,4 +1,4 @@
-.ees-case { --lime:#d9ff57; --teal:#006f78; --cyan:#bdeff0; --signal:#ff765f; }
+.ees-case { --lime:#d9ff57; --teal:#006f78; --cyan:#bdeff0; --signal:#ff765f; --signal-text:#9b3d32; }
 .ees-hero .hero-copy { background:radial-gradient(circle at 88% 12%,rgba(189,239,240,.23),transparent 25%),linear-gradient(145deg,rgba(0,111,120,.34),transparent 44%),#111b20; }
 
 .flow-monitor { align-self:center; position:relative; z-index:2; margin-left:-20px; padding:clamp(22px,3vw,38px); border:1px solid rgba(18,23,25,.16); border-radius:10px; background:var(--surface); box-shadow:var(--shadow); }
@@ -11,7 +11,7 @@
 .flow-monitor li { display:grid; grid-template-columns:32px 1fr auto; gap:12px; align-items:center; padding:14px 0; border-bottom:1px solid var(--line); }
 .flow-monitor li i { width:30px; height:30px; display:grid; place-items:center; border-radius:50%; background:var(--wash); color:var(--teal); font:700 .61rem var(--mono); font-style:normal; }
 .flow-monitor li strong,.flow-monitor li span { display:block; }.flow-monitor li strong { font:700 .68rem var(--mono); }.flow-monitor li span { margin-top:3px; color:var(--muted); font-size:.76rem; }.flow-monitor li > b { color:var(--muted); font:700 .62rem var(--mono); text-transform:uppercase; }
-.flow-monitor li.active i { background:var(--teal); color:white; }.flow-monitor li.active > b { color:var(--teal); }.flow-monitor li.alert { background:linear-gradient(90deg,transparent,#fff0eb); }.flow-monitor li.alert i { background:var(--signal); color:white; }.flow-monitor li.alert > b { color:var(--signal); }
+.flow-monitor li.active i { background:var(--teal); color:white; }.flow-monitor li.active > b { color:var(--teal); }.flow-monitor li.alert { background:linear-gradient(90deg,transparent,#fff0eb); }.flow-monitor li.alert i { background:var(--signal); color:var(--ink); }.flow-monitor li.alert > b { color:var(--signal-text); }
 .monitor-rule { margin:18px 0 0; padding:15px; border-left:4px solid var(--lime); background:#f3f7ec; font-size:.82rem; font-weight:720; line-height:1.45; }
 
 .ees-status .market-metric:first-child strong { font-size:clamp(3rem,5vw,5rem); }
@@ -27,7 +27,7 @@
 .clock-card { min-height:380px; display:flex; flex-direction:column; padding:22px; border:1px solid rgba(18,23,25,.18); border-radius:10px; background:var(--surface); }
 .clock-card > span { color:var(--teal); font:700 .64rem var(--mono); }.clock-face { width:76px; height:76px; display:grid; place-items:center; margin:26px 0; border:6px solid var(--cyan); border-radius:50%; color:var(--teal); font:800 .72rem var(--mono); }.clock-card:nth-child(2) .clock-face { border-color:#ffdbc0; }.clock-card:nth-child(3) .clock-face { border-color:var(--lime); }.clock-card:nth-child(4) .clock-face { border-color:#ffd0c9; }.clock-card:nth-child(5) { background:var(--charcoal); color:white; }.clock-card:nth-child(5) .clock-face { border-color:var(--lime); color:var(--lime); }
 .clock-card h3 { margin:auto 0 10px; font-size:1.35rem; }.clock-card p { margin:0; color:var(--muted); font-size:.88rem; line-height:1.45; }.clock-card:nth-child(5) p { color:rgba(255,255,255,.6); }.clock-card b { margin-top:20px; padding-top:14px; border-top:1px solid var(--line); color:var(--teal); font:700 .61rem var(--mono); text-transform:uppercase; }.clock-card:nth-child(5) b { border-color:rgba(255,255,255,.16); color:var(--lime); }
-.friction-equation { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:14px; margin-top:16px; padding:26px; border-radius:10px; background:var(--surface); }.friction-equation span,.friction-equation strong { padding:10px 13px; border:1px solid var(--line); border-radius:99px; font:700 .68rem var(--mono); text-transform:uppercase; }.friction-equation b { color:var(--signal); font-size:1.2rem; }.friction-equation strong { border-color:var(--teal); background:var(--teal); color:white; }
+.friction-equation { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:14px; margin-top:16px; padding:26px; border-radius:10px; background:var(--surface); }.friction-equation span,.friction-equation strong { padding:10px 13px; border:1px solid var(--line); border-radius:99px; font:700 .68rem var(--mono); text-transform:uppercase; }.friction-equation b { color:var(--signal-text); font-size:1.2rem; }.friction-equation strong { border-color:var(--teal); background:var(--teal); color:white; }
 
 .zone-section { padding:clamp(80px,10vw,140px) 0; }
 .terminal-map { padding:clamp(22px,4vw,44px); border:1px solid var(--ink); border-radius:12px; background:var(--surface); }

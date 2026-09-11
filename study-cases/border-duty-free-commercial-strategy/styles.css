@@ -1,4 +1,4 @@
-.border-case { --lime: #e2ff4f; --teal: #087f70; --amber: #ffbd3d; }
+.border-case { --lime: #e2ff4f; --teal: #007568; --amber: #ffbd3d; }
 .border-hero .hero-copy { background: radial-gradient(circle at 90% 12%, rgba(226,255,79,.2), transparent 24%), linear-gradient(145deg, rgba(8,127,112,.2), transparent 42%), #111a18; }
 .border-route-card { align-self: center; position: relative; z-index: 2; margin-left: -20px; padding: clamp(22px,3vw,38px); border: 1px solid rgba(18,23,25,.16); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); }
 .route-card-head { display:flex; justify-content:space-between; gap:16px; padding-bottom:18px; border-bottom:1px solid var(--line); }
@@ -9,7 +9,7 @@
 .border-route-card li > span { width:28px; height:28px; display:grid; place-items:center; border-radius:50%; background:var(--wash); color:var(--teal); font:700 .62rem var(--mono); }
 .border-route-card li b { font:700 .72rem var(--mono); }
 .border-route-card li p { margin:2px 0 0; color:var(--muted); font-size:.78rem; }
-.border-route-card li em { color:var(--rose); font:700 .72rem var(--mono); font-style:normal; text-align:right; }
+.border-route-card li em { color:var(--rose-text); font:700 .72rem var(--mono); font-style:normal; text-align:right; }
 .route-card-thesis { margin:0; padding:14px; border-radius:7px; background:var(--lime); font-weight:800; }
 .road-line { position:absolute; inset:94px auto 98px 51px; width:2px; background:repeating-linear-gradient(to bottom,var(--teal) 0 7px,transparent 7px 13px); opacity:.35; }
 .stop-funnel { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
